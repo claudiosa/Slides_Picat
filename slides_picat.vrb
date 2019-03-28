@@ -1,30 +1,24 @@
-\frametitle{Exemplo}
+\frametitle{Operadores Especiais \textrm{\MakeUppercase{\romannumeral 2}}}
 
-    \begin{itemize}
+    \begin{block}{Operadores de Termos Compostos}
+    	
+    	\begin{enumerate}
 
-        \item Tomando como exemplo uma relação de parentesco, como a seguinte:
-% usar antecendente,sucessor, descendente etc.
-        \begin{lstlisting}[frame=single]
-index(-,-) (+,-) (-,+)
-antecedente(ana,maria).
-antecedente(pedro,maria).
-antecedente(maria,paula).
-antecedente(paula,lucas).
-antecedente(lucas, eduarda).
+            \item \textbf{Concatenação}\/ (\verb!++!): concatena duas listas ou vetores, tornando o primeiro termo
+            da segunda lista no termo seguinte ao último termo da primeira lista.
 
-index(-)
-mulher(ana).
-mulher(maria).
-mulher(paula).
-mulher(eduarda).
-homem(pedro).
-homem(lucas).
+            \item \textbf{Separador}\/ (\verb!H | T!): separa uma lista \emph{L} em seu primeiro termo \emph{H},
+            chamado de cabeça (em inglês \textit{Head}), e o resto da lista \emph{T}, chamado de cauda (em inglês \textit{Tail}).
 
-mae(X,Y) ?=> antecedente(X,Y), mulher(X).
-pai(X,Y) ?=> antecedente(X,Y), homem(X).
-avos(X,Y) ?=> antecedente(X,Z), antecedente(Z,Y).
-sucessor(X,Y) ?=> antecedente(Y,X).
-sucessor(X,Y) ?=> antecedente(Y,Z), sucessor(X,Z).
-        \end{lstlisting}
-    \end{itemize}
+            \item \textbf{Iterador}\/ (\verb!X in L!): itera pelo termo composto \emph{L}, instanciando um termo
+            não composto \emph{X} aos termos contidos em \emph{L}. Bastante utilizado para iterar por listas.
+	%iterador
+            \item \textbf{Sequência }\/ (\verb!Inicio..Passo..Fim!): Gera uma lista ou vetor, começando
+            (inclusivamente) em \textit{Inicio} incrementando por \textit{Passo} e parando (inclusivamente) em
+            \textit{Fim}. Se \textit{Passo} for omitido, é automaticamente atribuído 1. Se usado dentro do
+            índice de uma lista ou vetor resultará na porção da lista dentro deste intervalo.
+
+    	\end{enumerate}
+
+    \end{block}
 
