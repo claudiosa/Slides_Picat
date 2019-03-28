@@ -1,0 +1,30 @@
+\frametitle{Exemplo}
+
+    \begin{itemize}
+
+        \item Tomando como exemplo uma relação de parentesco, como a seguinte:
+% usar antecendente,sucessor, descendente etc.
+        \begin{lstlisting}[frame=single]
+index(-,-) (+,-) (-,+)
+antecedente(ana,maria).
+antecedente(pedro,maria).
+antecedente(maria,paula).
+antecedente(paula,lucas).
+antecedente(lucas, eduarda).
+
+index(-)
+mulher(ana).
+mulher(maria).
+mulher(paula).
+mulher(eduarda).
+homem(pedro).
+homem(lucas).
+
+mae(X,Y) ?=> antecedente(X,Y), mulher(X).
+pai(X,Y) ?=> antecedente(X,Y), homem(X).
+avos(X,Y) ?=> antecedente(X,Z), antecedente(Z,Y).
+sucessor(X,Y) ?=> antecedente(Y,X).
+sucessor(X,Y) ?=> antecedente(Y,Z), sucessor(X,Z).
+        \end{lstlisting}
+    \end{itemize}
+

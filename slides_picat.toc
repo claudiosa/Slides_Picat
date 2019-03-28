@@ -1,0 +1,24 @@
+\babel@toc {brazilian}{}
+\beamer@sectionintoc {1}{Curso de PICAT}{4}{0}{1}
+\beamer@sectionintoc {2}{Introdu\IeC {\c c}\IeC {\~a}o}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Estrutura da Linguagem}{7}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{1}{Paradigmas}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{Caracter\IeC {\'\i }sticas}{13}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{1}{Instala\IeC {\c c}\IeC {\~a}o}{14}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{2}{Usando Picat}{15}{0}{2}
+\beamer@sectionintoc {3}{Tipos de Dados e Vari\IeC {\'a}veis}{16}{0}{3}
+\beamer@subsectionintoc {3}{1}{Tipos de Dados}{16}{0}{3}
+\beamer@subsectionintoc {3}{2}{Vari\IeC {\'a}veis}{28}{0}{3}
+\beamer@subsectionintoc {3}{3}{Unifica\IeC {\c c}\IeC {\~a}o e Atribui\IeC {\c c}\IeC {\~a}o}{31}{0}{3}
+\beamer@subsectionintoc {3}{4}{Tabela de Operadores}{38}{0}{3}
+\beamer@subsubsectionintoc {3}{4}{1}{Operadores Especiais}{40}{0}{3}
+\beamer@sectionintoc {4}{Predicados e Fun\IeC {\c c}\IeC {\~o}es}{64}{0}{4}
+\beamer@subsectionintoc {4}{1}{Casamento de Padr\IeC {\~o}es}{67}{0}{4}
+\beamer@subsectionintoc {4}{2}{Predicados}{75}{0}{4}
+\beamer@subsectionintoc {4}{3}{Fun\IeC {\c c}\IeC {\~o}es}{81}{0}{4}
+\beamer@subsectionintoc {4}{4}{Exemplos}{84}{0}{4}
+\beamer@subsectionintoc {4}{5}{Condicionais e Repeti\IeC {\c c}\IeC {\~o}es}{87}{0}{4}
+\beamer@sectionintoc {5}{Recurs\IeC {\~a}o e Backtracking}{101}{0}{5}
+\beamer@subsectionintoc {5}{1}{Recurs\IeC {\~a}o}{101}{0}{5}
+\beamer@subsectionintoc {5}{2}{Backtracking}{110}{0}{5}
+\beamer@sectionintoc {6}{Conclus\IeC {\~a}o}{114}{0}{6}

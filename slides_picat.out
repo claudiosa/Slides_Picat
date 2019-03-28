@@ -1,13 +1,19 @@
-\BOOKMARK [2][]{Outline0.1}{Introdu\347\343o}{}% 1
-\BOOKMARK [2][]{Outline0.2}{Caracter\355sticas}{}% 2
-\BOOKMARK [3][]{Outline0.2.1.8}{Instala\347\343o}{Outline0.2}% 3
-\BOOKMARK [3][]{Outline0.2.2.9}{Usando do Picat}{Outline0.2}% 4
-\BOOKMARK [2][]{Outline0.3}{Exemplo}{}% 5
-\BOOKMARK [2][]{Outline0.4}{Tipos de Dados}{}% 6
-\BOOKMARK [3][]{Outline0.4.1.16}{Outros Detalhes}{Outline0.4}% 7
-\BOOKMARK [2][]{Outline0.5}{Conclus\343o}{}% 8
-\BOOKMARK [2][]{Outline0.6}{Contexto dos Tipos de Dados}{}% 9
-\BOOKMARK [2][]{Outline0.7}{Tipos de Dados}{}% 10
-\BOOKMARK [3][]{Outline0.7.1.25}{Tipos Simples}{Outline0.7}% 11
-\BOOKMARK [3][]{Outline0.7.2.37}{Tipos Compostos}{Outline0.7}% 12
-\BOOKMARK [2][]{Outline0.8}{Conclus\365es}{}% 13
+\BOOKMARK [2][]{Outline0.1}{Curso de PICAT}{}% 1
+\BOOKMARK [2][]{Outline0.2}{Introdu\347\343o}{}% 2
+\BOOKMARK [3][]{Outline0.2.1.7}{Estrutura da Linguagem}{Outline0.2}% 3
+\BOOKMARK [3][]{Outline0.2.2.13}{Caracter\355sticas}{Outline0.2}% 4
+\BOOKMARK [2][]{Outline0.3}{Tipos de Dados e Vari\341veis}{}% 5
+\BOOKMARK [3][]{Outline0.3.1.16}{Tipos de Dados}{Outline0.3}% 6
+\BOOKMARK [3][]{Outline0.3.2.28}{Vari\341veis}{Outline0.3}% 7
+\BOOKMARK [3][]{Outline0.3.3.31}{Unifica\347\343o e Atribui\347\343o}{Outline0.3}% 8
+\BOOKMARK [3][]{Outline0.3.4.38}{Tabela de Operadores}{Outline0.3}% 9
+\BOOKMARK [2][]{Outline0.4}{Predicados e Fun\347\365es}{}% 10
+\BOOKMARK [3][]{Outline0.4.1.67}{Casamento de Padr\365es}{Outline0.4}% 11
+\BOOKMARK [3][]{Outline0.4.2.75}{Predicados}{Outline0.4}% 12
+\BOOKMARK [3][]{Outline0.4.3.81}{Fun\347\365es}{Outline0.4}% 13
+\BOOKMARK [3][]{Outline0.4.4.84}{Exemplos}{Outline0.4}% 14
+\BOOKMARK [3][]{Outline0.4.5.87}{Condicionais e Repeti\347\365es}{Outline0.4}% 15
+\BOOKMARK [2][]{Outline0.5}{Recurs\343o e Backtracking}{}% 16
+\BOOKMARK [3][]{Outline0.5.1.101}{Recurs\343o}{Outline0.5}% 17
+\BOOKMARK [3][]{Outline0.5.2.110}{Backtracking}{Outline0.5}% 18
+\BOOKMARK [2][]{Outline0.6}{Conclus\343o}{}% 19
