@@ -4,7 +4,7 @@
 						
     \item Requisitos computacionais:
     \pause
-    Um computador qualquer (arquitetura 16, 32 ou 64 bits), com Linux ou Windows,
+    Um computador qualquer (arquitetura 16, 32 ou 64 bits), com Linux, Mac ou Windows,
     que tenha um compilador C instalado completo, preferencialmente.
 
     \item Comunidade e ações: \url{http://picat-lang.org}
@@ -13,8 +13,8 @@
     \item Códigos e este material, sempre atualizados em:
     \pause
     \begin{itemize}
-      \item  Este PDF e seu texto original:  \url{http://www.github.com/claudiosa/Slides_Picat}
-     \item   Os códigos de programas:  \url{http://www.github.com/claudiosa/CCS/picat}
+      \item  Este PDF e seu texto original:  \url{http://github.com/claudiosa/Slides_Picat}
+     \item   Os códigos de programas:  \url{http://github.com/claudiosa/CCS/picat}
     \end{itemize}
 
     \item Tópicos  que serão cobertos no curso:
