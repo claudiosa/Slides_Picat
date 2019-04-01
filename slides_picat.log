@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.2.25)  28 MAR 2019 12:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.2.25)  1 APR 2019 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -623,11 +623,8 @@ Package: amsthm 2017/10/31 v2.20.4
 \beamer@dimb=\dimen186
 )
 (/usr/share/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty)))
-(/usr/share/texmf-dist/tex/latex/beamer/beamerthemeMadrid.sty
-(/usr/share/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)
-(/usr/share/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty)
-(/usr/share/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty)
-(/usr/share/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty))
+(/usr/share/texmf-dist/tex/latex/beamer/beamerthemeSingapore.sty
+(/usr/share/texmf-dist/tex/latex/beamer/beamerouterthememiniframes.sty))
 (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks43
@@ -1563,8 +1560,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\Hy@tempa' on input line 156.
 
-(./slides_picat.aux (./aulas_udemy_picat.aux) (./introducao_picat.aux)
-(./tipos_dados_variaveis_picat.aux) (./conclusoes_picat.aux))
+(./slides_picat.aux (./aulas_udemy_picat.aux) (./conclusoes_picat.aux))
 \openout1 = `slides_picat.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 165.
@@ -1590,14 +1586,14 @@ LaTeX Font Info:    ... okay on input line 165.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(10.95003pt, 342.2953pt, 10.95003pt)
+* h-part:(L,W,R)=(28.45274pt, 307.28987pt, 28.45274pt)
 * v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
 * \paperwidth=364.19536pt
 * \paperheight=273.14662pt
-* \textwidth=342.2953pt
+* \textwidth=307.28987pt
 * \textheight=244.6939pt
-* \oddsidemargin=-61.31996pt
-* \evensidemargin=-61.31996pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
@@ -1784,9 +1780,9 @@ line 168.
 (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-) [1
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb) [2
@@ -1818,257 +1814,29 @@ thkerncmss.
 
 ] (./slides_picat.vrb) [9
 
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [10
-
-])
-(./slides_picat.toc) [11
-
-
-]
-\openout2 = `introducao_picat.aux'.
-
- (./introducao_picat.tex [12
-
-
-] [13
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-<figures/Paradigma_Flow.png, id=449, 308.1111pt x 160.1985pt>
-File: figures/Paradigma_Flow.png Graphic file (type png)
-<use figures/Paradigma_Flow.png>
-Package pdftex.def Info: figures/Paradigma_Flow.png  used on input line 23.
-(pdftex.def)             Requested size: 171.14764pt x 88.98454pt.
-)
-Overfull \vbox (1.95753pt too high) detected at line 78
- []
-
-[14
-
- <./figures/Paradigma_Flow.png>]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [15
+] (./slides_picat.vrb) [10
 
 ]
 \openout4 = `slides_picat.vrb'.
 
 
-(./slides_picat.vrb
-<figures/Paradigma_Funcional.png, id=507, 1606.0pt x 712.6625pt>
-File: figures/Paradigma_Funcional.png Graphic file (type png)
-<use figures/Paradigma_Funcional.png>
-Package pdftex.def Info: figures/Paradigma_Funcional.png  used on input line 21
-.
-(pdftex.def)             Requested size: 239.60567pt x 106.31842pt.
-)
-Overfull \vbox (12.81873pt too high) detected at line 127
- []
+(./slides_picat.vrb) [11
 
-[16
+] (./slides_picat.vrb) [12
 
- <./figures/Paradigma_Funcional.png (PNG copy)>]
-\openout4 = `slides_picat.vrb'.
+] (./slides_picat.vrb)
+[13
 
- (./slides_picat.vrb
-<figures/Paradigma_Procedural.png, id=534, 642.4pt x 481.8pt>
-File: figures/Paradigma_Procedural.png Graphic file (type png)
-<use figures/Paradigma_Procedural.png>
-Package pdftex.def Info: figures/Paradigma_Procedural.png  used on input line 2
-0.
-(pdftex.def)             Requested size: 164.30403pt x 123.22862pt.
-)
-Overfull \vbox (1.79337pt too high) detected at line 158
- []
+] (./slides_picat.vrb) [14
 
-[17
+]) (./slides_picat.toc) [15
 
- <./figures/Paradigma_Procedural.png>]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [18
-
-] [19
 
 ]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb) [20
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [21
-
-])
-\openout2 = `tipos_dados_variaveis_picat.aux'.
-
-
-(./tipos_dados_variaveis_picat.tex
-<figures/tipos_dados_picat__traduzido3.png, id=676, 422.57875pt x 349.305pt>
-File: figures/tipos_dados_picat__traduzido3.png Graphic file (type png)
-<use figures/tipos_dados_picat__traduzido3.png>
-Package pdftex.def Info: figures/tipos_dados_picat__traduzido3.png  used on inp
-ut line 14.
-(pdftex.def)             Requested size: 248.16618pt x 205.13942pt.
-
-Overfull \vbox (10.37549pt too high) detected at line 14
- []
-
-[22
-
-
-
- <./figures/tipos_dados_picat__traduzido3.png>] [23
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-[24
-
-] [25
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [26
-
-] [27
-
-] [28
-
-] [29
-
-] [30
-
-] [31
-
-] [32
-
-] [33
-
-] [34
-
-]
-[35
-
-
-] [36
-
-
-] [37
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [38
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [39
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb) [40
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [41
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-[42
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [43
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [44
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-[45
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [46
-
-] [47
-
-] [48
-
-] [49
-
-] [50
-
-] [51
-
-] [52
-
-] [53
-
-] [54
-
-] [55
-
-]
-[56
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [57
-
-] [58
-
-] [59
-
-] [60
-
-] [61
-
-] [62
-
-] [63
-
-] [64
-
-] [65
-
-] [66
-
-]
-[67
-
-] [68
-
-] [69
-
-])
 \openout2 = `conclusoes_picat.aux'.
 
- (./conclusoes_picat.tex [70
 
+(./conclusoes_picat.tex [16
 
 
 ])
@@ -2083,80 +1851,39 @@ Overfull \vbox (10.37549pt too high) detected at line 14
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
- (./slides_picat.aux
-(./aulas_udemy_picat.aux) (./introducao_picat.aux)
-(./tipos_dados_variaveis_picat.aux) (./conclusoes_picat.aux))
+ (./slides_picat.aux (./aulas_udemy_picat.aux)
+(./conclusoes_picat.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 213.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 213.
+Package rerunfilecheck Info: File `slides_picat.out' has not changed.
+(rerunfilecheck)             Checksum: 29AFE4100AD36574A11BB849D0F5E5A5;118.
 
-
-Package rerunfilecheck Warning: File `slides_picat.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `slides_picat.out':
-(rerunfilecheck)             Before: CF0637B96BD0ECB2919C171471C77925;654
-(rerunfilecheck)             After:  46886BBEE90A241BE7DE2304B358B780;655.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.74pt have occurred.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 31226 strings out of 492616
- 587391 string characters out of 6135177
- 925255 words of memory out of 5000000
- 34339 multiletter control sequences out of 15000+600000
- 558934 words of font info for 90 fonts, out of 8000000 for 9000
+ 30583 strings out of 492616
+ 573985 string characters out of 6135177
+ 922232 words of memory out of 5000000
+ 33897 multiletter control sequences out of 15000+600000
+ 551158 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,15n,73p,779b,892s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Operadores\040Aritm\351ticos} has been referenced
- but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.3.4.42} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.3.3.35} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.3.2.32} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.3.1.20} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.2.2.17} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.2.1.8} has been referenced but does not ex
-ist, replaced by a fixed one
-
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-di
-st/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf-dist/fonts/type1/
-public/cm-super/sfsi1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
-/sfsi1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfso1095.pfb><
-/usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texm
-f-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/cm-super/sfss0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
-uper/sfss1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1095.p
-fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/
-texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf-dist/font
-s/type1/public/cm-super/sfss2074.pfb></usr/share/texmf-dist/fonts/type1/public/
-cm-super/sfsx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx14
-40.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on slides_picat.pdf (70 pages, 921701 bytes).
+ 56i,19n,70p,779b,780s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/font
+s/type1/public/cm-super/sfss0600.pfb></usr/share/texmf-dist/fonts/type1/public/
+cm-super/sfss0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss10
+00.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf-dist/
+fonts/type1/public/cm-super/sfss2074.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
+tt1095.pfb>
+Output written on slides_picat.pdf (16 pages, 163731 bytes).
 PDF statistics:
- 2099 PDF objects out of 2487 (max. 8388607)
- 1961 compressed objects within 20 object streams
- 167 named destinations out of 1000 (max. 500000)
- 203 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 616 PDF objects out of 1000 (max. 8388607)
+ 569 compressed objects within 6 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 65 words of extra memory for PDF output out of 10000 (max. 10000000)
 

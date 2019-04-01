@@ -1,24 +1,22 @@
-\frametitle{Operadores Especiais \textrm{\MakeUppercase{\romannumeral 2}}}
+\frametitle{Apresentação ao Curso de PICAT -- III}
+  \begin{itemize}
 
-    \begin{block}{Operadores de Termos Compostos}
-    	
-    	\begin{enumerate}
+						
+    \item Requisitos computacionais:
+    \pause
+    Um computador qualquer (arquitetura 16, 32 ou 64 bits), com Linux ou Windows,
+    que tenha um compilador C instalado completo, preferencialmente.
 
-            \item \textbf{Concatenação}\/ (\verb!++!): concatena duas listas ou vetores, tornando o primeiro termo
-            da segunda lista no termo seguinte ao último termo da primeira lista.
+    \item Comunidade e ações: \url{http://picat-lang.org}
+    \pause
 
-            \item \textbf{Separador}\/ (\verb!H | T!): separa uma lista \emph{L} em seu primeiro termo \emph{H},
-            chamado de cabeça (em inglês \textit{Head}), e o resto da lista \emph{T}, chamado de cauda (em inglês \textit{Tail}).
+    \item Códigos e este material, sempre atualizados em:
+    \pause
+    \begin{itemize}
+      \item  Este PDF e seu texto original:  \url{http://www.github.com/claudiosa/Slides_Picat}
+     \item   Os códigos de programas:  \url{http://www.github.com/claudiosa/CCS/picat}
+    \end{itemize}
 
-            \item \textbf{Iterador}\/ (\verb!X in L!): itera pelo termo composto \emph{L}, instanciando um termo
-            não composto \emph{X} aos termos contidos em \emph{L}. Bastante utilizado para iterar por listas.
-	%iterador
-            \item \textbf{Sequência }\/ (\verb!Inicio..Passo..Fim!): Gera uma lista ou vetor, começando
-            (inclusivamente) em \textit{Inicio} incrementando por \textit{Passo} e parando (inclusivamente) em
-            \textit{Fim}. Se \textit{Passo} for omitido, é automaticamente atribuído 1. Se usado dentro do
-            índice de uma lista ou vetor resultará na porção da lista dentro deste intervalo.
-
-    	\end{enumerate}
-
-    \end{block}
+    \item Tópicos  que serão cobertos no curso:
+  \end{itemize}
 
