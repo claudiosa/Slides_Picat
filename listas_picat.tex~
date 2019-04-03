@@ -1,0 +1,19 @@
+\section{Conclusão}
+\begin{frame}
+
+    \frametitle{Resumindo}
+
+    \begin{itemize}
+      \item Picat é jovem (nascida em 2013); 
+      \item Uma evolução ao Prolog após seus mais de 40 anos de existência e sucesso!
+      \item Sua sintaxe é moderna;
+      \item Código aberto, multi-plataforma, e repleta de possibilidades;
+      \item Uso para fins diversos;
+      \item Muitas bibliotecas específicas prontas: CP, SAT, Planner, etc;
+      \item 
+
+      
+      \item .
+
+    \end{itemize}
+\end{frame}

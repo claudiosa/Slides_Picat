@@ -1,0 +1,293 @@
+\section{Listas}
+\begin{frame}
+
+    \frametitle{Listas}
+
+   \begin{block}{}
+     \begin{itemize}
+      \item Requisito: conceitos de recursividade e functores dominados!
+      \item  Os  conceitos são os próximos os das  LPs convencionais
+     \item Essencialmente vamos computar sob uma árvore
+         binária
+      \item 
+
+      
+      \item .
+
+    \end{itemize}
+    
+    \end{block}
+    
+\end{frame}
+
+
+\begin{frame}
+ % \frametitle{Fluxo do Cálculo Recursivo}
+\frametitle{Ilustrando uma Lista em Formato Binário}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=.7\textwidth, height=0.650\textheight]{figures/ilustra-lista-01.jpg}
+%\label{fig_ilustra_arv}
+\caption{Uma estrutura  Lista -- Homogênea}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Ilustrando a Listas}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=.7\textwidth, height=0.650\textheight]{figures/ilustra-lista-02.jpg}
+%\label{fig_arv_recurs_2}
+\caption{Listas são inerentemente \textbf{recursivas}!}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}
+ \frametitle{Exemplificando as Listas}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=.7\textwidth, height=0.650\textheight]{figures/exemplo_listas_01.jpg}
+%\label{fig_arv_recurs_2}
+%\caption{Fluxo Recursivo 2}
+\end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile, allowframebreaks=0.9]
+ \frametitle{Sintaxe das Listas}
+
+
+\begin{block}{Definições iniciais (e recursivas)}
+\begin{itemize}
+
+\item Uma lista é uma estrutura de dados que representa
+uma coleção de objetos homogêneos;
+
+\item Uma lista é uma sequência de objetos;
+
+\item Uma lista  apresenta uma hierarquia natural, internamente,
+em \textit{cabeça} de lista e sub-lista, até o fim da lista.
+
+\end{itemize}
+\end{block}
+%\lbrack       left bracket [
+%\rbrack       right bracket ]
+
+\framebreak
+
+\begin{block}{Notação:}
+\begin{itemize}
+   \item O símbolo ``\lbrack'' é usado para descrever o início de uma lista,
+e ``\rbrack'' para o final da mesma;
+
+   \item Exemplo: seja a lista \lbrack a, b, c, d \rbrack,  logo um predicado cujo
+argumento seja algumas letras,  tem-se uma lista do tipo:\\
+  \begin{itemize}
+  \item letras(\lbrack  a, b, c, d \rbrack )
+ \item Onde `a' é o   \textit{cabeça} (primeiro elemento) da lista
+ \item e \lbrack b, c, d \rbrack é uma sub-lista que é uma lista!
+  \end{itemize}
+
+\item Assim os elementos de uma lista são lidos da esquerda para direita,
+
+\item   Quanto ao resto ou ``{\em cauda}'' da lista, é uma  ``{\em sub-lista}''  dada por:
+    \lbrack b,  c, d \rbrack.    Esta sub-lista, segue a definição de uma lista.
+ \end{itemize} 
+
+\end{block}
+
+
+\framebreak
+\begin{block}{Operador ``{\bf |}'':}
+
+\begin{itemize}
+  \item ``{\em  Como vamos distinguir de onde se encontra
+a cabeça  da cauda da lista?}'' 
+
+  \item Com as listas introduziram 
+novos símbolos, 
+isto é, os seus delimitadores \lbrack \ldots \rbrack, há um 
+novo operador que \textbf{separa} 
+ou \textbf{define} quem é a cabeça da cauda da lista. 
+
+  \item Este operador é
+ o ``{\em pipe}'', simbolizado por ``{\bf |}'', que 
+ distingue a parte da esquerda 
+ da direita da lista. 
+ 
+  \item  Isto é necessário para se realizar os casamentos 
+ de padrões com as variáveis.
+
+\end{itemize}
+\end{block}
+
+\framebreak
+\begin{block}{Exemplos de ``{\em casamentos}'':}
+
+% Os exemplos abaixo  ilustram
+%como funcionam os casamentos entre variáveis, átomos, etc em listas.
+% Atenção em cada exemplo e faça suas próprias conclusões 
+%[ de como as listas funcionam.
+%\end{itemize}
+\begin{small}
+\begin{verbatim}
+ [ a, b, c, d ] == X
+ [ X | b, c, d ]  ==  [ a, b, c, d ]
+ [ a | b, c, d ]  ==  [ a, b, c, d ]
+ [ a , b | c, d ]  ==  [ a, b, c, d ]
+ [ a , b , c | d ]  ==  [ a, b, c, d ]
+ [ a , b , c , d | [] ]  ==  [ a, b, c, d ]
+ [] == X
+ [ [ a | b , c , d] ] == [ [ a , b , c , d ] ]
+ [  a | b , c , [ d ] ] == [  a , b , c , [ d ] ]
+ [  _ | b , c , [d ] ] == [  a , b , c , [ d ] ]
+ [  a | Y ] == [  a , b , c ,  d ]
+ [  a | _ ] == [  a , b , c ,  d ]
+ [  a , b | c , d ] == [  X , Y | Z ]
+ \end{verbatim}
+\end{small}
+\end{block}
+
+\framebreak
+\begin{block}{Contra-exemplos de ``{\em casamentos}'':}
+
+\begin{verbatim}
+ [ a , b | [c, d] ]  \==  [ a, b, c, d ]
+ [ [ a , b , c , d] ]  \==  [ a, b, c, d ]
+ [  a , b , [ c ] , d, e ]  \==  [ a, b, c, d, e ]
+ [ [ [ a ] | b , c , d] ] \== [ [ a , b , c , d] ]
+ \end{verbatim}
+
+\end{block}
+
+\framebreak
+\begin{itemize}
+  \item Estes  casamentos de objetos de uma lista
+  são também conhecidos  por ``{\em matching}'' 
+
+\item  Devido ao fato de listas modelarem
+qualquer estrutura de dados, invariavelmente, seu uso  é extensivo
+há  problemas em geral (dos simples a complexos)
+
+\end{itemize}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile, allowframebreaks=0.9]
+\frametitle{Exemplo: comprimento de uma lista}
+ 
+\begin{itemize}
+   \item O comprimento de uma lista é o comprimento de sua \textbf{sub-lista}, mais \textbf{um}
+   \item O comprimento de uma lista vazia (\lbrack  \rbrack) é zero.
+ \end{itemize} 
+ 
+Em Picat, este enunciado é escrito por:
+
+\begin{verbatim}
+REFAZER
+
+#1 compto([ ], 0).
+#2 compto([X | T], N) => compto(T, N1), N is N1+1.
+
+? - compto([a, b, c, d], X).
+X = 4
+\end{verbatim}
+
+
+\framebreak
+Um ``{\em mapa de memória}'' é dado por:
+
+\begin{center}
+\begin{tabular}[c]{|c|c|c|c|c|c|}
+\hline
+& Regra & X & T & N1 & N is N+1\\\hline
+compto([a,b,c,d],N) & \#2 & a & [b,c,d] & 3 $\rightarrow$ & 3+1$=$4\\\hline
+compto([b,c,d],N) & \#2 & b & [c,d] & 2 $\rightarrow$ & $\nwarrow$ 2+1\\\hline
+compto([c,d],N) & \#2 & c & [d] & 1 $\rightarrow$ & $\nwarrow$ 1+1\\\hline
+compto([d],N) & \#2 & d & [] & 0 $\rightarrow$ & $\nwarrow$ 0+1\\\hline
+compto([],N) & \#1 & -- & -- & -- & $\nwarrow$ 0\\\hline
+\end{tabular}
+\end{center}
+ 
+
+\end{frame}
+
+
+\begin{frame}[fragile, allowframebreaks=0.9]
+\frametitle{Exemplo: Pertinência entre um objeto na lista}
+
+Verifica se um dado objeto pertence há uma  lista
+ \begin{verbatim}
+REFAZER
+member( H, [ H |  _ ] ).
+member( H, [ _  | T ] ) :- member(H, T).
+\end{verbatim}
+
+
+O interessante é observar a versatilidade 
+deste  predicado em várias situações:
+\begin{verbatim}
+?- member(3, [4,5,3]).
+
+Yes
+?- member(X, [4,5,3]).
+X = 4 ;
+X = 5 ;
+X = 3 ;
+No
+?- member(3, X).
+X = [3|_G231] 
+Yes
+?- member(3, X).
+
+X = [3|_G231] ;
+X = [_G230, 3|_G234] ;
+X = [_G230, _G233, 3|_G237] 
+.........................
+\end{verbatim}
+
+
+\end{frame}
+
+
+
+\begin{frame}[fragile, allowframebreaks=0.9]
+\frametitle{Exemplo: Adiciona um objeto em uma lista}
+
+Um objeto é adicionado a lista
+sem repeti\c{c}ão caso este já
+ esteja contido na lista:
+ 
+\begin{verbatim}
+REFAZER
+add_to_set(X, [ ], [X]).
+add_to_set(X, Y, Y) :- member(X, Y).
+add_to_set(X, Y, [X | Y]).
+\end{verbatim}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
