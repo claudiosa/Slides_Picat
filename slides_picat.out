@@ -1,3 +1,20 @@
 \BOOKMARK [2][]{Outline0.1}{Apresenta\347\343o ao Curso de PICAT}{}% 1
-\BOOKMARK [2][]{Outline0.2}{Listas}{}% 2
-\BOOKMARK [2][]{Outline0.3}{Conclus\343o}{}% 3
+\BOOKMARK [2][]{Outline0.2}{Introdu\347\343o}{}% 2
+\BOOKMARK [3][]{Outline0.2.1.18}{Estrutura da Linguagem}{Outline0.2}% 3
+\BOOKMARK [3][]{Outline0.2.2.24}{Caracter\355sticas}{Outline0.2}% 4
+\BOOKMARK [2][]{Outline0.3}{Tipos de Dados e Vari\341veis}{}% 5
+\BOOKMARK [3][]{Outline0.3.1.27}{Tipos de Dados}{Outline0.3}% 6
+\BOOKMARK [3][]{Outline0.3.2.39}{Vari\341veis}{Outline0.3}% 7
+\BOOKMARK [3][]{Outline0.3.3.43}{Unifica\347\343o e Atribui\347\343o}{Outline0.3}% 8
+\BOOKMARK [3][]{Outline0.3.4.50}{Tabela de Operadores}{Outline0.3}% 9
+\BOOKMARK [2][]{Outline0.4}{Predicados e Fun\347\365es}{}% 10
+\BOOKMARK [3][]{Outline0.4.1.79}{Casamento de Padr\365es}{Outline0.4}% 11
+\BOOKMARK [3][]{Outline0.4.2.87}{Predicados}{Outline0.4}% 12
+\BOOKMARK [3][]{Outline0.4.3.93}{Fun\347\365es}{Outline0.4}% 13
+\BOOKMARK [3][]{Outline0.4.4.96}{Exemplos}{Outline0.4}% 14
+\BOOKMARK [3][]{Outline0.4.5.99}{Condicionais e Repeti\347\365es}{Outline0.4}% 15
+\BOOKMARK [2][]{Outline0.5}{Recurs\343o e Backtracking}{}% 16
+\BOOKMARK [3][]{Outline0.5.1.114}{Recurs\343o}{Outline0.5}% 17
+\BOOKMARK [3][]{Outline0.5.2.123}{Backtracking}{Outline0.5}% 18
+\BOOKMARK [2][]{Outline0.6}{Listas}{}% 19
+\BOOKMARK [2][]{Outline0.7}{Conclus\343o}{}% 20

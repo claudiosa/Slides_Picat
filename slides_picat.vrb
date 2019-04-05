@@ -2,11 +2,11 @@
 
 \begin{block}{}
 \begin{itemize}
-  \item Há muitos predicados e funções prontas sobre listas no módulo lists.pi (conferir)
+  \item Há muitos predicados e funções prontas sobre listas nos módulos do Picat
   \item Se aprende sobre listas, fazendo muitos métodos
   \item A recursividade em sua modelagem, define a metodologia de se \textit{programar em lógica}
   \item Exercitar-se
-  \item Usar as listas em problemas complexos
+  \item Usar as listas em problemas complexos, como na aula de aplicações de buscas.
 
 \end{itemize}
 

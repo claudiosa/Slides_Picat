@@ -6,13 +6,14 @@
    \begin{block}{}
      \begin{itemize}
       \item Requisito: conceitos de recursividade e functores dominados!
-      \item  Os  conceitos são os próximos os das  LPs convencionais
+      \item  Os conceitos são os próximos os das  LPs convencionais
      \item Essencialmente vamos computar sob uma árvore
-         binária
-      \item 
+         binária (cada nó tem duas ramificações)
 
-      
-      \item .
+      \item Lembrando que uma estrutura binária de árvore tem uma
+      equivalência com uma árvore n-ária (ver livro de Estrutura de Dados)
+
+       \item Logo,  listas são estruturas flexíveis e poderosas!
 
     \end{itemize}
     
@@ -65,10 +66,11 @@
 \begin{block}{Definições iniciais (e recursivas)}
 \begin{itemize}
 
-\item Uma lista é uma estrutura de dados que representa
-uma coleção de objetos homogêneos;
 
 \item Uma lista é uma sequência de objetos;
+
+\item Uma lista é uma estrutura de dados que representa
+uma coleção de objetos homogêneos;
 
 \item Uma lista  apresenta uma hierarquia natural, internamente,
 em \textit{cabeça} de lista e sub-lista, até o fim da lista.
@@ -79,7 +81,6 @@ em \textit{cabeça} de lista e sub-lista, até o fim da lista.
 %\rbrack       right bracket ]
 
 \framebreak
-
 \begin{block}{Notação:}
 \begin{itemize}
    \item O símbolo ``\lbrack'' é usado para descrever o início de uma lista,
@@ -89,14 +90,15 @@ e ``\rbrack'' para o final da mesma;
 argumento seja algumas letras,  tem-se uma lista do tipo:\\
   \begin{itemize}
   \item letras(\lbrack  a, b, c, d \rbrack )
- \item Onde `a' é o   \textit{cabeça} (primeiro elemento) da lista
- \item e \lbrack b, c, d \rbrack é uma sub-lista que é uma lista!
+ \item Onde `a' é  o   \textit{cabeça} (primeiro elemento) da lista
+ \item e \lbrack b, c, d \rbrack é uma \textit{sub-lista} que é uma lista!
   \end{itemize}
 
-\item Assim os elementos de uma lista são lidos da esquerda para direita,
+\item Os elementos de uma lista são lidos da esquerda para direita;
 
-\item   Quanto ao resto ou ``{\em cauda}'' da lista, é uma  ``{\em sub-lista}''  dada por:
-    \lbrack b,  c, d \rbrack.    Esta sub-lista, segue a definição de uma lista.
+\item  A ``{\em sub-lista}'' \lbrack b,  c, d \rbrack é conhecida como  \textit{resto} ou ``{\em cauda}'' da lista;
+        
+\item   Esta sub-lista é uma lista, e toda definição segue-se recursivamente.
  \end{itemize} 
 
 \end{block}
@@ -109,19 +111,17 @@ argumento seja algumas letras,  tem-se uma lista do tipo:\\
   \item ``{\em  Como vamos distinguir de onde se encontra
 a cabeça  da cauda da lista?}'' 
 
-  \item Com as listas introduziram 
-novos símbolos, 
-isto é, os seus delimitadores \lbrack \ldots \rbrack, há um 
-novo operador que \textbf{separa} 
-ou \textbf{define} quem é a cabeça da cauda da lista. 
+  \item Com as listas novos símbolos foram introduzidos, 
+isto é, além dos delimitadores \lbrack \ldots \rbrack, há um 
+ novo operador que \textbf{separa} 
+ ou \textbf{define} quem é a elemento cabeça da lista e  cauda. 
 
-  \item Este operador é
- o ``{\em pipe}'', simbolizado por ``{\bf |}'', que 
- distingue a parte da esquerda 
- da direita da lista. 
+  \item Este operador é conhecido como
+ ``{\em pipe}'' (ou \textit{barra vertical}), simbolizado por ``{\bf |}'', que 
+ separa  o lado esquerdo  da direita da lista. 
  
-  \item  Isto é necessário para se realizar os casamentos 
- de padrões com as variáveis.
+  \item  Esta separação  é necessário para se realizar os 
+  \textit{casamentos de padrões} nas linguagens lógicas.
 
 \end{itemize}
 \end{block}
@@ -136,19 +136,19 @@ ou \textbf{define} quem é a cabeça da cauda da lista.
 %\end{itemize}
 \begin{small}
 \begin{verbatim}
- [ a, b, c, d ] == X
- [ X | b, c, d ]  ==  [ a, b, c, d ]
- [ a | b, c, d ]  ==  [ a, b, c, d ]
- [ a , b | c, d ]  ==  [ a, b, c, d ]
- [ a , b , c | d ]  ==  [ a, b, c, d ]
- [ a , b , c , d | [] ]  ==  [ a, b, c, d ]
- [] == X
- [ [ a | b , c , d] ] == [ [ a , b , c , d ] ]
- [  a | b , c , [ d ] ] == [  a , b , c , [ d ] ]
- [  _ | b , c , [d ] ] == [  a , b , c , [ d ] ]
- [  a | Y ] == [  a , b , c ,  d ]
- [  a | _ ] == [  a , b , c ,  d ]
- [  a , b | c , d ] == [  X , Y | Z ]
+ [ a, b, c, d ] = X
+ [ X | b, c, d ]  =  [ a, b, c, d ]
+ [ a | b, c, d ]  =  [ a, b, c, d ]
+ [ a , b | c, d ]  =  [ a, b, c, d ]
+ [ a , b , c | d ]  =  [ a, b, c, d ]
+ [ a , b , c , d | [] ]  =  [ a, b, c, d ]
+ [] = X
+ [ [ a | b , c , d] ] = [ [ a , b , c , d ] ]
+ [  a | b , c , [ d ] ] = [  a , b , c , [ d ] ]
+ [  _ | b , c , [d ] ] = [  a , b , c , [ d ] ]
+ [  a | Y ] = [  a , b , c ,  d ]
+ [  a | _ ] = [  a , b , c ,  d ]
+ [  a , b | c , d ] = [  X , Y | Z ]
  \end{verbatim}
 \end{small}
 \end{block}
@@ -157,10 +157,10 @@ ou \textbf{define} quem é a cabeça da cauda da lista.
 \begin{block}{Contra-exemplos de ``{\em casamentos}'':}
 
 \begin{verbatim}
- [ a , b | [c, d] ]  \==  [ a, b, c, d ]
- [ [ a , b , c , d] ]  \==  [ a, b, c, d ]
- [  a , b , [ c ] , d, e ]  \==  [ a, b, c, d, e ]
- [ [ [ a ] | b , c , d] ] \== [ [ a , b , c , d] ]
+ [ a , b | [c, d] ]  !=  [ a, b, c, d ]
+ [ [ a , b , c , d] ]  !=  [ a, b, c, d ]
+ [  a , b , [ c ] , d, e ]  !=  [ a, b, c, d, e ]
+ [ [ [ a ] | b , c , d] ] != [ [ a , b , c , d] ]
  \end{verbatim}
 
 \end{block}
@@ -174,6 +174,9 @@ ou \textbf{define} quem é a cabeça da cauda da lista.
 qualquer estrutura de dados, invariavelmente, seu uso  é extensivo
 há  problemas em geral (dos simples a complexos)
 
+\item Porém, alguns cuidados no uso de predicados com backtracking. Acompanhe os
+exemplos.
+
 \end{itemize}
 
 
@@ -183,25 +186,33 @@ há  problemas em geral (dos simples a complexos)
 %%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[fragile, allowframebreaks=0.9]
-\frametitle{Exemplo: comprimento de uma lista}
+\frametitle{Exemplo: encontrar o comprimento de uma lista}
  
 \begin{itemize}
    \item O comprimento de uma lista é o comprimento de sua \textbf{sub-lista}, mais \textbf{um}
    \item O comprimento de uma lista vazia (\lbrack  \rbrack) é zero.
  \end{itemize} 
  
-Em Picat, este enunciado é escrito por:
+Em Picat, sob uma visão funcional, este enunciado é escrito por:
 
 \begin{verbatim}
-REFAZER
-
-#1 compto([ ], 0).
-#2 compto([X | T], N) => compto(T, N1), N is N1+1.
-
-? - compto([a, b, c, d], X).
-X = 4
+comprimento_02( [ ] ) = 0.
+comprimento_02([ _ | L ]) = S  => 
+             S = 1 + comprimento_02( L ).
 \end{verbatim}
 
+\framebreak
+
+Em Picat, sob uma visão lógica, este predicado 
+pode ser construído como:
+
+\begin{verbatim}
+comprimento_01([],S) ?=> S = 0. 
+%%% em PROLOG, apenas comprimento_01([],0). PORQUÊ?
+comprimento_01([_|L],S)  => 
+             comprimento_01( L , Parcial ), 
+             S = 1 + Parcial.
+\end{verbatim}
 
 \framebreak
 Um ``{\em mapa de memória}'' é dado por:
@@ -209,7 +220,7 @@ Um ``{\em mapa de memória}'' é dado por:
 \begin{center}
 \begin{tabular}[c]{|c|c|c|c|c|c|}
 \hline
-& Regra & X & T & N1 & N is N+1\\\hline
+& Regra & X & T & N1 & N = N+1\\\hline
 compto([a,b,c,d],N) & \#2 & a & [b,c,d] & 3 $\rightarrow$ & 3+1$=$4\\\hline
 compto([b,c,d],N) & \#2 & b & [c,d] & 2 $\rightarrow$ & $\nwarrow$ 2+1\\\hline
 compto([c,d],N) & \#2 & c & [d] & 1 $\rightarrow$ & $\nwarrow$ 1+1\\\hline
@@ -223,7 +234,7 @@ compto([],N) & \#1 & -- & -- & -- & $\nwarrow$ 0\\\hline
 
 
 \begin{frame}[fragile, allowframebreaks=0.9]
-\frametitle{Exemplo: Pertinência entre um objeto na lista}
+\frametitle{Exemplo: verificar a pertinência de um objeto na lista}
 
 Verifica se um dado objeto pertence há uma  lista
  \begin{verbatim}
@@ -232,28 +243,8 @@ member( H, [ H |  _ ] ).
 member( H, [ _  | T ] ) :- member(H, T).
 \end{verbatim}
 
-
-O interessante é observar a versatilidade 
-deste  predicado em várias situações:
-\begin{verbatim}
-?- member(3, [4,5,3]).
-
-Yes
-?- member(X, [4,5,3]).
-X = 4 ;
-X = 5 ;
-X = 3 ;
-No
-?- member(3, X).
-X = [3|_G231] 
-Yes
-?- member(3, X).
-
-X = [3|_G231] ;
-X = [_G230, 3|_G234] ;
-X = [_G230, _G233, 3|_G237] 
-.........................
-\end{verbatim}
+%O interessante é observar a versatilidade 
+%deste  predicado em várias situações:
 
 
 \end{frame}
@@ -261,7 +252,7 @@ X = [_G230, _G233, 3|_G237]
 
 
 \begin{frame}[fragile, allowframebreaks=0.9]
-\frametitle{Exemplo: Adiciona um objeto em uma lista}
+\frametitle{Exemplo: adicionar um elemento  em uma lista}
 
 Um objeto é adicionado a lista
 sem repeti\c{c}ão caso este já
@@ -277,7 +268,100 @@ add_to_set(X, Y, [X | Y]).
 \end{frame}
 
 
+\begin{frame}[fragile, allowframebreaks=0.9]
+\frametitle{Exemplo: união de duas listas}
 
+O método de  união ou concatenação entre duas listas,
+resultando em uma terceira lista pode ser dada por:
+
+Em Picat, sob uma visão funcional, este enunciado é escrito por:
+
+\begin{verbatim}
+uniao_02( [], X ) = X. 
+uniao_02( [X|L1], L2 ) = L3 => 
+                            L3 = [X | uniao_02( L1, L2 )].
+\end{verbatim}
+
+\framebreak
+
+Em Picat, sob uma visão lógica, este predicado 
+pode ser construído como:
+
+\begin{verbatim}
+uniao_01( [] , X, Y ) ?=> Y = X. 
+uniao_01( A , L2, R  ) =>  A = [X|L1] , 
+                           R = [X|L3] , 
+                           uniao_01( L1, L2, L3 ).
+\end{verbatim}
+
+\end{frame}
+
+
+\begin{frame}[fragile, allowframebreaks=0.9]
+
+\frametitle{Geração de  Listas -- \textit{list comprehension}}
+
+\begin{block}{}
+\begin{itemize}
+  \item O conceito de \textit{list comprehension} veio da programação funcional
+  \item Basicamente serve para criarmos ou gerarmos listas
+  \item Bastante útil e pode ser usada em qualquer parte de um código
+  
+\end{itemize}
+\end{block}
+
+\framebreak
+
+A list comprehension\index{list comprehension}, which takes the following form, is a special functional notation for creating lists:
+\begin{tabbing}
+aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
+\> \> \texttt{[$T$ : $E_1$ \texttt{in} $D_1$, $Cond_1$, $\ldots$, $E_n$ in $D_n$, $Cond_n$]} 
+\end{tabbing}
+where $T$ is an expression, each $E_i$ is an iterating pattern\index{iterator}, each $D_i$ is an expression that gives a compound value\index{compound value}, and the optional conditions $Cond_1$,$\ldots$,$Cond_n$  are callable terms\index{term}. This list comprehension\index{list comprehension} means that for every tuple of values $E_1 \in D_1$, $\ldots$, $E_n \in D_n$, if the conditions are true, then the value of $T$ is added into the list\index{list}.
+
+An array comprehension\index{array comprehension} takes the following form:
+\begin{tabbing}
+aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
+\> \> \texttt{\{$T$ : $E_1$ \texttt{in} $D_1$, $Cond_1$, $\ldots$, $E_n$ in $D_n$, $Cond_n$\}} 
+\end{tabbing}
+It is the same as:
+\begin{tabbing}
+aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
+\> \> \texttt{to\_array([$T$ : $E_1$ \texttt{in} $D_1$, $Cond_1$, $\ldots$, $E_n$ in $D_n$, $Cond_n$])} 
+\end{tabbing}
+
+\framebreak
+\frametitle{Exemplos de \textit{list comprehension}}
+
+
+\begin{verbatim}
+L1 = [I :  I in 1..20]
+L2 = [I :  I in 1..20, I>10, I<20]
+L3 = [(A,I) : A in [a,b], I in 1..2]
+\end{verbatim}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}[fragile]
+\frametitle{Concluindo Listas}
+
+\begin{block}{}
+\begin{itemize}
+  \item Há muitos predicados e funções prontas sobre listas no módulo lists.pi (conferir)
+  \item Se aprende sobre listas, fazendo muitos métodos
+  \item A recursividade em sua modelagem, define a metodologia de se \textit{programar em lógica}
+  \item Exercitar-se
+  \item Usar as listas em problemas complexos, como na aula de aplicações de buscas.
+  
+\end{itemize}
+
+\end{block}
+
+\end{frame}
 
 
 
