@@ -13,13 +13,13 @@
        \begin{itemize}
 			\item Uma linguagem de programação de propósitos gerais
 			\item Uma evolução do PROLOG (consagrada linguagem dos primórdios da IA)
-			\item Tem elementos de Python, Prolog e Haskell
+			\item Tem elementos das linguagens Python, Prolog e Haskell
 		\end{itemize}
 
     \item Uso e finalidades do PICAT:
     \pause
        \begin{itemize}
-			\item Uso de programas gerais, simples a complexos
+			\item Uso de programas gerais; de simples à complexos (uma reflexão)
 			\item Provê suporte há vários solvers na área de Pesquisa Operacional
 			\item Área: IA, programação por restrições, programação inteira, planejamento,
 			combinatória, etc
@@ -39,15 +39,25 @@
     \item Requisitos:
    \pause
 		\begin{itemize}
-			\item De conhecimento:
-			\item Dedicação
-			\item 
-		\end{itemize}
+			\item Conhecimento: noções de lógica matemática (proposional e primeira-ordem), matemática elementar, 
+			e alguma outra linguagem de programação
 
-    \item Requisitos computacionais:
-    \pause
-    Um computador qualquer (arquitetura 16, 32 ou 64 bits), com Linux ou Windows,
-    que tenha um compilador C instalado completo, preferencialmente.
+			\item 
+			\item Dedicação: depende de você
+		\end{itemize}
+		
+  \pause
+    \item Motivação:
+   \pause
+		\begin{itemize}
+			\item Dependendo de sua dedicação, ao final voce vai estar apto a resolver problemas
+			computacionais de simples à difíceis
+
+			\item Difícil: muitas linhas de código e muito conhecimento de algoritmos seriam
+			necessários
+			\item Com Picat, há sofisticados esquemas prontos para se construir programas.
+
+		\end{itemize}
 
   \end{itemize}
 
@@ -59,9 +69,23 @@
   \frametitle{Apresentação ao Curso de PICAT -- III}
   \begin{itemize}
 
-      \item Comunidade e ações: \url{http://picat-lang.org}
+						
+    \item Requisitos computacionais:
+    \pause
+    Um computador qualquer (arquitetura 16, 32 ou 64 bits), com Linux, Mac ou Windows,
+    que tenha um compilador C instalado completo, preferencialmente.
 
-   \item Que tópicos serão cobertos no curso?
+    \item Comunidade e ações: \url{http://picat-lang.org}
+    \pause
+
+    \item Códigos e este material, sempre atualizados em: 
+    \pause
+    \begin{itemize}
+      \item  Este PDF e seu texto original:  \url{http://github.com/claudiosa/Slides_Picat}
+     \item   Os códigos de programas:  \url{http://github.com/claudiosa/CCS/picat}
+    \end{itemize}
+
+    \item Tópicos  que serão cobertos no curso:
   \end{itemize}
 
 \end{frame}
