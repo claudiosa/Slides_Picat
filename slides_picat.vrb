@@ -1,40 +1,5 @@
-\frametitle{Núcleo Geral de Buscas}
+\frametitle{O código}
 
-\textcolor{red}{Pseudo-código já em Picat}
-
-\begin{verbatim}
-resolve(P) =>
-      inicio(Start),
-      busca(Start,[Start],Qsol),
-      imprime_saida(Qsol,P).
-
-busca(S,P,P) ?=>  objetivo(S).    % objetivo alcancado : FIM
-busca(S,Visited,P) =>
-     proximo_estado(S,Nxt),       % gera um proximo estado
-     estado_seguro(Nxt),          % verifica se este estado é válido
-     sem_loop(Nxt,Visited),       % verifica se está em loop .. repete estados
-     busca(Nxt,[Nxt|Visited],P).  % continue a busca recursiva
-\end{verbatim}
-
-
-\framebreak
-
-
-\begin{verbatim}
-
-sem_loop(Nxt,Visited) :-
-      \+member(Nxt,Visited).
-
-proximo_estado(S,Nxt) =>   < fill in here >.
-estado_seguro(Nxt) =>     < fill in here >.
-sem_loop(Nxt,Visited) =>  < fill in here >.
-
-inicio(...).
-objetivo(...).
-
-\end{verbatim}
-
-
-\textcolor{red}{Vamos reescrever este pseudo-código}
-
+Acompanhar as explicações do código de:\\
+\url{https://github.com/claudiosa/CCS/blob/master/picat/hamiltoniano_DFS.pi}
 
