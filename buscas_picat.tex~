@@ -6,18 +6,18 @@
    \begin{block}{}
      \begin{itemize}
       \item Requisito: conceitos de listas e recursividade  dominados!
-      \item  
-     \item Essencialmente vamos varrer uma estrutura
-     de estados ou nós, de modo sistemático até encontrarmos
-     uma solução aceitável.
+       \pause
+      \item Além destes: conceitos grafos, árvores de busca, nós, etc
          
-
-      \item Em geral os problemas 
+       \pause
+      \item Pois, problemas em geral
       se apresentam como uma conexão complexa tipo um \textit{grafo},
       e a varredura sob este grafo é sistemática
-      no formato sob uma \textit{árvore de busca}
+      sob uma \textit{árvore de busca}
+      \pause
       
-       \item Computar sob listas é o esquema aqui utilizado
+     \item Então, computar listas em Picat, é a nossa estratégia
+     de resolver problemas!
 
     \end{itemize}
     
@@ -25,18 +25,18 @@
     
 \end{frame}
 
+
+
 \begin{frame}[fragile, allowframebreaks=0.9]
   \frametitle{Ciclo Euleriano}
 
-
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=.6\textwidth, height=0.650\textheight]{figures/ilhas_euler.jpeg}
+\includegraphics[width=0.60\textwidth, height=0.650\textheight]{figures/ilhas_euler.jpeg}
 %%%prolog/scale=0.47
 %\label{fig_nos_estados}
 \caption{Ciclo Euleriano -- Problema das Pontes de Königsberg}
 \end{figure}
-
 
 
 \framebreak
@@ -54,7 +54,7 @@ qualquer uma das pontes.
 \item  Embora intrigante, este problema foi atacado por Leonard Euler (1736) e demonstrou
 que isto não era possível para um grafo qualquer
 
-\item Curiosamente, este problema, computacionalmente é fácil de resolver!
+\item Curiosamente, este problema, computacionalmente é \underline{\textit{fácil}} de resolver!
 \end{itemize}
 
 \end{frame}
@@ -83,46 +83,49 @@ que isto não era possível para um grafo qualquer
 \item Todos os nós precisam ser visitados uma única vez sem repetição
 
 \item  Num grafo pode haver muitos caminhos  Hamiltonianos, mas, pode
-não existir nenhum!
+       não existir nenhum!
 
-\item Ao contrário do ciclo Euleriano, este problema, computacionalmente é difícil de resolver!
+\item Ao contrário do ciclo Euleriano, este problema, computacionalmente é \underline{\textit{difícil}} de resolver!
 
-\item Mas é este que vamos usar como exemplo, com um algoritmo 
-bem ingênuo.
+\item Mas é este que vamos usar como exemplo, com um algoritmo  ingênuo.
 \end{itemize}
 
 \end{frame}
 
 
-\begin{frame}[fragile]
+\begin{frame}[fragile,  allowframebreaks=0.8]
 \frametitle{Problemas, Estados, Grafos e  Árvores de Buscas}
 
-\begin{block}{Contextualizando estes termos:}
+Contextualizando estes termos:
 
 \begin{itemize}
 
   \item Em geral, problemas podem ser vistos como \textit{fotografias 
   instantâneas} de uma situação, isto é, \textbf{um estado discreto}
    
-  \item Uma sucessão destes estados, compõem \textit{um caminho} de um estado $i$ ao estado $j$
+  \item Uma \textit{sucessão} destes estados, compõem \textit{um caminho} de um estado $i$ ao estado $j$
   
   \item Assim, estes \textit{estados} são representados pelos \textit{nós dos grafos}, e a ligação entre 
   estes, são resultados de \textit{uma ação}, mudança ou evolução do problema
   
-  \item Há um estado particular chamado \textit{inicial}, e algum ou vários outros, os estados \textit{finais}
+  \item Há um estado particular chamado \textit{inicial},  vários outros de estados \textit{intermediários},
+   e outros estados \textit{finais}
   
-  \item Se o problema tiver várias soluções,  o mesmo apresenta vários caminhos do estado inicial há vários finais.
+  \item Se o problema tiver várias soluções,  o mesmo apresenta vários caminhos do estado inicial ao  final.
   
-  \item Assim uma sucessão ou transição válida entre estados, é conhecido como uma solução ou instância
+  \item Assim uma sucessão ou transição válida entre estados, é conhecido como uma \textit{solução} ou \textit{prova}
      do problema
-  
-  \item Logo, vamos empregar alguns conceitos da teoria dos grafos, em modelar problemas e resolvê-los 
+
+  \item Essencialmente vamos varrer uma estrutura
+     entre estados ou nós, de modo sistemático até encontrarmos
+     uma solução aceitável/desejável.
+
+    \item Logo, vamos empregar alguns conceitos da teoria dos grafos, em modelar problemas e resolvê-los 
   por um esquema de busca computacional
   
     
 \end{itemize}
 
-\end{block}
 \end{frame}
 
 
@@ -133,10 +136,10 @@ bem ingênuo.
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=.8\textwidth, height=0.67\textheight]{figures/grafo-arvore-busca.jpg}
+\includegraphics[width=.99\textwidth, height=0.55\textheight]{figures/espaco-estado-arvore.jpg}
 %%%prolog/scale=0.47
 %\label{fig_nos_estados}
-\caption{Refazer esta figura}
+\caption{Google ...}
 \end{figure}
 
 \textcolor{red}{Resumindo, os problemas são modelados  em 
@@ -188,8 +191,98 @@ objetivo(...).
 \end{verbatim}
 
 
-\textcolor{red}{Vamos reescrever este pseudo-código}
+\textcolor{red}{Vamos reescrever este pseudo-código em um problema!}
 
 
 \end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Caminho Hamiltoniano Aplicado}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=.8\textwidth, height=0.567\textheight]{figures/mapa-norte-santa-catarina.jpg}
+%%%prolog/scale=0.47
+%\label{fig_nos_estados}
+%\caption{Mapa do norte de Santa Catarina}
+\end{figure}
+
+Seja um viajante que sai cedo de Joinville, e chegar a noite
+em Blumenau, passando por algumas destas cidades uma única vez!
+
+\end{frame}
+
+
+
+\begin{frame}[fragile, allowframebreaks=0.9]
+ \frametitle{\textit{O nosso viajante}}
+
+\begin{itemize}
+  \item Em nosso problema temos 7 cidades pré-escolhidas
+
+  \item A lista de cidades são:
+  \begin{verbatim}
+index(-) %% lista de todas cidade do mapa
+as_cidades( [ brusque, blumenau, itajai, luiz_alves,
+            jaragua, sao_bento, joinville ] ).
+\end{verbatim}
+
+  \item  Duas cidades em particular
+\begin{verbatim}
+index(-)
+destino( blumenau ).
+
+index(-)
+origem( joinville ).
+\end{verbatim}  
+
+  
+\item As estradas transitáveis entre as cidades definem
+  o nosso mapa, consequentemente um grafo entre
+  cidades:
+\begin{verbatim}
+%% MAPA da região
+index(-,-)
+arco(joinville, sbs) .
+arco(joinville, itajai) .
+arco(jaragua, sbs) .
+arco(jaragua, blumenau) .
+arco(blumenau, itajai) .
+arco(brusque, itajai) .
+arco(brusque, blumenau) .
+\end{verbatim} 
+  
+\item Claro, este problema é pequeno e construindo o grafo dá para perceber que existe
+algumas soluções
+
+  \item Para resolver este problema vamos utilizar uma \textit{busca em profundidade}
+  
+  \item Esta \textit{busca em profundidade}, encontra-se inserida no contexto buscas em geral,
+  visto anteriormente
+\end{itemize}
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+ \frametitle{O código}
+
+Acompanhar as explicações do código de:\\
+\url{https://github.com/claudiosa/CCS/blob/master/picat/hamiltoniano_DFS.pi}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
 

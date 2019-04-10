@@ -1,4 +1,4 @@
-\babel@toc {brazilian}{}
-\beamer@sectionintoc {1}{Apresenta\IeC {\c c}\IeC {\~a}o ao Curso de PICAT}{3}{0}{1}
-\beamer@sectionintoc {2}{Buscas}{16}{0}{2}
-\beamer@sectionintoc {3}{Conclus\IeC {\~a}o}{34}{0}{3}
+\beamer@endinputifotherversion {3.33pt}
+\select@language {brazilian}
+\beamer@sectionintoc {1}{Buscas}{4}{0}{1}
+\beamer@sectionintoc {2}{Conclus\IeC {\~a}o}{24}{0}{2}

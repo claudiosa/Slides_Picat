@@ -1,5 +1,10 @@
-\frametitle{O código}
+\frametitle{Uma Soluç\~ao}
 
-Acompanhar as explicações do código de:\\
-\url{https://github.com/claudiosa/CCS/blob/master/picat/hamiltoniano_DFS.pi}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=.8\textwidth, height=0.567\textheight]{figures/mapa02SC.jpg}
+%%%prolog/scale=0.47
+%\label{fig_nos_estados}
+%\caption{Mapa do norte de Santa Catarina}
+\end{figure}
 

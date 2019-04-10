@@ -214,6 +214,21 @@ em Blumenau, passando por algumas destas cidades uma única vez!
 \end{frame}
 
 
+\begin{frame}[fragile]
+\frametitle{Cidades Escolhidas pelo Viajante}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=.8\textwidth, height=0.567\textheight]{figures/mapa01SC.jpg}
+%%%prolog/scale=0.47
+%\label{fig_nos_estados}
+%\caption{Mapa do norte de Santa Catarina}
+\end{figure}
+
+\end{frame}
+
+
+
 
 \begin{frame}[fragile, allowframebreaks=0.9]
  \frametitle{\textit{O nosso viajante}}
@@ -244,13 +259,18 @@ origem( joinville ).
 \begin{verbatim}
 %% MAPA da região
 index(-,-)
-arco(joinville, sbs) .
-arco(joinville, itajai) .
-arco(jaragua, sbs) .
-arco(jaragua, blumenau) .
-arco(blumenau, itajai) .
-arco(brusque, itajai) .
-arco(brusque, blumenau) .
+arco(joinville, sao_bento)  .
+arco(joinville, itajai)     .
+arco(joinville, jaragua)     .
+arco(joinville, luiz_alves)     .
+arco(jaragua, sao_bento)    .
+arco(jaragua, blumenau)     .
+arco(jaragua, luiz_alves)   .
+arco(itajai, luiz_alves)    . 
+arco(blumenau, luiz_alves)    . 
+arco(blumenau, itajai)      .
+arco(brusque, itajai)       .
+arco(brusque, blumenau)     .
 \end{verbatim} 
   
 \item Claro, este problema é pequeno e construindo o grafo dá para perceber que existe
@@ -266,17 +286,33 @@ algumas soluções
 \end{frame}
 
 
+
+
 \begin{frame}[fragile]
  \frametitle{O código}
 
-Acompanhar as explicações do código de:\\
+\begin{itemize}
+  \item Acompanhar as explicações do código de:\\
 \url{https://github.com/claudiosa/CCS/blob/master/picat/hamiltoniano_DFS.pi}
 
+  \item Confira a execuç\~ao
+\end{itemize}
 \end{frame}
 
 
 
+\begin{frame}[fragile]
+\frametitle{Uma Soluç\~ao}
 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=.8\textwidth, height=0.567\textheight]{figures/mapa02SC.jpg}
+%%%prolog/scale=0.47
+%\label{fig_nos_estados}
+%\caption{Mapa do norte de Santa Catarina}
+\end{figure}
+
+\end{frame}
 
 
 
