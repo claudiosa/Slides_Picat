@@ -1,10 +1,16 @@
-\frametitle{Uma Soluç\~ao}
+\frametitle{Reflexões}
 
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=.8\textwidth, height=0.567\textheight]{figures/mapa02SC.jpg}
-%%%prolog/scale=0.47
-%\label{fig_nos_estados}
-%\caption{Mapa do norte de Santa Catarina}
-\end{figure}
+
+\begin{itemize}
+  \item Outros métodos para se resolver estes problemas
+  \pause
+  \item Mas perdemos na portabilidade de usar em outros planejadores
+  \pause
+  \item Os modelos escritos em PDDL (\textit{Planning Domain Definition Language})
+  facilmente portáveis para Picat
+    \pause
+  \item Sob um uso mais restrito, um modelo em PDDL é executado diretamente em Picat
+    \pause
+  \item
+\end{itemize}
 
