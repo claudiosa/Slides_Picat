@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.2.25)  12 APR 2019 17:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.2.25)  12 APR 2019 17:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1838,7 +1838,7 @@ thkerncmss.
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/planning01.jpg, id=889, 552.0625pt x 393.47pt>
+<figures/planning01.jpg, id=907, 552.0625pt x 393.47pt>
 File: figures/planning01.jpg Graphic file (type jpg)
 <use figures/planning01.jpg>
 Package pdftex.def Info: figures/planning01.jpg  used on input line 5.
@@ -1849,7 +1849,7 @@ Package pdftex.def Info: figures/planning01.jpg  used on input line 5.
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/mundo_dos_blocos01.jpg, id=940, 426.62613pt x 176.40097pt>
+<figures/mundo_dos_blocos01.jpg, id=958, 426.62613pt x 176.40097pt>
 File: figures/mundo_dos_blocos01.jpg Graphic file (type jpg)
 <use figures/mundo_dos_blocos01.jpg>
 Package pdftex.def Info: figures/mundo_dos_blocos01.jpg  used on input line 5.
@@ -1861,7 +1861,7 @@ Package pdftex.def Info: figures/mundo_dos_blocos01.jpg  used on input line 5.
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/mundo_dos_blocos02.jpg, id=991, 746.01291pt x 559.50967pt>
+<figures/mundo_dos_blocos02.jpg, id=1011, 746.01291pt x 559.50967pt>
 File: figures/mundo_dos_blocos02.jpg Graphic file (type jpg)
 <use figures/mundo_dos_blocos02.jpg>
 Package pdftex.def Info: figures/mundo_dos_blocos02.jpg  used on input line 5.
@@ -1880,12 +1880,12 @@ Package pdftex.def Info: figures/mundo_dos_blocos02.jpg  used on input line 5.
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/puzzle_2x3_01.jpg, id=1146, 200.75pt x 317.185pt>
+<figures/puzzle_2x3_01.jpg, id=1168, 200.75pt x 317.185pt>
 File: figures/puzzle_2x3_01.jpg Graphic file (type jpg)
 <use figures/puzzle_2x3_01.jpg>
 Package pdftex.def Info: figures/puzzle_2x3_01.jpg  used on input line 5.
 (pdftex.def)             Requested size: 153.65594pt x 100.75108pt.
-<figures/puzzle_2x3_02.jpg, id=1147, 1284.8pt x 722.7pt>
+<figures/puzzle_2x3_02.jpg, id=1169, 1284.8pt x 722.7pt>
 File: figures/puzzle_2x3_02.jpg Graphic file (type jpg)
 <use figures/puzzle_2x3_02.jpg>
 Package pdftex.def Info: figures/puzzle_2x3_02.jpg  used on input line 15.
@@ -1956,7 +1956,7 @@ Overfull \hbox (18.13066pt too wide) in paragraph at lines 89--89
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-Overfull \hbox (60.1204pt too wide) in paragraph at lines 22--22
+Overfull \hbox (60.1204pt too wide) in paragraph at lines 21--21
 []\T1/cmtt/m/n/10 (up(2),[1,5,2,4,3,0]),(right(3),[1,5,2,4,0,3]),(dow(5),[1,0,2
 ,4,5,3]),[] 
  []
@@ -1966,48 +1966,45 @@ Overfull \hbox (60.1204pt too wide) in paragraph at lines 22--22
 ] [32
 
 
-] [33
+]
+\openout4 = `slides_picat.vrb'.
 
+ (./slides_picat.vrb) [33
+
+] (./slides_picat.vrb) [34
+
+]
+(./slides_picat.vrb) [35
+
+] (./slides_picat.vrb) [36
+
+] (./slides_picat.vrb)
+[37
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [34
-
-] (./slides_picat.vrb) [35
-
-]
-(./slides_picat.vrb) [36
-
-] (./slides_picat.vrb) [37
-
-] (./slides_picat.vrb)
-[38
+ (./slides_picat.vrb) [38
 
 ]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb) [39
 
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [40
-
 ] (./slides_picat.vrb)
-[41
+[40
+
+] (./slides_picat.vrb) [41
 
 ] (./slides_picat.vrb) [42
 
-] (./slides_picat.vrb) [43
-
 ] (./slides_picat.vrb)
-[44
+[43
 
 ])
 \openout2 = `conclusoes_picat.aux'.
 
- (./conclusoes_picat.tex [45
+ (./conclusoes_picat.tex [44
 
 
 
@@ -2036,31 +2033,34 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 30802 strings out of 492616
- 577526 string characters out of 6135177
+ 30803 strings out of 492616
+ 577535 string characters out of 6135177
  933222 words of memory out of 5000000
- 34006 multiletter control sequences out of 15000+600000
+ 34008 multiletter control sequences out of 15000+600000
  555170 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,19n,70p,779b,781s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb></us
-r/share/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf-d
-ist/fonts/type1/public/cm-super/sfsi1440.pfb></usr/share/texmf-dist/fonts/type1
-/public/cm-super/sfss0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-supe
-r/sfss0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-</usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/tex
-mf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/cm-super/sfss2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
-super/sfsx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.
-pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on slides_picat.pdf (45 pages, 543493 bytes).
+pdfTeX warning (dest): name{Navigation45} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb></usr/
+share/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf-dis
+t/fonts/type1/public/cm-super/sfsi1440.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/cm-super/sfss0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
+sfss0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></
+usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf
+-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/cm-super/sfss2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
+per/sfsx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pf
+b></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on slides_picat.pdf (44 pages, 542378 bytes).
 PDF statistics:
- 2435 PDF objects out of 2487 (max. 8388607)
- 2311 compressed objects within 24 object streams
- 93 named destinations out of 1000 (max. 500000)
+ 2431 PDF objects out of 2487 (max. 8388607)
+ 2307 compressed objects within 24 object streams
+ 92 named destinations out of 1000 (max. 500000)
  90 words of extra memory for PDF output out of 10000 (max. 10000000)
 
