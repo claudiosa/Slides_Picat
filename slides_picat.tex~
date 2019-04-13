@@ -99,7 +99,7 @@
 \definecolor{darkgray}{rgb}{.4,.4,.4}
 \definecolor{purple}{rgb}{0.65, 0.12, 0.82}
 
-\newcommand{\minizinc}{MiniZinc}
+%\newcommand{\minizinc}{MiniZinc}
 
 \newenvironment{CustomBlock}[3]{%
 	\setbeamercolor{block body}{#2}
@@ -209,8 +209,8 @@
 %\include{predicados_funcoes_picat}
 %\include{recursao_picat}
 %\include{listas_picat} % cap 4 nesse capitulo falar mais de listas
-\include{buscas_picat}
-%\include{planejamento_picat}
+%\include{buscas_picat}
+\include{planejamento_picat}
 %\include{PD_picat} % cap 5 finalizar aqui
 %\include{CP_picat} % cap 5 finalizar aqui
 

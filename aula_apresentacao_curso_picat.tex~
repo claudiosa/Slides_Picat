@@ -19,8 +19,8 @@
     \item Uso e finalidades do PICAT:
     \pause
        \begin{itemize}
-			\item Uso de programas gerais: de simples à complexos (uma reflexão)
-			\item Provê suporte há vários \textit{solvers} na área de Pesquisa Operacional
+			\item Uso de programas gerais; de simples à complexos (uma reflexão)
+			\item Provê suporte há vários solvers na área de Pesquisa Operacional
 			\item Área: IA, programação por restrições, programação inteira, planejamento,
 			combinatória, etc
 		\end{itemize}
@@ -95,23 +95,3 @@
   \end{itemize}
 
 \end{frame}
-
-
-    
-\begin{frame}[fragile]
-  \frametitle{Apresentação ao Curso de PICAT -- IV}
-  \begin{itemize}
-
-						
-    \item Assim, ao final deste curso terás uma visão forte de uma ferramenta
-    computacional, utilizada em várias áreas tais como: modelagem matemática, IA,
-    Pesquisa Operacional, etc
-
-    \pause
-    \item Ao final voce vai conseguir resolver problemas com alguma complexidade e ler
-    códigos de grandes programadores da área: Bartak, Neng-Fa, Hakank, Dymichenko    
-    
-  \end{itemize}
-
-\end{frame}
-

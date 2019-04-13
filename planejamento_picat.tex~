@@ -361,7 +361,6 @@ Acao: left(1)
 Acao: left(5)
  1 5 0
  4 3 2
-.................................
 \end{verbatim}
 \end{small}
 
@@ -439,7 +438,6 @@ Acao: up(3)
 \end{itemize}
 
 \end{frame}
-
 
 
 

@@ -4,13 +4,9 @@
 \begin{itemize}
   \item Outros métodos para se resolver estes problemas
   \pause
-  \item Mas perdemos na portabilidade de usar em outros planejadores
-  \pause
-  \item Os modelos escritos em PDDL (\textit{Planning Domain Definition Language})
-  facilmente portáveis para Picat
-    \pause
-  \item Sob um uso mais restrito, um modelo em PDDL é executado diretamente em Picat
-    \pause
   \item
+  \pause
+   % \pause
+  %\item
 \end{itemize}
 
