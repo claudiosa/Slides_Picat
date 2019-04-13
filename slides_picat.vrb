@@ -2,10 +2,11 @@
 
 
 \begin{itemize}
-  \item Outros métodos para se resolver estes problemas
+  \item Há outros métodos para se resolver estes problemas
+
   \pause
-  \item
-  \pause
+  \item O comando \textit{tabling} é a base do módulo \textit{planner}
+
    % \pause
   %\item
 \end{itemize}
