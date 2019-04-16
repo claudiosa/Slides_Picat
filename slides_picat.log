@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.2.25)  16 APR 2019 16:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.2.25)  16 APR 2019 18:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1780,24 +1780,29 @@ line 168.
 (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+)
+Overfull \vbox (10.41487pt too high) detected at line 168
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [2
+ (./slides_picat.vrb)
+[2
 
 ]
 \openout2 = `tipos_dados_variaveis_picat.aux'.
 
-
-(./tipos_dados_variaveis_picat.tex
+ (./tipos_dados_variaveis_picat.tex
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb) [3
 
 
-] (./slides_picat.vrb) [4
+]
+(./slides_picat.vrb) [4
 
 ] (./slides_picat.vrb) [5
 
@@ -1806,21 +1811,25 @@ thkerncmss.
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb)
-[7
+
+(./slides_picat.vrb) [7
 
 ] (./slides_picat.vrb) [8
 
 ] (./slides_picat.vrb) [9
 
 ]
-<figures/tipos_dados_picat__traduzido3.png, id=327, 422.57875pt x 349.305pt>
+<figures/tipos_dados_picat__traduzido3.png, id=816, 422.57875pt x 349.305pt>
 File: figures/tipos_dados_picat__traduzido3.png Graphic file (type png)
 <use figures/tipos_dados_picat__traduzido3.png>
 Package pdftex.def Info: figures/tipos_dados_picat__traduzido3.png  used on inp
-ut line 68.
+ut line 69.
 (pdftex.def)             Requested size: 222.78702pt x 184.1607pt.
- [10
+
+Overfull \vbox (4.95921pt too high) detected at line 69
+ []
+
+[10
 
  <./figures/tipos_dados_picat__traduzido3.png>] [11
 
@@ -1829,15 +1838,16 @@ ut line 68.
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [13
 
-]
-(./slides_picat.vrb) [14
+(./slides_picat.vrb) [13
+
+] (./slides_picat.vrb) [14
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [15
+ (./slides_picat.vrb)
+[15
 
 ] [16
 
@@ -1848,8 +1858,7 @@ ut line 68.
 
 ] [19
 
-]
-[20
+] [20
 
 ] [21
 
@@ -1865,44 +1874,30 @@ ut line 68.
 
 ] [27
 
-
 ] [28
-
 
 ] [29
 
 
-] [30
+]
+\openout4 = `slides_picat.vrb'.
+
+
+(./slides_picat.vrb) [30
+
+] (./slides_picat.vrb) [31
 
 ]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb)
-[31
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-Overfull \vbox (5.42921pt too high) detected at line 406
- []
-
 [32
 
-]
-\openout4 = `slides_picat.vrb'.
+] (./slides_picat.vrb) [33
 
- (./slides_picat.vrb) [33
+] (./slides_picat.vrb) [34
 
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [34
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
+] (./slides_picat.vrb)
 [35
 
 ]
@@ -1913,196 +1908,177 @@ Overfull \vbox (5.42921pt too high) detected at line 406
 ]
 \openout4 = `slides_picat.vrb'.
 
+ (./slides_picat.vrb) [37
+
+] (./slides_picat.vrb)
+[38
+
+] (./slides_picat.vrb) [39
+
+] (./slides_picat.vrb) [40
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+Overfull \vbox (30.26039pt too high) detected at line 494
+ []
+
+[41
+
+] (./slides_picat.vrb)
+Overfull \vbox (30.26039pt too high) detected at line 494
+ []
+
+[42
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb) [43
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb) [44
+
+]
+\openout4 = `slides_picat.vrb'.
+
  (./slides_picat.vrb
-Overfull \hbox (31.38275pt too wide) in paragraph at lines 5--17
+Overfull \hbox (6.34709pt too wide) in paragraph at lines 8--20
  [] 
  []
 
-) [37
+) [45
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb
-
-LaTeX Warning: Reference `Operadores Aritm\IeC {\'e}ticos' on page 38 undefined
- on input line 5.
-
-) [38
+ (./slides_picat.vrb) [46
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb)
-Overfull \vbox (25.60397pt too high) detected at line 573
+ (./slides_picat.vrb) [47
+
+]
+Overfull \vbox (682.39716pt too high) detected at line 724
  []
 
-[39
+[48
 
-] [40
-
-] [41
-
-] [42
-
-] [43
-
-] [44
-
-] [45
-
-] [46
-
-] [47
-
-] [48
-
-] [49
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-Overfull \vbox (12.00397pt too high) detected at line 643
- []
-
-[50
-
-] [51
-
-] [52
-
-] [53
-
-] [54
-
-] [55
-
-] [56
-
-] [57
-
-] [58
-
-] [59
-
-] [60
-
-] [61
-
-] [62
 
 ])
 \openout2 = `CP_picat.aux'.
 
-
-(./CP_picat.tex
+ (./CP_picat.tex
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [63
+ (./slides_picat.vrb) [49
 
 
 
-] (./slides_picat.vrb) [64
+] (./slides_picat.vrb) [50
 
 ]
-(./slides_picat.vrb) [65
+(./slides_picat.vrb) [51
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [66
+ (./slides_picat.vrb) [52
 
 ] (./slides_picat.vrb)
-[67
+[53
 
-] (./slides_picat.vrb) [68
+] (./slides_picat.vrb) [54
 
-] (./slides_picat.vrb) [69
+] (./slides_picat.vrb) [55
 
 ]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb)
-[70
+[56
 
-] (./slides_picat.vrb) [71
+] (./slides_picat.vrb) [57
 
-] (./slides_picat.vrb) [72
+] (./slides_picat.vrb) [58
 
 ] (./slides_picat.vrb)
-[73
+[59
 
 ]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/problema_modelagem.pdf, id=2360, 332.24126pt x 210.7875pt>
+<figures/problema_modelagem.pdf, id=4559, 332.24126pt x 210.7875pt>
 File: figures/problema_modelagem.pdf Graphic file (type pdf)
 <use figures/problema_modelagem.pdf>
 Package pdftex.def Info: figures/problema_modelagem.pdf  used on input line 7.
-(pdftex.def)             Requested size: 215.10255pt x 151.13647pt.
-) [74
+(pdftex.def)             Requested size: 215.10255pt x 142.42981pt.
+) [60
 
  <./figures/problema_modelagem.pdf>]
 \openout4 = `slides_picat.vrb'.
 
 
 (./slides_picat.vrb
-<figures/dinamica_pr.pdf, id=2400, 150.5625pt x 425.59pt>
+<figures/dinamica_pr.pdf, id=4643, 150.5625pt x 425.59pt>
 File: figures/dinamica_pr.pdf Graphic file (type pdf)
 <use figures/dinamica_pr.pdf>
 Package pdftex.def Info: figures/dinamica_pr.pdf  used on input line 6.
-(pdftex.def)             Requested size: 92.19218pt x 176.32431pt.
-) [75
+(pdftex.def)             Requested size: 92.19218pt x 166.16125pt.
+) [61
 
  <./figures/dinamica_pr.pdf>]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/reducao_PR_01.pdf, id=2438, 328.22626pt x 288.07625pt>
+<figures/reducao_PR_01.pdf, id=4724, 328.22626pt x 288.07625pt>
 File: figures/reducao_PR_01.pdf Graphic file (type pdf)
 <use figures/reducao_PR_01.pdf>
 Package pdftex.def Info: figures/reducao_PR_01.pdf  used on input line 6.
-(pdftex.def)             Requested size: 215.10245pt x 151.13678pt.
+(pdftex.def)             Requested size: 215.10245pt x 142.43333pt.
 )
-[76
+[62
 
  <./figures/reducao_PR_01.pdf>]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/reducao_PR_02.pdf, id=2496, 403.5075pt x 445.665pt>
+<figures/reducao_PR_02.pdf, id=4824, 403.5075pt x 445.665pt>
 File: figures/reducao_PR_02.pdf Graphic file (type pdf)
 <use figures/reducao_PR_02.pdf>
 Package pdftex.def Info: figures/reducao_PR_02.pdf  used on input line 7.
-(pdftex.def)             Requested size: 215.10167pt x 151.12967pt.
-) [77
+(pdftex.def)             Requested size: 215.10167pt x 142.4253pt.
+) [63
 
  <./figures/reducao_PR_02.pdf>]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [78
+ (./slides_picat.vrb) [64
 
-] (./slides_picat.vrb) [79
+] (./slides_picat.vrb) [65
 
 ]
 \openout4 = `slides_picat.vrb'.
 
 
-(./slides_picat.vrb) [80
+(./slides_picat.vrb) [66
 
-] (./slides_picat.vrb) [81
+] (./slides_picat.vrb) [67
 
 ] (./slides_picat.vrb)
-[82
+[68
 
-] (./slides_picat.vrb) [83
+] (./slides_picat.vrb) [69
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [84
+ (./slides_picat.vrb) [70
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -2113,37 +2089,37 @@ Overfull \hbox (7.63322pt too wide) in paragraph at lines 13--13
 ] 
  []
 
-) [85
+) [71
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [86
+ (./slides_picat.vrb) [72
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [87
+ (./slides_picat.vrb) [73
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [88
+ (./slides_picat.vrb) [74
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [89
+ (./slides_picat.vrb) [75
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [90
+ (./slides_picat.vrb) [76
 
 ] (./slides_picat.vrb)
-[91
+[77
 
-] (./slides_picat.vrb) [92
+] (./slides_picat.vrb) [78
 
 ])
 \tf@nav=\write7
@@ -2168,52 +2144,88 @@ Package rerunfilecheck Warning: File `slides_picat.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `slides_picat.out':
-(rerunfilecheck)             Before: D9C3C56925AF14213459310D89E1FCBD;64
-(rerunfilecheck)             After:  76F5CAE0352D974EBF633C7292884FA0;354.
+(rerunfilecheck)             Before: 76F5CAE0352D974EBF633C7292884FA0;354
+(rerunfilecheck)             After:  CF073F5066CCFB404BC8A0634B7B4F27;418.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.74pt have occurred.
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 30964 strings out of 492616
- 580691 string characters out of 6135177
- 922222 words of memory out of 5000000
- 34030 multiletter control sequences out of 15000+600000
- 557393 words of font info for 88 fonts, out of 8000000 for 9000
+ 31061 strings out of 492616
+ 581652 string characters out of 6135177
+ 949222 words of memory out of 5000000
+ 34125 multiletter control sequences out of 15000+600000
+ 557384 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,19n,70p,779b,780s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Operadores\040Aritm\351ticos} has been referenced
- but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{Navigation79} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Operadores\040Aritm\351ticos} has been referenced b
+ut does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation90} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation89} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation88} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation87} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation86} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation85} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation84} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation80} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation92} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.1.3.37} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.1.2.30} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.1.1.26} has been referenced but does not e
+xist, replaced by a fixed one
 
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-di
-st/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf-dist/fonts/type1/
-public/cm-super/sfsi1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
-/sfsi1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfso1095.pfb><
-/usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texm
-f-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
-uper/sfss1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1200.p
-fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/
-texmf-dist/fonts/type1/public/cm-super/sfss2074.pfb></usr/share/texmf-dist/font
+/share/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf-di
+st/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf-dist/fonts/type1/
+public/cm-super/sfsi1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
+/sfso1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb><
+/usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texm
+f-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/cm-super/sfss1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
+uper/sfss1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1440.p
+fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss2074.pfb></usr/share/
+texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf-dist/font
 s/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf-dist/fonts/type1/public/
 cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt10
 95.pfb>
-Output written on slides_picat.pdf (92 pages, 503799 bytes).
+Output written on slides_picat.pdf (78 pages, 600804 bytes).
 PDF statistics:
- 3137 PDF objects out of 3580 (max. 8388607)
- 2962 compressed objects within 30 object streams
- 194 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6149 PDF objects out of 6186 (max. 8388607)
+ 5915 compressed objects within 60 object streams
+ 180 named destinations out of 1000 (max. 500000)
+ 114 words of extra memory for PDF output out of 10000 (max. 10000000)
 

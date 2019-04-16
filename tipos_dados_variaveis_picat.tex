@@ -336,7 +336,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 		\item Por isso, diz-se que variáveis em Picat são de \textit{atribuição única}
 		
 		\framebreak
-		\item O nome de variáveis devem sempre ser iniciado com letras \textbf{\underline{maisculas}}
+		\item O nome de variáveis devem sempre ser iniciado com letras \textbf{\underline{maiúsculas}}
 		ou  com o caráctere \textbf{\textit{underscore (\_)}}, porém;
 		
 		\begin{itemize}
@@ -359,10 +359,17 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 
 \subsection{Unificação e Atribuição}
 
-\begin{frame}
+\begin{frame} [fragile]
 	\frametitle{Unficação e Atribuição}
-	Há dois modos de definir valores a variáveis, a \underline{unificação}, que usa o operador 
-	\textbf{=}, e a \underline{atribuição}, que usa o operador \textbf{:=}
+	Há dois modos de definir valores às variáveis:
+	
+	\pause
+	\begin{itemize}
+	  \item \underline{Unificação} usa o operador 	\textbf{=}
+	
+		  \item \underline{Atribuição} usa o operador \textbf{:=}
+
+	\end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -375,18 +382,22 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 	% montar uma figura talvez
 	\begin{itemize}
 		
-		\item A \textbf{\underline{Unificação}} é uma operação que instância uma variável a um termo ou 
-		padrão, substituindo toda a ocorrência dessa variável pelo valor a qual ela foi instanciada até que
-		haja uma situação onde esta instanciação falhe, nesse momento a variável será reinstanciada e
-		esse processo se repete.
+		\item A \textbf{\underline{Unificação}} é uma operação que instancia uma variável a um termo, substituindo toda  ocorrência dessa variável pelo valor
 		
+		% a qual ela foi instanciada até que
+		%haja uma situação onde esta instanciação falhe, nesse momento a variável será reinstanciada e
+		%esse processo se repete.
+		
+		\pause
 		\item Caso ocorra uma instância que não falhe nenhuma situação a variável é unificada à este termo
 		ou padrão.
 		
+		\pause
 		\item Uma instanciação é indefinida até que se encontre um valor que possa ser unificada a uma
 		variável.
         
-        \item Termos são ditos unificáveis se são idênticos ou podem ser tornados idênticos instanciado 
+   		\pause
+     \item Termos são ditos unificáveis se são idênticos ou podem ser tornados idênticos instanciado 
         variáveis nos termos.
 		
 	\end{itemize}
@@ -413,10 +424,11 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 		Picat> bind_vars({X,Y,Z},a)
 		Picat> X = $f(X)
 		\end{verbatim}
-		
-		A última consulta demonstra um caso do problema de ocorrência, onde o compilador de Picat não
-		verifica se um termo ocorre dentro de um padrão. Isso cria um termo cíclico que não pode ser
-		acessado. % Algo muito ruim
+	
+	\textcolor{red}{Cuidar neste último caso, há um laço infinito nesta chamada!}	
+%		A última consulta demonstra um caso do problema de ocorrência, onde o compilador de Picat não
+%		verifica se um termo ocorre dentro de um padrão. Isso cria um termo cíclico que não pode ser
+%		acessado. % Algo muito ruim
 		
 	\end{exampleblock}
 	
@@ -428,13 +440,20 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 	
 	\begin{itemize}
 		
-		\item A \textbf{\underline{Atribuição}} é uma operação cujo intuito é simular a atribuição em
-		linguagens imperativas, permitindo que variáveis sejam re-atribuídas valores durante a execução
+		\item A \textbf{\underline{atribuição}}  simula a atribuição em
+		linguagens imperativas
+		
+		\pause
+		\item Permite que variáveis assumam novos valores durante a execução
 		do programa
 		
-		\item Para isso, durante a compilação do programa, toda vez que a operação de unificação é 	
-		encontrada, uma nova variável temporária será criada que irá substituir a variável que seria
-		atribuída.
+				\pause
+		\item O escopo da atribuição da variável é local e volátil
+		
+				\pause
+		\item Na unificação,  uma nova variável temporária é criada 
+		afim de substituir um valor	atribuído ou outra variável.
+		
 		
 	\end{itemize}
 	
@@ -445,22 +464,38 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 \begin{frame}[fragile]
 	
 	\begin{exampleblock}{Exemplo}
-		
+
 		\begin{verbatim}
 		test => X = 0, X := X + 1,  X := X + 2, write(X).
 		\end{verbatim}
-		Neste exemplo $X$ é unificado a $0$, então, o compilador tenta unificar $X$ a $X+1$, porém $X$ já 
-		foi unificado a um valor, portanto outras operações devem ser feitas para que esta atribuição seja
-		possível.\\
+		\begin{itemize}
+		  \item Neste exemplo $X$ é unificado a $0$. 
+		  
+		  \item Em seguida, há uma atribuição $X$ a $X+1$, porém $X$ já foi unificado a um termo. 
+		  
+		  \item Então, outras operações devem ser feitas para que esta atribuição seja
+		possível.
 		
-		Nesse caso, o compilador irá criar uma variável temporária, $X1$ por exemplo, e à ela irá unir
-		$X+1$, depois toda vez que $X$ for encontrado no programa o compilador irá substitui-lo por $X1$.\\
+   \item	Nesse caso, o compilador  cria uma variável temporária, $X1$ por exemplo, e unifica com
+		$X+1$. Cada vez que $X$ for instanciado, o compilador/programa atualiza em $X1$.
 		
-		O mesmo ocorre na atribuição $X1 := X1 + 2$, neste caso uma outra variável temporária será criada,
-		$X2$ por exemplo, e o processo será repetido.\\
-		
+		\item	 O mesmo ocorre na atribuição $X1 := X1 + 2$, neste caso uma outra variável temporária é criada,  por exemplo	$X2$, e o processo se repetido.
+	  
+		\end{itemize}
+			
+	\end{exampleblock}
+	
+\end{frame}
+	
+	
+	
+\begin{frame}[fragile]
+	
+	\begin{exampleblock}{Exemplo}
+
+	
 		Portanto, estas atribuições sucessivas são compiladas como:
-		
+		\pause
 		\begin{verbatim}
 		test => X = 0, X1 = X + 1, X2 = X1 + 2, write(X2).
 		\end{verbatim} 
@@ -469,6 +504,8 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 	
 \end{frame}
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[fragile]
@@ -476,14 +513,14 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 	\begin{exampleblock}{Exemplos de Variáveis Válidas}
 		
 		\begin{center}
-			\begin{tabular}{|c|c|c|}\hline
+			\begin{tabular}{c|c|c}\hline
 				X1 & \textbf{\_} & \_ab \\ \hline
 				X & A & Variavel \\ \hline
 				\_invalido & \_correto & \_aa \\ \hline
 			\end{tabular}
 		\end{center}
 		
-		Relembrando, um nome de variável é válido se começa com letra maiúscula ou \_
+		Relembrando, um nome de variável é válido se começa com letra \textbf{maiúscula} ou \textbf{\_}
 		
 	\end{exampleblock}
 	
@@ -496,15 +533,15 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 	\begin{exampleblock}{Exemplos de Variáveis Inválidas}
 		
 		\begin{center}
-			\begin{tabular}{|c|c|c|}\hline
-				\verb!1_Var! & variavel & valida\\ \hline
-				$23$ & \verb!"correto! & \verb!'termo!\\ \hline
+			\begin{tabular}{c|c|c}\hline
+				\verb!1_Var! & variável & valida\\ \hline
+				$23$ & \verb!"correto! & \verb!`termo!\\ \hline
 				\verb+!numero+ & \verb!$valor! & \verb!#comum!\\ \hline
 			\end{tabular}
 		\end{center}
 		
-		Relembrando, um nome de variável é inválido se começa com números ou símbolos que não sejam 
-		\_ ou letra minúscula
+		%Relembrando, um nome de variável é inválido se começa com números ou símbolos que não sejam 
+		%\_ ou letra minúscula
 		
 	\end{exampleblock}
 	
@@ -514,30 +551,38 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 
 \subsection{Tabela de Operadores} 
 \begin{frame}[fragile]
-	
+
+\begin{small}
+		
 	\begin{table}
-		\caption{\label{Operadores Aritméticos}Operadores Aritméticos em Ordem de Precedência}
+	\label{Operadores Aritméticos}
+		\caption{Operadores Aritméticos em Ordem de Precedência}
 		\begin{center}
 			\begin{tabular}{ c|c } \hline
-				\texttt{$X$ ** $Y$}  &  Potenciação \\ \hline 
-				\texttt{$X$ * $Y$} &    Multiplicação \\ \hline 
-				\texttt{$X$ / $Y$} &    Divisão, resulta em um real \\ \hline 
+				\texttt{$X$ ** $Y$}  &   Potenciação \\ \hline 
+				\texttt{$X$ * $Y$} &     Multiplicação \\ \hline 
+				\texttt{$X$ / $Y$} &     Divisão, resulta em um real \\ \hline 
 				\texttt{$X$ // $Y$} &    Divisão de Inteiros, resulta em um inteiro \\ \hline 
 				\texttt{$X$ mod $Y$} &   Resto da Divisão\\ \hline
-				\texttt{$X$ + $Y$} & Adição \\ \hline 
-				\texttt{$X$ - $Y$} &   Subtração \\ \hline 
+				\texttt{$X$ + $Y$} &     Adição \\ \hline 
+				\texttt{$X$ - $Y$} &     Subtração \\ \hline 
 				{\tt $Inicio$ \verb!..! $Passo$ \verb!..! $Fim$} & Uma série (lista) de números com um passo\\ 
 				\hline 
 				{\tt $Inicio$ \verb!..! $Fim$}  &   Uma série (lista) de números com passo 1 \\ \hline
 			\end{tabular}
 		\end{center}
 	\end{table}
-	
+	\textcolor{red}{REDIMENSIONAR}
+	\end{small}
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[fragile]
+
+\begin{small}
+
 	\begin{table}
 		\caption{Tabela de Operadores Completa em Ordem de Precedência}
 		\begin{center}
@@ -556,14 +601,18 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 			\end{tabular}
 		\end{center}
 	\end{table}
+
+\end{small}
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Operadores Especiais}
 
-\begin{frame}[fragile,c]
-    \frametitle{Operadores Especiais \textrm{\MakeUppercase{\romannumeral 1}}}
+\begin{frame}[fragile]
+
+    \frametitle{Operadores Especiais -- I}
     
     \begin{block}{Operadores de Termos Não Compostos}
 
@@ -571,7 +620,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
     
             \item \textbf{Equivalência}(\verb+==+): Compara se dois termos são iguais.\\No caso de termos
             compostos, eles são ditos equivalentes se todos os termos contidos em si são equivalentes. O 
-            compilador considera termos de tipos diferentes como totalmente diferentes, portanto a comparação 
+            compilador considera termos de tipos diferentes como totalmente diferentes, portanto a   comparação 
             $1.0 == 1$ seria avaliada como falsa, mesmo que os valores sejam iguais. Nesses casos, usa-se a 
             \emph{Equivalência Numérica}.
 
@@ -587,12 +636,15 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
     	\end{enumerate}
     \end{block}
     
+
 \end{frame}
+%%%%%%%%%NOVO FRAME
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
+\begin{frame}[fragile]
 
+\frametitle{Operadores Especiais -- II}
+    
 	\begin{exampleblock}{Exemplos}
     	
     	\begin{enumerate}
@@ -627,15 +679,16 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
           
         \end{enumerate}
 	\end{exampleblock}
-    
+
+
 \end{frame}
+%%%%
+%%%%%%%%%NOVO FRAME
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[fragile,c]
-    \frametitle{Operadores Especiais \textrm{\MakeUppercase{\romannumeral 2}}}
-    
-    \begin{block}{Operadores de Termos Compostos}
+\begin{frame}[fragile]
+\frametitle{Operadores de Termos Compostos}
+        
+    \begin{block}{}
     	
     	\begin{enumerate}
         
@@ -659,11 +712,11 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
     
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%NOVO FRAME	
+\begin{frame}[fragile]
+\frametitle{Operadores de Termos Compostos -- Exemplos}
 
-\begin{frame}
-	
-    \begin{exampleblock}{Exemplos}
+    \begin{exampleblock}{}
 		
         \begin{enumerate}
         
@@ -686,11 +739,14 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
             $1$ $2$ $3$
             \medskip
             \pause
-            
             \item $X\:=\:1..10$,\:\:$Y\:=\:0..2..20$,\:\:$Z\:=\:10..-1..1$\\
+            
             \pause
-            $X = [1,2,3,4,5,6,7,8,9,10]$\\ \pause
-            $Y = [0,2,4,6,8,10,12,14,16,18,20]$\\ \pause
+            $X = [1,2,3,4,5,6,7,8,9,10]$\\ 
+            
+            \pause
+            $Y = [0,2,4,6,8,10,12,14,16,18,20]$\\
+             \pause
             $Z = [10,9,8,7,6,5,4,3,2,1]$
             
 		\end{enumerate}
@@ -698,3 +754,5 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 	\end{exampleblock}
     
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
