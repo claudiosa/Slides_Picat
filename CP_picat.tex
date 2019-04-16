@@ -166,17 +166,42 @@
 
 \frametitle{Exemplo}
 
-Dado um n'umero par, encontre um dois de n'umeros primos,$N_1$ e $N_2$,
-diferentes entre si, que somados deêm este n'umero 
-par.\\ 
+\begin{itemize}
+  \item Dado um número par qualquer, encontre  dois de números primos, $N_1$ e $N_2$,
+diferentes entre si, que somados deêm este número 
+par.
 
-Exemplo:\\
-
+\pause
+\item Exemplo:\\
 Seja o PAR = 18\\
 Uma soluç~ao:\\
 $N_1 = 7$  e $N_2 = 11$\\
 pois\\
 $N_1 + N_2 = 18$
+\end{itemize}
+
+\end{frame}
+\begin{frame}[fragile] 
+
+\frametitle{Modelagem do Problema}
+
+\begin{itemize}
+  \item  $N_1$ e $N_2$ assumem valores no domínio dos números primos. \\
+  Logo, é importante ter os números primos prontos!
+
+  \pause
+   \item A soma destes números é o par fornecido como entrada, $N_{PAR}$:\\
+         $N_1 + N_2 = N_{PAR}$
+
+  \pause
+  \item  $N_1$ e $N_2$  são diferentes entre si\\
+   $N_1 \neq N_2$
+
+  \pause
+  \item Como são inteiros: $N_1 < N_{PAR}$ e $N_2 < N_{PAR}$ \\
+  Sim, é óbvio, mas isto faz uma redução significativa de domínio!
+
+\end{itemize}
 
 \end{frame}
 
@@ -189,7 +214,7 @@ $N_1 + N_2 = 18$
   \item Acompanhar as explicações do código de:\\
 \url{https://github.com/claudiosa/CCS/blob/master/picat/soma_N1_N2_primos_CP.pi}
 
-  \item Confira a execuç\~ao e testes
+  \item Confira a execução e testes
 \end{itemize}
 \end{frame}
 
@@ -211,7 +236,7 @@ modelo =>
 \end{verbatim}
 \end{small}
    
-   Uma 'otima estrat'egia: sair com um dom'inio de n'umeros candidatos!
+   Uma ótima estratégia: sair com um domínio de números candidatos!
     
 \end{frame}
 
@@ -326,13 +351,16 @@ Picat>
 
 \begin{itemize}
   \item Há outros métodos para se resolver estes problemas.\\
-  Exemplo: Programação Linear, Buscas Heurísticas
+  Exemplo: Programação Linear, Buscas Heurísticas, etc
 
   \pause
   \item A área é extensa, contudo, Picat adere há todos requisitos da PR
 
-   % \pause
-  %\item 
+    \pause
+  \item Resumo da PR: segue por uma notação/manipulação algébrica restrita,
+  simplificar e bissecionar as restrições, instanciar variáveis, verificar inconsistências,
+  avançar sobre as demais variáveis, até que todas estejam instanciadas.
+  
 \end{itemize}
 
 \end{frame}

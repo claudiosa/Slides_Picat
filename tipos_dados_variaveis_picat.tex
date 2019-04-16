@@ -2,18 +2,16 @@
 
 \begin{frame}[fragile]
 %[fragile, allowframebreaks=0.9]
-  \frametitle{Tipos de Dados e Variáveis}
-
+ \frametitle{Tipos de Dados e Variáveis -- Introdução -- I}
 
 
 \begin{itemize}
 
-\item Em projetos de linguagens de programaç~ao h'a dois tipos 
-verificação do tipo de dados: \underline{estática} e \underline{dinâmica}
+\item Em projetos de linguagens de programação há dois tipos 
+verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\textbf{dinâmica}}
 
   
   \pause 
-
   \item A verificação de tipos dados   \underline{estática} 
    em \textit{tempo de compilação}.
   
@@ -21,16 +19,29 @@ verificação do tipo de dados: \underline{estática} e \underline{dinâmica}
   \item Enquanto a \underline{dinâmica} em \textit{tempo de execução}.
   
   \pause 
-  \item Linguagens fortemente tipadas, tais como C, Java e Pascal, exigem que o tipo do dado (conteudo) seja do mesmo tipo da variável ao qual este valor será atribuído. Tudo isto é pré-definido durante a fase da \textit{compilação}.
+  \item Linguagens fortemente tipadas, tais como C, Java e Pascal, 
+  exigem que o tipo do dado (conteudo) seja do mesmo tipo da variável 
+  ao qual este valor será atribuído. 
+  Tudo isto é pré-definido durante a fase da \textit{compilação}.
   
-    \pause 
-  \item Nas linguagens interpretadas, com uma máquina virtual, esta definição é feita durante a \textit{execução} do
+  
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]
+%[fragile, allowframebreaks=0.9]
+ \frametitle{Tipos de Dados e Variáveis -- Introdução -- II}
+\begin{itemize}
+
+  \item Nas linguagens interpretadas, com uma máquina virtual, 
+  esta definição é feita durante a \textit{execução} do
   programa
   
-      \pause 
+  \pause 
   \item Prós e contras para o que é melhor, a discussão fica de lado neste momento
   
-        \pause 
+  \pause 
   \item Picat até o momento tem a tipagem \textbf{dinâmica}
   
 \end{itemize}
@@ -41,6 +52,7 @@ verificação do tipo de dados: \underline{estática} e \underline{dinâmica}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsection{Tipos de Dados}
 
 
 \begin{frame}
@@ -63,17 +75,17 @@ verificação do tipo de dados: \underline{estática} e \underline{dinâmica}
 	\frametitle{Termos}
 
 \begin{itemize}
-	  \item Em Picat, variáveis e valores são chamados simplesmente de \textit{termos}
+	  \item Em Picat, variáveis e valores são \textit{genericamente} chamados de \textit{termos}
 	
-	        \pause 
+	  \pause 
 	  \item Os valores são subdivididos em duas categorias, números e valores 
 	compostos
 	
 		  \item Os números, por suas vez, podem ser inteiros ou reais, e valores compostos
 	podem ser listas e estruturas
 	
-	        \pause 
-	\item Resumindo, em Picat tudo é \textit{termo}
+	%\pause 
+	%\item Resumindo, em Picat tudo é \textit{termo}
 	
 	\end{itemize}	
 \end{frame}
@@ -87,10 +99,9 @@ verificação do tipo de dados: \underline{estática} e \underline{dinâmica}
 	  \item Átomos são constantes simbólicas, podendo ser delimitados ou não, por 
 	aspas simples.
 	
-	\item Carácteres são representados por átomos de comprimento 1.
+	\item Carácteres são representados por átomos de comprimento $1$.
 	
-	 	\item Átomos não delimitados por aspas \underline{\textbf{nunca}} começam com uma letra maiúscula, número ou
-\textit{underscore}.
+	 	\item Átomos não delimitados por aspas simples, \underline{\textbf{nunca}} começam com uma letra maiúscula, nem número ou \textit{underscore}.
 
 	\end{itemize} 
 
@@ -105,16 +116,18 @@ verificação do tipo de dados: \underline{estática} e \underline{dinâmica}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-	\frametitle{Números \textrm{\MakeUppercase{\romannumeral 1}}}
+\begin{frame}[fragile, allowframebreaks=0.9]
+
+	\frametitle{Números}
 	
 	Números se dividem em:
 	
 	\begin{itemize}
 		
 		\item \textbf{Inteiro:} Inteiros podem ser representados por números binários, octais,
-		decimais ou hexadecimais. Dígitos em um número podem ser separados por um 
-		\textbf{underscore}, porém essa separação é ignorada pelo compilador.
+		decimais ou hexadecimais.
+		% Dígitos em um número podem ser separados por um 
+		% \textbf{underscore}, porém essa separação é ignorada pelo compilador.
 		
 	\end{itemize}
 	
@@ -127,18 +140,15 @@ verificação do tipo de dados: \underline{estática} e \underline{dinâmica}
 			\> \texttt{0xf7} \> \> \>  247 em notação hexadecimal  
 		\end{tabbing}
 	\end{exampleblock}
-	
-\end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textcolor{red}{O \textbf{underscore} é ignorado pelo compilador e o interpretador.}
 
-\begin{frame}[fragile]
-	\frametitle{Números \textrm{\MakeUppercase{\romannumeral 2}}}
+\framebreak
 	
 	\begin{itemize}
 		
-		\item \textbf{Real:} Números reais são compostos por um parte inteira opcional, uma 
-		fração decimal opcional, um ponto decimal e um expoente opcional.
+		\item \textbf{Real:} Números reais são compostos por um parte inteira, um ponto,
+		 seguido por uma fração decimal, ou um expoente.
 		
 		\item Se existe uma parte inteira em um número real então ela deve ser seguida por uma
 		fração ou um expoente. Isso é necessário para distinguir um número real de um número inteiro.
@@ -156,10 +166,21 @@ verificação do tipo de dados: \underline{estática} e \underline{dinâmica}
 
 \begin{frame}
 	\frametitle{Compostos}
+	\begin{itemize}
+	  \item 	Termos compostos podem conter mais de um valor ao mesmo tempo. 
+	  
+	  \pause
+    \item   Termos compostos são 
+	acessados pela notação de índice, começando a partir de $1$ e indo até $N$, onde $N$
+	 é o tamanho deste termo.
+
+	  \pause
+    \item 	Se dividem em \underline{Listas} e \underline{Estruturas}.
 	
-	Termos compostos são termos que podem conter mais de um valor ao mesmo tempo. Termos compostos são 
-	acessados por notação de índice, começando a partir de 1 e indo até N, onde N é o tamanho deste termo.
-	Se dividem em \underline{Listas} e \underline{Estruturas}.
+    
+	\end{itemize}
+	
+	
 	
 \end{frame}
 
@@ -175,16 +196,18 @@ verificação do tipo de dados: \underline{estática} e \underline{dinâmica}
 	\begin{exampleblock}{Exemplos}
 		[1,2,3,4,5] \: [a,b,32,1.5,aaac] \: ["string",14,22]
 	\end{exampleblock}
+
+\textcolor{red}{Há uma seção dedicada a esta poderosa  estrutura de dados!}
 	
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-	\frametitle{Strings}
+	\frametitle{\textit{Strings} -- Lista de Carácteres}
 	
-	Strings são listas especiais que contém somente Carácteres. Strings podem ser inicializadas como uma 
-	sequência de Carácteres encapsulados por aspas duplas, ou como uma sequência de Carácteres dentro 
+	\textit{Strings} são listas especiais que contém somente carácteres. \textit{Strings} podem ser inicializadas como uma 
+	sequência de carácteres encapsulados por aspas duplas, ou como uma sequência de carácteres dentro 
 	colchetes separados por vírgulas.
 	
 	\begin{exampleblock}{Exemplos}
@@ -197,17 +220,20 @@ verificação do tipo de dados: \underline{estática} e \underline{dinâmica}
 
 \begin{frame}
 	\frametitle{Tuplas}
-	
-	Tuplas são conjuntos de termos não ordenados, podendo ser acessados por notação de índice assim como
-	listas.\\
-	Tuplas são imutáveis, ou seja, os termos contidos em uma tupla não podem ser alterados, assim como
-	não podem ser adicionados ou removidos termos de tuplas.\\
-	Tuplas são encapsuladas por parênteses e seus termos são separados por vírgulas.
+	\begin{itemize}
+	  \item 	Tuplas é um conjunto de termos não-ordenados, podendo ser acessados por notação de índice assim como	listas.
+	  
+	  \item  Tuplas são estáticas, ou seja, os termos contidos em uma tupla não podem ser alterados, assim como	não podem ser adicionados ou removidos termos de tuplas.
+	  
+	\item   Tuplas são encapsuladas por parênteses e seus termos são separados por vírgulas.
+
+	\end{itemize}
 	
 	\begin{exampleblock}{Exemplos}
 		(1,2,3,4,5) \: (a,b,32,1.5,aaac) \: ("string",14,22)
 	\end{exampleblock}
 	
+	\textcolor{red}{Em geral, usamos as tuplas dentro de listas.}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -222,27 +248,39 @@ verificação do tipo de dados: \underline{estática} e \underline{dinâmica}
 	\texttt{{\$}s($t_1,\ldots,t_n$)}
 	\end{displaymath}
 	
-	Onde \textit{"s"} é um átomo que nomeia a estrutura, cada 
-	\textit{"$t_i$"} é um de seus termos, e \textit{"n"} é a aridade ou tamanho da estrutura.\\
+	Onde \textit{`s'} é um átomo que denomina a estrutura, cada 
+	\textit{`$t_i$'} é um de seus termos, e \textit{`n'} é a aridade ou tamanho da estrutura.
 	
 	\begin{exampleblock}{Exemplo}
 		\$ponto(1,2) \: \$pessoa(jose, "123.456.789.00", "1.234.567")
 	\end{exampleblock}
 	
-	Existem 4 estruturas especiais que não necessitam que seja usado o símbolo \$, são eles
+	\pause
+	\textbf{\textcolor{red}{Temos 4 outras estruturas  que não usam o símbolo \$, são elas:}}
 	
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}
-	\frametitle{Vetores}
+	\frametitle{Vetores} [fragile, allowframebreaks=0.9]
 	
-	Vetores, ou \textit{arrays}, são estruturas especiais do tipo \texttt{\{$t_1$,$\ldots$,$t_{n}$\}},
-	cujo nome é simplesmente \texttt{'\{\}'} e tem aridade $n$.\\
-	Vetores tem comportamento praticamente idêntico à listas, tanto é que quase todas as funções de listas
-	são sobrecarregadas para vetores. Uma importante diferença entre vetores e listas é que vetores tem seu 
-	tamanho armazenado na memória, ou seja, o tempo para se calcular o tamanho de um vetor é constante.
+	Vetores ou \textit{arrays} são estruturas especiais do tipo:
+	\begin{center}
+		 \texttt{\{$t_1$,$\ldots$,$t_{n}$\}}
+		\end{center}
+	
+	\begin{itemize}
+	 \pause
+	   \item Vetor é um conjunto ordenado de tamanho $n$, delimitado por \texttt{'\{\}'}.
+	   \item 	Vetores tem comportamentos análogo às listas, tanto é que quase todas as funções de listas
+	são sobrecarregadas para vetores. 
+	
+		   \item A diferença entre vetores e listas é que vetores tem um tamanho  constante.
+		   \item Vetores são muito práticos quando se manipula matrizes na entrada
+		   
+	 \end{itemize} 
+
 	
 	\begin{exampleblock}{Exemplos}
 		\{1,2,3,4,5\} \: \{a,b,32,1.5,aaac\} \: \{"string",14,22\}
@@ -256,9 +294,9 @@ verificação do tipo de dados: \underline{estática} e \underline{dinâmica}
 	\frametitle{Mapas, Conjuntos e \textit{Heaps}}
 	
 	\begin{itemize}
-		\item Mapas são estruturas especiais que são conjuntos de relações do tipo \texttt{chave-valor}.
+		\item \textbf{Mapas} são estruturas especiais que são conjuntos de relações do tipo \texttt{chave-valor}.
 		
-		\item Conjuntos são sub-tipos de mapas onde todos as chaves estão relacionadas com o átomo 
+		\item \textbf{Conjuntos} são sub-tipos de mapas onde todos as chaves estão relacionadas com o átomo 
 		\texttt{not\_a\_value}.
 		
 		\item \textit{Heaps} são árvores binárias completas representadas como vetores.
@@ -272,42 +310,45 @@ verificação do tipo de dados: \underline{estática} e \underline{dinâmica}
 
 \subsection{Variáveis}
 
-\begin{frame}[c,allowframebreaks=0.53]
-	\frametitle{Introdução à Variáveis}
+\begin{frame}[allowframebreaks=0.90]
+	\frametitle{Variáveis}
 	
 	\begin{itemize}
 		
 		\item Picat é uma linguagem de \underline{Tipagem Dinâmica}, ou seja, o tipo de uma variável 
-		é checado somente durante a execução de um programa
+		é validado durante a execução do programa
 		
-		\item Por causa disso, quando uma variável é criada, seu tipo não é instanciado
 		
-		\item Variáveis em Picat, como variáveis na matemática, são símbolos que \textit{seguram} ou 
+		\item Isto é, quando uma variável é criada, seu tipo não é instanciado
+		
+		\item Variáveis são análogas as da matemática, são símbolos que \textit{seguram} ou 
 		representam um valor
 		
 		\item Ao contrário de variáveis em linguagens imperativas, variáveis em Picat não são
 		endereços simbólicos de locais na memória
 		
-		\item Uma variável é dita \textit{livre} se não contém nenhum valor, e dita
-		\textit{instanciada} se ela contém um valor
+		\item Uma variável é dita \textit{livre} (\textit{free}) se não contém nenhum valor, e dita
+		\textit{instanciada} (\textit{bound}) se ela contém um valor
 		
 		\item Uma vez que uma variável é instanciada, ela permanece com este valor na 
 		execução atual
 		
 		\item Por isso, diz-se que variáveis em Picat são de \textit{atribuição única}
 		
+		\framebreak
 		\item O nome de variáveis devem sempre ser iniciado com letras \textbf{\underline{maisculas}}
-		ou um caractere \textbf{\textit{underscore (\_)}}, porém;
+		ou  com o caráctere \textbf{\textit{underscore (\_)}}, porém;
 		
 		\begin{itemize}
 			
-			\item Variáveis cujo nome é unicamente um caractere \_ são chamadas de 
-			\textit{variáveis anônimas}, que são variáveis que podem ser instanciadas valores,
-			mas não os retem durante a execução do programa;
+			\item Variáveis cujo nome é unicamente um caractere \textbf{\_} são chamadas de 
+			\textit{variáveis anônimas}.
 			
-			\item Diversas variáveis anônimas podem ser instanciadas durante a execução de um
-			programa, porém todas as ocorrências de variáveis anônimas são tratadas 
-			diferentemente.
+			\item As 			\textit{variáveis anônimas} podem receber qualquer  valor
+			 não os guardam  durante a execução do programa;
+			
+			\item Num mesmo programa, podem existir diversas variáveis anônimas, instanciadas durante a execução do mesmo
+			
 		\end{itemize}
 		
 	\end{itemize}
@@ -317,6 +358,7 @@ verificação do tipo de dados: \underline{estática} e \underline{dinâmica}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Unificação e Atribuição}
+
 \begin{frame}
 	\frametitle{Unficação e Atribuição}
 	Há dois modos de definir valores a variáveis, a \underline{unificação}, que usa o operador 

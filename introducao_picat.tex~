@@ -86,7 +86,8 @@
     
     \pause
     	\item Regras são escritas em formas de cláusulas, as quais são interpretadas como
-        implicações lógicas. Depenpendem das premissas serem verdadeiras para esta ser verdadeira.
+        implicações lógicas. Depen
+        dem das premissas serem verdadeiras para esta ser verdadeira.
         
 
     \pause
@@ -169,8 +170,8 @@
       \item Sintaxe elegante e simples, facilitando a leitura e entendimento do código
       
           \pause 
-      \item Velocidade de execução em um ambiente \textit{interpretado} (h\'a 
-      uma \textit{m\'aquina
+      \item Velocidade de execução em um ambiente \textit{interpretado} (há
+      uma \textit{máquina
       virtual} como Python, Java e alguns Prologs)
       
           \pause 
@@ -309,7 +310,7 @@ msg_02 =>  printf("\n  FIM \n").
 
 
 \begin{frame}[fragile]
-\frametitle{Execuç~ao na Console Linux ou Windows}
+\frametitle{Execução na Console Linux ou Windows}
 
 \begin{verbatim}
 $ picat alo_mundo.pi 
@@ -322,14 +323,14 @@ $
 
 
 \begin{frame}[fragile]
-\frametitle{Execuç~ao no Ambiente do Interpretador}
+\frametitle{Execução no Ambiente do Interpretador}
 
 \begin{footnotesize}
 \begin{verbatim}
 $ picat
 Picat 2.0, (C) picat-lang.org, 2013-2016.
 Type 'help' for help.
-Picat> cl('alo_mundo.pi').
+Picat> cl(álo_mundo.pi').
 Compiling:: alo_mundo.pi
 alo_mundo.pi compiled in 0 milliseconds
 loading...
@@ -364,12 +365,12 @@ Picat>
 \begin{itemize}
 
 
-  \item O conte'udo desta parte do curso pode ser complementado
-  com a   \textbf{Videoaula 01: Introduç~ao ao PICAT}, dispon'ivel no Youtube:\\
+  \item O conteúdo desta parte do curso pode ser complementado
+  com a   \textbf{Videoaula 01: Introdução ao PICAT}, disponível no Youtube:\\
     \textbf{\url {https://www.youtube.com/watch?v=0DmTyFFQPK8}}
 
       \pause
-      \item Para pr'oxima seç~ao esteja com o Picat instalado em seu 
+      \item Para próxima seção esteja com o Picat instalado em seu 
       computador para um melhor aproveitamento.
    % \pause
   %\item 

@@ -3,12 +3,15 @@
 
 \begin{itemize}
   \item Há outros métodos para se resolver estes problemas.\\
-  Exemplo: Programação Linear, Buscas Heurísticas
+  Exemplo: Programação Linear, Buscas Heurísticas, etc
 
   \pause
   \item A área é extensa, contudo, Picat adere há todos requisitos da PR
 
-   % \pause
-  %\item
+    \pause
+  \item Resumo da PR: segue por uma notação/manipulação algébrica restrita,
+  simplificar e bissecionar as restrições, instanciar variáveis, verificar inconsistências,
+  avançar sobre as demais variáveis, até que todas estejam instanciadas.
+
 \end{itemize}
 
