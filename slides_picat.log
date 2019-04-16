@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.2.25)  13 APR 2019 15:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.2.25)  16 APR 2019 00:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1560,7 +1560,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\Hy@tempa' on input line 156.
 
-(./slides_picat.aux (./PD_picat.aux) (./conclusoes_picat.aux))
+(./slides_picat.aux (./aula_apresentacao_curso_picat.aux)
+(./introducao_picat.aux) (./CP_picat.aux))
 \openout1 = `slides_picat.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 165.
@@ -1780,52 +1781,56 @@ line 168.
 (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+)
+Overfull \vbox (0.74104pt too high) detected at line 168
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [2
+ (./slides_picat.vrb)
+[2
 
 ]
-\openout2 = `PD_picat.aux'.
+\openout2 = `aula_apresentacao_curso_picat.aux'.
 
-
-(./PD_picat.tex
+ (./aula_apresentacao_curso_picat.tex
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb) [3
 
 
-] (./slides_picat.vrb) [4
-
 ]
-(./slides_picat.vrb) [5
+(./slides_picat.vrb) [4
 
-] (./slides_picat.vrb) [6
+] (./slides_picat.vrb) [5
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [7
+ (./slides_picat.vrb) [6
 
 ]
-(./slides_picat.vrb) [8
+(./slides_picat.vrb) [7
+
+] (./slides_picat.vrb) [8
 
 ] (./slides_picat.vrb) [9
 
-] (./slides_picat.vrb) [10
+]
+(./slides_picat.vrb) [10
 
 ]
 \openout4 = `slides_picat.vrb'.
 
-
-(./slides_picat.vrb) [11
-
-] (./slides_picat.vrb) [12
+ (./slides_picat.vrb) [11
 
 ] (./slides_picat.vrb)
-[13
+[12
+
+] (./slides_picat.vrb) [13
 
 ] (./slides_picat.vrb) [14
 
@@ -1833,109 +1838,326 @@ thkerncmss.
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/pascal_triangle_01.jpg, id=620, 365.365pt x 164.615pt>
-File: figures/pascal_triangle_01.jpg Graphic file (type jpg)
-<use figures/pascal_triangle_01.jpg>
-Package pdftex.def Info: figures/pascal_triangle_01.jpg  used on input line 6.
-(pdftex.def)             Requested size: 215.10075pt x 151.13617pt.
-) [15
-
- <./figures/pascal_triangle_01.jpg>]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-<figures/pascal_triangle_02.jpg, id=660, 748.7975pt x 583.17876pt>
-File: figures/pascal_triangle_02.jpg Graphic file (type jpg)
-<use figures/pascal_triangle_02.jpg>
-Package pdftex.def Info: figures/pascal_triangle_02.jpg  used on input line 6.
-(pdftex.def)             Requested size: 261.20326pt x 163.72496pt.
-) [16
-
- <./figures/pascal_triangle_02.jpg>]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb
-
-Package amsmath Warning: Foreign command \atopwithdelims;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 11.
-
-) [17
-
-] (./slides_picat.vrb) [18
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [19
-
-] (./slides_picat.vrb) [20
-
-] (./slides_picat.vrb) [21
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [22
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-Overfull \hbox (7.63322pt too wide) in paragraph at lines 26--26
-[]    \T1/cmtt/m/n/10 statistics(runtime,_), % faz uma marca do 1o. statistics[
-] 
- []
-
-
-Overfull \hbox (23.37938pt too wide) in paragraph at lines 26--26
-[]    \T1/cmtt/m/n/10 N = 10, %% ateh uns 30 ... são números grandes ... fatori
-al[] 
- []
-
-
-Overfull \hbox (86.364pt too wide) in paragraph at lines 26--26
-[]    \T1/cmtt/m/n/10 printf("\n OVERALL PICAT CPU time %f em SEGUNDOS ", T_Pic
-at_ON/1000.0),[] 
- []
-
-
-Overfull \hbox (18.13066pt too wide) in paragraph at lines 26--26
-[]    \T1/cmtt/m/n/10 printf(" \n =========================================\n "
-)[] 
- []
-
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 10.
 )
-Overfull \vbox (21.50945pt too high) detected at line 225
- []
+[15
 
-[23
+] (./slides_picat.vrb) [16
 
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [24
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [25
+] (./slides_picat.vrb) [17
 
 ]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb)
-[26
+[18
 
-] (./slides_picat.vrb) [27
+] (./slides_picat.vrb) [19
+
+] (./slides_picat.vrb) [20
 
 ])
-\openout2 = `conclusoes_picat.aux'.
-
- (./conclusoes_picat.tex [28
+\openout2 = `introducao_picat.aux'.
 
 
+(./introducao_picat.tex [21
+
+
+
+] [22
+
+] [23
+
+] [24
+
+] [25
+
+] [26
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+[27
+
+] (./slides_picat.vrb) [28
+
+] (./slides_picat.vrb) [29
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+[30
+
+] (./slides_picat.vrb) [31
+
+] (./slides_picat.vrb) [32
+
+] (./slides_picat.vrb)
+[33
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb) [34
+
+] (./slides_picat.vrb) [35
+
+] (./slides_picat.vrb)
+[36
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb
+<figures/Paradigma_Procedural.png, id=1549, 642.4pt x 481.8pt>
+File: figures/Paradigma_Procedural.png Graphic file (type png)
+<use figures/Paradigma_Procedural.png>
+Package pdftex.def Info: figures/Paradigma_Procedural.png  used on input line 2
+4.
+(pdftex.def)             Requested size: 147.50119pt x 110.62051pt.
+)
+Overfull \vbox (8.67387pt too high) detected at line 160
+ []
+
+[37
+
+ <./figures/Paradigma_Procedural.png>] (./slides_picat.vrb
+File: figures/Paradigma_Procedural.png Graphic file (type png)
+<use figures/Paradigma_Procedural.png>
+Package pdftex.def Info: figures/Paradigma_Procedural.png  used on input line 2
+4.
+(pdftex.def)             Requested size: 147.50119pt x 110.62051pt.
+)
+Overfull \vbox (8.67387pt too high) detected at line 160
+ []
+
+[38
+
+] (./slides_picat.vrb
+File: figures/Paradigma_Procedural.png Graphic file (type png)
+<use figures/Paradigma_Procedural.png>
+Package pdftex.def Info: figures/Paradigma_Procedural.png  used on input line 2
+4.
+(pdftex.def)             Requested size: 147.50119pt x 110.62051pt.
+)
+Overfull \vbox (8.67387pt too high) detected at line 160
+ []
+
+[39
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb) [40
+
+] (./slides_picat.vrb) [41
+
+] (./slides_picat.vrb)
+[42
+
+] (./slides_picat.vrb) [43
+
+] (./slides_picat.vrb) [44
+
+] (./slides_picat.vrb)
+[45
+
+] [46
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb) [47
+
+] (./slides_picat.vrb) [48
+
+]
+(./slides_picat.vrb) [49
+
+] (./slides_picat.vrb) [50
+
+] (./slides_picat.vrb)
+[51
+
+] (./slides_picat.vrb) [52
+
+] (./slides_picat.vrb) [53
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+[54
+
+] (./slides_picat.vrb) [55
+
+] (./slides_picat.vrb) [56
+
+] (./slides_picat.vrb)
+[57
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb) [58
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb) [59
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+Overfull \vbox (37.12468pt too high) detected at line 356
+ []
+
+[60
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb) [61
+
+] (./slides_picat.vrb) [62
+
+])
+\openout2 = `CP_picat.aux'.
+
+ (./CP_picat.tex
+\openout4 = `slides_picat.vrb'.
+
+
+(./slides_picat.vrb) [63
+
+
+
+] (./slides_picat.vrb) [64
+
+] (./slides_picat.vrb)
+[65
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb) [66
+
+] (./slides_picat.vrb) [67
+
+] (./slides_picat.vrb)
+[68
+
+] (./slides_picat.vrb) [69
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb) [70
+
+] (./slides_picat.vrb)
+[71
+
+] (./slides_picat.vrb) [72
+
+] (./slides_picat.vrb) [73
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb
+<figures/problema_modelagem.pdf, id=3061, 332.24126pt x 210.7875pt>
+File: figures/problema_modelagem.pdf Graphic file (type pdf)
+<use figures/problema_modelagem.pdf>
+Package pdftex.def Info: figures/problema_modelagem.pdf  used on input line 7.
+(pdftex.def)             Requested size: 215.10255pt x 148.23532pt.
+)
+[74
+
+ <./figures/problema_modelagem.pdf>]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb
+<figures/dinamica_pr.pdf, id=3111, 150.5625pt x 425.59pt>
+File: figures/dinamica_pr.pdf Graphic file (type pdf)
+<use figures/dinamica_pr.pdf>
+Package pdftex.def Info: figures/dinamica_pr.pdf  used on input line 6.
+(pdftex.def)             Requested size: 92.19218pt x 172.93446pt.
+) [75
+
+ <./figures/dinamica_pr.pdf>]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb
+<figures/reducao_PR_01.pdf, id=3158, 328.22626pt x 288.07625pt>
+File: figures/reducao_PR_01.pdf Graphic file (type pdf)
+<use figures/reducao_PR_01.pdf>
+Package pdftex.def Info: figures/reducao_PR_01.pdf  used on input line 6.
+(pdftex.def)             Requested size: 215.10245pt x 148.23564pt.
+) [76
+
+ <./figures/reducao_PR_01.pdf>]
+\openout4 = `slides_picat.vrb'.
+
+
+(./slides_picat.vrb
+<figures/reducao_PR_02.pdf, id=3225, 403.5075pt x 445.665pt>
+File: figures/reducao_PR_02.pdf Graphic file (type pdf)
+<use figures/reducao_PR_02.pdf>
+Package pdftex.def Info: figures/reducao_PR_02.pdf  used on input line 7.
+(pdftex.def)             Requested size: 215.10167pt x 148.23274pt.
+) [77
+
+ <./figures/reducao_PR_02.pdf>]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+[78
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb) [79
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb
+Overfull \hbox (7.63322pt too wide) in paragraph at lines 13--13
+[]    \T1/cmtt/m/n/10 % L_dom = [I : I in 1..1000, eh_primo(I) == true],   %OU[
+] 
+ []
+
+) [80
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb) [81
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb) [82
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+Overfull \vbox (132.12468pt too high) detected at line 300
+ []
+
+[83
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb) [84
+
+] (./slides_picat.vrb) [85
 
 ])
 \tf@nav=\write7
@@ -1949,12 +2171,13 @@ Overfull \vbox (21.50945pt too high) detected at line 225
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
-
-(./slides_picat.aux (./PD_picat.aux) (./conclusoes_picat.aux))
+ (./slides_picat.aux
+(./aula_apresentacao_curso_picat.aux) (./introducao_picat.aux) (./CP_picat.aux)
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
 Package rerunfilecheck Info: File `slides_picat.out' has not changed.
-(rerunfilecheck)             Checksum: 1CA2BA0099869FCB21AC5D32BD91463C;111.
+(rerunfilecheck)             Checksum: 39ED8117CECD1B832EB9A6341B1E2538;267.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1962,32 +2185,31 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 30662 strings out of 492616
- 574701 string characters out of 6135177
- 926222 words of memory out of 5000000
- 33921 multiletter control sequences out of 15000+600000
- 553530 words of font info for 82 fonts, out of 8000000 for 9000
+ 30989 strings out of 492616
+ 580634 string characters out of 6135177
+ 926220 words of memory out of 5000000
+ 34013 multiletter control sequences out of 15000+600000
+ 556200 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,19n,70p,779b,780s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,19n,70p,779b,783s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/cm-super/sfsi1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
-per/sfss0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0800.pf
-b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/t
-exmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf-dist/fonts
-/type1/public/cm-super/sfss1440.pfb></usr/share/texmf-dist/fonts/type1/public/c
-m-super/sfss2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx109
-5.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on slides_picat.pdf (28 pages, 332679 bytes).
+exmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfs
+i1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr
+/share/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf-di
+st/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf-dist/fonts/type1/
+public/cm-super/sfss1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
+/sfss1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb><
+/usr/share/texmf-dist/fonts/type1/public/cm-super/sfss2074.pfb></usr/share/texm
+f-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/cm-super/sfsx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
+uper/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.p
+fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on slides_picat.pdf (85 pages, 505941 bytes).
 PDF statistics:
- 1241 PDF objects out of 1440 (max. 8388607)
- 1159 compressed objects within 12 object streams
- 59 named destinations out of 1000 (max. 500000)
- 75 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3714 PDF objects out of 4296 (max. 8388607)
+ 3535 compressed objects within 36 object streams
+ 178 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

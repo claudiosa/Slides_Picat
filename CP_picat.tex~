@@ -166,156 +166,66 @@
 
 \frametitle{Exemplo}
 
-Dado um n'umero par, encontre um dois de n'umeros primos,$N_1$ e $N_2$,
-diferentes entre si, que somados deêm este n'umero 
-par.\\ 
 
-Exemplo:\\
 
-Seja o PAR = 18\\
-Uma soluç~ao:\\
-$N_1 = 7$  e $N_2 = 11$\\
-pois\\
-$N_1 + N_2 = 18$
 
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile] 
+
+\frametitle{Código}
+
+\begin{verbatim}
+
+\end{verbatim}
+    
+\end{frame}
+
+
+
+\begin{frame}[fragile] 
+
+\frametitle{Código em Partes}
+
+\begin{small}
+\begin{verbatim}
+
+\end{verbatim}
+\end{small}
+    
+\end{frame}
+
+
 \begin{frame}[fragile]
  \frametitle{Código Completo}
 
 \begin{itemize}
   \item Acompanhar as explicações do código de:\\
-\url{https://github.com/claudiosa/CCS/blob/master/picat/soma_N1_N2_primos_CP.pi}
+\url{https://github.com/claudiosa/CCS/blob/master/picat/xxxxxxxxxxxx.pi}
 
-  \item Confira a execuç\~ao e testes
+  \item Confira a execuç\~ao
 \end{itemize}
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile] 
 
-\frametitle{Código em Partes}
 
-\begin{small}
-\begin{verbatim}
-modelo => 
-    PAR = 382,
-    Variaveis = [N1,N2],
-    % Gerando um domino soh de primos
-    % L_dom = [I : I in 1..1000, eh_primo(I) == true],   %OU
-    L_dom = [I : I in 1..1000, prime(I)],
-    Variaveis :: L_dom,
-\end{verbatim}
-\end{small}
-   
-   Uma 'otima estrat'egia: sair com um dom'inio de n'umeros candidatos!
-    
-\end{frame}
 
-\begin{frame}[fragile] 
-
-\frametitle{Código em Partes}
-
-\begin{small}
-\begin{verbatim}
-    % RESTRICOES
-    N1 #!= N2,
-    N1 #< PAR,  
-    N2 #< PAR,
-    N1 + N2 #= PAR,
-  
-	% A BUSCA
-	solve([ff], Variaveis),
-  % UMA SAIDA
-	printf("\n  N1: %d\t N2: %d", N1,N2),
-	printf("\n.....................................")
-	.
-\end{verbatim}
-\end{small}
-    
-\end{frame}
-
-\begin{frame}[fragile] 
-
-\frametitle{Código em Partes}
-
-\begin{small}
-\begin{verbatim}
-import cp.
-
-% main => modelo	.
-% main ?=> modelo, fail.	
-% main =>  true.	
-
-main =>
-    L = findall(_, $modelo),
-    writef("\n Total de solucoes:  %d \n", length(L)) .
-
-\end{verbatim}
-\end{small}
-    
-\end{frame}
 
 
 \begin{frame}[fragile]
 %[fragile, allowframebreaks=0.9]
 
-\frametitle{Saída -- I}
+\frametitle{Saída}
 
 \begin{small}
 \begin{verbatim}
-Picat> cl('soma_N1_N2_primos_CP').
-Compiling:: soma_N1_N2_primos_CP.pi
-** Warning  : redefine_preimported_symbol(math): prime / 1
-soma_N1_N2_primos_CP.pi compiled in 7 milliseconds
-loading...
-
-yes
-
-Picat> main.                      
-
-  N1: 3	 N2: 379
-.....................................
-  N1: 23	 N2: 359
-.....................................
-  N1: 29	 N2: 353
-.....................................
+ =========================================
 \end{verbatim}
     
 \end{small}
 \end{frame}
-
-
-\begin{frame}[fragile]
-%[fragile, allowframebreaks=0.9]
-
-\frametitle{Saída -- II}
-
-\begin{small}
-\begin{verbatim}
- .....................................
-  N1: 353	 N2: 29
-.....................................
-  N1: 359	 N2: 23
-.....................................
-  N1: 379	 N2: 3
-.....................................
- Total de solucoes:  18 
-
-yes
-
-Picat> 
-\end{verbatim}
-    
-\end{small}
-\end{frame}
-
-
-
-
 
 
 

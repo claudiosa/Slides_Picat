@@ -1,3 +1,7 @@
 \babel@toc {brazilian}{}
-\beamer@sectionintoc {1}{Programa\IeC {\c c}\IeC {\~a}o Din\IeC {\^a}mica}{3}{0}{1}
-\beamer@sectionintoc {2}{Conclus\IeC {\~a}o}{28}{0}{2}
+\beamer@sectionintoc {1}{Apresenta\IeC {\c c}\IeC {\~a}o ao Curso de PICAT}{3}{0}{1}
+\beamer@sectionintoc {2}{Introdu\IeC {\c c}\IeC {\~a}o}{21}{0}{2}
+\beamer@subsectionintoc {2}{1}{Estrutura da Linguagem}{25}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{1}{Paradigmas}{30}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{2}{Usando Picat}{54}{0}{2}
+\beamer@sectionintoc {3}{Programa\IeC {\c c}\IeC {\~a}o por Restri\IeC {\c c}\IeC {\~o}es}{63}{0}{3}

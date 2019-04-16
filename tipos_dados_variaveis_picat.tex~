@@ -1,24 +1,14 @@
 \section{Tipos de Dados e Variáveis}
 
-\begin{frame}[fragile]
+\begin{frame}fragile]
 %[fragile, allowframebreaks=0.9]
   \frametitle{Tipos de Dados e Variáveis}
 
 
 
+
 \begin{itemize}
-
-\item Em projetos de linguagens de programaç~ao h'a dois tipos 
-verificação do tipo de dados: \underline{estática} e \underline{dinâmica}
-
-  
-  \pause 
-
-  \item A verificação de tipos dados   \underline{estática} 
-   em \textit{tempo de compilação}.
-  
-    \pause 
-  \item Enquanto a \underline{dinâmica} em \textit{tempo de execução}.
+  \item A verificação do tipo de um dado é feita de forma \underline{estática} em \textit{tempo de compilação}, ou de forma \underline{dinâmica} em \textit{tempo de execução}.
   
   \pause 
   \item Linguagens fortemente tipadas, tais como C, Java e Pascal, exigem que o tipo do dado (conteudo) seja do mesmo tipo da variável ao qual este valor será atribuído. Tudo isto é pré-definido durante a fase da \textit{compilação}.

@@ -2,10 +2,11 @@
 
 
 \begin{itemize}
-  \item Há outros métodos para se resolver estes problemas
+  \item Há outros métodos para se resolver estes problemas.\\
+  Exemplo: Programação Linear, Buscas Heurísticas
 
   \pause
-  \item O comando \textit{tabling} é a base do módulo \textit{planner}
+  \item A área é extensa, contudo, Picat adere há todos requisitos da PR
 
    % \pause
   %\item
