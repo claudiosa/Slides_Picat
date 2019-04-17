@@ -1,65 +1,20 @@
-\frametitle{Exemplos}
+\frametitle{Reflexões}
 
-    \begin{block}{Condicionais}
+\begin{itemize}
 
-        \begin{lstlisting}[frame=single]
-main =>
-    X = read_int(),
-    if(X <= 100)then
-        println("X e menor que 100")
-    else
-        println("X nao e menor que 100")
-    end
-.
-        \end{lstlisting}
 
-    \end{block}
+  \item Este  conteúdo trata da sintaxe do Picat
 
-    \framebreak
+    \pause
+  \item Embora sua sintaxe não seja muito extensa, ela precisa
+  ser pratica
 
-    \begin{block}{Repetições}
+    \pause
+  \item Como este conteúdo se assemelha as LPs clássicas, como exercício,
+  voce está apto a fazer alguns algoritmos de outras linguagens.
 
-        \begin{lstlisting}[frame=single]
-main =>
-    X = read_int(),
-    println(x=X),
-    while(X != 0)
-        X := X - 1,
-        println(x=X)
-    end
-.
-        \end{lstlisting}
+      \pause
+  \item Mãos a obra!
 
-        \begin{lstlisting}[frame=single]
-main =>
-    X = read_int(),
-    Y = X..X*3,
-    foreach(A in Y)
-        println(A)
-    end.
-        \end{lstlisting}
-
-    \end{block}
-
-    \framebreak
-
-    \begin{block}{Compreensão de Listas}
-
-       \begin{lstlisting}[frame=single]
-main =>
-    Tamanho = read_int(),
-    Y = [read_int() : 1..Tamanho],
-    Z = {X : X in Y, X >= 0},
-    forach(I in 1..Tamanho)
-        if(Y[I] >= 0)then
-            printf("Y[%d] e maior ou igual que 0\n",I)
-        else
-            printf("Y[%d] e menor que 0\n",I)
-        end
-    end
-    printf("Os valores de Y que sao maiores que 0 sao:\n%w",Z)
-.
-       \end{lstlisting}
-
-    \end{block}
+\end{itemize}
 
