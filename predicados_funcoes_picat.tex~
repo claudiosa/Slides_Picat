@@ -1,17 +1,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Predicados e Funções}
 
-
 \begin{frame}[fragile,allowframebreaks=0.68,c]
-	\frametitle{Predicados e Funções}
+	\frametitle{Predicados e Funções: Conceitos Iniciais}
     
     \begin{itemize}
     	
         \item Em Picat, predicados e funções são definidos com regras de casamento de padrões
         
-        
         \item Há dois tipos de regras:
-        \pause
+        
         \begin{itemize}
             \item Regras sem {\em backtracking} (\textit{non-backtrackable}):
         	
@@ -20,7 +18,6 @@
               \> \> $Cabe$ç$a, Cond\ $\verb+=>+$\ Corpo$. 
             \end{tabbing}
             
-                    \pause
             \item Regras com {\em backtracking}:
             
             \begin{tabbing}
@@ -30,13 +27,13 @@
         
         \end{itemize}
         
-        \item A identificação da sintaxe é dada por:
+        \item Seus membros se dividem em:
         
         \begin{itemize}
         
             \item \emph{Cabeça}: indica um padrão de regra a ser casada.\\
-            
             Forma geral:
+            
             \begin{tabbing}
                 aa \= aaa \= aaa \= aaa \kill
                 \> \> $regra(termo_1, \ldots,termo_n)$
@@ -119,7 +116,7 @@
 
 \begin{frame}
     
-    \begin{block}{Exemplos de regras onde pode ocorrer o casamento}
+    \begin{exampleblock}{Exemplos de regras onde pode ocorrer o casamento}
     	
         \begin{enumerate}
         	\item A regra $fatorial(Termo, Resultado)$ pode casar com:\\
@@ -146,7 +143,7 @@
             $pai(X, fabio)$, $pai(salomao, X)$, $pai(X,Y)$
         \end{enumerate}
         
-    \end{block}
+    \end{exampleblock}
     
 \end{frame}
 
@@ -320,7 +317,7 @@
 \subsection{Exemplos}
 \begin{frame}[c,allowframebreaks,fragile]{Exemplos}
 
-    \begin{block}{Exemplos de Predicados}
+    \begin{exampleblock}{Exemplos de Predicados}
     
         \begin{lstlisting}[frame=single]
 entre_valores(X1, X2, X3) ?=>
@@ -337,11 +334,11 @@ entre_valores(X1, X2, X3), number(X1), number(X2), number(X3) ?=>
     X1 < X3.
         \end{lstlisting}
         
-    \end{block}
+    \end{exampleblock}
     
     \framebreak
     
-    \begin{block}{Exemplos de Predicados Fatos}
+    \begin{exampleblock}{Exemplos de Predicados Fatos}
     
         \begin{lstlisting}[frame=single]
 index(-,-) (+,-) (-,+)
@@ -355,11 +352,11 @@ irmao(X,Y) ?=> pai(Z,X), pai(Z,Y).
 tio(X,Y) ?=> pai(Z,Y), irmao(X,Z).
         \end{lstlisting}
     
-    \end{block}
+    \end{exampleblock}
     
     \framebreak
     
-    \begin{block}{Exemplos de Funções}
+    \begin{exampleblock}{Exemplos de Funções}
     
         \begin{lstlisting}[frame=single]
 eleva_cubo(1) = 1.
@@ -375,7 +372,7 @@ dobra_lista(L), L != [] = L1 =>
     L1 = L ++ L.
         \end{lstlisting}
     
-    \end{block}
+    \end{exampleblock}
     
 \end{frame}
 
@@ -597,7 +594,7 @@ dobra_lista(L), L != [] = L1 =>
             \hline 
             \hline 
             \texttt{\%\%} & Sinal de Porcentagem \\
-            \texttt{\%c} & Caráctere \\
+            \texttt{\%c} & Caractere \\
             \texttt{\%d \%i} & Número Inteiro Com Sinal \\
             \texttt{\%f} & Número Real \\
             \texttt{\%n} & Nova Linha \\
@@ -636,7 +633,8 @@ dobra_lista(L), L != [] = L1 =>
 
 \begin{frame}[c,allowframebreaks,fragile]{Exemplos}
     
-    \begin{block}{Condicionais}
+    \begin{exampleblock}{Condicionais}
+    
         \begin{lstlisting}[frame=single]
 main =>
     X = read_int(),
@@ -648,13 +646,13 @@ main =>
 .
         \end{lstlisting}
     
-    \end{block}
+    \end{exampleblock}
     
     \framebreak
     
-    \begin{block}{Repetições}
+    \begin{exampleblock}{Repetições}
     
-   \begin{lstlisting}[frame=single]
+        \begin{lstlisting}[frame=single]
 main =>
     X = read_int(),
     println(x=X),
@@ -663,9 +661,9 @@ main =>
         println(x=X)
     end
 .
-   \end{lstlisting}
+        \end{lstlisting}
         
-   \begin{lstlisting}[frame=single]
+        \begin{lstlisting}[frame=single]
 main =>
     X = read_int(),
     Y = X..X*3,
@@ -674,11 +672,11 @@ main =>
     end.
         \end{lstlisting}
     
-    \end{block}
+    \end{exampleblock}
     
     \framebreak
     
-    \begin{block}{Compreensão de Listas}
+    \begin{exampleblock}{Compreensão de Listas}
        
        \begin{lstlisting}[frame=single]
 main => 
@@ -696,31 +694,8 @@ main =>
 .
        \end{lstlisting} 
        
-    \end{block}
+    \end{exampleblock}
     
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[fragile]
-\frametitle{Reflexões}
-
-\begin{itemize}
-
-
-  \item Este  conteúdo trata da sintaxe do Picat
-  
-    \pause
-  \item Embora sua sintaxe não seja muito extensa, ela precisa 
-  ser pratica
-  
-    \pause
-  \item Como este conteúdo se assemelha as LPs clássicas, como exercício,
-  voce está apto a fazer alguns algoritmos de outras linguagens.
-  
-      \pause
-  \item Mãos a obra!
- 
-\end{itemize}
-
-\end{frame}

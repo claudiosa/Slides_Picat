@@ -106,11 +106,11 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 	\end{itemize} 
 
 	  \pause 
-	\begin{exampleblock}{Exemplos}
+	\begin{block}{Exemplos}
 		\begin{verbatim}
 		x   x_1   '_'   '\\'   'a\'b\n'   '_ab'   '$%'
 		\end{verbatim}
-	\end{exampleblock}
+	\end{block}
 	
 \end{frame}
 
@@ -131,7 +131,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 		
 	\end{itemize}
 	
-	\begin{exampleblock}{Exemplos}
+	\begin{block}{Exemplos}
 		\begin{tabbing}
 			aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
 			\> \texttt{12\_345} \> \> \> 12345 em notação decimal, usando \_ como separador \\
@@ -139,7 +139,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 			\> \texttt{0o73} \> \> \>  59 em notação octal \\
 			\> \texttt{0xf7} \> \> \>  247 em notação hexadecimal  
 		\end{tabbing}
-	\end{exampleblock}
+	\end{block}
 
 \textcolor{red}{O \textbf{underscore} é ignorado pelo compilador e o interpretador.}
 
@@ -154,11 +154,11 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 		fração ou um expoente. Isso é necessário para distinguir um número real de um número inteiro.
 	\end{itemize}
 	
-	\begin{exampleblock}{Exemplos}
+	\begin{block}{Exemplos}
 		\begin{verbatim}
 		12.345   0.123   12-e10   0.12E10
 		\end{verbatim}
-	\end{exampleblock}
+	\end{block}
 	
 \end{frame}
 
@@ -193,9 +193,9 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 	armazenado na memória, sendo necessário recalcular sempre que necessário seu uso. Listas são 
 	encapsuladas por colchetes.
 	
-	\begin{exampleblock}{Exemplos}
+	\begin{block}{Exemplos}
 		[1,2,3,4,5] \: [a,b,32,1.5,aaac] \: ["string",14,22]
-	\end{exampleblock}
+	\end{block}
 
 \textcolor{red}{Há uma seção dedicada a esta poderosa  estrutura de dados!}
 	
@@ -210,9 +210,9 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 	sequência de carácteres encapsulados por aspas duplas, ou como uma sequência de carácteres dentro 
 	colchetes separados por vírgulas.
 	
-	\begin{exampleblock}{Exemplos}
+	\begin{block}{Exemplos}
 		"Hello" \: "World!" \: "\textbackslash n" \: [o,l,a,"\:",m,u,n,d,o] 
-	\end{exampleblock}
+	\end{block}
 	
 \end{frame}
 
@@ -229,9 +229,9 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 
 	\end{itemize}
 	
-	\begin{exampleblock}{Exemplos}
+	\begin{block}{Exemplos}
 		(1,2,3,4,5) \: (a,b,32,1.5,aaac) \: ("string",14,22)
-	\end{exampleblock}
+	\end{block}
 	
 	\textcolor{red}{Em geral, usamos as tuplas dentro de listas.}
 \end{frame}
@@ -251,9 +251,9 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 	Onde \textit{`s'} é um átomo que denomina a estrutura, cada 
 	\textit{`$t_i$'} é um de seus termos, e \textit{`n'} é a aridade ou tamanho da estrutura.
 	
-	\begin{exampleblock}{Exemplo}
+	\begin{block}{Exemplo}
 		\$ponto(1,2) \: \$pessoa(jose, "123.456.789.00", "1.234.567")
-	\end{exampleblock}
+	\end{block}
 	
 	\pause
 	\textbf{\textcolor{red}{Temos 4 outras estruturas  que não usam o símbolo \$, são elas:}}
@@ -282,9 +282,9 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 	 \end{itemize} 
 
 	
-	\begin{exampleblock}{Exemplos}
+	\begin{block}{Exemplos}
 		\{1,2,3,4,5\} \: \{a,b,32,1.5,aaac\} \: \{"string",14,22\}
-	\end{exampleblock}
+	\end{block}
 	
 \end{frame}
 
@@ -408,7 +408,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 
 \begin{frame}[fragile]
 	
-	\begin{exampleblock}{Exemplo}
+	\begin{block}{Exemplo}
 		
 		\begin{verbatim}
 		Picat> X = 1
@@ -430,7 +430,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 %		verifica se um termo ocorre dentro de um padrão. Isso cria um termo cíclico que não pode ser
 %		acessado. % Algo muito ruim
 		
-	\end{exampleblock}
+	\end{block}
 	
 \end{frame}
 
@@ -463,7 +463,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 
 \begin{frame}[fragile]
 	
-	\begin{exampleblock}{Exemplo}
+	\begin{block}{Exemplo}
 
 		\begin{verbatim}
 		test => X = 0, X := X + 1,  X := X + 2, write(X).
@@ -483,7 +483,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 	  
 		\end{itemize}
 			
-	\end{exampleblock}
+	\end{block}
 	
 \end{frame}
 	
@@ -491,7 +491,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 	
 \begin{frame}[fragile]
 	
-	\begin{exampleblock}{Exemplo}
+	\begin{block}{Exemplo}
 
 	
 		Portanto, estas atribuições sucessivas são compiladas como:
@@ -500,7 +500,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 		test => X = 0, X1 = X + 1, X2 = X1 + 2, write(X2).
 		\end{verbatim} 
 		
-	\end{exampleblock}
+	\end{block}
 	
 \end{frame}
 
@@ -510,7 +510,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 
 \begin{frame}[fragile]
 	
-	\begin{exampleblock}{Exemplos de Variáveis Válidas}
+	\begin{block}{Exemplos de Variáveis Válidas}
 		
 		\begin{center}
 			\begin{tabular}{c|c|c}\hline
@@ -520,9 +520,9 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 			\end{tabular}
 		\end{center}
 		
-		Relembrando, um nome de variável é válido se começa com letra \textbf{maiúscula} ou \textbf{\_}
+	$\Rightarrow $	Relembrando, um nome de variável é válido se começa com letra \textbf{maiúscula} ou \textbf{\_}
 		
-	\end{exampleblock}
+	\end{block}
 	
 \end{frame}
 
@@ -530,7 +530,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 
 \begin{frame}[fragile]
 	
-	\begin{exampleblock}{Exemplos de Variáveis Inválidas}
+	\begin{block}{Exemplos de Variáveis Inválidas}
 		
 		\begin{center}
 			\begin{tabular}{c|c|c}\hline
@@ -543,7 +543,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 		%Relembrando, um nome de variável é inválido se começa com números ou símbolos que não sejam 
 		%\_ ou letra minúscula
 		
-	\end{exampleblock}
+	\end{block}
 	
 \end{frame}
 
@@ -558,7 +558,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 	\label{Operadores Aritméticos}
 		\caption{Operadores Aritméticos em Ordem de Precedência}
 		\begin{center}
-			\begin{tabular}{ c|c } \hline
+			\begin{tabular}{ p{2cm}| p{5cm} } \hline
 				\texttt{$X$ ** $Y$}  &   Potenciação \\ \hline 
 				\texttt{$X$ * $Y$} &     Multiplicação \\ \hline 
 				\texttt{$X$ / $Y$} &     Divisão, resulta em um real \\ \hline 
@@ -572,7 +572,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 			\end{tabular}
 		\end{center}
 	\end{table}
-	\textcolor{red}{REDIMENSIONAR}
+
 	\end{small}
 
 \end{frame}
@@ -586,8 +586,8 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 	\begin{table}
 		\caption{Tabela de Operadores Completa em Ordem de Precedência}
 		\begin{center}
-			\begin{tabular}{ c|c } \hline
-				Operadores Aritméticos & Ver Tabela \ref{Operadores Aritméticos}\\ \hline
+			\begin{tabular}{ p{2cm}| p{5cm} } \hline
+				Ops Aritméticos & Ver Tabela \ref{Operadores Aritméticos}\\ \hline
 				\verb-++-  & Concatenação de Listas/Vetores \\ \hline 
 				\verb+=+  \verb+:=+  & Unificação e Atribuição\\ \hline
 				\verb+==+ \verb+=:=+ & Equivalência e Equivalência Numérica\\ \hline
@@ -614,28 +614,41 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 
     \frametitle{Operadores Especiais -- I}
     
-    \begin{block}{Operadores de Termos Não Compostos}
+    \begin{block}{Operadores de Termos Não-Compostos}
 
-		\begin{enumerate}
-    
-            \item \textbf{Equivalência}(\verb+==+): Compara se dois termos são iguais.\\No caso de termos
+		\begin{itemize}
+	
+	
+          \item \textbf{Equivalência}(\verb+==+): compara se dois termos são iguais.\\No caso de termos
             compostos, eles são ditos equivalentes se todos os termos contidos em si são equivalentes. O 
-            compilador considera termos de tipos diferentes como totalmente diferentes, portanto a   comparação 
-            $1.0 == 1$ seria avaliada como falsa, mesmo que os valores sejam iguais. Nesses casos, usa-se a 
-            \emph{Equivalência Numérica}.
+            compilador considera termos de tipos diferentes como totalmente diferentes, portanto a   comparação  $1.0 == 1$ seria avaliada como falsa, mesmo que os valores sejam iguais. Nesses casos, usa-se a  \emph{Equivalência Numérica}.
 
+      \pause
             \item \textbf{Equivalência Numérica}(\verb+=:=+): Compara se dois números são o mesmo valor.
-            Não deve ser usada com termos que não são números.
+            Deve ser usada com termos que sejam números.
 
-            \item \textbf{Diferença}(\verb+!==+): Compara se dois termos são diferentes.\\Mesmo que a negação da 
-            equivalência.
-
-            \item \textbf{Não Unificável}(\verb+!=+): Verifica se dois termos não são unificáveis. Termos são 
-            ditos unificáveis se são idênticos ou podem ser tornados idênticos instanciando variáveis destes 
-            termos.
-    	\end{enumerate}
+  	\end{itemize}
     \end{block}
+     %%% \verb+!=+ ...\verb!!=! ....
+
+\end{frame}
+
+\begin{frame}[fragile]
+
+    \frametitle{Operadores Especiais -- I}
     
+    \begin{block}{Operadores de Termos Não-Compostos}
+
+		\begin{itemize}
+
+    \item \textbf{Diferença}(\verb+!==+): compara se dois termos são diferentes, isto é, a negação da  equivalência.
+
+      \pause
+            \item \textbf{Não-Unificável}(\verb+!=+): Verifica se dois termos não são unificáveis. Termos são  ditos unificáveis se são idênticos ou podem ser tornados idênticos instanciando variáveis destes 
+            termos.
+	\end{itemize}
+    \end{block}
+     %%% \verb+!=+ ...\verb!!=! ....
 
 \end{frame}
 %%%%%%%%%NOVO FRAME
@@ -645,32 +658,28 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 
 \frametitle{Operadores Especiais -- II}
     
-	\begin{exampleblock}{Exemplos}
+	\begin{block}{Exemplos}
     	
     	\begin{enumerate}
     	
           \item $a\:$==$\:a$, \: $[1,2,3]\:$==$\:[1,2,3]$, \: $Var1\:$==$\:Var2$\\
           \pause
-          $yes$, $yes$, Depende dos Valores (padrão $no$)
-          \medskip
-          \pause
+          $yes$, $yes$, Depende dos valores (padrão $no$)
           
+          \pause
           \item $1.0\:$==$\:1$\\
           \pause
           $no$
-          \medskip
-          \pause
           
+          \pause
           \item $1.0\:$=:=$\:1$, \: $1.2\:$=:=$\:1$\\
           \pause
           $yes$, $no$
-          \medskip
+          
           \pause
-
           \item $1.0\:$!==$\:1$, \: $Var3\:$!==$\:Var4$\\
           \pause
-          $yes$, Depende dos Valores (padrão $yes$)
-          \medskip
+          $yes$, Depende dos valores (padrão $yes$)
           \pause
 
           \item $1.0\:$!=$\:1$, \: aa\:$!=$\:bb, \: $Var1\:$!=$\:Var5$\\
@@ -678,7 +687,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
           $yes$, $yes$, $no$
           
         \end{enumerate}
-	\end{exampleblock}
+	\end{block}
 
 
 \end{frame}
@@ -686,29 +695,51 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 %%%%%%%%%NOVO FRAME
 
 \begin{frame}[fragile]
-\frametitle{Operadores de Termos Compostos}
+\frametitle{Alguns Operadores de Termos Compostos}
         
     \begin{block}{}
     	
-    	\begin{enumerate}
+	\begin{itemize}
         
-            \item \textbf{Concatenação}\/ (\verb!++!): concatena duas listas ou vetores, tornando o primeiro termo 
-            da segunda lista no termo seguinte ao último termo da primeira lista.
+    \item \textbf{Concatenação}\/ (\verb!++!): concatena duas listas ou vetores. O termo da esquerda
+    é a primeira parte lista  e a segundo a parte final da lista resultante.
+    %, tornando o primeiro termo 
+    %        da segunda lista no termo seguinte ao último termo da primeira lista.
 
-            \item \textbf{Separador}\/ (\verb!H | T!): separa uma lista \emph{L} em seu primeiro termo \emph{H}, 
-            chamado de cabeça (em inglês \textit{Head}), e o resto da lista \emph{T}, chamado de cauda (em inglês \textit{Tail}).
+    \pause
+     \item \textbf{Separador}\/ (\verb!H | T!): separa uma lista \emph{L} em seu primeiro termo \emph{H},  chamado de \textit{cabeça} (em inglês \textit{Head}), e o resto da lista \emph{T}, chamado de \textit{cauda} (em inglês \textit{Tail}).
 
-            \item \textbf{Iterador}\/ (\verb!X in L!): itera pelo termo composto \emph{L}, instanciando um termo
-            não composto \emph{X} aos termos contidos em \emph{L}. Bastante utilizado para iterar por listas.
-	%iterador
-            \item \textbf{Sequência }\/ (\verb!Inicio..Passo..Fim!): Gera uma lista ou vetor, começando 
-            (inclusivamente) em \textit{Inicio} incrementando por \textit{Passo} e parando (inclusivamente) em 
-            \textit{Fim}. Se \textit{Passo} for omitido, é automaticamente atribuído 1. Se usado dentro do 
-            índice de uma lista ou vetor resultará na porção da lista dentro deste intervalo.
-            
-    	\end{enumerate}
+    
+	\end{itemize}
         
     \end{block}
+    
+    \textcolor{red}{Na seção  de listas este assunto é retomado}
+    
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Alguns Operadores de Termos Compostos}
+        
+    \begin{block}{}
+    	
+	\begin{itemize}
+        
+  \item \textbf{Iterador}\/ (\verb!X in L!): itera \textit{X} no termo composto \textit{L}, instanciando um termo   não-composto \emph{X} aos termos contidos em \emph{L}.
+  %. Bastante utilizado para iterar por listas.
+	%iterador
+	\pause
+            \item \textbf{Sequência }\/ (\verb!Inicio..Passo..Fim!): gera uma lista ou vetor, começando 
+            (inclusivamente) em \textit{Inicio} incrementando por \textit{Passo} e parando (inclusivamente) em \textit{Fim}. Se \textit{Passo} for omitido, este é automaticamente atribuído 1. 
+            %Se usado dentro do  índice de uma lista ou vetor resultará na porção da lista dentro deste intervalo.
+            
+	\end{itemize}
+        
+    \end{block}
+    
+    \textcolor{red}{Na seção  de listas este assunto é retomado}
     
 \end{frame}
 
@@ -716,28 +747,26 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 \begin{frame}[fragile]
 \frametitle{Operadores de Termos Compostos -- Exemplos}
 
-    \begin{exampleblock}{}
+    \begin{block}{}
 		
         \begin{enumerate}
         
 			\item $[1,2,3]$\:$++$\:$[4,5,6]$, \: $[]$\:$++$\:$[1,2,3]$, \: $[]$\:$++$\:$[]$\\
             \pause
             $[1,2,3,4,5,6]$, \:$[1,2,3]$, \:$[]$
-            \medskip
+
             \pause
-            
             \item $L = [1,2,3]$,\:\:$[H|T] = L$\\
             \pause
             $L = [1,2,3]$\\ \pause
             $H = 1$\\ \pause
             $T = [2,3]$
-            \medskip
-            \pause
             
+            \pause
             \item $foreach(X\:in\:[1,2,3])$\:\:$printf("\%w\:",X)$\:\:$end$\\
             \pause
             $1$ $2$ $3$
-            \medskip
+
             \pause
             \item $X\:=\:1..10$,\:\:$Y\:=\:0..2..20$,\:\:$Z\:=\:10..-1..1$\\
             
@@ -746,13 +775,33 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
             
             \pause
             $Y = [0,2,4,6,8,10,12,14,16,18,20]$\\
-             \pause
+            \pause
             $Z = [10,9,8,7,6,5,4,3,2,1]$
             
 		\end{enumerate}
         
-	\end{exampleblock}
+	\end{block}
     
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Reflexões}
+
+\begin{itemize}
+
+
+  \item O conteúdo desta parte do curso pode ser complementado
+  com a   \textbf{Videoaula 02: Tipos de Dados do PICAT}\\
+    \textbf{\url {https://www.youtube.com/watch?v=7fPKPd0ZDnc}} 
+
+%      \pause
+%      \item Para próxima seção esteja com o Picat instalado em seu 
+%      computador para um melhor aproveitamento.
+   % \pause
+  %\item 
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

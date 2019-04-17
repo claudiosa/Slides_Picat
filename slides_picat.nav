@@ -4,107 +4,87 @@
 \headcommand {\beamer@framepages {2}{2}}
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\sectionentry {1}{Tipos de Dados e Vari\IeC {\'a}veis}{3}{Tipos de Dados e Vari\IeC {\'a}veis}{0}}
-\headcommand {\slideentry {1}{0}{1}{3/6}{}{0}}
-\headcommand {\beamer@framepages {3}{6}}
-\headcommand {\slideentry {1}{0}{2}{7/9}{}{0}}
-\headcommand {\beamer@framepages {7}{9}}
-\headcommand {\beamer@subsectionpages {3}{9}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{10}{Tipos de Dados}}
-\headcommand {\slideentry {1}{1}{1}{10/10}{Tipos de Dados}{0}}
-\headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {1}{1}{2}{11/12}{Tipos de Dados}{0}}
-\headcommand {\beamer@framepages {11}{12}}
-\headcommand {\slideentry {1}{1}{3}{13/14}{Tipos de Dados}{0}}
-\headcommand {\beamer@framepages {13}{14}}
-\headcommand {\slideentry {1}{1}{4}{15/15}{Tipos de Dados}{0}}
-\headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {1}{1}{4}{15/16}{Tipos de Dados}{0}}
-\headcommand {\beamer@framepages {15}{16}}
-\headcommand {\slideentry {1}{1}{5}{17/19}{Tipos de Dados}{0}}
+\headcommand {\sectionentry {1}{Predicados e Fun\IeC {\c c}\IeC {\~o}es}{3}{Predicados e Fun\IeC {\c c}\IeC {\~o}es}{0}}
+\headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\slideentry {1}{0}{1}{3/4}{}{0}}
+\headcommand {\beamer@framepages {3}{4}}
+\headcommand {\slideentry {1}{0}{1}{3/5}{}{0}}
+\headcommand {\beamer@framepages {3}{5}}
+\headcommand {\beamer@subsectionpages {3}{5}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{6}{Casamento de Padr\IeC {\~o}es}}
+\headcommand {\slideentry {1}{1}{1}{6/6}{Casamento de Padr\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\slideentry {1}{1}{1}{6/7}{Casamento de Padr\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {6}{7}}
+\headcommand {\slideentry {1}{1}{2}{8/12}{Casamento de Padr\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {8}{12}}
+\headcommand {\slideentry {1}{1}{3}{13/13}{Casamento de Padr\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\beamer@subsectionpages {6}{13}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{14}{Predicados}}
+\headcommand {\slideentry {1}{2}{1}{14/14}{Predicados}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {1}{2}{1}{14/15}{Predicados}{0}}
+\headcommand {\beamer@framepages {14}{15}}
+\headcommand {\slideentry {1}{2}{1}{14/16}{Predicados}{0}}
+\headcommand {\beamer@framepages {14}{16}}
+\headcommand {\slideentry {1}{2}{2}{17/17}{Predicados}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\slideentry {1}{2}{2}{17/18}{Predicados}{0}}
+\headcommand {\beamer@framepages {17}{18}}
+\headcommand {\slideentry {1}{2}{2}{17/19}{Predicados}{0}}
 \headcommand {\beamer@framepages {17}{19}}
-\headcommand {\slideentry {1}{1}{6}{20/20}{Tipos de Dados}{0}}
+\headcommand {\beamer@subsectionpages {14}{19}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{20}{Fun\IeC {\c c}\IeC {\~o}es}}
+\headcommand {\slideentry {1}{3}{1}{20/20}{Fun\IeC {\c c}\IeC {\~o}es}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {1}{1}{7}{21/21}{Tipos de Dados}{0}}
-\headcommand {\beamer@framepages {21}{21}}
-\headcommand {\slideentry {1}{1}{8}{22/22}{Tipos de Dados}{0}}
-\headcommand {\beamer@framepages {22}{22}}
-\headcommand {\slideentry {1}{1}{9}{23/24}{Tipos de Dados}{0}}
+\headcommand {\slideentry {1}{3}{1}{20/21}{Fun\IeC {\c c}\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {20}{21}}
+\headcommand {\slideentry {1}{3}{1}{20/22}{Fun\IeC {\c c}\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {20}{22}}
+\headcommand {\beamer@subsectionpages {20}{22}}
+\headcommand {\beamer@subsectionentry {0}{1}{4}{23}{Exemplos}}
+\headcommand {\slideentry {1}{4}{1}{23/23}{Exemplos}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {1}{4}{1}{23/24}{Exemplos}{0}}
 \headcommand {\beamer@framepages {23}{24}}
-\headcommand {\slideentry {1}{1}{10}{25/26}{Tipos de Dados}{0}}
-\headcommand {\beamer@framepages {25}{26}}
-\headcommand {\slideentry {1}{1}{11}{27/27}{Tipos de Dados}{0}}
-\headcommand {\beamer@framepages {27}{27}}
-\headcommand {\beamer@subsectionpages {10}{27}}
-\headcommand {\beamer@subsectionentry {0}{1}{2}{28}{Vari\IeC {\'a}veis}}
-\headcommand {\slideentry {1}{2}{1}{28/28}{Vari\IeC {\'a}veis}{0}}
-\headcommand {\beamer@framepages {28}{28}}
-\headcommand {\slideentry {1}{2}{1}{28/29}{Vari\IeC {\'a}veis}{0}}
-\headcommand {\beamer@framepages {28}{29}}
-\headcommand {\beamer@subsectionpages {28}{29}}
-\headcommand {\beamer@subsectionentry {0}{1}{3}{30}{Unifica\IeC {\c c}\IeC {\~a}o e Atribui\IeC {\c c}\IeC {\~a}o}}
-\headcommand {\slideentry {1}{3}{1}{30/31}{Unifica\IeC {\c c}\IeC {\~a}o e Atribui\IeC {\c c}\IeC {\~a}o}{0}}
-\headcommand {\beamer@framepages {30}{31}}
-\headcommand {\slideentry {1}{3}{2}{32/35}{Unifica\IeC {\c c}\IeC {\~a}o e Atribui\IeC {\c c}\IeC {\~a}o}{0}}
-\headcommand {\beamer@framepages {32}{35}}
-\headcommand {\slideentry {1}{3}{3}{36/36}{Unifica\IeC {\c c}\IeC {\~a}o e Atribui\IeC {\c c}\IeC {\~a}o}{0}}
+\headcommand {\slideentry {1}{4}{1}{23/25}{Exemplos}{0}}
+\headcommand {\beamer@framepages {23}{25}}
+\headcommand {\beamer@subsectionpages {23}{25}}
+\headcommand {\beamer@subsectionentry {0}{1}{5}{26}{Condicionais e Repeti\IeC {\c c}\IeC {\~o}es}}
+\headcommand {\slideentry {1}{5}{1}{26/26}{Condicionais e Repeti\IeC {\c c}\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\slideentry {1}{5}{1}{26/27}{Condicionais e Repeti\IeC {\c c}\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {26}{27}}
+\headcommand {\slideentry {1}{5}{1}{26/28}{Condicionais e Repeti\IeC {\c c}\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {26}{28}}
+\headcommand {\slideentry {1}{5}{1}{26/29}{Condicionais e Repeti\IeC {\c c}\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {26}{29}}
+\headcommand {\slideentry {1}{5}{1}{26/30}{Condicionais e Repeti\IeC {\c c}\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {26}{30}}
+\headcommand {\slideentry {1}{5}{2}{31/31}{Condicionais e Repeti\IeC {\c c}\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\slideentry {1}{5}{2}{31/32}{Condicionais e Repeti\IeC {\c c}\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {31}{32}}
+\headcommand {\slideentry {1}{5}{2}{31/33}{Condicionais e Repeti\IeC {\c c}\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {31}{33}}
+\headcommand {\slideentry {1}{5}{2}{31/34}{Condicionais e Repeti\IeC {\c c}\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {31}{34}}
+\headcommand {\slideentry {1}{5}{2}{31/35}{Condicionais e Repeti\IeC {\c c}\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {31}{35}}
+\headcommand {\slideentry {1}{5}{3}{36/36}{Condicionais e Repeti\IeC {\c c}\IeC {\~o}es}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {1}{3}{4}{37/40}{Unifica\IeC {\c c}\IeC {\~a}o e Atribui\IeC {\c c}\IeC {\~a}o}{0}}
-\headcommand {\beamer@framepages {37}{40}}
-\headcommand {\slideentry {1}{3}{5}{41/42}{Unifica\IeC {\c c}\IeC {\~a}o e Atribui\IeC {\c c}\IeC {\~a}o}{0}}
-\headcommand {\beamer@framepages {41}{42}}
-\headcommand {\slideentry {1}{3}{6}{43/43}{Unifica\IeC {\c c}\IeC {\~a}o e Atribui\IeC {\c c}\IeC {\~a}o}{0}}
-\headcommand {\beamer@framepages {43}{43}}
-\headcommand {\slideentry {1}{3}{7}{44/44}{Unifica\IeC {\c c}\IeC {\~a}o e Atribui\IeC {\c c}\IeC {\~a}o}{0}}
-\headcommand {\beamer@framepages {44}{44}}
-\headcommand {\beamer@subsectionpages {30}{44}}
-\headcommand {\beamer@subsectionentry {0}{1}{4}{45}{Tabela de Operadores}}
-\headcommand {\slideentry {1}{4}{1}{45/45}{Tabela de Operadores}{0}}
-\headcommand {\beamer@framepages {45}{45}}
-\headcommand {\slideentry {1}{4}{2}{46/46}{Tabela de Operadores}{0}}
-\headcommand {\beamer@framepages {46}{46}}
-\headcommand {\beamer@subsubsectionentry {0}{1}{4}{1}{47}{Operadores Especiais}}
-\headcommand {\slideentry {1}{4}{3}{47/47}{Tabela de Operadores}{0}}
-\headcommand {\beamer@framepages {47}{47}}
-\headcommand {\slideentry {1}{4}{3}{47/48}{Tabela de Operadores}{0}}
-\headcommand {\beamer@framepages {47}{48}}
-\headcommand {\beamer@sectionpages {3}{48}}
-\headcommand {\beamer@subsectionpages {45}{48}}
-\headcommand {\sectionentry {2}{Programa\IeC {\c c}\IeC {\~a}o por Restri\IeC {\c c}\IeC {\~o}es}{49}{Programa\IeC {\c c}\IeC {\~a}o por Restri\IeC {\c c}\IeC {\~o}es}{0}}
-\headcommand {\slideentry {2}{0}{1}{49/51}{}{0}}
-\headcommand {\beamer@framepages {49}{51}}
-\headcommand {\slideentry {2}{0}{2}{52/55}{}{0}}
-\headcommand {\beamer@framepages {52}{55}}
-\headcommand {\slideentry {2}{0}{3}{56/59}{}{0}}
-\headcommand {\beamer@framepages {56}{59}}
-\headcommand {\slideentry {2}{0}{4}{60/60}{}{0}}
-\headcommand {\beamer@framepages {60}{60}}
-\headcommand {\slideentry {2}{0}{5}{61/61}{}{0}}
-\headcommand {\beamer@framepages {61}{61}}
-\headcommand {\slideentry {2}{0}{6}{62/62}{}{0}}
-\headcommand {\beamer@framepages {62}{62}}
-\headcommand {\slideentry {2}{0}{7}{63/63}{}{0}}
-\headcommand {\beamer@framepages {63}{63}}
-\headcommand {\slideentry {2}{0}{8}{64/65}{}{0}}
-\headcommand {\beamer@framepages {64}{65}}
-\headcommand {\slideentry {2}{0}{9}{66/69}{}{0}}
-\headcommand {\beamer@framepages {66}{69}}
-\headcommand {\slideentry {2}{0}{10}{70/70}{}{0}}
-\headcommand {\beamer@framepages {70}{70}}
-\headcommand {\slideentry {2}{0}{11}{71/71}{}{0}}
-\headcommand {\beamer@framepages {71}{71}}
-\headcommand {\slideentry {2}{0}{12}{72/72}{}{0}}
-\headcommand {\beamer@framepages {72}{72}}
-\headcommand {\slideentry {2}{0}{13}{73/73}{}{0}}
-\headcommand {\beamer@framepages {73}{73}}
-\headcommand {\slideentry {2}{0}{14}{74/74}{}{0}}
-\headcommand {\beamer@framepages {74}{74}}
-\headcommand {\slideentry {2}{0}{15}{75/75}{}{0}}
-\headcommand {\beamer@framepages {75}{75}}
-\headcommand {\slideentry {2}{0}{16}{76/78}{}{0}}
-\headcommand {\beamer@framepages {76}{78}}
-\headcommand {\beamer@partpages {1}{78}}
-\headcommand {\beamer@subsectionpages {49}{78}}
-\headcommand {\beamer@sectionpages {49}{78}}
-\headcommand {\beamer@documentpages {78}}
-\headcommand {\gdef \inserttotalframenumber {45}}
+\headcommand {\slideentry {1}{5}{4}{37/37}{Condicionais e Repeti\IeC {\c c}\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {37}{37}}
+\headcommand {\slideentry {1}{5}{5}{38/38}{Condicionais e Repeti\IeC {\c c}\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {38}{38}}
+\headcommand {\slideentry {1}{5}{5}{38/39}{Condicionais e Repeti\IeC {\c c}\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {38}{39}}
+\headcommand {\slideentry {1}{5}{5}{38/40}{Condicionais e Repeti\IeC {\c c}\IeC {\~o}es}{0}}
+\headcommand {\beamer@framepages {38}{40}}
+\headcommand {\beamer@partpages {1}{40}}
+\headcommand {\beamer@subsectionpages {26}{40}}
+\headcommand {\beamer@sectionpages {3}{40}}
+\headcommand {\beamer@documentpages {40}}
+\headcommand {\gdef \inserttotalframenumber {36}}
