@@ -3,18 +3,23 @@
 \begin{itemize}
 
 
-  \item Este  conteúdo trata da sintaxe do Picat
+  \item Esta seção  trata da sintaxe do Picat
 
     \pause
   \item Embora sua sintaxe não seja muito extensa, ela precisa
-  ser pratica
+  ser praticada
 
     \pause
   \item Como este conteúdo se assemelha as LPs clássicas, como exercício,
   voce está apto a fazer alguns algoritmos de outras linguagens.
 
-      \pause
-  \item Mãos a obra!
+  \pause
+  \item Se antes o Prolog era complicado, com Picat,
+  tudo ficou análogo a Python e a linguagem C
+
+
+  \pause
+  \item Mãos à obra!
 
 \end{itemize}
 
