@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.2.25)  17 APR 2019 18:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.2.25)  18 APR 2019 11:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1781,7 +1781,7 @@ line 168.
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-Overfull \vbox (20.0887pt too high) detected at line 168
+Overfull \vbox (10.41487pt too high) detected at line 168
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -1830,50 +1830,32 @@ Missing character: There is no ç in font cmss10!
 \openout4 = `slides_picat.vrb'.
 
 
-(./slides_picat.vrb)
-Overfull \vbox (5.15126pt too high) detected at line 163
- []
+(./slides_picat.vrb) [8
 
-[8
+] (./slides_picat.vrb) [9
 
-] (./slides_picat.vrb)
-Overfull \vbox (5.15126pt too high) detected at line 163
- []
+] (./slides_picat.vrb) [10
 
-[9
+]
+(./slides_picat.vrb) [11
 
-] (./slides_picat.vrb)
-Overfull \vbox (5.15126pt too high) detected at line 163
- []
-
-[10
-
-] (./slides_picat.vrb)
-Overfull \vbox (5.15126pt too high) detected at line 163
- []
-
-[11
-
-] (./slides_picat.vrb)
-Overfull \vbox (5.15126pt too high) detected at line 163
- []
-
-[12
+] (./slides_picat.vrb) [12
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [13
+ (./slides_picat.vrb)
+[13
 
 ] (./slides_picat.vrb) [14
 
-] (./slides_picat.vrb)
-[15
+] (./slides_picat.vrb) [15
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [16
+ (./slides_picat.vrb)
+[16
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -1910,47 +1892,10 @@ Missing character: There is no ç in font cmss10!
 
 
 ]
-Runaway argument?
- index (+,+,+) (+,+, -) (-,+,-) (-,-,+) (-,-, +) (+,-,+) (+,+,-) (-,-\ETC.
-! Paragraph ended before \@xverbatim was complete.
-<to be read again> 
-                   \par 
-l.356 \end{frame}
-                 
-? r
-OK, entering \nonstopmode...
+\openout4 = `slides_picat.vrb'.
 
-Overfull \hbox (54.87169pt too wide) in paragraph at lines 356--356
-[]\T1/cmtt/m/n/10 and2(true,true,true). and2(true,false,false). and2(false,true
-,false).
- []
-
-! Undefined control sequence.
-<argument> \csname system@active"\endcsname \n 
-                                               
-l.356 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> \csname system@active"\endcsname \n 
-                                               
-l.356 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (18.13066pt too wide) in paragraph at lines 356--356
-[]\T1/cmtt/m/n/10 main ?=> and2(X,Y,Z), printf("X: fail. main => println("FIM")
-.[] 
+ (./slides_picat.vrb)
+Overfull \vbox (27.12715pt too high) detected at line 356
  []
 
 [24
@@ -1960,67 +1905,87 @@ Overfull \hbox (18.13066pt too wide) in paragraph at lines 356--356
 
  (./slides_picat.vrb) [25
 
-] [26
+] (./slides_picat.vrb) [26
 
+]
+\openout4 = `slides_picat.vrb'.
 
-] [27
+ (./slides_picat.vrb)
+[27
 
+] (./slides_picat.vrb) [28
+
+] (./slides_picat.vrb) [29
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+[30
 
 ]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 5.
-
-Overfull \hbox (24.13217pt too wide) in paragraph at lines 15--16
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][] 
- []
-
-) [28
-
-] [29
-
-
-] [30
-
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 6.
+) [31
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [31
-
-] [32
-
-
-] [33
-
-
-] [34
-
-
-] [35
-
-
-] [36
-
-] [37
-
+ (./slides_picat.vrb) [32
 
 ]
-[38
+\openout4 = `slides_picat.vrb'.
 
+ (./slides_picat.vrb)
+[33
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb) [34
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb) [35
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+[36
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb) [37
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb) [38
 
 ] [39
-
 
 ] [40
 
 
 ] [41
 
-] [42
+
+]
+[42
+
+
+] [43
+
+
+] [44
+
+] [45
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -2032,29 +1997,29 @@ Overfull \hbox (8.83577pt too wide) in paragraph at lines 59--60
 [][][][][][][][][][][][][] 
  []
 
-) [43
+) [46
 
-] [44
+] [47
 
 
 ]
-Overfull \vbox (199.77132pt too high) detected at line 798
+Overfull \vbox (190.09749pt too high) detected at line 854
  []
 
-[45
+[48
 
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [46
+ (./slides_picat.vrb) [49
 
-] (./slides_picat.vrb) [47
+] (./slides_picat.vrb) [50
 
 ] (./slides_picat.vrb)
-[48
+[51
 
-] (./slides_picat.vrb) [49
+] (./slides_picat.vrb) [52
 
 ])
 \tf@nav=\write7
@@ -2079,21 +2044,21 @@ Package rerunfilecheck Warning: File `slides_picat.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `slides_picat.out':
-(rerunfilecheck)             Before: 9FC17FC1A48A0E1AEDB0BF76DC2FE4A5;133
-(rerunfilecheck)             After:  A30446A0F702DD2C19AEB31644DCB9E4;395.
+(rerunfilecheck)             Before: AC010A63FC76C311C3873B1337323F6C;256
+(rerunfilecheck)             After:  3F3C736BB949F7352975169CC3F184A9;395.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.74pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 31224 strings out of 492616
- 580767 string characters out of 6135177
- 978222 words of memory out of 5000000
- 34438 multiletter control sequences out of 15000+600000
+ 31217 strings out of 492616
+ 580932 string characters out of 6135177
+ 972222 words of memory out of 5000000
+ 34401 multiletter control sequences out of 15000+600000
  562636 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,19n,70p,779b,1524s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,19n,70p,779b,1509s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/
@@ -2119,10 +2084,10 @@ public/cm-super/sfsx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
 /usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texm
 f-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/ty
 pe1/public/cm-super/sftt1440.pfb>
-Output written on slides_picat.pdf (49 pages, 513642 bytes).
+Output written on slides_picat.pdf (52 pages, 511639 bytes).
 PDF statistics:
- 3192 PDF objects out of 3580 (max. 8388607)
- 3039 compressed objects within 31 object streams
- 105 named destinations out of 1000 (max. 500000)
- 65 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2525 PDF objects out of 2984 (max. 8388607)
+ 2392 compressed objects within 24 object streams
+ 111 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

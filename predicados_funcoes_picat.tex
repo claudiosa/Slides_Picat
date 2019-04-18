@@ -358,9 +358,10 @@ excluindo alguns dos parâmetros do \textit{index}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%ù
+
 \subsection{Funções}
-\begin{frame}[fragile, c, allowframebreaks=0.75]
+
+\begin{frame}[fragile]
 	\frametitle{Funções}
     
     \begin{itemize}
@@ -370,25 +371,31 @@ excluindo alguns dos parâmetros do \textit{index}}
           aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
           \> \> $Cabe$ç$a = X \ $\verb+=>+$\ Corpo$. 
         \end{tabbing}
-        
-        \item Caso haja alguma condição \emph{Cond}, uma função é denotada de modo:
+
+       \pause        
+        \item Caso tenhamos uma condição \emph{Cond}::
         
         \begin{tabbing}
           aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
-          \> \> $Cabe$ç$a, Cond = X \ $\verb+=>+$\ Corpo$. 
+          \> \> $Cabe$ç$a = X , Cond \ $\verb+=>+$\ Corpo$. 
         \end{tabbing}
         
-        \item Funções \textbf{não} admitem \textbf{\textit{backtracking}}.
+        \item \textcolor{red}{Funções \textbf{não} admitem \textbf{\textit{backtracking}}}.
     \end{itemize}
+\end{frame}
     
-    \framebreak
+\begin{frame}[fragile]
+	\frametitle{Funções}
+
     
     \begin{itemize}
         \item Funções são tipos especiais de regras que sempre sucedem com \emph{uma} 
         resposta.
         
+        \pause
         \item Funções em Picat tem como intuito serem sintaticamente semelhantes a funções matemáticas (vide \emph{Haskell}).
         
+        \pause
         \item Em uma função a \emph{Cabeça} é uma equação do tipo $f(t_1,\ldots,t_n)=X$, onde
         \emph{f} é um átomo que é o nome da função, \emph{n} é a aridade da função, e cada
         termo $t_i$ é um argumento da função.
@@ -397,15 +404,19 @@ excluindo alguns dos parâmetros do \textit{index}}
         
     \end{itemize}
     
-    \framebreak
+\end{frame}
+    
+\begin{frame}[fragile]
+	\frametitle{Funções}
     
     \begin{itemize}
     
         \item Funções também podem ser denotadas como fatos, onde podem servir como 
-        aterramento para regras recursivas, ou até mesmo como versões simplificadas de uma 
-        regra. 
+        \textbf{\textit{aterramento}} para regras recursivas.
+        %, ou até mesmo como versões simplificadas de uma      regra. 
         
-        \item São denotadas como: $f(t_1,\ldots,t_n) = $ \emph{Expressão}, onde \textit{Expressão}
+        
+        \item Esta são denotadas como: $f(t_1,\ldots,t_n) = $ \emph{Expressão}, onde \textit{Expressão}
         pode ser um valor ou uma série de ações.
         
     \end{itemize}
@@ -415,32 +426,55 @@ excluindo alguns dos parâmetros do \textit{index}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Exemplos}
-\begin{frame}[c,allowframebreaks,fragile]{Exemplos}
 
-    \begin{block}{Exemplos de Predicados}
-    
-        \begin{lstlisting}[frame=single]
-entre_valores(X1, X2, X3) ?=>
+\begin{frame}[fragile]
+
+\frametitle{Exemplos}
+
+\begin{block}{Exemplo de Predicado}
+   
+\begin{lstlisting}[frame=single]
+contas_P0(X1, X2, X3, Z) ?=>
     number(X1),
     number(X2),
     number(X3),
-    X2 < X1,
-    X1 < X3.
-        \end{lstlisting}
+    X1 < X2,
+    X2 < X3,
+    Z  =  (X2 + X3).
+    
+contas_P0(X1, _, _, Z) =>
+   Z = X1.    
+\end{lstlisting}
+    \end{block}
+
         
-        \begin{lstlisting}[frame=single]
-entre_valores(X1, X2, X3), number(X1), number(X2), number(X3) ?=>
-    X2 < X1,
-    X1 < X3.
-        \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+
+\begin{block}{Exemplo de Funções}
+     
+\begin{lstlisting}[frame=single]
+contas_F0(X1, X2, X3) = Z, (number(X1), 
+                           number(X2), 
+                           number(X3)) =>
+    if (X1 < X2 && X2 < X3) then
+    Z  =  (X2 + X3)
+    else
+    Z  =  X1
+    end.
+\end{lstlisting}
         
     \end{block}
+
+\textcolor{red}{\textit{Aperitivo} à próxima seção: condicionais e laços!}
     
-    \framebreak
+\end{frame}    
+\begin{frame}[fragile]
+   
+\begin{block}{Mais Exemplos (Fatos e Regras)}
     
-    \begin{block}{Exemplos de Predicados Fatos}
-    
-        \begin{lstlisting}[frame=single]
+\begin{lstlisting}[frame=single]
 index(-,-) (+,-) (-,+)
 pai(salomao, rogerio).
 pai(salomao, fabio).
@@ -450,36 +484,34 @@ pai(rogerio, henrique).
 avo(X,Y) ?=> pai(X,Z), pai(Z,Y).
 irmao(X,Y) ?=> pai(Z,X), pai(Z,Y).
 tio(X,Y) ?=> pai(Z,Y), irmao(X,Z).
-        \end{lstlisting}
+\end{lstlisting}
     
-    \end{block}
+ \end{block}
     
-    \framebreak
+\end{frame}    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
     
-    \begin{block}{Exemplos de Funções}
+\begin{block}{Exemplos de Funções -- Equivalentes}
     
-        \begin{lstlisting}[frame=single]
+\begin{lstlisting}[frame=single]
 eleva_cubo(1) = 1.
 eleva_cubo(X) = X**3.
 eleva_cubo(X) = X*X*X.
 eleva_cubo(X) = X1 => X1 = X**3.
 eleva_cubo(X) = X1 => X1 = X*X*X.
-        \end{lstlisting}
+\end{lstlisting}
         
-        \begin{lstlisting}[frame=single]
-dobra_lista([]) = [].
-dobra_lista(L), L != [] = L1 =>
-    L1 = L ++ L.
-        \end{lstlisting}
-    
-    \end{block}
+\end{block}
     
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ATE AQUI
+\subsection{Comandos Condicionais, Laços e Repetições}
 
-\subsection{Condicionais e Repetições}
-\begin{frame}[c,allowframebreaks,fragile]{Condicionais e Repetições}
+\begin{frame}[fragile]
+\frametitle{Comandos Condicionais, Laços e Repetições}
     
     \begin{itemize}
         
@@ -505,8 +537,12 @@ dobra_lista(L), L != [] = L1 =>
         vírgula nem ponto e vírgula.
         
     \end{itemize}
+\end{frame}    
     
-    \framebreak
+\begin{frame}[fragile]
+\frametitle{Comandos Condicionais, Laços e Repetições}
+    
+    
     
     \begin{itemize}
         
@@ -520,9 +556,18 @@ dobra_lista(L), L != [] = L1 =>
         
         \item O \textit{loop} \texttt{do-while} é análogo ao loop \texttt{while}, porém ele 
         sempre executará pelo menos uma vez.
-        
-        \framebreak
-        
+    \end{itemize}
+
+
+\end{frame}    
+    
+\begin{frame}[fragile]
+\frametitle{Comandos Condicionais, Laços e Repetições}
+
+
+    \begin{itemize}
+    
+
         \item Um \textit{loop} \texttt{foreach} tem a seguinte forma:
         
         \begin{tabbing}
@@ -541,7 +586,18 @@ dobra_lista(L), L != [] = L1 =>
         
         % Exemplo 1 iterador e multiplos iteradores
         
-        \framebreak
+    \end{itemize}
+
+
+\end{frame}    
+    
+\begin{frame}[fragile]
+\frametitle{Comandos Condicionais, Laços e Repetições}
+
+
+\begin{itemize}
+    
+
         
         \item Um \textit{loop} \texttt{while} tem a seguinte forma:
         

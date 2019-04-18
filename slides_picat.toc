@@ -3,5 +3,5 @@
 \beamer@subsectionintoc {1}{1}{Casamento de Padr\IeC {\~o}es}{7}{0}{1}
 \beamer@subsectionintoc {1}{2}{Predicados}{17}{0}{1}
 \beamer@subsectionintoc {1}{3}{Fun\IeC {\c c}\IeC {\~o}es}{25}{0}{1}
-\beamer@subsectionintoc {1}{4}{Exemplos}{28}{0}{1}
-\beamer@subsectionintoc {1}{5}{Condicionais e Repeti\IeC {\c c}\IeC {\~o}es}{31}{0}{1}
+\beamer@subsectionintoc {1}{4}{Exemplos}{31}{0}{1}
+\beamer@subsectionintoc {1}{5}{Condicionais e Repeti\IeC {\c c}\IeC {\~o}es}{35}{0}{1}
