@@ -1,23 +1,7 @@
-\frametitle{}
+\frametitle{Reflexões}
 
-    \begin{itemize}
-        \item Uma chamada do tipo $mae(maria, X)$, seria como perguntar ao compilador
-        "Maria é mãe de quem ?".
 
-        \item Nesse caso o compilador iria testar cada possível valor que pudesse ser
-        unificado com $X$ que pudesse satisfazer a regra $mae(maria,X)$.
-
-        \item Ou seja, seria como se estivéssemos perguntando:
-
-        \begin{itemize}
-            \item "Maria é mãe de Ana ?".
-
-            \item "Maria é mãe de Paula ?".
-
-            \item "Maria é mãe de Pedro ?".
-
-            $\vdots$
-        \end{itemize}
-
-    \end{itemize}
+\begin{itemize}
+\item xxxxxxxxx
+\end{itemize}
 

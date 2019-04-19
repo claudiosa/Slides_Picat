@@ -34,7 +34,7 @@
 
 \begin{frame}[fragile]
 
-\frametitle{Conceitos Matemáticos com Recursividade -- I}
+\frametitle{Conceitos de Recursividade via Exemplos -- I}
 
 \begin{block}{Somatório dos $N$ naturais}
 
@@ -66,7 +66,7 @@
 \end{frame}
 
 \begin{frame}[fragile]
-\frametitle{Conceitos Matemáticos com Recursividade -- II}
+\frametitle{Conceitos de Recursividade via Exemplos -- II}
 
 
 \begin{block}{Fatorial}
@@ -76,7 +76,6 @@ O Fatorial de um número $n$ é definido  recursivamente pela
   O fatorial só pode ser calculado para números positivos. 
   Adicionalmente, o fatorial de $0$ é igual a 
   $1$ por definição.
-      
     \[ 
     Fat(n)=\left\{
     \begin{tabular}[c]{ll}%
@@ -86,9 +85,7 @@ O Fatorial de um número $n$ é definido  recursivamente pela
     \right.
     \]
     
-    \vskip 11pt
     Portanto:
-    \vskip 11pt
     
     \[
     Fat(n)=
@@ -104,7 +101,7 @@ O Fatorial de um número $n$ é definido  recursivamente pela
 
 
 \begin{frame}[fragile]
-\frametitle{Conceitos Matemáticos com Recursividade -- III}
+\frametitle{Conceitos de Recursividade via Exemplos -- III}
 
 \begin{block}{Sequência Fibonacci}
 
@@ -127,23 +124,25 @@ dois últimos números anteriores desta. Ou seja o $n-esimo$ termo da Sequência
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
 
-\frametitle{Conceitos Matemáticos com Recursividade -- IV}
+\frametitle{Conceitos de Recursividade via Exemplos -- IV}
 
   \begin{itemize}
       
       \item Podemos perceber algo em comum entre estas três regras, todas tem uma ou mais
       condições que sempre tem o mesmo valor de retorno, ou seja, todas tem uma \textit{regra de  aterramento}.
       
+      \pause
       \item Uma condição de \textit{aterramento} é uma condição onde a chamada recursiva da regra
       acaba (pára ou termina).
       
-      \item Caso uma regra não tenha uma regra de aterramento, poderá ocorrer uma recursão infinita deste regra, ou seja, são feitas infinitas chamadas recursivas
+       \pause
+      \item Caso uma regra não tenha uma \textit{regra de aterramento}, poderá ocorrer uma recursão infinita deste regra, ou seja, são feitas infinitas chamadas recursivas
       da regra.
   \end{itemize}
 
 \end{frame}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
 
 \frametitle{Exemplos}
@@ -297,4 +296,15 @@ sucessor(X,Y) ?=> antecedente(Y,Z), sucessor(X,Z).
 \end{frame}
 
 
+
+
+\begin{frame}[fragile]
+\frametitle{Reflexões}
+
+
+\begin{itemize}
+\item xxxxxxxxx  
+\end{itemize}
+
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
