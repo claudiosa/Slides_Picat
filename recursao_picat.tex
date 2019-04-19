@@ -1,146 +1,152 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Recursão e Backtracking}
+\section{Recursão}
+
 \subsection{Recursão}
-\begin{frame}{Recursão}
-    \begin{itemize}
+\begin{frame}[fragile]
 
-        \item A recursão é um importante conceito não só em Picat, mas também na matemática e em muitas outras linguagens
-        de programação.
+\frametitle{Recursão}
 
-        \item Permite expressar problemas complexos de uma maneira simples.
-        
-        \item Uma regra é dita recursiva quando ela faz auto-referência.
-        
-        \item Exemplo:
+\begin{itemize}
 
-    \end{itemize}
+    \item A \textit{recursão} é um importante conceito da matemática e presente em muitas  linguagens
+    de programação. Exemplo: LISP, Haskell, etc
+
+    \pause
+    \item Permite expressar conceitos complexos em uma sintaxe abstrata, mas  simples de ler.
+    \pause
+    \item Uma regra é dita recursiva quando ela faz auto-referência.
     
     \pause
+    \item Em Picat, a recursão pode ser usada sob uma notação em \textit{lógica} ou \textit{funcional}
     
-    \centering
-    \includegraphics[scale=0.5]{figures/Recursao.png}
-    
+    \pause
+    \item A funcional apresenta muita clareza ao código!
+\end{itemize}
+
+%\pause
+%\centering
+%\includegraphics[scale=0.5]{figures/Recursao.png}
+  
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[c,allowframebreaks]{Regras Matemáticas Definidas Recursivamente}
+\begin{frame}[fragile]
 
-        \begin{enumerate}
-        
-            \item \texttt{Somatório}: O somatório é definido como a soma de todos os números 
-            em um dado intervalo. O somatório de \emph{N} até \emph{M} pode, então, ser 
-            definido como a soma de todos os números de \emph{N} até \emph{M-1} somado com 
-            \emph{M}. Ou seja:
-            % arrumar
-            \[
-            S(n)=\left \{
-            \begin{tabular}
-                [c]{ll}
-                $1$ & para $n=1$ \\
-                $S(n-1) + n $ & para $n \geqslant 2$ e $n \in \mathbb{N}$
-            \end{tabular}
-            \right.
-            \]
-            
-            Ou seja:
-            
-            \[
-            S(n)=
-            \begin{tabular}[c]{cc}
-                $\underbrace{1+2+3+.....+(n-1)}$ &  $  + n$\\
-                $S(n-1)$ &
-            \end{tabular}
-            \]
-            
-            \framebreak
-        
-            \item \texttt{Fatorial}: O Fatorial de um número é definido como este mesmo número multiplicado pelo
-            fatorial do número anterior. O fatorial só pode ser calculado para números positivos, e é fato que o fatorial
-            de 0 é igual a 1.
-              
-            \[
-            Fat(n)=\left\{
-            \begin{tabular}[c]{ll}%
-                $1$ & para $n = 0$\\
-                $Fat(n-1)\ast n$ & para $n\geqslant1$ e $n \in \mathbb{N}$
-            \end{tabular}
-            \right.
-            \]
-            
-            \vskip 11pt
-            Portanto, podemos inferir que:
-            \vskip 11pt
-            
-            \[
-            Fat(n)=
-            \begin{tabular}
-                [c]{cc}%
-                $\underbrace{1\ast2\ast3\ast.....\ast(n-1)}$ & $\ast \ n$\\
-                $Fat(n-1)$ &
-            \end{tabular}
-            \]
+\frametitle{Conceitos Matemáticos com Recursividade -- I}
+
+\begin{block}{Somatório dos $N$ naturais}
+
+ O somatório dos \emph{n}  primeiros  números naturais é recursivamente 
+ definido como a soma de todos \emph{n-1} números, mais o termo \emph{n}. 
+ Ou seja:
+
+    \[
+    S(n)=\left \{
+    \begin{tabular}
+        [c]{ll}
+        $1$ & para $n=1$ \\
+        $S(n-1) + n $ & para $n \geqslant 2$ e $n \in \mathbb{N}$
+    \end{tabular}
+    \right.
+    \]
     
-            \framebreak
+    Ou seja:
     
-            \item \texttt{Sequência Fibonacci}: A sequência Fibonacci é uma sequência de números calculada a partir da soma dos
-            dois ultimos números anteriores, ou seja o $n-esimo$ termo da Sequência Fibonacci é definido como a soma dos termos
-            $n-1$ e $n-2$. É fato que os dois primeiros termos ($n = 0$ e $n = 1$) são, respectivamente, 0 e 1.
-            
-            \[
-            Fib(n)=\left\{
-            \begin{tabular}[c]{ll}%
-                $0$ & para $n = 0$\\
-                $1$ & para $n = 1$\\
-                $Fib(n-1) + Fib(n-2)$ & para $n\geqslant1$ e $n \in \mathbb{N}$
-            \end{tabular}
-            \right.
-            \]
-            
-        \end{enumerate}
-        
-        \framebreak
-        
-        \begin{itemize}
-            
-            \item Podemos perceber algo em comum entre estas três regras, todas tem uma ou mais
-            condições que sempre tem o mesmo valor de retorno, ou seja, todas tem uma \textit{regra de  aterramento}.
-            
-            \item Uma condição de \textit{aterramento} é uma condição onde a chamada recursiva da regra
-            acaba (pára ou termina).
-            
-            \item Caso uma regra não tenha uma regra de aterramento, poderá ocorrer uma recursão infinita deste regra, ou seja, são feitas infinitas chamadas recursivas
-            da regra.
-        \end{itemize}
+    \[
+    S(n)=
+    \begin{tabular}[c]{cc}
+        $\underbrace{1+2+3+.....+(n-1)}$ &  $  + n$\\
+        $S(n-1)$ &
+    \end{tabular}
+    \]
+\end{block}            
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Conceitos Matemáticos com Recursividade -- II}
+
+
+\begin{block}{Fatorial}
+
+O Fatorial de um número $n$ é definido  recursivamente pela
+ multiplicação do fatorial do termo $n-1$ por $n$. 
+  O fatorial só pode ser calculado para números positivos. 
+  Adicionalmente, o fatorial de $0$ é igual a 
+  $1$ por definição.
+      
+    \[ 
+    Fat(n)=\left\{
+    \begin{tabular}[c]{ll}%
+        $1$ & para $n = 0$\\
+        $Fat(n-1) . n$ & para $n\geqslant1$ e $n \in \mathbb{N}$
+    \end{tabular}
+    \right.
+    \]
+    
+    \vskip 11pt
+    Portanto:
+    \vskip 11pt
+    
+    \[
+    Fat(n)=
+    \begin{tabular}
+        [c]{cc}%
+        $\underbrace{1\ast2\ast3 . ..... . (n-1)}$ & $ .  \ n$\\
+        $Fat(n-1)$ &
+    \end{tabular}
+    \]
+
+\end{block}    
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Conceitos Matemáticos com Recursividade -- III}
+
+\begin{block}{Sequência Fibonacci}
+
+A sequência Fibonacci é uma sequência de números calculada a partir da soma dos
+dois últimos números anteriores desta. Ou seja o $n-esimo$ termo da Sequência Fibonacci é definido como a soma dos termos $n-1$ e $n-2$. Como fato ou definição: os dois primeiros termos, $n = 0$ e $n = 1$, são respectivamente, $0$ e $1$.
+      
+      \[
+      Fib(n)=\left\{
+      \begin{tabular}[c]{ll}%
+          $0$ & para $n = 0$\\
+          $1$ & para $n = 1$\\
+          $Fib(n-1) + Fib(n-2)$ & para $n\geqslant1$ e $n \in \mathbb{N}$
+      \end{tabular}
+      \right.
+      \]
  
+\end{block}    
 \end{frame}
 
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
 
-\begin{frame}{Exemplo de Recursão Infinita}
+\frametitle{Conceitos Matemáticos com Recursividade -- IV}
 
-    \begin{itemize}
-        \item Caso alterássemos a definição da regra fatorial de modo que ela seja:
-        
-        \[
-        Fat(n)= 
-        \begin{tabular}[c]{ll}
-            $Fat(n-1)\ast n$, &$\forall n \in \mathbb{N}$ ou $\forall n \geq 0$
-        \end{tabular}
-        \]
-        
-        \item Teríamos um caso de recursão infinita, pois a regra Fatorial seria continuamente
-        chamada até que $n < 0$, nesse caso haveria um erro, pois estaria tentando executar algo indefinido.
-        
-    \end{itemize}
+  \begin{itemize}
+      
+      \item Podemos perceber algo em comum entre estas três regras, todas tem uma ou mais
+      condições que sempre tem o mesmo valor de retorno, ou seja, todas tem uma \textit{regra de  aterramento}.
+      
+      \item Uma condição de \textit{aterramento} é uma condição onde a chamada recursiva da regra
+      acaba (pára ou termina).
+      
+      \item Caso uma regra não tenha uma regra de aterramento, poderá ocorrer uma recursão infinita deste regra, ou seja, são feitas infinitas chamadas recursivas
+      da regra.
+  \end{itemize}
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{frame}[fragile]
 
-\begin{frame}[fragile]{Exemplos}
+\frametitle{Exemplos}
 
 Numa visão funcional, estas regras matemáticas podem ser transcritas em Picat como:
 
@@ -164,6 +170,32 @@ somatorio(n) = n + somatorio(n-1).
 
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+
+\frametitle{Recursão Infinita}
+
+    \begin{itemize}
+        \item Caso alterássemos a definição da regra fatorial de modo que ela seja:
+        
+        \[
+        Fat(n)= 
+        \begin{tabular}[c]{ll}
+            $Fat(n-1)\ast n$, &$\forall n \in \mathbb{N}$ ou $\forall n \geq 0$
+        \end{tabular}
+        \]
+        
+        \item Teríamos um caso de recursão infinita, pois a regra Fatorial seria continuamente
+        chamada até que $n < 0$, nesse caso haveria um erro, pois estaria tentando executar algo indefinido.
+        
+    \end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{frame}[fragile]{Exercício}
 
 Para os exemplos anteriores, reescreva
@@ -175,25 +207,16 @@ lógica e  procedural.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Backtracking}
-\begin{frame}[allowframebreaks,fragile]{\textit{Backtracking}}
-    
-    \begin{itemize}
-    
-        \item \textit{Backtracking} é um conceito muito parecido com recursão, porém a principal diferença entre os dois
-        (no escopo da linguagem) é que \textit{backtraking} é exclusivo à predicados, enquanto que ambos funções e 
-        predicados podem ser definidos de forma recursiva.
-        
-        \item O que distingue um predicado que pode fazer \textit{backtracking} de um que não pode é o uso do símbolo
-        \verb!?=>! no lugar do símbolo \verb!=>!.
-        
-        \item \textit{Backtracking} é uma construção da linguagem, que é definida como segue:
-        
-    \end{itemize}   
-        
-    \framebreak
+\subsection{\textit{Backtracking}}
+\begin{frame}[fragile]
 
-    \begin{itemize}
+\frametitle{\textit{Backtracking}}
+
+ O que distingue uma regra em realizarr \textit{backtracking} ou não, é o uso do símbolo
+        \verb!?=>! no escopo da regra.
+        
+O procedimento do \textit{Backtracking} é definido por:
+    \begin{enumerate}
         
         \item O casamento de um predicado \textit{backtrackable} $p$ com outro predicado \textit{backtrackable} $p1$.
         
@@ -207,17 +230,17 @@ lógica e  procedural.
         
         \item Este processo se repete até não for mais possível a reinstanciação de variáveis, ou ocorrer um erro durante a
         execução.
-    \end{itemize}
+\end{enumerate}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[fragile]{Exemplo}
+\begin{frame}[fragile]
+
+\frametitle{Exemplos}
     
-    \begin{itemize}
-        
-        \item Tomando como exemplo uma relação de parentesco, como a seguinte:
+Tomando como exemplo uma relação de parentesco, como a seguinte:
 % usar antecendente,sucessor, descendente etc.
         \begin{lstlisting}[frame=single]
 index(-,-) (+,-) (-,+)
@@ -241,7 +264,6 @@ avos(X,Y) ?=> antecedente(X,Z), antecedente(Z,Y).
 sucessor(X,Y) ?=> antecedente(Y,X).
 sucessor(X,Y) ?=> antecedente(Y,Z), sucessor(X,Z).
         \end{lstlisting}
-    \end{itemize}
     
 \end{frame}
 
@@ -249,7 +271,7 @@ sucessor(X,Y) ?=> antecedente(Y,Z), sucessor(X,Z).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{frame}[allowframebreaks]{}
+\begin{frame}[fragile]{}
     
     \begin{itemize}
         \item Uma chamada do tipo $mae(maria, X)$, seria como perguntar ao compilador

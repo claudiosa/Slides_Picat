@@ -1,0 +1,1110 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Predicados e Funções}
+
+
+\begin{frame}[fragile,allowframebreaks=0.8,c]
+	\frametitle{Predicados e Funções em Picat}
+    
+\begin{itemize}
+
+\item Os \textbf{predicados} sempre assumem valores valores lógicos \texttt{true} ($1$) ou \texttt{false} ($0$).
+
+\item Os \textbf{predicados} em seus argumentos, podem passar $n$-termos e receber
+outros termos.
+
+\item Quanto as \textbf{funções}, estas funcionam seguindo as regras de funções matemáticas,
+sempre retornando um único valor
+
+\item Predicados e funções são definidos com regras de \textit{casamento de padrões}
+
+
+\item Predicados são conhecidos como \textbf{regras lógicas}, há dois tipos de regras:
+\framebreak        
+        \begin{itemize}
+            \item Regras \textbf{sem} {\em backtracking} (\textit{non-backtrackable}):
+        	
+            \begin{tabbing}
+              aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
+             \> \> \verb+ Cabeça , Condicional + \textbf{\textcolor{red}{=>}} \verb+ Corpo .+
+            \end{tabbing}
+            
+
+            \item Regras \textbf{com} {\em backtracking}:
+            
+            \begin{tabbing}
+              aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
+             \> \> \verb+ Cabeça , Condicional + \textbf{\textcolor{red}{?=>}} \verb+ Corpo .+
+            \end{tabbing}
+        
+        \end{itemize}
+\framebreak        
+       
+  \item A identificação da sintaxe é dada por:
+  
+  \begin{itemize}
+  
+      \item \emph{Cabeça}: indica um padrão de regra a ser casada.
+      
+      Forma geral:
+      \begin{tabbing}
+          aa \= aaa \= aaa \= aaa \kill
+          \> \> $regra(termo_1, \ldots,termo_n)$
+      \end{tabbing}
+      
+      Onde:
+      
+      \begin{itemize}
+          \item \emph{regra} é um átomo que define o nome da regra.
+          \item \emph{n} é a aridade da regra (\emph{i.e.} o total de argumentos)
+          \item Cada \emph{$termo_i$} é um argumento da regra.
+      \end{itemize}
+      
+      \item \emph{Cond}: é uma ou várias condições sobre a execução desta regra.
+          
+      \item \emph{Corpo}: define as ações da regra 
+      
+  \end{itemize}
+  
+  \item Todas as regras são finalizadas por um ponto final (.), seguido por um espaço 
+  em branco ou nova linha.
+  
+  \item Ao longo dos exemplos, detalhes a mais sobre esta construção de \textbf{predicados} e \textbf{funções}
+      
+\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]
+	\frametitle{Regras com e sem Backtracking -- Exemplo}
+
+
+\begin{footnotesize}
+\begin{verbatim}
+main => regra_01(7)  ,
+        regra_01(-4) ,
+        regra_01(44) .
+        
+regra_01(0)          ?=> printf("\n  CHEGOU A 0 !!!\n").
+regra_01(N) , N < 0  ?=> printf("\n  EH UM NEGATIVO !!!\n").
+regra_01(N) , N > 10 ?=> printf("\n  EH MAIOR QUE 10 !!!\n").
+regra_01(N) , N <= 10  =>  
+          printf("\t :%d ", N),
+          regra_01(N-1).
+
+%% =<  EH IGUAL a >= :: sobrecarga
+%%% $ picat regras_com_sem_backtraking.pi
+
+\end{verbatim}
+
+\end{footnotesize}
+\textcolor{red}{Há uma recursão aqui. Algumas seções a frente.}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Casamento de Padrões}
+
+\begin{frame}[fragile]
+\frametitle{Casamento de Padrões}
+
+\begin{itemize}
+
+\item O algoritmo de {\em casamento de padrões} para regras é análogo ao algoritmo de    unificação para variáveis. 
+
+\item O objetivo é encontrar dois padrões que possam ser unificados para se inferir alguma ação.
+
+\item Quanto ao {\em casamento de padrões}:
+\framebreak
+
+\begin{itemize}
+	\item Dado um padrão $p_1(t_1, \ldots,t_m)$, este \emph{casa} 
+	com um padrão semelhante $p_2(u_1, \ldots,u_n)$ se:
+    
+    \begin{itemize}
+    	\item $p_1$ e $p_2$ forem átomos equivalentes;
+    
+        \item O número de termos (chamado de aridade) em ($t_1, \ldots,t_m$)
+        e ($u_1, \ldots,u_n$) for equivalente.
+    
+    	\item Os termos ($t_1, \ldots,t_m$) e ($u_1, \ldots,u_n$) são equivalentes, ou tornaram-se  equivalentes pela unificação de variáveis	em qualquer um dos dois termos;
+    \end{itemize}
+    
+    \item Caso essas condições forem satisfeitas, o padrão $p_1(t_1,\ldots,t_m)$  casa com o padrão $p_2(u_1, \ldots,u_n)$.
+    
+\end{itemize}        
+
+\end{itemize}
+    
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+    
+\begin{block}{Exemplos de \textit{casamento}}
+
+\begin{enumerate}
+	\item A regra $fatorial(Termo, Resultado)$ pode casar com:\\
+    $fatorial(1,1)$, $fatorial(5,120)$, $fatorial(abc,25)$, $fatorial(X,Y)$, \emph{etc}.
+    
+    \pause
+     \item A regra $fatorial(Termo, Resultado), Termo \geq 0$ pode casar com:\\
+    $fatorial(1,1)$, $fatorial(5,120)$, $fatorial(X,Y)$, $fatorial(Z,Z)$, \emph{etc}.
+    
+    \pause
+    \item A regra $pai(X,Y)$ pode casar com:\\
+    $pai(rogerio, miguel)$, $pai(rogerio, henrique)$, $pai(salomao, X)$, $pai(12,24)$, \emph{etc}.
+    
+    \pause
+    \item A regra $pai(salomao, X)$ pode casar com:\\
+    $pai(salomao, rogerio)$, $pai(salomao, fabio)$.
+    
+    \pause
+    \item A regra $pai(salomao, fabio)$ pode casar com:\\
+    $pai(X, fabio)$, $pai(salomao, X)$, $pai(X,Y)$
+\end{enumerate}
+
+\end{block}
+    
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+
+	\frametitle{Metas ou Provas -- (\textit{goals})}
+	
+	\begin{itemize}
+	    
+	 \item Na matemática ao se deduzir um valor de um teorema, tem-se uma \textit{prova}. 
+	  Assim, o termo  \textit{goal} eventualmente é chamado de \textit{prova do programa}
+	 
+	 \pause
+	    \item Metas ou Provas (do inglês: \textit{goal}) são estados que definem o final da execução.
+	    
+  	 \pause
+	    \item Uma meta pode ser, entre outros, um valor lógico, uma chamada de outra regra, 
+	    uma exceção ou uma operação lógica.
+	\end{itemize}
+
+\end{frame}
+    
+  %  \begin{enumerate}
+  %      \item \texttt{true, yes} $\Rightarrow$ Valor lógico para verdade.
+%   %      \item \texttt{false, no} $\Rightarrow$ Valor lógico para falsidade.
+%         \item \texttt{$p(t_1,\ldots,t_n)$} $\Rightarrow$ Chamada de uma regra \emph{p}.
+%         \item \texttt{(P,Q), (P;Q), (P\&\&Q), (P||Q), not P} $\Rightarrow$ Operação lógica 
+%     %    sobre uma ou mais metas P e Q.
+   % \end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Funções}
+
+\begin{frame}[fragile]
+	\frametitle{Funções -- I}
+    
+    \begin{itemize}
+        \item A forma geral de uma função é:
+        
+        \begin{tabbing}
+          aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
+          \> \> $Cabe$ç$a = X \ $\verb+=>+$\ Corpo$. 
+        \end{tabbing}
+
+       \pause        
+        \item Caso tenhamos uma condição \emph{Cond}::
+        
+        \begin{tabbing}
+          aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
+          \> \> $Cabe$ç$a = X , Cond \ $\verb+=>+$\ Corpo$. 
+        \end{tabbing}
+        
+        \item \textcolor{red}{Funções \textbf{não} admitem \textbf{\textit{backtracking}}}.
+    \end{itemize}
+\end{frame}
+    
+\begin{frame}[fragile]
+	\frametitle{Funções -- II}
+
+    
+    \begin{itemize}
+        \item Funções são tipos especiais de regras que sempre sucedem com \emph{uma} 
+        resposta.
+        
+        \pause
+        \item Funções em Picat tem como intuito serem sintaticamente semelhantes a funções matemáticas (vide \emph{Haskell}).
+        
+        \pause
+        \item Em uma função a \emph{Cabeça} é uma equação do tipo $f(t_1,\ldots,t_n)=X$, onde
+        \emph{f} é um átomo que é o nome da função, \emph{n} é a aridade da função, e cada
+        termo $t_i$ é um argumento da função.
+        
+        \item \emph{X} é uma expressão que é o retorno da função.
+        
+    \end{itemize}
+    
+\end{frame}
+    
+\begin{frame}[fragile]
+	\frametitle{Funções  -- III}
+    
+    \begin{itemize}
+    
+        \item Funções também podem ser denotadas como fatos, onde podem servir como 
+        \textbf{\textit{aterramento}} para regras recursivas.
+        %, ou até mesmo como versões simplificadas de uma      regra. 
+        
+        
+        \item Esta são denotadas como: $f(t_1,\ldots,t_n) = $ \emph{Expressão}, onde \textit{Expressão}
+        pode ser um valor ou uma série de ações.
+        
+    \end{itemize}
+    
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Regras, Metas e Funções -- Exemplo}
+
+\begin{small}
+\begin{verbatim}
+main =>
+       X = 3, 
+       Y = 4,
+       um_predicado(X,Y,Z),
+       R = uma_funcao(X,Y),
+       printf("\n Z: %d \t R: %d", Z, R),
+       println("\n FIM"). 
+       
+um_predicado(X,Y,Z) => Z = X + Y.
+
+uma_funcao(X,Y) = R => R = X + Y.
+\end{verbatim}
+
+\end{small}
+\end{frame}
+
+
+\begin{frame} [fragile]
+
+\frametitle{Regras, Metas e Funções -- Exemplo}
+\begin{small}
+\begin{verbatim}
+Picat> cl('predicados_funcoes').
+Compiling:: predicados_funcoes.pi
+predicados_funcoes.pi compiled in 0 milliseconds
+loading...
+
+yes
+
+Picat> um_predicado(3,4,Z), write(Z).
+7Z = 7
+yes
+
+Picat> uma_funcao(3,4) = R, write(R).
+7R = 7
+yes
+
+Picat>
+\end{verbatim}
+\end{small}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Relembrando as Regras}
+\begin{frame}[c, fragile, allowframebreaks=0.75]
+	\frametitle{Relembrando as Regras}
+    
+    \begin{itemize}
+        \item Forma geral de um predicado do tipo Regra:
+    
+        \begin{tabbing}
+          aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
+          \> \> \verb+ Cabeça , Condicional  =>   Corpo .+ 
+        \end{tabbing}
+        
+        \item  Forma geral de um predicado com \textit{backtracking}:
+        
+        \begin{tabbing}
+          aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
+            \> \> \verb+ Cabeça , Condicional + \textbf{\textcolor{red}{?=>}} \verb+ Corpo .+
+        \end{tabbing}
+    \end{itemize}
+    
+    \textcolor{red}{Em Prolog, esta condicional (Cond) entra no corpo da regra. Picat é flexível!}
+
+    \framebreak
+    
+    \begin{itemize}
+        \framebreak
+        
+        \item Dentro de uma regra, \emph{Cond} só pode ser avaliado uma vez, acessando somente termos dentro do escopo do predicado.
+        
+        \item Sempre estar atento que: regras são \textbf{sempre avaliados com valores lógicos} ({\em true} ou {\em false})
+        
+        \item Por outro lado, as variáveis  como argumento ou  instanciadas
+        dentro dele, podem ser utilizadas dentro do escopo da regra, 
+        ou no escopo onde  esta regra foi chamada.
+    \end{itemize}
+    
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Regras do Tipo  Fatos}
+\begin{frame}[c,allowframebreaks=0.6,fragile]
+\frametitle{Regras do Tipo  Fatos}
+
+    \begin{itemize}
+        \item As regras que não tem condicionais e nem corpo, estes  são conhecidos
+        como:  \textit{fatos} ou \textit{regras sem-corpo}
+        
+       \item Estes \textit{fatos} são regras \textit{sempre verdadeiras}
+        
+        \item Formato dos fatos são do tipo:
+        
+        \begin{tabbing}
+          aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
+          \> \> $p(t_1,\ldots,t_n)$. 
+        \end{tabbing}
+        
+        \item Os argumentos de um \emph{fato} \textbf{não} podem conter \textbf{variáveis}.
+        
+        \framebreak
+        
+        \item A declaração de um fato é precedida por uma declaração \textbf{\emph{index}},
+        algo como:
+        
+        \begin{tabbing}
+        aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
+            \> \texttt{index ($M_{11},M_{12},\ldots,M_{1n}$) $\ldots$ ($M_{m1},M_{m2},\ldots,M_{mn}$)}\index{\texttt{index}} 
+        \end{tabbing}
+        
+        \item Onde um $M_{ij}$ com o simbolo `$+$',  significa que este termo já foi 
+        indexado.
+        
+        \item Quanto o `$-$' significa que este termo deve ser indexado
+        
+        \item Ou seja, quando ocorre um simbolo `$+$' em um grupo do \textit{index}, é avaliado
+        pelo compilador como um valor constante a ser casada
+        
+        %, que não irá gerar uma nova regra durante
+        %a execução do programa.
+        
+        \item Quanto ao `$-$', este é avaliado pelo compilador com uma variável que deverá ser 
+        instanciada à um valor. Ou seja, quando se deseja unificar um valor a esta variável
+        
+        \item Dica: o parâmetro `$-$' no \textit{index} é quase como regra geral
+                
+        \item \textbf{Não} pode haver um \textbf{predicado} e um \textbf{predicado 
+        fato} com \textbf{mesmo nome}.
+        
+    \end{itemize}
+\end{frame}
+
+
+
+\begin{frame} [fragile]
+\frametitle{Exemplo -- Função e Regras}
+
+\begin{small}
+\begin{verbatim}
+index (+,+,+) (+,+, -) (-,+,-) (-,-,+) (-,-, +) 
+      (+,-,+) (+,+,-)  (-,-,-)
+%(-,-,-) %% NENHUM argumento instanciao -- UTIL
+%(+,+,+) %% TODOS ARGUMENTOS DEVEM ESTAR INSTANCIADOS
+%(+,+, -) (-,+,-) (-,-,+) (-,-, +) (+,-,+) (+,+,-) (-,-,-)
+
+and2(true,true,true).
+and2(true,false,false).
+and2(false,true,false).
+and2(false,false,false).
+
+main ?=>
+       and2(X,Y,Z), % and eh reservado
+       printf("\n X: %w \t Y: %w \t Z: %w", X, Y, Z),
+       fail.
+main =>       
+       println("\n FIM"). 
+\end{verbatim}
+\end{small}
+
+\textcolor{red}{Este exemplo é muito interessante. Execute ele na console do interpretador
+excluindo alguns dos parâmetros do \textit{index}}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Exemplos}
+
+\begin{frame}[fragile]
+
+\frametitle{Exemplos}
+
+\begin{block}{Exemplo de Predicado ou regra}
+   
+\begin{lstlisting}[frame=single]
+contas_P0(X1, X2, X3, Z) ?=>
+    number(X1),
+    number(X2),
+    number(X3),
+    X1 < X2,
+    X2 < X3,
+    Z  =  (X2 + X3).
+    
+contas_P0(X1, _, _, Z) =>
+   Z = X1.    
+\end{lstlisting}
+    \end{block}
+
+        
+\end{frame}
+
+\begin{frame}[fragile]
+
+\begin{block}{Exemplo de Funções}
+     
+\begin{lstlisting}[frame=single]
+contas_F0(X1, X2, X3) = Z, (number(X1), 
+                           number(X2), 
+                           number(X3)) =>
+    if (X1 < X2 && X2 < X3) then
+    Z  =  (X2 + X3)
+    else
+    Z  =  X1
+    end.
+\end{lstlisting}
+        
+ \end{block}
+
+\textcolor{red}{\textit{Aperitivo} à próxima seção: condicionais e laços!}
+    
+\end{frame}    
+\begin{frame}[fragile]
+   
+\begin{block}{Mais Exemplos (Fatos e Regras)}
+    
+\begin{lstlisting}[frame=single]
+index(-,-) (+,-) (-,+)
+pai(salomao, rogerio).
+pai(salomao, fabio).
+pai(rogerio, miguel).
+pai(rogerio, henrique).
+
+avo(X,Y) ?=> pai(X,Z), pai(Z,Y).
+irmao(X,Y) ?=> pai(Z,X), pai(Z,Y).
+tio(X,Y) ?=> pai(Z,Y), irmao(X,Z).
+\end{lstlisting}
+    
+ \end{block}
+    
+\end{frame}    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+    
+\begin{block}{Exemplos de Funções -- Equivalentes}
+    
+\begin{lstlisting}[frame=single]
+eleva_cubo(1) = 1.
+eleva_cubo(X) = X**3.
+eleva_cubo(X) = X*X*X.
+eleva_cubo(X) = X1 => X1 = X**3.
+eleva_cubo(X) = X1 => X1 = X*X*X.
+\end{lstlisting}
+        
+\end{block}
+    
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ATE AQUI
+\section{Comandos Condicionais, Laços e Repetições}
+
+\begin{frame}[fragile]
+\frametitle{Comandos Condicionais, Laços e Repetições}
+    
+  
+  \begin{itemize}
+      
+      \item Ao contrário do Prolog, Picat apresenta
+      conceitos e comandos da programação imperativa
+      
+      \pause
+      \item Esta maneira  ameniza os obstáculos
+      em se aprender uma linguagem com o paradigma lógico,
+      tendo outros elementos conhecidos
+  
+          \pause
+      \item Assim, Picat apresenta estruturas clássicas
+      como: 
+      \begin{itemize}
+        \item  \texttt{if--then--end}, \texttt{if--then--else--end}, \texttt{if--then--elseif--then--....end}
+        \item  \texttt{foreach}
+        \item  \texttt{while}
+        \item  \texttt{do--while}
+        \item Bem como a atribuição, `\texttt{:=}', já discutida
+      \end{itemize}
+   \end{itemize}
+
+       
+\end{frame}    
+     
+    %%%%%%%%%%%%%%%%
+    
+\begin{frame}[fragile]
+\frametitle{Comandos Condicionais}
+    
+    \begin{itemize}
+        
+        \item Picat implementa uma  estrutura condicional explícita (na programação em lógica, voce faz isto implicitamente)
+        
+        \pause
+        \item Sua notação é:\\
+        
+        \begin{tabbing}
+            aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
+            \> \texttt{if (Exp) then}\\
+            \> \> \texttt{Ações} \\
+            \> \texttt{else}\\
+            \> \> \texttt{Ações}\\
+            \> \vdots\\
+            \> \texttt{end} 
+        \end{tabbing}
+        
+        \pause
+        \item Onde \emph{Exp} é uma expressão lógica  avaliada como verdadeira ou  falsa.
+     
+     \pause   
+        \item A última ação antes de um \emph{else} ou \emph{end} não deve ter  vírgula nem ponto e vírgula ao final da linha.
+  
+     \pause   
+        \item Tem-se ainda o \texttt{elseif} que pode estar embutido no comando \texttt{if--then--else--end}
+        
+    \end{itemize}
+\end{frame}    
+    
+    
+    
+    
+    
+    
+    
+    
+\begin{frame}[fragile]
+
+\begin{block}{Exemplo: \texttt{if--then--else--end} }
+     
+\begin{lstlisting}[frame=single]
+    ,
+if (X <= 100) then
+        println("X e menor que 100")
+    elseif (X <= 1000 && X >= 500) then
+        println("X estah entre 500 e 1000")
+    else
+        println("X estah abaixo de  500")
+    end
+    ,
+\end{lstlisting}
+        
+\end{block}
+\end{frame}    
+
+    
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+    
+    
+    
+\begin{frame}[fragile]
+\frametitle{Estruturas de Repetições}
+       
+
+\begin{itemize}
+    
+    \item Picat também implementa 3 estruturas de repetição, são elas:
+    \texttt{foreach}, \texttt{while}, e \texttt{do-while}.
+    
+    \pause
+    \item O laço do  \texttt{foreach}  itera sobre termos simples e compostos.
+    
+        \pause
+    \item O  \texttt{while} repete um conjunto de ações enquanto uma 
+     condição for verdadeira.
+     
+        \pause
+    \item A condição pode ser simples ou combinada
+     
+     
+        \pause
+    \item O laço \texttt{do-while} é análogo ao  \texttt{while}, porém ele 
+    sempre executa pelo menos uma vez.
+\end{itemize}
+\end{frame}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+\begin{frame}[fragile]
+\frametitle{Estruturas de Repetições: \texttt{foreach}}
+
+    \begin{itemize}
+        \item Um laço \texttt{foreach} tem a seguinte forma:
+        
+        \begin{tabbing}
+            aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
+            \> \texttt{foreach ($E_1$ in $D_1$, $Cond_1$, $\ldots$, $E_n$ in $D_n$, $Cond_n$)}  \\
+            \> \> $Metas$ \\
+            \>  \texttt{end} 
+        \end{tabbing}
+    
+   \pause    
+   Esta notação é dada por:
+        
+    \item  $E_i$ é um \emph{padrão de iteração} ou \emph{iterador}. 
+        
+    \item  $D_i$ é  uma expressão de \emph{valor composto}. Exemplo: uma lista de valores
+        
+     \item  $Cond_i$ é uma condição opcional sobre os iteradores $E_1$ até $E_i$.
+        
+     \item Laços do \texttt{foreach} podem conter múltiplos iteradores. 
+     Caso isso ocorra, o compilador interpreta isso como diversos laços aninhados.
+        
+        % Maiores detalhes, ver Manual do Usuário. % copiar para outros slides
+        
+        % Exemplo 1 iterador e multiplos iteradores
+        
+    \end{itemize}
+\end{frame}    
+
+
+\begin{frame}[fragile]
+
+\begin{block}{Exemplo: \texttt{foreach} }
+     
+\begin{lstlisting}[frame=single]
+    
+laco_01 =>  
+    L = [17, 3, 41, 25, 8, 1, 6, 40],  
+    foreach (E in L)  
+        println(E)  
+    end.  
+\end{lstlisting}
+        
+\end{block}
+\end{frame}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+\begin{frame}[fragile]
+\frametitle{Estruturas de Repetições: \texttt{while}}
+
+
+\begin{itemize}
+        \item O laço do \texttt{while} tem a seguinte forma:
+        
+        \begin{tabbing}
+            aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
+            \> \texttt{while ($Cond$)} \\
+            \> \> $Metas$  \\
+            \>  \texttt{end}
+        \end{tabbing} 
+        
+        \item Enquanto a expressão lógica \emph{Cond} for verdadeira, o conjunto de \texttt{Metas} é executado.
+        
+\end{itemize}
+\end{frame}    
+
+
+\begin{frame}[fragile]
+
+\begin{block}{Exemplo: \texttt{while} }
+     
+\begin{lstlisting}[frame=single]
+  
+laco_02 =>  
+    I = 1,  
+    while (I <= 9)  
+        println(I),  
+        I := I + 2  
+    end.  
+\end{lstlisting}
+        
+\end{block}
+\end{frame}    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+\begin{frame}[fragile]
+\frametitle{Estruturas de Repetições: \texttt{do-while}}
+
+    \begin{itemize}
+        
+        \item O laço \texttt{do-while} tem a seguinte forma:
+        
+        \begin{tabbing}
+            aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
+            \> \texttt{do} \\
+            \> \> $Metas$  \\
+            \>  \texttt{while ($Cond$)}
+        \end{tabbing} 
+        
+        \item Ao contrário do  \texttt{while} o iterador \texttt{do-while}
+        vai executar \texttt{Metas} pelo menos uma vez antes de avaliar \texttt{Cond}.
+        
+    \end{itemize}
+    
+\end{frame}
+
+
+\begin{frame}[fragile]
+
+\begin{block}{Exemplo: \texttt{do-while} }
+
+\begin{lstlisting}[frame=single]
+     
+laco_03 =>  
+     J = 6,  
+    do  
+        println(J),  
+        J := J + 1  
+    while (J <= 5).  
+\end{lstlisting}
+        
+\end{block}
+\end{frame}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Funções e Predicados Especiais}
+
+
+\begin{frame}[fragile]
+%[c,allowframebreaks]
+
+\frametitle{Funções e Predicados Especiais}
+    % Compreensão de lista
+    % Entrada e Saida de Dados
+\begin{itemize}
+    
+    \item Há algumas funções e predicados especiais em Picat 
+    que necessitam de algum cuidado.
+    
+    \pause
+    \item São elas: \texttt{compreensão de listas/vetores}, 
+    \texttt{entrada de dados} e \texttt{saída de dados}.
+    
+    \item Na verdade, já fizemos uso delas, porém sem a ênfase de que
+    são funções ora predicados.
+    
+\end{itemize}
+\end{frame}      
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[c,allowframebreaks]
+
+\frametitle{Compreensão de Listas e Vetores}    
+    
+\begin{itemize}    
+    \item A função de \underline{\textit{compreensão de listas e vetores}} é uma função especial que  permite a fácil criação de listas ou vetores, opcionalmente seguindo uma regra de 
+    criação.
+    
+    \item Sua notação é:
+    
+    \begin{tabbing}
+        aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
+        \> \> \texttt{[$T$ : $E_1$ \texttt{in} $D_1$, $Cond_1$, $\ldots$, $E_n$ in $D_n$, $Cond_n$]} 
+    \end{tabbing}
+    
+    \item Onde, $T$ é uma expressão  adicionada a lista, cada $E_i$ é um 
+    iterador, cada $D_i$ é um termo composto ou expressão que gera um termo composto, e cada $Cond_i$ é uma condição sobre cada iterador de $E_1$ até $E_i$.
+    
+    \item Há uma seção dedicada a listas. Voltaremos ao assunto.
+    
+    \framebreak
+
+    \item Esta função pode gerar um vetor também, a notação é um pouco diferente:
+    
+    \begin{tabbing}
+        aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
+        \> \> \texttt{\{$T$ : $E_1$ \texttt{in} $D_1$, $Cond_1$, $\ldots$, $E_n$ in $D_n$, $Cond_n$\}} 
+    \end{tabbing}
+    
+    \item Neste caso, os delimitadores são $\{$ e $\}$ de um vetor
+
+\end{itemize}
+
+\end{frame}      
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ \begin{frame}[fragile]
+ \frametitle{Compreensão de Listas e Vetores: Exemplo}
+\begin{small}
+
+\begin{verbatim}
+main =>
+ L = [(A, I) : A in [a, b], I in 1 .. 2],
+ V = {(I, A) : A in [a, b], I in 1 .. 2},
+ printf("\nL: %w  \nV: %w\n", L, V),
+ imp_vetor(V).
+
+imp_vetor (M) => 
+Tam = M.length,  %% tamanho de M
+  nl,
+   foreach(I in 1  .. Tam )
+     printf("V(%d):%w \t" , I, M[I] )
+    end,
+  nl.
+%%%% $picat vetor_exemplo_01.pi
+\end{verbatim}
+
+\end{small}
+ 
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[c,allowframebreaks]
+
+\frametitle{Leitura e Escrita}    
+
+\begin{itemize}
+        
+\item Picat tem diversas variações  funções de leitura de valores,
+        que serve tanto para ler de uma console \texttt{stdin},
+        como de um arquivo qualquer.
+        
+\item Aos usuários de Prolog, aqui não precisamos do delimitador
+final de `\textbf{.}'   ao final de uma leitura. 
+
+\item Válido quando editamos no interpretador, o `\textbf{.}' final é opcional
+        
+\framebreak        
+\item As mais importantes são:
+
+\begin{itemize}
+  
+  \item \texttt{read\_int($FD$) = $Int$} $\Rightarrow$ Lê um \textit{Int} do 
+  arquivo $FD$.
+  
+  \item \texttt{read\_real($FD$) = $Real$} $\Rightarrow$ Lê um \textit{Float} do 
+  arquivo $FD$.
+  
+  \item \texttt{read\_char($FD$) = $Char$} $\Rightarrow$ Lê um \textit{Char} do 
+  arquivo $FD$.
+  
+  \item \texttt{read\_line($FD$) = $String$} $\Rightarrow$ Lê uma \textit{Linha} 
+  do arquivo $FD$.
+  
+\end{itemize}
+
+\item Caso se deseja ler da console, padrão \texttt{stdin}, $FD$, o nome do descritor de arquivo,  pode ser omitido.
+
+\framebreak
+
+\item Os dois predicados mais importantes para saída de dados, são 
+\texttt{write} e \texttt{print}.
+
+\item Cada um destes predicados tem três variantes, são eles:
+
+\begin{itemize}
+
+\item \texttt{write($FD$, $T$)} $\Rightarrow$ Escreve um termo $T$ no arquivo 
+$FD$.
+
+\item \texttt{writeln($FD$, $T$)} $\Rightarrow$ Escreve um termo $T$ no arquivo 
+$FD$, e pula uma linha ao final do termo.
+
+\item \texttt{writef($FD$, $F$, $A\ldots$)} $\Rightarrow$ Este predicado é usado 
+para escrita formatada para um arquivo $FD$, onde $F$ indica uma série de 
+formatos para cada termo contido no argumento $A\ldots$. O número de argumentos 
+não pode exceder 10.
+
+\end{itemize}
+        
+\framebreak
+        
+\item Analogamente, para o predicado \texttt{print}, temos:
+
+\begin{itemize}
+
+  \item \texttt{print($FD$, $T$)} $\Rightarrow$ Escreve um termo $T$ no arquivo 
+  $FD$.
+  
+  \item \texttt{println($FD$, $T$)} $\Rightarrow$ Escreve um termo $T$ no arquivo 
+  $FD$, e pula uma linha ao final do termo.
+  
+  \item \texttt{printf($FD$, $F$, $A\ldots$)} $\Rightarrow$ Este predicado é usado 
+  para escrita formatada para um arquivo $FD$, onde $F$ indica uma série de 
+  formatos para cada termo contido no argumento $A\ldots$. O número de argumentos 
+  não pode exceder 10.
+
+\end{itemize}
+
+\item Caso queira escrever para \texttt{stdout}, o nome do  $FD$, pode ser omitido.
+
+\end{itemize}
+    
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+{Tabela de Formatação para Escrita}
+
+Apenas os mais importantes, há outros como: hexadecimal, notação científica,
+etc. Ver no apêndice do Guia do Usuário.    
+\begin{table}[h]
+    \begin{tabular}{l|l}
+        \hline  \hline
+        \textbf{Especificador} & \textbf{Saída} \\
+        \hline 
+        \hline 
+        \texttt{\%\%} & Sinal de Porcentagem \\
+        \texttt{\%c} & Caráctere \\
+        \texttt{\%d \%i} & Número Inteiro Com Sinal \\
+        \texttt{\%f} & Número Real \\
+        \texttt{\%n} & Nova Linha \\
+        \texttt{\%s} & \textit{String} \\
+        \texttt{\%u} & Número Inteiro Sem Sinal \\
+        \texttt{\%w} & Termo \textbf{qualquer} \\
+        \hline   \hline
+    \end{tabular}
+\end{table}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\frametitle{Comparação entre \texttt{write} e \texttt{print}}
+     
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ l|l|l|l }
+        \hline         \hline
+        Dados $\Rightarrow$  & "abc" & [a,b,c] & 'a@b'\\
+        \hline         \hline
+        \texttt{write}   & [a,b,c] & [a,b,c] & 'a@b' \\
+        \hline
+        \texttt{writef}  & [a,b,c] (\%s) & abc (\%w) & 'a@b' (\%w) \\
+        \hline
+        \texttt{print}   & abc & abc & a@b \\
+        \hline
+        \texttt{printf}  & abc (\%s) & abc (\%w) & a@b (\%w) \\ 
+        \hline \hline
+    \end{tabular}
+\end{table}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+
+\frametitle{Exemplos}
+    
+    \begin{block}{Condicionais}
+        \begin{lstlisting}[frame=single]
+main =>
+    X = read_int(),
+    if(X <= 100)then
+        println("X e menor que 100")
+    else
+        println("X nao e menor que 100")
+    end.
+.
+        \end{lstlisting}
+    
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+
+\frametitle{Exemplos -- Repetições}
+    
+   \begin{lstlisting}[frame=single]
+main =>
+    X = read_int(),
+    println(x=X),
+    while(X != 0)
+        X := X - 1,
+        println(x=X)
+    end
+.
+   \end{lstlisting}
+        
+   \begin{lstlisting}[frame=single]
+main =>
+    X = read_int(),
+    Y = X..X*3,
+    foreach(A in Y)
+        println(A)
+    end.
+        \end{lstlisting}
+    
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Exemplos -- Compreensão de Listas}    
+       
+ \begin{lstlisting}[frame=single]
+main => 
+  Tamanho = read_int(),
+  Y = [read_int() : 1..Tamanho],
+  Z = {X : X in Y, X >= 0},
+  forach(I in 1..Tamanho)
+      if(Y[I] >= 0)then
+          printf("Y[%d] e maior ou igual que 0\n",I)
+      else
+          printf("Y[%d] e menor que 0\n",I)
+      end
+  end
+ printf("Os valores de Y que sao maiores que 0 sao:\n%w",Z)
+.
+\end{lstlisting} 
+       
+\textcolor{red}{Este exemplo reúne muitos conceitos desta seção.}       
+   
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+\frametitle{Reflexões}
+
+\begin{itemize}
+
+
+  \item Esta seção  trata da sintaxe do Picat
+  
+    \pause
+  \item Embora sua sintaxe não seja muito extensa, ela precisa 
+  ser praticada
+  
+    \pause
+  \item Como este conteúdo se assemelha as LPs clássicas, como exercício,
+  voce está apto a fazer alguns algoritmos de outras linguagens.
+
+  \pause
+  \item Se antes o Prolog era complicado, com Picat,
+  tudo ficou análogo a Python e a linguagem C
+  
+  \pause
+  \item Em \url{https://github.com/claudiosa/CCS/tree/master/picat/input_output_exemplos}
+  tem vários exemplos avançados de entradas e saídas 
+  
+  \pause
+  \item Mãos à obra!
+ 
+\end{itemize}
+
+\end{frame}

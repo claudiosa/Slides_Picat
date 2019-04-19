@@ -1,28 +1,23 @@
-\frametitle{Reflexões}
+\frametitle{}
 
-\begin{itemize}
+    \begin{itemize}
+        \item Uma chamada do tipo $mae(maria, X)$, seria como perguntar ao compilador
+        "Maria é mãe de quem ?".
 
+        \item Nesse caso o compilador iria testar cada possível valor que pudesse ser
+        unificado com $X$ que pudesse satisfazer a regra $mae(maria,X)$.
 
-  \item Esta seção  trata da sintaxe do Picat
+        \item Ou seja, seria como se estivéssemos perguntando:
 
-    \pause
-  \item Embora sua sintaxe não seja muito extensa, ela precisa
-  ser praticada
+        \begin{itemize}
+            \item "Maria é mãe de Ana ?".
 
-    \pause
-  \item Como este conteúdo se assemelha as LPs clássicas, como exercício,
-  voce está apto a fazer alguns algoritmos de outras linguagens.
+            \item "Maria é mãe de Paula ?".
 
-  \pause
-  \item Se antes o Prolog era complicado, com Picat,
-  tudo ficou análogo a Python e a linguagem C
+            \item "Maria é mãe de Pedro ?".
 
-  \pause
-  \item Em \url{https://github.com/claudiosa/CCS/tree/master/picat/input_output_exemplos}
-  tem vários exemplos avançados de entradas e saídas
+            $\vdots$
+        \end{itemize}
 
-  \pause
-  \item Mãos à obra!
-
-\end{itemize}
+    \end{itemize}
 
