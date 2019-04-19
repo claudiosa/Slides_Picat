@@ -5,9 +5,9 @@
 \begin{frame}[fragile,allowframebreaks=0.8,c]
 	\frametitle{Predicados e Funções em Picat}
     
-    \begin{itemize}
+\begin{itemize}
 
-\item Os \textbf{predicados} assumem valores sempre valores lógicos \texttt{true} ($1$) ou \texttt{false} ($0$).
+\item Os \textbf{predicados} sempre assumem valores valores lógicos \texttt{true} ($1$) ou \texttt{false} ($0$).
 
 \item Os \textbf{predicados} em seus argumentos, podem passar $n$-termos e receber
 outros termos.
@@ -15,119 +15,129 @@ outros termos.
 \item Quanto as \textbf{funções}, estas funcionam seguindo as regras de funções matemáticas,
 sempre retornando um único valor
 
-        \item Predicados e funções são definidos com regras de \textit{casamento de padrões}
-        
-        
-        \item Há dois tipos de regras:
-        \pause
+\item Predicados e funções são definidos com regras de \textit{casamento de padrões}
+
+
+\item Predicados são conhecidos como \textbf{regras lógicas}, há dois tipos de regras:
+\framebreak        
         \begin{itemize}
-            \item Regras sem {\em backtracking} (\textit{non-backtrackable}):
+            \item Regras \textbf{sem} {\em backtracking} (\textit{non-backtrackable}):
         	
             \begin{tabbing}
               aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
-              \> \> $Cabe$ç$a, Cond\ $\textbf{\textcolor{red}{=>}} $Corpo$. 
+             \> \> \verb+ Cabeça , Condicional + \textbf{\textcolor{red}{=>}} \verb+ Corpo .+
             \end{tabbing}
             
-            \pause
-            \item Regras com {\em backtracking}:
+
+            \item Regras \textbf{com} {\em backtracking}:
             
             \begin{tabbing}
               aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
-              \> \> $Cabe$ç$a, Cond$ \textbf{\textcolor{red}{?=>}} $Corpo$ 
+             \> \> \verb+ Cabeça , Condicional + \textbf{\textcolor{red}{?=>}} \verb+ Corpo .+
             \end{tabbing}
         
         \end{itemize}
-        
-        \item A identificação da sintaxe é dada por:
-        
-        \begin{itemize}
-        
-            \item \emph{Cabeça}: indica um padrão de regra a ser casada.\\
-            
-            Forma geral:
-            \begin{tabbing}
-                aa \= aaa \= aaa \= aaa \kill
-                \> \> $regra(termo_1, \ldots,termo_n)$
-            \end{tabbing}
-            
-            Onde:
-            
-            \begin{itemize}
-                \item \emph{regra} é um átomo que define o nome da regra.
-                \item \emph{n} é a aridade da regra (\emph{i.e.} o total de argumentos)
-                \item Cada \emph{$termo_i$} é um argumento da regra.
-            \end{itemize}
-            
-            \item \emph{Cond}: é uma ou várias condições sobre a execução desta regra.
-                
-            \item \emph{Corpo}: define as ações da regra 
-            
-        \end{itemize}
-        
-        \item Todas as regras são finalizadas por um ponto final (.), seguido por um espaço 
-        em branco ou nova linha.
-        
-        \item Ao longo dos exemplos, detalhes a mais sobre esta construção de \textbf{predicados} e \textbf{funções}
-            
-    \end{itemize}
+\framebreak        
+       
+  \item A identificação da sintaxe é dada por:
+  
+  \begin{itemize}
+  
+      \item \emph{Cabeça}: indica um padrão de regra a ser casada.
+      
+      Forma geral:
+      \begin{tabbing}
+          aa \= aaa \= aaa \= aaa \kill
+          \> \> $regra(termo_1, \ldots,termo_n)$
+      \end{tabbing}
+      
+      Onde:
+      
+      \begin{itemize}
+          \item \emph{regra} é um átomo que define o nome da regra.
+          \item \emph{n} é a aridade da regra (\emph{i.e.} o total de argumentos)
+          \item Cada \emph{$termo_i$} é um argumento da regra.
+      \end{itemize}
+      
+      \item \emph{Cond}: é uma ou várias condições sobre a execução desta regra.
+          
+      \item \emph{Corpo}: define as ações da regra 
+      
+  \end{itemize}
+  
+  \item Todas as regras são finalizadas por um ponto final (.), seguido por um espaço 
+  em branco ou nova linha.
+  
+  \item Ao longo dos exemplos, detalhes a mais sobre esta construção de \textbf{predicados} e \textbf{funções}
+      
+\end{itemize}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{frame}[fragile]
-	\frametitle{Predicados e Funções -- Exemplo}
+	\frametitle{Regras com e sem Backtracking -- Exemplo}
 
-\begin{small}
+
+\begin{footnotesize}
 \begin{verbatim}
-main =>
-       X = 3, 
-       Y = 4,
-       um_predicado(X,Y,Z),
-       R = uma_funcao(X,Y),
-       printf("\n Z: %d \t R: %d", Z, R),
-       println("\n FIM"). 
-       
-um_predicado(X,Y,Z) => Z = X + Y.
-uma_funcao(X,Y) = R => R = X + Y.
+main => regra_01(7)  ,
+        regra_01(-4) ,
+        regra_01(44) .
+        
+regra_01(0)          ?=> printf("\n  CHEGOU A 0 !!!\n").
+regra_01(N) , N < 0  ?=> printf("\n  EH UM NEGATIVO !!!\n").
+regra_01(N) , N > 10 ?=> printf("\n  EH MAIOR QUE 10 !!!\n").
+regra_01(N) , N <= 10  =>  
+          printf("\t :%d ", N),
+          regra_01(N-1).
+
+%% =<  EH IGUAL a >= :: sobrecarga
+%%% $ picat regras_com_sem_backtraking.pi
+
 \end{verbatim}
 
-\end{small}
+\end{footnotesize}
+\textcolor{red}{Há uma recursão aqui. Algumas seções a frente.}
+
 \end{frame}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Casamento de Padrões}
 
 \begin{frame}[fragile]
-	\frametitle{Casamento de Padrões}
+\frametitle{Casamento de Padrões}
+
+\begin{itemize}
+
+\item O algoritmo de {\em casamento de padrões} para regras é análogo ao algoritmo de    unificação para variáveis. 
+
+\item O objetivo é encontrar dois padrões que possam ser unificados para se inferir alguma ação.
+
+\item Quanto ao {\em casamento de padrões}:
+\framebreak
+
+\begin{itemize}
+	\item Dado um padrão $p_1(t_1, \ldots,t_m)$, este \emph{casa} 
+	com um padrão semelhante $p_2(u_1, \ldots,u_n)$ se:
     
     \begin{itemize}
-    	
-        \item O algoritmo de {\em casamento de padrões} para regras é análogo ao algoritmo de    unificação para variáveis. 
-        
-        \item O objetivo é encontrar dois padrões que possam ser unificados para se inferir alguma ação.
-        
-        \item Quanto ao {\em casamento de padrões}:
-        \framebreak
-        
-        \begin{itemize}
-        	\item Dado um padrão $p_1(t_1, \ldots,t_m)$, este \emph{casa} 
-        	com um padrão semelhante $p_2(u_1, \ldots,u_n)$ se:
-            
-            \begin{itemize}
-            	\item $p_1$ e $p_2$ forem átomos equivalentes;
-            
-                \item O número de termos (chamado de aridade) em ($t_1, \ldots,t_m$)
-                e ($u_1, \ldots,u_n$) for equivalente.
-            
-            	\item Os termos ($t_1, \ldots,t_m$) e ($u_1, \ldots,u_n$) são equivalentes, ou tornaram-se  equivalentes pela unificação de variáveis	em qualquer um dos dois termos;
-            \end{itemize}
-            
-            \item Caso essas condições forem satisfeitas, o padrão $p_1(t_1,\ldots,t_m)$  casa com o padrão $p_2(u_1, \ldots,u_n)$.
-            
-        \end{itemize}        
-        
+    	\item $p_1$ e $p_2$ forem átomos equivalentes;
+    
+        \item O número de termos (chamado de aridade) em ($t_1, \ldots,t_m$)
+        e ($u_1, \ldots,u_n$) for equivalente.
+    
+    	\item Os termos ($t_1, \ldots,t_m$) e ($u_1, \ldots,u_n$) são equivalentes, ou tornaram-se  equivalentes pela unificação de variáveis	em qualquer um dos dois termos;
     \end{itemize}
+    
+    \item Caso essas condições forem satisfeitas, o padrão $p_1(t_1,\ldots,t_m)$  casa com o padrão $p_2(u_1, \ldots,u_n)$.
+    
+\end{itemize}        
+
+\end{itemize}
     
 \end{frame}
 
@@ -135,30 +145,30 @@ uma_funcao(X,Y) = R => R = X + Y.
 
 \begin{frame}[fragile]
     
-    \begin{block}{Exemplos de \textit{casamento}}
-    	
-        \begin{enumerate}
-        	\item A regra $fatorial(Termo, Resultado)$ pode casar com:\\
-            $fatorial(1,1)$, $fatorial(5,120)$, $fatorial(abc,25)$, $fatorial(X,Y)$, \emph{etc}.
-            
-            \pause
-             \item A regra $fatorial(Termo, Resultado), Termo \geq 0$ pode casar com:\\
-            $fatorial(1,1)$, $fatorial(5,120)$, $fatorial(X,Y)$, $fatorial(Z,Z)$, \emph{etc}.
-            
-            \pause
-            \item A regra $pai(X,Y)$ pode casar com:\\
-            $pai(rogerio, miguel)$, $pai(rogerio, henrique)$, $pai(salomao, X)$, $pai(12,24)$, \emph{etc}.
-            
-            \pause
-            \item A regra $pai(salomao, X)$ pode casar com:\\
-            $pai(salomao, rogerio)$, $pai(salomao, fabio)$.
-            
-            \pause
-            \item A regra $pai(salomao, fabio)$ pode casar com:\\
-            $pai(X, fabio)$, $pai(salomao, X)$, $pai(X,Y)$
-        \end{enumerate}
-        
-    \end{block}
+\begin{block}{Exemplos de \textit{casamento}}
+
+\begin{enumerate}
+	\item A regra $fatorial(Termo, Resultado)$ pode casar com:\\
+    $fatorial(1,1)$, $fatorial(5,120)$, $fatorial(abc,25)$, $fatorial(X,Y)$, \emph{etc}.
+    
+    \pause
+     \item A regra $fatorial(Termo, Resultado), Termo \geq 0$ pode casar com:\\
+    $fatorial(1,1)$, $fatorial(5,120)$, $fatorial(X,Y)$, $fatorial(Z,Z)$, \emph{etc}.
+    
+    \pause
+    \item A regra $pai(X,Y)$ pode casar com:\\
+    $pai(rogerio, miguel)$, $pai(rogerio, henrique)$, $pai(salomao, X)$, $pai(12,24)$, \emph{etc}.
+    
+    \pause
+    \item A regra $pai(salomao, X)$ pode casar com:\\
+    $pai(salomao, rogerio)$, $pai(salomao, fabio)$.
+    
+    \pause
+    \item A regra $pai(salomao, fabio)$ pode casar com:\\
+    $pai(X, fabio)$, $pai(salomao, X)$, $pai(X,Y)$
+\end{enumerate}
+
+\end{block}
     
 \end{frame}
 
@@ -190,13 +200,98 @@ uma_funcao(X,Y) = R => R = X + Y.
 %         \item \texttt{(P,Q), (P;Q), (P\&\&Q), (P||Q), not P} $\Rightarrow$ Operação lógica 
 %     %    sobre uma ou mais metas P e Q.
    % \end{enumerate}
-  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Funções}
+
+\begin{frame}[fragile]
+	\frametitle{Funções -- I}
+    
+    \begin{itemize}
+        \item A forma geral de uma função é:
+        
+        \begin{tabbing}
+          aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
+          \> \> $Cabe$ç$a = X \ $\verb+=>+$\ Corpo$. 
+        \end{tabbing}
+
+       \pause        
+        \item Caso tenhamos uma condição \emph{Cond}::
+        
+        \begin{tabbing}
+          aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
+          \> \> $Cabe$ç$a = X , Cond \ $\verb+=>+$\ Corpo$. 
+        \end{tabbing}
+        
+        \item \textcolor{red}{Funções \textbf{não} admitem \textbf{\textit{backtracking}}}.
+    \end{itemize}
+\end{frame}
+    
+\begin{frame}[fragile]
+	\frametitle{Funções -- II}
+
+    
+    \begin{itemize}
+        \item Funções são tipos especiais de regras que sempre sucedem com \emph{uma} 
+        resposta.
+        
+        \pause
+        \item Funções em Picat tem como intuito serem sintaticamente semelhantes a funções matemáticas (vide \emph{Haskell}).
+        
+        \pause
+        \item Em uma função a \emph{Cabeça} é uma equação do tipo $f(t_1,\ldots,t_n)=X$, onde
+        \emph{f} é um átomo que é o nome da função, \emph{n} é a aridade da função, e cada
+        termo $t_i$ é um argumento da função.
+        
+        \item \emph{X} é uma expressão que é o retorno da função.
+        
+    \end{itemize}
+    
+\end{frame}
+    
+\begin{frame}[fragile]
+	\frametitle{Funções  -- III}
+    
+    \begin{itemize}
+    
+        \item Funções também podem ser denotadas como fatos, onde podem servir como 
+        \textbf{\textit{aterramento}} para regras recursivas.
+        %, ou até mesmo como versões simplificadas de uma      regra. 
+        
+        
+        \item Esta são denotadas como: $f(t_1,\ldots,t_n) = $ \emph{Expressão}, onde \textit{Expressão}
+        pode ser um valor ou uma série de ações.
+        
+    \end{itemize}
+    
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Regras, Metas e Funções -- Exemplo}
+
+\begin{small}
+\begin{verbatim}
+main =>
+       X = 3, 
+       Y = 4,
+       um_predicado(X,Y,Z),
+       R = uma_funcao(X,Y),
+       printf("\n Z: %d \t R: %d", Z, R),
+       println("\n FIM"). 
+       
+um_predicado(X,Y,Z) => Z = X + Y.
+
+uma_funcao(X,Y) = R => R = X + Y.
+\end{verbatim}
+
+\end{small}
+\end{frame}
+
 
 \begin{frame} [fragile]
 
-\frametitle{Exemplo -- Função e Predicado}
+\frametitle{Regras, Metas e Funções -- Exemplo}
 \begin{small}
-
 \begin{verbatim}
 Picat> cl('predicados_funcoes').
 Compiling:: predicados_funcoes.pi
@@ -220,69 +315,64 @@ Picat>
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Predicados}
+\subsection{Relembrando as Regras}
 \begin{frame}[c, fragile, allowframebreaks=0.75]
-	\frametitle{Predicados}
+	\frametitle{Relembrando as Regras}
     
     \begin{itemize}
-        \item Forma geral de um predicado:
+        \item Forma geral de um predicado do tipo Regra:
     
         \begin{tabbing}
           aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
-          \> \> $Cabeça, Cond\ $\verb+=>+$\ Corpo$. 
+          \> \> \verb+ Cabeça , Condicional  =>   Corpo .+ 
         \end{tabbing}
         
         \item  Forma geral de um predicado com \textit{backtracking}:
         
         \begin{tabbing}
           aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
-            \> \> $Cabe$ç$a, Cond$ \textbf{\textcolor{red}{?=>}} $Corpo$
+            \> \> \verb+ Cabeça , Condicional + \textbf{\textcolor{red}{?=>}} \verb+ Corpo .+
         \end{tabbing}
     \end{itemize}
     
+    \textcolor{red}{Em Prolog, esta condicional (Cond) entra no corpo da regra. Picat é flexível!}
+
     \framebreak
     
     \begin{itemize}
-    	\item Predicados são um tipo de regra que definem relações, podendo ter zero, uma ou múltiplas respostas.
-    	
-    	\item Predicados podem, ou não, ser \emph{backtrable}.
-        
-        \item Caso um predicado tenha $n = 0$, os parenteses dos argumentos podem ser omitidos.
-        
         \framebreak
         
-        \item Dentro de um predicado, \emph{Cond} só pode ser avaliado uma vez, acessando somente termos dentro do escopo do predicado.
+        \item Dentro de uma regra, \emph{Cond} só pode ser avaliado uma vez, acessando somente termos dentro do escopo do predicado.
         
-        \item Predicados são \textbf{sempre avaliados com valores lógicos} ({\em true} ou {\em false})
+        \item Sempre estar atento que: regras são \textbf{sempre avaliados com valores lógicos} ({\em true} ou {\em false})
         
         \item Por outro lado, as variáveis  como argumento ou  instanciadas
-        dentro dele, podem ser utilizadas dentro do escopo do predicado, 
-        ou no escopo onde
-        este predicado foi chamado.
+        dentro dele, podem ser utilizadas dentro do escopo da regra, 
+        ou no escopo onde  esta regra foi chamada.
     \end{itemize}
     
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsection{Regras do Tipo  Fatos}
 \begin{frame}[c,allowframebreaks=0.6,fragile]
-
-\frametitle{Predicados do Tipo  Fatos}
+\frametitle{Regras do Tipo  Fatos}
 
     \begin{itemize}
-        \item As regras que não tem condições no corpo, estes predicados são conhecidos
-        como:  \textit{fatos}
+        \item As regras que não tem condicionais e nem corpo, estes  são conhecidos
+        como:  \textit{fatos} ou \textit{regras sem-corpo}
         
-                \item Isto é, \textit{fatos} são regras \textit{sempre verdadeiras}
+       \item Estes \textit{fatos} são regras \textit{sempre verdadeiras}
         
-        \item Os fatos são do tipo:
+        \item Formato dos fatos são do tipo:
         
         \begin{tabbing}
           aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
           \> \> $p(t_1,\ldots,t_n)$. 
         \end{tabbing}
         
-        \item Os argumentos de um \emph{fato} \textbf{não} podem ser \textbf{variáveis}.
+        \item Os argumentos de um \emph{fato} \textbf{não} podem conter \textbf{variáveis}.
         
         \framebreak
         
@@ -294,29 +384,22 @@ Picat>
             \> \texttt{index ($M_{11},M_{12},\ldots,M_{1n}$) $\ldots$ ($M_{m1},M_{m2},\ldots,M_{mn}$)}\index{\texttt{index}} 
         \end{tabbing}
         
-        \item Onde um $M_{ij}$ com o simbolo $+$,  significa que este termo já foi 
+        \item Onde um $M_{ij}$ com o simbolo `$+$',  significa que este termo já foi 
         indexado.
         
-        \item Quanto o $-$ significa que este termo deve ser indexado
+        \item Quanto o `$-$' significa que este termo deve ser indexado
         
-        \item Ou seja, quando ocorre um simbolo $+$ em um grupo do \textit{index}, é avaliado
+        \item Ou seja, quando ocorre um simbolo `$+$' em um grupo do \textit{index}, é avaliado
         pelo compilador como um valor constante a ser casada
         
         %, que não irá gerar uma nova regra durante
         %a execução do programa.
         
-        \item Quanto ao $-$, este é avaliado pelo compilador com uma variável que deverá ser 
+        \item Quanto ao `$-$', este é avaliado pelo compilador com uma variável que deverá ser 
         instanciada à um valor. Ou seja, quando se deseja unificar um valor a esta variável
         
-        \item O parâmetro $-$ no \textit{index} é quase como regra geral
-        
-        % e, para que isso ocorra, será necessária a geração de uma nova 
-        %regra
-        % + não será avaliado, portanto não será gerada uma nova regra (por instancia)
-        % + é como uma constante
-        % - será avaliado, portanto será gerada uma nova regra (por instancia)
-        % - é como uma variável
-        
+        \item Dica: o parâmetro `$-$' no \textit{index} é quase como regra geral
+                
         \item \textbf{Não} pode haver um \textbf{predicado} e um \textbf{predicado 
         fato} com \textbf{mesmo nome}.
         
@@ -326,7 +409,7 @@ Picat>
 
 
 \begin{frame} [fragile]
-\frametitle{Exemplo -- Função e Predicado}
+\frametitle{Exemplo -- Função e Regras}
 
 \begin{small}
 \begin{verbatim}
@@ -359,70 +442,6 @@ excluindo alguns dos parâmetros do \textit{index}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\subsection{Funções}
-
-\begin{frame}[fragile]
-	\frametitle{Funções}
-    
-    \begin{itemize}
-        \item A forma geral de uma função é:
-        
-        \begin{tabbing}
-          aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
-          \> \> $Cabe$ç$a = X \ $\verb+=>+$\ Corpo$. 
-        \end{tabbing}
-
-       \pause        
-        \item Caso tenhamos uma condição \emph{Cond}::
-        
-        \begin{tabbing}
-          aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
-          \> \> $Cabe$ç$a = X , Cond \ $\verb+=>+$\ Corpo$. 
-        \end{tabbing}
-        
-        \item \textcolor{red}{Funções \textbf{não} admitem \textbf{\textit{backtracking}}}.
-    \end{itemize}
-\end{frame}
-    
-\begin{frame}[fragile]
-	\frametitle{Funções}
-
-    
-    \begin{itemize}
-        \item Funções são tipos especiais de regras que sempre sucedem com \emph{uma} 
-        resposta.
-        
-        \pause
-        \item Funções em Picat tem como intuito serem sintaticamente semelhantes a funções matemáticas (vide \emph{Haskell}).
-        
-        \pause
-        \item Em uma função a \emph{Cabeça} é uma equação do tipo $f(t_1,\ldots,t_n)=X$, onde
-        \emph{f} é um átomo que é o nome da função, \emph{n} é a aridade da função, e cada
-        termo $t_i$ é um argumento da função.
-        
-        \item \emph{X} é uma expressão que é o retorno da função.
-        
-    \end{itemize}
-    
-\end{frame}
-    
-\begin{frame}[fragile]
-	\frametitle{Funções}
-    
-    \begin{itemize}
-    
-        \item Funções também podem ser denotadas como fatos, onde podem servir como 
-        \textbf{\textit{aterramento}} para regras recursivas.
-        %, ou até mesmo como versões simplificadas de uma      regra. 
-        
-        
-        \item Esta são denotadas como: $f(t_1,\ldots,t_n) = $ \emph{Expressão}, onde \textit{Expressão}
-        pode ser um valor ou uma série de ações.
-        
-    \end{itemize}
-    
-\end{frame}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Exemplos}
@@ -431,7 +450,7 @@ excluindo alguns dos parâmetros do \textit{index}}
 
 \frametitle{Exemplos}
 
-\begin{block}{Exemplo de Predicado}
+\begin{block}{Exemplo de Predicado ou regra}
    
 \begin{lstlisting}[frame=single]
 contas_P0(X1, X2, X3, Z) ?=>
@@ -539,7 +558,7 @@ eleva_cubo(X) = X1 => X1 = X*X*X.
        
 \end{frame}    
      
-    
+    %%%%%%%%%%%%%%%%
     
 \begin{frame}[fragile]
 \frametitle{Comandos Condicionais}
@@ -826,24 +845,30 @@ laco_03 =>
 \end{frame}      
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
- \begin{frame}
+ \begin{frame}[fragile]
  \frametitle{Compreensão de Listas e Vetores: Exemplo}
-%           
-% \begin{block}{xx}
-% \begin{verbatim}
+\begin{small}
 
-%  picat> L = [(A, I) : A in [a, b], I in 1 .. 2].  
-%  L = [(a , 1),(a , 2),(b , 1),(b , 2)]  
-%
-%  picat> L = {(A, I) : A in [a, b], I in 1 .. 2}.  
-%  L = {(a , 1),(a , 2),(b , 1),(b , 2)}        
+\begin{verbatim}
+main =>
+ L = [(A, I) : A in [a, b], I in 1 .. 2],
+ V = {(I, A) : A in [a, b], I in 1 .. 2},
+ printf("\nL: %w  \nV: %w\n", L, V),
+ imp_vetor(V).
+
+imp_vetor (M) => 
+Tam = M.length,  %% tamanho de M
+  nl,
+   foreach(I in 1  .. Tam )
+     printf("V(%d):%w \t" , I, M[I] )
+    end,
+  nl.
+%%%% $picat vetor_exemplo_01.pi
+\end{verbatim}
+
+\end{small}
  
-%\end{verbatim}
-% \end{block}        
-% %\item Ao longo do curso, teremos outros exemplos
-%
- \end{frame}
-%
+\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1072,7 +1097,10 @@ main =>
   \pause
   \item Se antes o Prolog era complicado, com Picat,
   tudo ficou análogo a Python e a linguagem C
-
+  
+  \pause
+  \item Em \url{https://github.com/claudiosa/CCS/tree/master/picat/input_output_exemplos}
+  tem vários exemplos avançados de entradas e saídas 
   
   \pause
   \item Mãos à obra!

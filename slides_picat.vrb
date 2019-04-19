@@ -17,6 +17,9 @@
   \item Se antes o Prolog era complicado, com Picat,
   tudo ficou análogo a Python e a linguagem C
 
+  \pause
+  \item Em \url{https://github.com/claudiosa/CCS/tree/master/picat/input_output_exemplos}
+  tem vários exemplos avançados de entradas e saídas
 
   \pause
   \item Mãos à obra!
