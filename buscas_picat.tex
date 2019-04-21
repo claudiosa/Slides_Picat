@@ -1,3 +1,4 @@
+
 \section{Buscas}
 \begin{frame}
 
@@ -285,11 +286,36 @@ algumas soluções
 
 \end{frame}
 
+\begin{frame}[fragile]
+ \frametitle{O \textit{Miolo} ou Núcleo  da Busca}
 
+\begin{footnotesize}
+\begin{verbatim}
+busca_DFS ( [ No_corrente | Caminho] , L_sol) ?=>
+     destino(No_final),       %%% condicao de parada 1
+	   No_corrente == No_final,
+     L_sol = [ No_corrente | Caminho ],
+     as_cidades(L_Todas_Cidades),    %%% condicao de parada 2
+     %% TODAS CIDADES FORAM VISITADAS
+	   length (L_sol) ==  length(L_Todas_Cidades),
+     write(L_sol),
+     printf(" \n UMA SOLUCAO ....: OK\n ==>"). 
+
+busca_DFS (  [NoH | Caminho], Solucao) =>
+           %%% explorar um novo movimento ou um novo noh
+           move_no(NoH , Novo_NoH), 
+           %% testar se este novo noh nao foi visitado ainda
+           %% ou novo_NOH eh permitido
+           not( member(Novo_NoH, [NoH|Caminho]) ),
+           busca_DFS(  [Novo_NoH , NoH | Caminho ] , Solucao).
+\end{verbatim}
+\end{footnotesize}
+
+\end{frame}
 
 
 \begin{frame}[fragile]
- \frametitle{O código}
+ \frametitle{O Código Completo}
 
 \begin{itemize}
   \item Acompanhar as explicações do código de:\\
@@ -317,6 +343,31 @@ algumas soluções
 
 
 
+\begin{frame}[fragile]
+\frametitle{Concluindo Buscas}
+
+\begin{block}{}
+\begin{itemize}
+  
+  
+  \item A recursividade na modelagem das buscas, define uma metodologia de se \textit{programar em lógica} e resolver problemas
+    \pause
+  \item Exercitar-se para aprender os detalhes!
+    \pause
+  \item Há o uso extensivo de listas em problemas complexos
+  
+  \pause
+  \item Aos problemas complexos, há outras técnicas de programação
+  para resolvê-los.
+  
+  
+  \pause
+  \item Assunto das próximas seções!
+\end{itemize}
+
+\end{block}
+
+\end{frame}
 
 
 

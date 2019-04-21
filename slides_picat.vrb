@@ -2,27 +2,15 @@
 
 
 \begin{itemize}
-\item A recursão é o paradigma das linguagens declarativas como Haskell, Prolog, Picat, ... etc
-
- \pause
- \item As regras recursivas são construídas com uma ou mais \textit{regras aterradas}, que \textbf{sempre vem antes} das demais
- regras recursivas, as  quais podem ou não terem o \textit{backtracking} habilitados (\textbf{\texttt{?=>}})
-
-
- \pause
- \item A avaliação destas regras \textbf{são sempre da esquerda para direita}, ocorrendo o \textit{backtracking} em caso de falha ou de uma nova resposta
-
+  \item Outros métodos para se resolver estes problemas
   \pause
- \item As regras recursivas com \textit{backtracking} habilitados ( \textbf{\texttt{?=>}} ), apenas
- para regras predicativas. As funções não admitem \textit{backtracking}!
-
+  \item Mas perdemos na portabilidade de usar em outros planejadores
   \pause
- \item A metodologia destas regras e sua construção, seguem  esquemas mais
- avançados da programação declarativa
-
-   \pause
- \item O \textbf{\textit{main}} é uma regra predicativa que pode conter ou não argumentos.
-
-
+  \item Os modelos escritos em PDDL (\textit{Planning Domain Definition Language})
+  facilmente portáveis para Picat
+    \pause
+  \item Sob um uso mais restrito, um modelo em PDDL é executado diretamente em Picat
+   % \pause
+  %\item
 \end{itemize}
 

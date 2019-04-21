@@ -197,8 +197,8 @@ Em Picat, sob uma visão funcional, este enunciado é escrito por:
 
 \begin{verbatim}
 comprimento_02( [ ] ) = 0.
-comprimento_02([ _ | L ]) = S  => 
-             S = 1 + comprimento_02( L ).
+comprimento_02([ _ | L ]) = N  => 
+             N = 1 + comprimento_02( L ).
 \end{verbatim}
 
 \framebreak
@@ -207,11 +207,11 @@ Em Picat, sob uma visão lógica, este predicado
 pode ser construído como:
 
 \begin{verbatim}
-comprimento_01([],S) ?=> S = 0. 
+comprimento_01([],N) ?=> N = 0. 
 %%% em PROLOG, apenas comprimento_01([],0). PORQUÊ?
-comprimento_01([_|L],S)  => 
+comprimento_01([_|L],N)  => 
              comprimento_01( L , Parcial ), 
-             S = 1 + Parcial.
+             N = 1 + Parcial.
 \end{verbatim}
 
 \framebreak
@@ -220,7 +220,7 @@ Um ``{\em mapa de memória}'' é dado por:
 \begin{center}
 \begin{tabular}[c]{|c|c|c|c|c|c|}
 \hline
-& Regra & X & T & N1 & N = N+1\\\hline
+& Regra & X & T & N & N = N+1\\\hline
 compto([a,b,c,d],N) & \#2 & a & [b,c,d] & 3 $\rightarrow$ & 3+1$=$4\\\hline
 compto([b,c,d],N) & \#2 & b & [c,d] & 2 $\rightarrow$ & $\nwarrow$ 2+1\\\hline
 compto([c,d],N) & \#2 & c & [d] & 1 $\rightarrow$ & $\nwarrow$ 1+1\\\hline
@@ -236,50 +236,100 @@ compto([],N) & \#1 & -- & -- & -- & $\nwarrow$ 0\\\hline
 \begin{frame}[fragile, allowframebreaks=0.9]
 \frametitle{Exemplo: verificar a pertinência de um objeto na lista}
 
-Verifica se um dado objeto pertence há uma  lista
+\begin{itemize}
+  \item Verifica se um dado objeto pertence há uma  lista
+  \item Um método clássico -- muito usado
+  \item Tem embutido no Picat: o \textit{menber}
+\end{itemize}
+
+Em Picat, sob uma visão funcional, esta função é escrita por:
+
  \begin{verbatim}
-REFAZER
-member( H, [ H |  _ ] ).
-member( H, [ _  | T ] ) :- member(H, T).
+pertence_02( _ , [ ]) = false. 
+pertence_02( A, [A|_]) = true. 
+% CUIDAR ... em funcoes nao hah ? em ?=> ... 
+% sem backtracking em funcoes
+pertence_02(A, [B|L]) = X => 
+             A != B,
+             X = pertence_02(A,L).
 \end{verbatim}
 
 %O interessante é observar a versatilidade 
 %deste  predicado em várias situações:
 
 
-\end{frame}
-
-
-
-\begin{frame}[fragile, allowframebreaks=0.9]
-\frametitle{Exemplo: adicionar um elemento  em uma lista}
-
-Um objeto é adicionado a lista
-sem repeti\c{c}ão caso este já
- esteja contido na lista:
- 
+\framebreak
+Em Picat, sob uma visão lógica, este predicado 
+pode ser construído como:
 \begin{verbatim}
-REFAZER
-add_to_set(X, [ ], [X]).
-add_to_set(X, Y, Y) :- member(X, Y).
-add_to_set(X, Y, [X | Y]).
+pertence_01( A, [A|_]) ?=> true. 
+% Again, backtracking CONTROLADO ... diferente do Prolog
+pertence_01(A,[B|L])  => 
+             A != B,
+             pertence_01(A,L).
 \end{verbatim}
 
 \end{frame}
 
 
 \begin{frame}[fragile, allowframebreaks=0.9]
+\frametitle{Exemplo: adicionar um elemento  em uma lista}
+
+\begin{itemize}
+  \item Um objeto é adicionado no início da lista (sem repeti\c{c}ão) caso este já
+ esteja contido na lista, a lista original é a retornada:
+%  \item 
+\end{itemize}
+
+Em Picat, sob uma visão funcional, esta função é escrita por:
+ 
+\begin{verbatim}
+add_X_lista_02(X, [ ]) = [X]. 
+add_X_lista_02(X, Y) = Z =>
+          pertence_02(X, Y) = true,
+          Z = Y;
+          Z = [ X | Y ].
+\end{verbatim}
+
+
+\framebreak
+Em Picat, sob uma visão lógica, este predicado 
+pode ser construído como:
+\begin{verbatim}
+
+add_X_lista_01(X, [ ], Z )  ?=> Z = [X]. 
+add_X_lista_01(X, Y, Z) ?=>
+          pertence_01(X, Y),
+          Z = Y.
+add_X_lista_01(X, Y, Z) =>
+          Z = [ X | Y ].
+
+\end{verbatim}
+
+\end{frame}
+
+
+
+
+\begin{frame}[fragile, allowframebreaks=0.9]
 \frametitle{Exemplo: união de duas listas}
 
-O método de  união ou concatenação entre duas listas,
-resultando em uma terceira lista pode ser dada por:
+\begin{itemize}
+  \item O método de  união ou concatenação entre duas listas,
+ resultando em uma terceira lista
 
-Em Picat, sob uma visão funcional, este enunciado é escrito por:
+ \item Este predicado é conhecido como \textit{append} ou \textit{concatena}. O \textit{append} está 
+pronto na  biblioteca default do Picat
 
+\item Há uma versão simplificada: \texttt{L3 = L1 \textbf{++} L2}
+
+\end{itemize}
+
+Em Picat, sob uma visão funcional, esta função é escrita por:
 \begin{verbatim}
 uniao_02( [], X ) = X. 
 uniao_02( [X|L1], L2 ) = L3 => 
-                            L3 = [X | uniao_02( L1, L2 )].
+                           L3 = [X | uniao_02( L1, L2 )].
 \end{verbatim}
 
 \framebreak
@@ -312,25 +362,40 @@ uniao_01( A , L2, R  ) =>  A = [X|L1] ,
 
 \framebreak
 
-A list comprehension\index{list comprehension}, which takes the following form, is a special functional notation for creating lists:
+Um \textit{list comprehension} tem o seguinte formato
+na criação de listas:
 \begin{tabbing}
 aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
 \> \> \texttt{[$T$ : $E_1$ \texttt{in} $D_1$, $Cond_1$, $\ldots$, $E_n$ in $D_n$, $Cond_n$]} 
 \end{tabbing}
-where $T$ is an expression, each $E_i$ is an iterating pattern\index{iterator}, each $D_i$ is an expression that gives a compound value\index{compound value}, and the optional conditions $Cond_1$,$\ldots$,$Cond_n$  are callable terms\index{term}. This list comprehension\index{list comprehension} means that for every tuple of values $E_1 \in D_1$, $\ldots$, $E_n \in D_n$, if the conditions are true, then the value of $T$ is added into the list\index{list}.
+\begin{itemize}
+  \item $T$ é uma termo (uma expressão num caso genérico)
+  \item $E_i$ é um padrão de iteração 
+  \item $D_i$ é uma expressão de um valor composto, em geral um intervalo de domínio
+  \item Opcionalmente,  condições $Cond_1$,$\ldots$,$Cond_n$  são chamados de \textit{termos}
+  \item Esta geração de lista tem a seguinte interpretação: \textit{toda tupla de valores $E_1 \in D_1$, $\ldots$, $E_n \in D_n$, 
+  se as condições $Cond_i$ forem verdades, então o valor do termo $T$ é adicionado na lista em construção}
+\end{itemize}
 
-An array comprehension\index{array comprehension} takes the following form:
-\begin{tabbing}
-aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
-\> \> \texttt{\{$T$ : $E_1$ \texttt{in} $D_1$, $Cond_1$, $\ldots$, $E_n$ in $D_n$, $Cond_n$\}} 
-\end{tabbing}
-It is the same as:
-\begin{tabbing}
-aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
-\> \> \texttt{to\_array([$T$ : $E_1$ \texttt{in} $D_1$, $Cond_1$, $\ldots$, $E_n$ in $D_n$, $Cond_n$])} 
-\end{tabbing}
 
 \framebreak
+Um vetor ou matrizes também pode 
+ser construídos com um  \textit{array comprehension} e tem
+o seguinte formato:
+\begin{center}
+\texttt{\{$T$ : $E_1$ \texttt{in} $D_1$, $Cond_1$, $\ldots$, $E_n$ in $D_n$, $Cond_n$\}} 
+\end{center}
+
+Isto é o mesmo como
+%It is the same as:
+\begin{center}
+\texttt{to\_array([$T$ : $E_1$ \texttt{in} $D_1$, $Cond_1$, $\ldots$, $E_n$ in $D_n$, $Cond_n$])} 
+
+\end{center}
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks=0.9]
+
 \frametitle{Exemplos de \textit{list comprehension}}
 
 
@@ -338,20 +403,20 @@ aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
 L1 = [I :  I in 1..20]
 L2 = [I :  I in 1..20, I>10, I<20]
 L3 = [(A,I) : A in [a,b], I in 1..2]
+V1 = {I :  I in 1 .. 7}
+V2 = {(I,J) :  I in 1 .. 2, J in 11 .. 12}
 \end{verbatim}
 
 \end{frame}
 
-
-
-
+%%%%%%%%%%%%%
 
 \begin{frame}[fragile]
 \frametitle{Concluindo Listas}
 
 \begin{block}{}
 \begin{itemize}
-  \item Há muitos predicados e funções prontas sobre listas no módulo lists.pi (conferir)
+  \item Há muitos predicados e funções prontas sobre listas nos módulos do Picat
   \item Se aprende sobre listas, fazendo muitos métodos
   \item A recursividade em sua modelagem, define a metodologia de se \textit{programar em lógica}
   \item Exercitar-se
@@ -362,14 +427,6 @@ L3 = [(A,I) : A in [a,b], I in 1..2]
 \end{block}
 
 \end{frame}
-
-
-
-
-
-
-
-
 
 
 

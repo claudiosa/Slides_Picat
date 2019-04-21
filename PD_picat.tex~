@@ -1,10 +1,11 @@
 
        
        \section{Programação Dinâmica}
+
 \begin{frame}[fragile]
 %[fragile, allowframebreaks=0.9]
 
-    \frametitle{Programação Dinâmica -- (PD)}
+    \frametitle{Programação Dinâmica (PD) -- I}
 
    \begin{block}{}
      \begin{itemize}
@@ -23,7 +24,23 @@
       evitando a repetição do que já foi calculado anteriormente, é conhecida como:
       Programação Dinâmica, ou simplesmente: PD
 
-      \pause
+    \end{itemize}
+    
+    \end{block}
+    
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]
+%[fragile, allowframebreaks=0.9]
+
+    \frametitle{Programação Dinâmica (PD) -- II}
+
+   \begin{block}{}
+     \begin{itemize}
+
       \item Como Picat usa a recursão, na programação em lógica, nada mais
       natural do que esta ter a PD disponível 
 
@@ -33,6 +50,10 @@
         \pause
        \item O \textit{tabling}  é um dos elementos fortes do planejador do Picat (módulo \textit{planner})
 
+
+        \pause
+       \item O exemplo escolhido para ilustrar a PD em Picat, veio do texto \textit{Modeling and Solving AI
+        Problems in Picat}, de Roman Barták e Neng-Fa
     \end{itemize}
     
     \end{block}
@@ -44,32 +65,114 @@
 \begin{frame}[fragile]
 %[fragile, allowframebreaks=0.9]
 
-\frametitle{Exemplo de uso da Programação Dinâmica -- (PD)}
+\frametitle{Exemplo de Uso da Programação Dinâmica -- (PD)}
+
+
+
+\begin{itemize}
+  \item Seja o binômio ${\left(x + y\right)}^n$, conhecido \textit{Binômio de Newton}
+
+  \pause 
+  \item Casos particulares são:
+  \item  ${\left(x + y\right)}^0 = 1$
+  \item  ${\left(x + y\right)}^1 = x + y$
+  \item  ${\left(x + y\right)}^2 = x^2 + 2xy + y^2$
+  
+  \pause
+  \item  ${\left(x + y\right)}^2 = x^2y^0 + 2x^1y^1 + x^0y^2$
+  \item  ${\left(x + y\right)}^3 = x^3y^0 + 3x^2y^1 + 3x^1y^2 + x^0y^3$
+  \item  ${\left(x + y\right)}^4 = x^4y^0 + 4x^3y^1 + 6x^2y^2 + 4x^1y^3 + x^0y^4.$
+    \item  .......
+    \pause
+ \item Como obter estes coeficientes  polinômios?  
+
+\end{itemize}
+
+    
+\end{frame}
+
+
+\begin{frame}[fragile]
+%[fragile, allowframebreaks=0.9]
+
+\frametitle{Exemplo de Uso da Programação Dinâmica -- (PD)}
 
 \begin{figure}[!htb]
 \centering
-%\includegraphics[width=0.850\textwidth, height=0.650\textheight]{figures/mundo_dos_blocos01.jpg}
+\includegraphics[width=0.70\textwidth, height=0.60\textheight]{figures/pascal_triangle_01.jpg}
 %%%prolog/scale=0.47
 %\label{fig_nos_estados}
-\caption{O \textit{mundo dos blocos}}
+\caption{O triângulo de Pascal}
+\end{figure}
+
+   
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+%[fragile, allowframebreaks=0.9]
+
+\frametitle{Exemplo de Uso da Programação Dinâmica -- (PD)}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.850\textwidth, height=0.650\textheight]{figures/pascal_triangle_02.jpg}
+%%%prolog/scale=0.47
+%\label{fig_nos_estados}
+\caption{O triângulo de Pascal -- Coeficientes Binomiais}
 \end{figure}
 
     
 \end{frame}
 
+
+
 \begin{frame}[fragile]
 %[fragile, allowframebreaks=0.9]
 
-\frametitle{Formulação Matemática}
+\frametitle{Formulação Matemática -- I}
+
+\begin{itemize}
+  \item O \textit{coeficiente binomial}, também chamado de \textit{número binomial}, 
+de um número $n$, na classe $k$, consiste no número de combinações de $n$ termos, $k$ a $k$. 
+
+\pause
+  \item O número binomial de um número $n$, na classe $k$, pode ser escrito como:
+
+$$ {n \choose k}= \frac {n!}{k!(n-k)!}=\frac {n(n-1)(n-2)\cdots(n-k+1)}{k!}$$
+\end{itemize}   
+    
+\end{frame}
 
 
+
+\begin{frame}[fragile]
+%[fragile, allowframebreaks=0.9]
+
+\frametitle{Formulação Matemática -- II}
+
+\begin{itemize}
+  \item Alternativa ao cálculo do fatorial, tem-se a relação de Stiffel:
+
+$$ {n\choose k}={n-1\choose k-1}+{n-1\choose k}$$
+    
+
+\pause
+  \item  O coeficiente binomial é muito utilizado no Triângulo de Pascal, onde o 
+  termo na linha $n$ e coluna $k$ é  dado por: ${n-1 \choose k-1}$
+  
+  \pause
+  \item A fórmula de Stiffel é recorrente, e diretamente escrita em Picat.\\
+  Veja os códigos.
+\end{itemize}   
     
 \end{frame}
 
 
 
 
-\begin{frame}[fragile] allowframebreaks=0.9]
+\begin{frame}[fragile] 
 
 \frametitle{Código em Partes}
 
@@ -85,9 +188,16 @@ c(N, N) = 1.
 c(N,K) = c(N-1, K-1) + c(N-1, K).
 
 \end{verbatim}
+    
+\end{frame}
 
-\framebreak
 
+
+\begin{frame}[fragile] 
+
+\frametitle{Código em Partes}
+
+\begin{small}
 \begin{verbatim}
 main  ?=>  
     statistics(runtime,_), % faz uma marca do 1o. statistics
@@ -110,7 +220,7 @@ main  ?=>
     .
 main => printf("\n Para uma solução .... !!!!" ) .
 \end{verbatim}
-
+\end{small}
     
 \end{frame}
 
@@ -168,10 +278,11 @@ main => printf("\n Para uma solução .... !!!!" ) .
 
 
 \begin{itemize}
-  \item Outros métodos para se resolver estes problemas
+  \item Há outros métodos para se resolver estes problemas
+
   \pause
-  \item 
-  \pause
+  \item O comando \textit{tabling} é a base do módulo \textit{planner}
+
    % \pause
   %\item 
 \end{itemize}
