@@ -2,15 +2,22 @@
 
 
 \begin{itemize}
-  \item Outros métodos para se resolver estes problemas
+  \item Há outros métodos para se resolver estes problemas.\\
+  Exemplo: Programação Linear, Buscas Heurísticas, etc
+
   \pause
-  \item Mas perdemos na portabilidade de usar em outros planejadores
+  \item As restrições globais se aplicam sobre um conjunto de variáveis
+  e há muitas outras importantes disponíveis no Picat
+
   \pause
-  \item Os modelos escritos em PDDL (\textit{Planning Domain Definition Language})
-  facilmente portáveis para Picat
+  \item A área é extensa, contudo, Picat adere há todos requisitos da PR
+
     \pause
-  \item Sob um uso mais restrito, um modelo em PDDL é executado diretamente em Picat
-   % \pause
-  %\item
+  \item Resumo da PR: segue por uma notação/manipulação algébrica restrita,
+        simplificar e bissecionar as restrições, instanciar variáveis,
+        verificar inconsistências,
+        avançar sobre as demais variáveis, até que todas
+        estejam instanciadas.
+
 \end{itemize}
 

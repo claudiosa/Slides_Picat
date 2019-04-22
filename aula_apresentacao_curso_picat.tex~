@@ -77,9 +77,10 @@
     que tenha um compilador C instalado completo, preferencialmente.
 
     \item Comunidade e ações: \url{http://picat-lang.org}
+    
     \pause
-
     \item Códigos e este material, sempre atualizados em: 
+
     \pause
     \begin{itemize}
       \item  Este PDF e seu texto original:  \url{http://github.com/claudiosa/Slides_Picat}
