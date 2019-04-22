@@ -355,6 +355,65 @@ Picat>
 \end{frame}
 
 
+\begin{frame}[fragile]
+\frametitle{Ambiente do Interpretador -- Uso do \texttt{getline}}
+
+\begin{itemize}
+  \item Inicialmente, aqui o código foi carregado com o comando `\texttt{cl}' (digite \texttt{help} na console), o qual \textbf{compila} o seu código e \textbf{carrega} em um código intermediário pronto
+  para ser executado e testado
+  
+  \pause
+  \item Neste ambiente interpretado há comandos básicos de teclado (mouse não funciona aqui)
+  do programa \texttt{getline} do Linux. Os mais importantes são:
+  \pause
+  \begin{itemize}
+    \item  \textbf{Crtl-a}: move o cursor para o início da linha
+        \item  \textbf{Crtl-e}: move o cursor para o final da linha (\textit{end})
+        \item  \textbf{Crtl-f}: 	move o cursor de uma posição a frente (forward)
+         \item  \textbf{Crtl-b}: 	move o cursor de uma posição para trás (backward)
+         \item  \textbf{Crtl-d}: 	exclui o carácter sob  o cursor (a 2a. vez -- sai do ambiente)
+        \item  \textbf{Crtl-u}: 	exclui a linha inteira
+        \item As flechas ... repetem os últimos comandos
+  \end{itemize}
+  
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Ambiente do Interpretador -- Uso}
+
+\begin{itemize}
+  \item Use um editor externo de sua preferência. Por exemplo:
+   \texttt{geany} com plugin do Picat
+
+    \pause
+  \item Mantenha duas janelas de terminais abertas
+    \begin{itemize}
+    \item Uma para o ambiente interpretado
+    \item Outra para usá-lo diretamente: \texttt{\$console\$ picat seu\_programa.pi}
+  \end{itemize}
+  
+    \pause
+  \item Os dois modos são importantes de se trabalhar simultaneamente
+  
+  \pause
+  \item Em dúvidas, digite: \texttt{Picat> help .}
+    
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
 
 
 

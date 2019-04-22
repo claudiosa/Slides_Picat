@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.2.25)  22 APR 2019 18:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.2.25)  22 APR 2019 18:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**slides_picat.tex
-(./slides_picat.tex
+**teste.tex
+(./teste.tex
 LaTeX2e <2018-12-01>
 (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
@@ -1561,9 +1561,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\Hy@tempa' on input line 156.
 
-(./slides_picat.aux (./aula_apresentacao_curso_picat.aux)
-(./introducao_picat.aux) (./tipos_dados_variaveis_picat.aux))
-\openout1 = `slides_picat.aux'.
+(./teste.aux (./tipos_dados_variaveis_picat.aux))
+\openout1 = `teste.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 165.
 LaTeX Font Info:    ... okay on input line 165.
@@ -1658,10 +1657,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 165.
 LaTeX Info: Redefining \pageref on input line 165.
 LaTeX Info: Redefining \nameref on input line 165.
-
-(./slides_picat.out) (./slides_picat.out)
+ (./teste.out)
+(./teste.out)
 \@outlinefile=\write6
-\openout6 = `slides_picat.out'.
+\openout6 = `teste.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 165.
@@ -1751,7 +1750,7 @@ Package caption Info: listings package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count362
- (./slides_picat.nav)
+ (./teste.nav)
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <20> not available
 (Font)              size <20.74> substituted on input line 168.
@@ -1785,448 +1784,158 @@ thkerncmss.
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-\openout4 = `slides_picat.vrb'.
+\openout4 = `teste.vrb'.
 
- (./slides_picat.vrb) [2
-
-]
-\openout2 = `aula_apresentacao_curso_picat.aux'.
-
-
-(./aula_apresentacao_curso_picat.tex
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [3
-
+ (./teste.vrb) [2
 
 ]
-(./slides_picat.vrb) [4
-
-] (./slides_picat.vrb) [5
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [6
-
-]
-(./slides_picat.vrb) [7
-
-] (./slides_picat.vrb) [8
-
-] (./slides_picat.vrb) [9
-
-]
-(./slides_picat.vrb) [10
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-Overfull \vbox (1.49275pt too high) detected at line 102
- []
-
-[11
-
-] (./slides_picat.vrb)
-Overfull \vbox (1.49275pt too high) detected at line 102
- []
-
-[12
-
-] (./slides_picat.vrb)
-Overfull \vbox (1.49275pt too high) detected at line 102
- []
-
-[13
-
-] (./slides_picat.vrb)
-Overfull \vbox (1.49275pt too high) detected at line 102
- []
-
-[14
-
-] (./slides_picat.vrb)
-Overfull \vbox (1.49275pt too high) detected at line 102
- []
-
-[15
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [16
-
-] (./slides_picat.vrb) [17
-
-] (./slides_picat.vrb)
-[18
-
-] (./slides_picat.vrb) [19
-
-] (./slides_picat.vrb) [20
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 9.
-)
-[21
-
-] (./slides_picat.vrb) [22
-
-] (./slides_picat.vrb) [23
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-[24
-
-] (./slides_picat.vrb) [25
-
-] (./slides_picat.vrb) [26
-
-]) (./slides_picat.toc)
-[27
-
-
-] [28
-
-
-]
-\openout2 = `introducao_picat.aux'.
-
- (./introducao_picat.tex [29
-
-
-] [30
-
-] [31
-
-] [32
-
-] [33
-
-] [34
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb) [35
-
-] (./slides_picat.vrb) [36
-
-] (./slides_picat.vrb)
-[37
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [38
-
-] (./slides_picat.vrb) [39
-
-] (./slides_picat.vrb)
-[40
-
-] (./slides_picat.vrb) [41
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [42
-
-] (./slides_picat.vrb)
-[43
-
-] (./slides_picat.vrb) [44
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-<figures/Paradigma_Procedural.png, id=1259, 642.4pt x 481.8pt>
-File: figures/Paradigma_Procedural.png Graphic file (type png)
-<use figures/Paradigma_Procedural.png>
-Package pdftex.def Info: figures/Paradigma_Procedural.png  used on input line 2
-4.
-(pdftex.def)             Requested size: 147.50119pt x 110.62051pt.
-) [45
-
- <./figures/Paradigma_Procedural.png>] (./slides_picat.vrb
-File: figures/Paradigma_Procedural.png Graphic file (type png)
-<use figures/Paradigma_Procedural.png>
-Package pdftex.def Info: figures/Paradigma_Procedural.png  used on input line 2
-4.
-(pdftex.def)             Requested size: 147.50119pt x 110.62051pt.
-) [46
-
-] (./slides_picat.vrb
-File: figures/Paradigma_Procedural.png Graphic file (type png)
-<use figures/Paradigma_Procedural.png>
-Package pdftex.def Info: figures/Paradigma_Procedural.png  used on input line 2
-4.
-(pdftex.def)             Requested size: 147.50119pt x 110.62051pt.
-) [47
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb) [48
-
-] (./slides_picat.vrb) [49
-
-] (./slides_picat.vrb)
-[50
-
-] (./slides_picat.vrb) [51
-
-] (./slides_picat.vrb) [52
-
-] (./slides_picat.vrb)
-[53
-
-] [54
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [55
-
-] (./slides_picat.vrb) [56
-
-]
-(./slides_picat.vrb) [57
-
-] (./slides_picat.vrb) [58
-
-] (./slides_picat.vrb)
-[59
-
-] (./slides_picat.vrb) [60
-
-] (./slides_picat.vrb) [61
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-[62
-
-] (./slides_picat.vrb) [63
-
-] (./slides_picat.vrb) [64
-
-] (./slides_picat.vrb)
-[65
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [66
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [67
-
-] (./slides_picat.vrb)
-[68
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-Overfull \vbox (22.56404pt too high) detected at line 355
- []
-
-[69
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [70
-
-] (./slides_picat.vrb) [71
-
-] (./slides_picat.vrb)
-[72
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [73
-
-] (./slides_picat.vrb) [74
-
-] (./slides_picat.vrb)
-[75
-
-] (./slides_picat.vrb) [76
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [77
-
-] (./slides_picat.vrb)
-[78
-
-])
 \openout2 = `tipos_dados_variaveis_picat.aux'.
 
- (./tipos_dados_variaveis_picat.tex
-\openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb) [79
+(./tipos_dados_variaveis_picat.tex
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb) [3
 
 
-
-]
-(./slides_picat.vrb) [80
-
-] (./slides_picat.vrb) [81
-
-] (./slides_picat.vrb)
-[82
+] (./teste.vrb) [4
 
 ]
-\openout4 = `slides_picat.vrb'.
+(./teste.vrb) [5
 
- (./slides_picat.vrb) [83
-
-] (./slides_picat.vrb) [84
-
-] (./slides_picat.vrb)
-[85
+] (./teste.vrb) [6
 
 ]
-<figures/tipos_dados_picat__traduzido3.png, id=2319, 422.57875pt x 349.305pt>
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb) [7
+
+] (./teste.vrb) [8
+
+]
+(./teste.vrb) [9
+
+]
+<figures/tipos_dados_picat__traduzido3.png, id=278, 422.57875pt x 349.305pt>
 File: figures/tipos_dados_picat__traduzido3.png Graphic file (type png)
 <use figures/tipos_dados_picat__traduzido3.png>
 Package pdftex.def Info: figures/tipos_dados_picat__traduzido3.png  used on inp
 ut line 68.
 (pdftex.def)             Requested size: 222.78702pt x 184.1607pt.
- [86
+ [10
 
- <./figures/tipos_dados_picat__traduzido3.png>] [87
-
-] [88
+ <./figures/tipos_dados_picat__traduzido3.png>] [11
 
 ]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb) [89
-
-] (./slides_picat.vrb) [90
+[12
 
 ]
-\openout4 = `slides_picat.vrb'.
+\openout4 = `teste.vrb'.
 
- (./slides_picat.vrb)
-[91
+ (./teste.vrb) [13
 
-] [92
-
-
-] [93
-
-] [94
-
-] [95
-
-] [96
-
-] [97
-
-] [98
-
-] [99
-
-] [100
-
-] [101
-
-] [102
-
-] [103
-
-] [104
+] (./teste.vrb) [14
 
 ]
-[105
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb) [15
+
+] [16
+
+
+] [17
+
+]
+[18
+
+] [19
+
+] [20
+
+] [21
+
+] [22
+
+] [23
+
+] [24
+
+] [25
+
+] [26
+
+] [27
+
+] [28
+
+] [29
 
 
 ]
-\openout4 = `slides_picat.vrb'.
+\openout4 = `teste.vrb'.
 
- (./slides_picat.vrb) [106
+ (./teste.vrb)
+[30
 
-] (./slides_picat.vrb) [107
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [108
-
-] (./slides_picat.vrb) [109
-
-] (./slides_picat.vrb) [110
+] (./teste.vrb) [31
 
 ]
-(./slides_picat.vrb) [111
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb) [32
+
+] (./teste.vrb) [33
+
+] (./teste.vrb)
+[34
+
+] (./teste.vrb) [35
 
 ]
-\openout4 = `slides_picat.vrb'.
+\openout4 = `teste.vrb'.
 
- (./slides_picat.vrb) [112
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-[113
-
-] (./slides_picat.vrb) [114
-
-] (./slides_picat.vrb) [115
-
-] (./slides_picat.vrb) [116
+ (./teste.vrb) [36
 
 ]
-\openout4 = `slides_picat.vrb'.
+\openout4 = `teste.vrb'.
 
- (./slides_picat.vrb) [117
+ (./teste.vrb) [37
 
-]
-\openout4 = `slides_picat.vrb'.
+] (./teste.vrb)
+[38
 
- (./slides_picat.vrb) [118
+] (./teste.vrb) [39
 
-]
-(./slides_picat.vrb) [119
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [120
+] (./teste.vrb) [40
 
 ]
-\openout4 = `slides_picat.vrb'.
+\openout4 = `teste.vrb'.
 
- (./slides_picat.vrb)
-[121
+ (./teste.vrb) [41
 
 ]
-\openout4 = `slides_picat.vrb'.
+\openout4 = `teste.vrb'.
 
- (./slides_picat.vrb
+ (./teste.vrb)
+[42
+
+] (./teste.vrb) [43
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb) [44
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb) [45
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb
 Underfull \hbox (badness 10000) in paragraph at lines 16--16
 []|$\OT1/mathkerncmss/m/sl/10 Inicio$ [][]\T1/cmtt/m/n/10 ..
  []
@@ -2241,1543 +1950,134 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--18
 []|$\OT1/mathkerncmss/m/sl/10 Inicio$ [][]\T1/cmtt/m/n/10 ..
  []
 
-) [122
+) [46
 
 ]
-\openout4 = `slides_picat.vrb'.
+\openout4 = `teste.vrb'.
 
- (./slides_picat.vrb
+ (./teste.vrb
 
 Package caption Warning: \label without proper reference on input line 5.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `Operadores Aritm\IeC {\'e}ticos' on page 123 undefine
-d on input line 8.
+LaTeX Warning: Reference `Operadores Aritm\IeC {\'e}ticos' on page 47 undefined
+ on input line 8.
 
-) [123
+) [47
 
 ]
-\openout4 = `slides_picat.vrb'.
+\openout4 = `teste.vrb'.
 
- (./slides_picat.vrb) [124
+ (./teste.vrb) [48
 
-] (./slides_picat.vrb) [125
+] (./teste.vrb) [49
 
 ]
-\openout4 = `slides_picat.vrb'.
+\openout4 = `teste.vrb'.
 
+ (./teste.vrb) [50
 
-(./slides_picat.vrb) [126
+] (./teste.vrb)
+[51
 
-] (./slides_picat.vrb) [127
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-[128
-
-] (./slides_picat.vrb) [129
-
-] (./slides_picat.vrb) [130
-
-] (./slides_picat.vrb) [131
-
-] (./slides_picat.vrb) [132
-
-] (./slides_picat.vrb) [133
-
-]
-(./slides_picat.vrb) [134
-
-] (./slides_picat.vrb) [135
-
-] (./slides_picat.vrb)
-[136
-
-] (./slides_picat.vrb) [137
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [138
-
-] (./slides_picat.vrb) [139
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [140
-
-] (./slides_picat.vrb) [141
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb) [142
-
-] (./slides_picat.vrb) [143
-
-] (./slides_picat.vrb)
-[144
-
-] (./slides_picat.vrb) [145
-
-] (./slides_picat.vrb) [146
-
-] (./slides_picat.vrb) [147
-
-] (./slides_picat.vrb) [148
-
-] (./slides_picat.vrb) [149
-
-]
-(./slides_picat.vrb) [150
-
-] (./slides_picat.vrb) [151
-
-] (./slides_picat.vrb)
-[152
-
-] (./slides_picat.vrb) [153
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [154
-
-])
-\openout2 = `regras_picat.aux'.
-
-
-(./regras_picat.tex
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [155
-
-
-
-] [156
-
-
-] [157
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [158
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [159
-
-] (./slides_picat.vrb) [160
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb) [161
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [162
-
-] (./slides_picat.vrb)
-[163
-
-] (./slides_picat.vrb) [164
-
-] (./slides_picat.vrb) [165
-
-] (./slides_picat.vrb) [166
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [167
-
-] (./slides_picat.vrb) [168
-
-]
-(./slides_picat.vrb) [169
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [170
-
-] (./slides_picat.vrb)
-[171
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [172
-
-] (./slides_picat.vrb) [173
-
-] (./slides_picat.vrb) [174
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [175
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [176
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb) [177
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [178
-
-] [179
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [180
-
-] [181
-
-
-] [182
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-Overfull \vbox (2.89268pt too high) detected at line 449
- []
-
-[183
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 6.
-) [184
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [185
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [186
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [187
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [188
-
-]
-(./slides_picat.vrb) [189
-
-] (./slides_picat.vrb) [190
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-[191
-
-] (./slides_picat.vrb) [192
-
-] (./slides_picat.vrb) [193
-
-] (./slides_picat.vrb) [194
-
-] (./slides_picat.vrb) [195
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [196
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb) [197
-
-] (./slides_picat.vrb) [198
-
-] (./slides_picat.vrb)
-[199
-
-] (./slides_picat.vrb) [200
-
-] (./slides_picat.vrb) [201
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [202
-
-] (./slides_picat.vrb) [203
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [204
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb) [205
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [206
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-[207
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [208
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [209
-
-] (./slides_picat.vrb) [210
-
-] [211
-
-] [212
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [213
-
-] [214
-
-] [215
-
-
-] [216
-
-
-] [217
-
-
-] [218
-
-]
-[219
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [220
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [221
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [222
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [223
-
-] (./slides_picat.vrb) [224
-
-]
-(./slides_picat.vrb) [225
-
-] (./slides_picat.vrb) [226
-
-] (./slides_picat.vrb)
-[227
-
-] (./slides_picat.vrb) [228
-
-])
-\openout2 = `recursao_picat.aux'.
-
- (./recursao_picat.tex
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-[229
-
-
-
-] (./slides_picat.vrb) [230
-
-] (./slides_picat.vrb) [231
-
-] (./slides_picat.vrb) [232
-
-] (./slides_picat.vrb) [233
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [234
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb) [235
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [236
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-[237
-
-] (./slides_picat.vrb) [238
-
-] (./slides_picat.vrb) [239
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [240
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [241
-
-] (./slides_picat.vrb) [242
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb) [243
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [244
-
-] (./slides_picat.vrb)
-[245
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-<figures/ilustra_backtracking_01.jpg, id=6419, 542.025pt x 406.51875pt>
-File: figures/ilustra_backtracking_01.jpg Graphic file (type jpg)
-<use figures/ilustra_backtracking_01.jpg>
-Package pdftex.def Info: figures/ilustra_backtracking_01.jpg  used on input lin
-e 5.
-(pdftex.def)             Requested size: 245.83604pt x 242.2259pt.
-)
-Overfull \vbox (12.78995pt too high) detected at line 241
- []
-
-[246
-
- <./figures/ilustra_backtracking_01.jpg>] [247
-
-] [248
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-<figures/ilustra_backtracking_03.jpg, id=6496, 423.83344pt x 199.49532pt>
-File: figures/ilustra_backtracking_03.jpg Graphic file (type jpg)
-<use figures/ilustra_backtracking_03.jpg>
-Package pdftex.def Info: figures/ilustra_backtracking_03.jpg  used on input lin
-e 5.
-(pdftex.def)             Requested size: 291.93446pt x 215.3269pt.
-)
-Overfull \vbox (1.61958pt too high) detected at line 286
- []
-
-[249
-
- <./figures/ilustra_backtracking_03.jpg>]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-<figures/ilustra_backtracking_02.jpg, id=6523, 260.975pt x 308.15125pt>
-File: figures/ilustra_backtracking_02.jpg Graphic file (type jpg)
-<use figures/ilustra_backtracking_02.jpg>
-Package pdftex.def Info: figures/ilustra_backtracking_02.jpg  used on input lin
-e 5.
-(pdftex.def)             Requested size: 184.37766pt x 201.8664pt.
-) [250
-
- <./figures/ilustra_backtracking_02.jpg>]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-Overfull \vbox (4.06372pt too high) detected at line 333
- []
-
-[251
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [252
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [253
-
-] (./slides_picat.vrb) [254
-
-] (./slides_picat.vrb) [255
-
-] (./slides_picat.vrb) [256
-
-]
-(./slides_picat.vrb) [257
-
-] (./slides_picat.vrb) [258
-
-])
-\openout2 = `listas_picat.aux'.
-
- (./listas_picat.tex
-[259
-
-
-
-]
-<figures/ilustra-lista-01.jpg, id=6778, 203.76125pt x 159.59625pt>
-File: figures/ilustra-lista-01.jpg Graphic file (type jpg)
-<use figures/ilustra-lista-01.jpg>
-Package pdftex.def Info: figures/ilustra-lista-01.jpg  used on input line 39.
-(pdftex.def)             Requested size: 215.11221pt x 174.94514pt.
- [260
-
- <./figures/ilustra-lista-01.jpg>]
-<figures/lista-picat-01.jpg, id=6804, 227.34938pt x 199.49532pt>
-File: figures/lista-picat-01.jpg Graphic file (type jpg)
-<use figures/lista-picat-01.jpg>
-Package pdftex.def Info: figures/lista-picat-01.jpg  used on input line 50.
-(pdftex.def)             Requested size: 215.10648pt x 174.95064pt.
- [261
-
- <./figures/lista-picat-01.jpg>]
-<figures/exemplo_listas_01.jpg, id=6830, 244.915pt x 206.7725pt>
-File: figures/exemplo_listas_01.jpg Graphic file (type jpg)
-<use figures/exemplo_listas_01.jpg>
-Package pdftex.def Info: figures/exemplo_listas_01.jpg  used on input line 62.
-(pdftex.def)             Requested size: 215.10728pt x 174.94658pt.
- [262
-
- <./figures/exemplo_listas_01.jpg>]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [263
-
-] [264
-
-
-]
-[265
-
-
-] [266
-
-
-] [267
-
-
-] [268
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [269
-
-] [270
-
-
-] [271
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb
-Overfull \hbox (9.5789pt too wide) in paragraph at lines 34--34
-[]\T1/cmtt/m/n/10.95 % Again, backtracking CONTROLADO ... diferente do Prolog[]
- 
- []
-
-) [272
-
-] [273
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [274
-
-] [275
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-Overfull \hbox (15.23727pt too wide) in paragraph at lines 19--19
-[]                           \T1/cmtt/m/n/10.95 L3 = [X | uniao_02( L1, L2 )].[
-] 
- []
-
-) [276
-
-] [277
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [278
-
-] [279
-
-
-] [280
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-[281
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [282
-
-] (./slides_picat.vrb) [283
-
-] (./slides_picat.vrb) [284
-
-] (./slides_picat.vrb) [285
-
-] (./slides_picat.vrb) [286
-
-])
-\openout2 = `buscas_picat.aux'.
-
-
-(./buscas_picat.tex [287
-
-
-
-] [288
-
-] [289
-
-] [290
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-<figures/ilhas_euler.jpeg, id=7569, 223.83624pt x 226.8475pt>
-File: figures/ilhas_euler.jpeg Graphic file (type jpg)
-<use figures/ilhas_euler.jpeg>
-Package pdftex.def Info: figures/ilhas_euler.jpeg  used on input line 5.
-(pdftex.def)             Requested size: 184.38028pt x 174.9431pt.
-) [291
-
- <./figures/ilhas_euler.jpeg>] [292
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-<figures/hamiltonian_path.jpg, id=7621, 72.27pt x 76.6062pt>
-File: figures/hamiltonian_path.jpg Graphic file (type jpg)
-<use figures/hamiltonian_path.jpg>
-Package pdftex.def Info: figures/hamiltonian_path.jpg  used on input line 6.
-(pdftex.def)             Requested size: 184.38637pt x 161.5148pt.
-) [293
-
- <./figures/hamiltonian_path.jpg>] [294
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [295
-
-] [296
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-<figures/espaco-estado-arvore.jpg, id=7724, 381.425pt x 132.495pt>
-File: figures/espaco-estado-arvore.jpg Graphic file (type jpg)
-<use figures/espaco-estado-arvore.jpg>
-Package pdftex.def Info: figures/espaco-estado-arvore.jpg  used on input line 5
-.
-(pdftex.def)             Requested size: 304.23247pt x 148.04158pt.
-) [297
-
- <./figures/espaco-estado-arvore.jpg>]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-Overfull \hbox (32.21239pt too wide) in paragraph at lines 19--19
-[]\T1/cmtt/m/n/10.95 busca(S,P,P) ?=>  objetivo(S).    % objetivo alcancado : F
-IM[] 
- []
-
-
-Overfull \hbox (20.89565pt too wide) in paragraph at lines 19--19
-[]     \T1/cmtt/m/n/10.95 proximo_estado(S,Nxt),       % gera um proximo estado
-[] 
- []
-
-
-Overfull \hbox (77.47935pt too wide) in paragraph at lines 19--19
-[]     \T1/cmtt/m/n/10.95 estado_seguro(Nxt),          % verifica se este estad
-o é válido[] 
- []
-
-
-Overfull \hbox (134.06306pt too wide) in paragraph at lines 19--19
-[]     \T1/cmtt/m/n/10.95 sem_loop(Nxt,Visited),       % verifica se está em lo
-op .. repete estados[] 
- []
-
-
-Overfull \hbox (43.52913pt too wide) in paragraph at lines 19--19
-[]     \T1/cmtt/m/n/10.95 busca(Nxt,[Nxt|Visited],P).  % continue a busca recur
-siva[] 
- []
-
-) [298
-
-] [299
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-<figures/mapa-norte-santa-catarina.jpg, id=7801, 642.4pt x 469.755pt>
-File: figures/mapa-norte-santa-catarina.jpg Graphic file (type jpg)
-<use figures/mapa-norte-santa-catarina.jpg>
-Package pdftex.def Info: figures/mapa-norte-santa-catarina.jpg  used on input l
-ine 5.
-(pdftex.def)             Requested size: 245.82993pt x 152.60405pt.
-) [300
-
- <./figures/mapa-norte-santa-catarina.jpg>]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-<figures/mapa01SC.jpg, id=7827, 379.4175pt x 303.1325pt>
-File: figures/mapa01SC.jpg Graphic file (type jpg)
-<use figures/mapa01SC.jpg>
-Package pdftex.def Info: figures/mapa01SC.jpg  used on input line 5.
-(pdftex.def)             Requested size: 245.83687pt x 152.6066pt.
-) [301
-
- <./figures/mapa01SC.jpg>]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-Overfull \hbox (8.84547pt too wide) in paragraph at lines 11--11
- []\T1/cmtt/m/n/10.95 as_cidades( [ brusque, blumenau, itajai, luiz_alves,[] 
- []
-
-) [302
-
-] [303
-
-
-] [304
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [305
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [306
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb
-<figures/mapa02SC.jpg, id=7982, 379.4175pt x 303.1325pt>
-File: figures/mapa02SC.jpg Graphic file (type jpg)
-<use figures/mapa02SC.jpg>
-Package pdftex.def Info: figures/mapa02SC.jpg  used on input line 5.
-(pdftex.def)             Requested size: 245.83687pt x 152.6066pt.
-) [307
-
- <./figures/mapa02SC.jpg>]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-[308
-
-] (./slides_picat.vrb) [309
-
-] (./slides_picat.vrb) [310
-
-] (./slides_picat.vrb) [311
-
-] (./slides_picat.vrb) [312
-
-])
-\openout2 = `PD_picat.aux'.
-
- (./PD_picat.tex
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-<figures/ilustra_PD.png, id=8134, 1606.0pt x 770.88pt>
-File: figures/ilustra_PD.png Graphic file (type png)
-<use figures/ilustra_PD.png>
-Package pdftex.def Info: figures/ilustra_PD.png  used on input line 5.
-(pdftex.def)             Requested size: 291.91017pt x 188.39087pt.
-)
-[313
-
-
-
- <./figures/ilustra_PD.png (PNG copy)>]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [314
-
-]
-(./slides_picat.vrb) [315
-
-] (./slides_picat.vrb) [316
-
-] (./slides_picat.vrb)
-[317
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [318
-
-] (./slides_picat.vrb) [319
-
-] (./slides_picat.vrb) [320
-
-] (./slides_picat.vrb) [321
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [322
-
-]
-(./slides_picat.vrb) [323
-
-] (./slides_picat.vrb) [324
-
-] (./slides_picat.vrb)
-[325
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-<figures/pascal_triangle_01.jpg, id=8468, 365.365pt x 164.615pt>
-File: figures/pascal_triangle_01.jpg Graphic file (type jpg)
-<use figures/pascal_triangle_01.jpg>
-Package pdftex.def Info: figures/pascal_triangle_01.jpg  used on input line 6.
-(pdftex.def)             Requested size: 215.10075pt x 161.4924pt.
-) [326
-
- <./figures/pascal_triangle_01.jpg>]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb
-<figures/pascal_triangle_02.jpg, id=8494, 748.7975pt x 583.17876pt>
-File: figures/pascal_triangle_02.jpg Graphic file (type jpg)
-<use figures/pascal_triangle_02.jpg>
-Package pdftex.def Info: figures/pascal_triangle_02.jpg  used on input line 6.
-(pdftex.def)             Requested size: 261.20326pt x 174.93718pt.
-) [327
-
- <./figures/pascal_triangle_02.jpg>]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb
-
-Package amsmath Warning: Foreign command \atopwithdelims;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 11.
-
-) [328
-
-] (./slides_picat.vrb) [329
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [330
-
-]
-(./slides_picat.vrb) [331
-
-] (./slides_picat.vrb) [332
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-[333
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-Overfull \hbox (7.63322pt too wide) in paragraph at lines 22--22
-[]    \T1/cmtt/m/n/10 statistics(runtime,_), % faz uma marca do 1o. statistics[
-] 
- []
-
-
-Overfull \hbox (23.37938pt too wide) in paragraph at lines 22--22
-[]    \T1/cmtt/m/n/10 N = 10, %% ateh uns 30 ... são números grandes ... fatori
-al[] 
- []
-
-
-Overfull \hbox (86.364pt too wide) in paragraph at lines 22--22
-[]    \T1/cmtt/m/n/10 printf("\n OVERALL PICAT CPU time %f em SEGUNDOS ", T_Pic
-at_ON/1000.0),[] 
- []
-
-
-Overfull \hbox (18.13066pt too wide) in paragraph at lines 22--22
-[]    \T1/cmtt/m/n/10 printf(" \n =========================================\n "
-)[] 
- []
-
-) [334
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [335
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [336
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb) [337
-
-] (./slides_picat.vrb) [338
-
-] (./slides_picat.vrb)
-[339
-
-])
-\openout2 = `planejamento_picat.aux'.
-
- (./planejamento_picat.tex
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [340
-
-
-
-] (./slides_picat.vrb) [341
-
-] (./slides_picat.vrb) [342
-
-] (./slides_picat.vrb) [343
-
-]
-(./slides_picat.vrb) [344
-
-] (./slides_picat.vrb) [345
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-[346
-
-] (./slides_picat.vrb) [347
-
-] (./slides_picat.vrb) [348
-
-] (./slides_picat.vrb) [349
-
-] (./slides_picat.vrb) [350
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [351
-
-]
-(./slides_picat.vrb) [352
-
-] (./slides_picat.vrb) [353
-
-] (./slides_picat.vrb)
-[354
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-<figures/planning01.jpg, id=9209, 552.0625pt x 393.47pt>
-File: figures/planning01.jpg Graphic file (type jpg)
-<use figures/planning01.jpg>
-Package pdftex.def Info: figures/planning01.jpg  used on input line 5.
-(pdftex.def)             Requested size: 261.2047pt x 188.40114pt.
-) [355
-
- <./figures/planning01.jpg>]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-<figures/mundo_dos_blocos01.jpg, id=9236, 426.62613pt x 176.40097pt>
-File: figures/mundo_dos_blocos01.jpg Graphic file (type jpg)
-<use figures/mundo_dos_blocos01.jpg>
-Package pdftex.def Info: figures/mundo_dos_blocos01.jpg  used on input line 5.
-(pdftex.def)             Requested size: 261.19197pt x 174.95241pt.
-) [356
-
- <./figures/mundo_dos_blocos01.jpg>]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-<figures/mundo_dos_blocos02.jpg, id=9262, 746.01291pt x 559.50967pt>
-File: figures/mundo_dos_blocos02.jpg Graphic file (type jpg)
-<use figures/mundo_dos_blocos02.jpg>
-Package pdftex.def Info: figures/mundo_dos_blocos02.jpg  used on input line 5.
-(pdftex.def)             Requested size: 215.09743pt x 188.40376pt.
-) [357
-
- <./figures/mundo_dos_blocos02.jpg>]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [358
-
-] [359
-
-
-] [360
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb
-<figures/puzzle_2x3_01.jpg, id=9364, 200.75pt x 317.185pt>
-File: figures/puzzle_2x3_01.jpg Graphic file (type jpg)
-<use figures/puzzle_2x3_01.jpg>
-Package pdftex.def Info: figures/puzzle_2x3_01.jpg  used on input line 5.
-(pdftex.def)             Requested size: 92.18988pt x 107.65755pt.
-<figures/puzzle_2x3_02.jpg, id=9365, 1284.8pt x 722.7pt>
-File: figures/puzzle_2x3_02.jpg Graphic file (type jpg)
-<use figures/puzzle_2x3_02.jpg>
-Package pdftex.def Info: figures/puzzle_2x3_02.jpg  used on input line 15.
-(pdftex.def)             Requested size: 230.45024pt x 174.94025pt.
-) [361
-
- <./figures/puzzle_2x3_01.jpg>] [362
-
-
- <./figures/puzzle_2x3_02.jpg>]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-Overfull \hbox (15.23727pt too wide) in paragraph at lines 45--45
-[]\T1/cmtt/m/n/10.95 .........................................................[
-] 
- []
-
-
-Overfull \hbox (3.92053pt too wide) in paragraph at lines 63--63
-[]    \T1/cmtt/m/n/10.95 Acao = ($left(B), S1). %%a acao + estado modificado[] 
-
- []
-
-
-Overfull \hbox (9.5789pt too wide) in paragraph at lines 63--63
-[]    \T1/cmtt/m/n/10.95 Acao = ($right(A), S1). %%a acao + estado modificado[]
- 
- []
-
-
-Overfull \hbox (15.23727pt too wide) in paragraph at lines 63--63
-[]\T1/cmtt/m/n/10.95 .........................................................[
-] 
- []
-
-
-Overfull \hbox (18.13066pt too wide) in paragraph at lines 89--89
-[]    \T1/cmtt/m/n/10 printf(" \n =========================================\n "
-)[] 
- []
-
-) [363
-
-] [364
-
-
-] [365
-
-
-] [366
-
-
-] [367
-
-
-] [368
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [369
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb
-Overfull \hbox (60.1204pt too wide) in paragraph at lines 21--21
-[]\T1/cmtt/m/n/10 (up(2),[1,5,2,4,3,0]),(right(3),[1,5,2,4,0,3]),(dow(5),[1,0,2
-,4,5,3]),[] 
- []
-
-) [370
-
-] [371
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [372
-
-] (./slides_picat.vrb) [373
-
-]
-(./slides_picat.vrb) [374
-
-] (./slides_picat.vrb) [375
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-[376
-
-] (./slides_picat.vrb) [377
-
-] (./slides_picat.vrb) [378
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [379
-
-] (./slides_picat.vrb) [380
-
-] (./slides_picat.vrb) [381
-
-]
-(./slides_picat.vrb) [382
-
-])
-\openout2 = `CP_picat.aux'.
-
- (./CP_picat.tex
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [383
-
-
-
-]
-(./slides_picat.vrb) [384
-
-] (./slides_picat.vrb) [385
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-[386
-
-] (./slides_picat.vrb) [387
-
-] (./slides_picat.vrb) [388
-
-] (./slides_picat.vrb) [389
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [390
-
-] (./slides_picat.vrb) [391
-
-]
-(./slides_picat.vrb) [392
-
-] (./slides_picat.vrb) [393
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-<figures/problema_modelagem.pdf, id=10207, 332.24126pt x 210.7875pt>
-File: figures/problema_modelagem.pdf Graphic file (type pdf)
-<use figures/problema_modelagem.pdf>
-Package pdftex.def Info: figures/problema_modelagem.pdf  used on input line 7.
-(pdftex.def)             Requested size: 215.10255pt x 161.49313pt.
-)
-[394
-
- <./figures/problema_modelagem.pdf>]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-<figures/dinamica_pr.pdf, id=10241, 150.5625pt x 425.59pt>
-File: figures/dinamica_pr.pdf Graphic file (type pdf)
-<use figures/dinamica_pr.pdf>
-Package pdftex.def Info: figures/dinamica_pr.pdf  used on input line 6.
-(pdftex.def)             Requested size: 92.19218pt x 201.85861pt.
-) [395
-
- <./figures/dinamica_pr.pdf>]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-<figures/reducao_PR_01.pdf, id=10274, 328.22626pt x 288.07625pt>
-File: figures/reducao_PR_01.pdf Graphic file (type pdf)
-<use figures/reducao_PR_01.pdf>
-Package pdftex.def Info: figures/reducao_PR_01.pdf  used on input line 6.
-(pdftex.def)             Requested size: 215.10245pt x 161.49301pt.
-) [396
-
- <./figures/reducao_PR_01.pdf>]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb
-<figures/reducao_PR_02.pdf, id=10325, 403.5075pt x 445.665pt>
-File: figures/reducao_PR_02.pdf Graphic file (type pdf)
-<use figures/reducao_PR_02.pdf>
-Package pdftex.def Info: figures/reducao_PR_02.pdf  used on input line 7.
-(pdftex.def)             Requested size: 215.10167pt x 161.48651pt.
-) [397
-
- <./figures/reducao_PR_02.pdf>]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-[398
-
-] (./slides_picat.vrb) [399
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [400
-
-] (./slides_picat.vrb) [401
-
-] (./slides_picat.vrb) [402
-
-] (./slides_picat.vrb) [403
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb) [404
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-Overfull \hbox (7.63322pt too wide) in paragraph at lines 13--13
-[]    \T1/cmtt/m/n/10 % L_dom = [I : I in 1..1000, eh_primo(I) == true],   %OU[
-] 
- []
-
-) [405
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [406
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [407
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb) [408
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [409
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-[410
-
-] (./slides_picat.vrb) [411
-
-] (./slides_picat.vrb) [412
-
 ]
-\openout4 = `slides_picat.vrb'.
+\openout4 = `teste.vrb'.
 
- (./slides_picat.vrb) [413
+ (./teste.vrb) [52
 
-] (./slides_picat.vrb) [414
+] (./teste.vrb) [53
 
-] (./slides_picat.vrb) [415
+] (./teste.vrb) [54
 
-]
-(./slides_picat.vrb) [416
-
-] (./slides_picat.vrb) [417
+] (./teste.vrb)
+[55
 
-]
-\openout4 = `slides_picat.vrb'.
+] (./teste.vrb) [56
 
- (./slides_picat.vrb)
-[418
+] (./teste.vrb) [57
 
-] (./slides_picat.vrb) [419
+] (./teste.vrb) [58
 
-] (./slides_picat.vrb) [420
+] (./teste.vrb)
+[59
 
-]
-\openout4 = `slides_picat.vrb'.
+] (./teste.vrb) [60
 
- (./slides_picat.vrb) [421
+] (./teste.vrb) [61
 
 ]
-\openout4 = `slides_picat.vrb'.
+\openout4 = `teste.vrb'.
 
- (./slides_picat.vrb
-Overfull \hbox (2.3845pt too wide) in paragraph at lines 16--16
-[]   \T1/cmtt/m/n/10 Quadro :: 1 .. L_dom.len , %% operador len . "eh colado"[]
- 
- []
+ (./teste.vrb) [62
 
-) [422
+] (./teste.vrb)
+[63
 
 ]
-\openout4 = `slides_picat.vrb'.
+\openout4 = `teste.vrb'.
 
- (./slides_picat.vrb) [423
+ (./teste.vrb) [64
 
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb
-Overfull \hbox (2.3845pt too wide) in paragraph at lines 23--23
-[]  \T1/cmtt/m/n/10 %% Ninguém trabalha no mesmo consultorio em dias seguidos[]
- 
- []
-
-
-Overfull \hbox (7.63322pt too wide) in paragraph at lines 23--23
-[]  \T1/cmtt/m/n/10 %% Ninguém trabalha no mesmo dia em mais de um consultorio[
-] 
- []
+] (./teste.vrb) [65
 
-) [424
-
 ]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [425
+\openout4 = `teste.vrb'.
 
-]
-\openout4 = `slides_picat.vrb'.
+ (./teste.vrb) [66
 
- (./slides_picat.vrb
-Overfull \hbox (39.12553pt too wide) in paragraph at lines 22--22
-[]\T1/cmtt/m/n/10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%[] 
- []
+] (./teste.vrb)
+[67
 
+] (./teste.vrb) [68
 
-Overfull \hbox (39.12553pt too wide) in paragraph at lines 22--22
-[]\T1/cmtt/m/n/10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%[] 
- []
+] (./teste.vrb) [69
 
-) [426
+] (./teste.vrb) [70
 
-]
-\openout4 = `slides_picat.vrb'.
+] (./teste.vrb)
+[71
 
- (./slides_picat.vrb) [427
+] (./teste.vrb) [72
 
-]
-\openout4 = `slides_picat.vrb'.
+] (./teste.vrb) [73
 
- (./slides_picat.vrb) [428
+] (./teste.vrb) [74
 
-]
-\openout4 = `slides_picat.vrb'.
+] (./teste.vrb)
+[75
 
+] (./teste.vrb) [76
 
-(./slides_picat.vrb) [429
+] (./teste.vrb) [77
 
 ]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb) [430
-
-] (./slides_picat.vrb)
-[431
-
-] (./slides_picat.vrb) [432
-
-] (./slides_picat.vrb) [433
-
-])
-\openout2 = `conclusoes_picat.aux'.
-
-
-(./conclusoes_picat.tex [434
-
-
-
-] [435
-
-] [436
-
-] [437
-
-] [438
-
-] [439
-
-] [440
+\openout4 = `teste.vrb'.
 
-] [441
+ (./teste.vrb
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 8.
+) [78
 
 ])
 \tf@nav=\write7
-\openout7 = `slides_picat.nav'.
+\openout7 = `teste.nav'.
 
 \tf@toc=\write8
-\openout8 = `slides_picat.toc'.
+\openout8 = `teste.toc'.
 
 \tf@snm=\write9
-\openout9 = `slides_picat.snm'.
+\openout9 = `teste.snm'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 212.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 212.
-
-(./slides_picat.aux (./aula_apresentacao_curso_picat.aux)
-(./introducao_picat.aux) (./tipos_dados_variaveis_picat.aux)
-(./regras_picat.aux) (./recursao_picat.aux) (./listas_picat.aux)
-(./buscas_picat.aux) (./PD_picat.aux) (./planejamento_picat.aux)
-(./CP_picat.aux) (./conclusoes_picat.aux))
+ (./teste.aux
+(./tipos_dados_variaveis_picat.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 212.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 212.
+Package rerunfilecheck Info: File `teste.out' has not changed.
+(rerunfilecheck)             Checksum: 99DF3F10E0735B77509A6E6D903E535E;345.
 
-
-Package rerunfilecheck Warning: File `slides_picat.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `slides_picat.out':
-(rerunfilecheck)             Before: C2E81D2B6E6F9D062405AA6D9442074C;471
-(rerunfilecheck)             After:  1B78BC1728F762946E575ECE75330CA2;1618.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.74pt have occurred.
@@ -3785,57 +2085,39 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 33477 strings out of 492616
- 613047 string characters out of 6135177
- 945426 words of memory out of 5000000
- 35119 multiletter control sequences out of 15000+600000
- 567181 words of font info for 113 fonts, out of 8000000 for 9000
+ 30935 strings out of 492616
+ 577817 string characters out of 6135177
+ 920405 words of memory out of 5000000
+ 34019 multiletter control sequences out of 15000+600000
+ 557384 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,18n,70p,779b,1510s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,14n,70p,772b,780s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Operadores\040Aritm\351ticos} has been referenced
  but does not exist, replaced by a fixed one
 
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-si10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.p
-fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/tex
-mf-dist/fonts/type1/public/cm-super/sfsi0900.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/cm-super/sfsi1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
-super/sfsi1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsi1200.
-pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsi1440.pfb></usr/share
-/texmf-dist/fonts/type1/public/cm-super/sfso1095.pfb></usr/share/texmf-dist/fon
-ts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf-dist/fonts/type1/public
-/cm-super/sfss0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0
-800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist
-/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/cm-super/sfss1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
-fss1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss2074.pfb></u
-sr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf-
-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf-dist/fonts/type
-1/public/cm-super/sfsx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
-er/sfsx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb
-></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/te
-xmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/
-type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm
--super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1440
-.pfb>
-Output written on slides_picat.pdf (441 pages, 2175636 bytes).
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/share/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf-di
+st/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf-dist/fonts/type1/
+public/cm-super/sfsi1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
+/sfso1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><
+/usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texm
+f-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/cm-super/sfss1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
+uper/sfss1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss2074.p
+fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/
+texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf-dist/font
+s/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/
+cm-super/sftt1095.pfb>
+Output written on teste.pdf (78 pages, 434377 bytes).
 PDF statistics:
- 11820 PDF objects out of 12825 (max. 8388607)
- 11182 compressed objects within 112 object streams
- 915 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2149 PDF objects out of 2487 (max. 8388607)
+ 2021 compressed objects within 21 object streams
+ 166 named destinations out of 1000 (max. 500000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 

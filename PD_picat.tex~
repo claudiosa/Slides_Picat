@@ -1,6 +1,16 @@
 
        
-       \section{Programação Dinâmica}
+\section{Programação Dinâmica}
+\begin{frame}[fragile]
+\frametitle{Programação Dinâmica}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.95\textwidth, height=0.70\textheight]{figures/ilustra_PD.png}
+\caption{Conceitos da Programação Dinâmica -- (PD)}
+\end{figure}
+\end{frame}
+
 
 \begin{frame}[fragile]
 %[fragile, allowframebreaks=0.9]
@@ -104,12 +114,10 @@
 %\label{fig_nos_estados}
 \caption{O triângulo de Pascal}
 \end{figure}
-
-   
 \end{frame}
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
 %[fragile, allowframebreaks=0.9]
 
@@ -122,11 +130,10 @@
 %\label{fig_nos_estados}
 \caption{O triângulo de Pascal -- Coeficientes Binomiais}
 \end{figure}
-
     
 \end{frame}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[fragile]
 %[fragile, allowframebreaks=0.9]
@@ -194,7 +201,6 @@ c(N,K) = c(N-1, K-1) + c(N-1, K).
 
 
 \begin{frame}[fragile] 
-
 \frametitle{Código em Partes}
 
 \begin{small}
@@ -202,19 +208,16 @@ c(N,K) = c(N-1, K-1) + c(N-1, K).
 main  ?=>  
     statistics(runtime,_), % faz uma marca do 1o. statistics
     N = 10, %% ateh uns 30 ... são números grandes ... fatorial
-
      foreach(I in 0  .. N)
         foreach(J in 0  ..  I)
              printf("  %d", c(I,J))
            end,
           printf(" \n"),
       end, 
-   
     statistics(runtime, [T_Picat_ON, T_final]),
     T = (T_final) / 1000.0, %%% está em milisegundos
     printf("\n CPU time %f em SEGUNDOS ", T),
     printf("\n OVERALL PICAT CPU time %f em SEGUNDOS ", T_Picat_ON/1000.0),
-    
     printf(" \n =========================================\n ")
     %%% , fail descomente para multiplas solucoes
     .
@@ -274,7 +277,7 @@ main => printf("\n Para uma solução .... !!!!" ) .
 
 
 \begin{frame}[fragile]
-\frametitle{Reflexões}
+\frametitle{Reflexões sobre PD}
 
 
 \begin{itemize}
@@ -283,7 +286,7 @@ main => printf("\n Para uma solução .... !!!!" ) .
   \pause
   \item O comando \textit{tabling} é a base do módulo \textit{planner}
 
-   % \pause
+  % \pause
   %\item 
 \end{itemize}
 

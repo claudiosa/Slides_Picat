@@ -289,12 +289,10 @@
 
 
 \begin{frame}[fragile]
-\frametitle{Exemplo -- Conceitos}
-
+\frametitle{Exemplo -- \textit{Alô Mundo!}}
 
 Acompanhar as explicações do código de:\\
 \url{https://github.com/claudiosa/CCS/blob/master/picat/alo_mundo.pi}
-
 
 \begin{verbatim}
 main => msg_01  , 
@@ -303,8 +301,6 @@ main => msg_01  ,
 msg_01 =>  printf("  ALO MUNDO!!! ").
 msg_02 =>  printf("\n  FIM \n").
 \end{verbatim}
-
-
 
 \end{frame}
 
@@ -318,6 +314,9 @@ $ picat alo_mundo.pi
   FIM 
 $ 
 \end{verbatim}
+
+\pause
+\textcolor{red}{Análogo ao desenvolvimento com Python!}
 
 \end{frame}
 

@@ -34,7 +34,7 @@
 
 \begin{frame}[fragile]
 
-\frametitle{Conceitos Matemáticos com Recursividade -- I}
+\frametitle{Conceitos de Recursividade via Exemplos -- I}
 
 \begin{block}{Somatório dos $N$ naturais}
 
@@ -66,7 +66,7 @@
 \end{frame}
 
 \begin{frame}[fragile]
-\frametitle{Conceitos Matemáticos com Recursividade -- II}
+\frametitle{Conceitos de Recursividade via Exemplos -- II}
 
 
 \begin{block}{Fatorial}
@@ -76,7 +76,6 @@ O Fatorial de um número $n$ é definido  recursivamente pela
   O fatorial só pode ser calculado para números positivos. 
   Adicionalmente, o fatorial de $0$ é igual a 
   $1$ por definição.
-      
     \[ 
     Fat(n)=\left\{
     \begin{tabular}[c]{ll}%
@@ -86,9 +85,7 @@ O Fatorial de um número $n$ é definido  recursivamente pela
     \right.
     \]
     
-    \vskip 11pt
     Portanto:
-    \vskip 11pt
     
     \[
     Fat(n)=
@@ -104,7 +101,7 @@ O Fatorial de um número $n$ é definido  recursivamente pela
 
 
 \begin{frame}[fragile]
-\frametitle{Conceitos Matemáticos com Recursividade -- III}
+\frametitle{Conceitos de Recursividade via Exemplos -- III}
 
 \begin{block}{Sequência Fibonacci}
 
@@ -127,23 +124,25 @@ dois últimos números anteriores desta. Ou seja o $n-esimo$ termo da Sequência
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
 
-\frametitle{Conceitos Matemáticos com Recursividade -- IV}
+\frametitle{Conceitos de Recursividade via Exemplos -- IV}
 
   \begin{itemize}
       
       \item Podemos perceber algo em comum entre estas três regras, todas tem uma ou mais
       condições que sempre tem o mesmo valor de retorno, ou seja, todas tem uma \textit{regra de  aterramento}.
       
+      \pause
       \item Uma condição de \textit{aterramento} é uma condição onde a chamada recursiva da regra
       acaba (pára ou termina).
       
-      \item Caso uma regra não tenha uma regra de aterramento, poderá ocorrer uma recursão infinita deste regra, ou seja, são feitas infinitas chamadas recursivas
+       \pause
+      \item Caso uma regra não tenha uma \textit{regra de aterramento}, poderá ocorrer uma recursão infinita deste regra, ou seja, são feitas infinitas chamadas recursivas
       da regra.
   \end{itemize}
 
 \end{frame}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
 
 \frametitle{Exemplos}
@@ -177,7 +176,7 @@ somatorio(n) = n + somatorio(n-1).
 \frametitle{Recursão Infinita}
 
     \begin{itemize}
-        \item Caso alterássemos a definição da regra fatorial de modo que ela seja:
+        \item Caso a definição do fatorial fosse modificada para:
         
         \[
         Fat(n)= 
@@ -185,9 +184,11 @@ somatorio(n) = n + somatorio(n-1).
             $Fat(n-1)\ast n$, &$\forall n \in \mathbb{N}$ ou $\forall n \geq 0$
         \end{tabular}
         \]
+        \pause
+        \item Teríamos um caso de \textit{recursão infinita}, pois a regra Fatorial continuaria
+        a ser chamada com $n < 0$
         
-        \item Teríamos um caso de recursão infinita, pois a regra Fatorial seria continuamente
-        chamada até que $n < 0$, nesse caso haveria um erro, pois estaria tentando executar algo indefinido.
+        \item Nesse caso haveria um erro, pois estaria tentando executar algo indefinido.
         
     \end{itemize}
 
@@ -196,11 +197,13 @@ somatorio(n) = n + somatorio(n-1).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{frame}[fragile]{Exercício}
+\begin{frame}[fragile]
 
-Para os exemplos anteriores, reescreva
-estas formulações sob uma visão
-lógica e  procedural.
+\frametitle{Exercício}
+
+Para os exemplos anteriores, reescreva-os
+as formulações sob uma visão
+\textit{lógica} e  \textit{procedural}.
 
 \end{frame}
 
@@ -211,28 +214,93 @@ lógica e  procedural.
 \begin{frame}[fragile]
 
 \frametitle{\textit{Backtracking}}
+\begin{itemize}
+  \item O mecanismo de \textit{backtracking} é bem conhecido por algumas linguagens de programação
 
- O que distingue uma regra em realizarr \textit{backtracking} ou não, é o uso do símbolo
-        \verb!?=>! no escopo da regra.
-        
-O procedimento do \textit{Backtracking} é definido por:
-    \begin{enumerate}
-        
-        \item O casamento de um predicado \textit{backtrackable} $p$ com outro predicado \textit{backtrackable} $p1$.
-        
-        \item A execução do predicado $p$.
-        
-        \item Caso ocorra uma falha durante a execução do predicado $p$ o compilador irá reinstanciar todas as variáveis de 
-        $p$, incluindo aquelas que são indexadas a partir de um domínio, com a única exceção sendo variáveis instanciadas a
-        partir de argumentos do predicado.
-        
-        \item O predicado será executado novamente.
-        
-        \item Este processo se repete até não for mais possível a reinstanciação de variáveis, ou ocorrer um erro durante a
-        execução.
-\end{enumerate}
+ % \pause 
+ % \item Backtracking é um tipo de algoritmo que representa um refinamento da busca por força bruta,
+%   em que múltiplas soluções podem ser eliminadas sem serem explicitamente examinadas.
+  
+  \pause 
+  \item Em Picat, o \textit{backtracking} é controlável e é habilitado pelo símbolo
+  \verb!?=>! no escopo da regra. 
+
+\end{itemize}
 
 \end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Ilustrando o \textit{Backtracking} -- 01}
+
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics[width=0.80\textwidth, height=0.90\textheight]{figures/ilustra_backtracking_01.jpg}
+%\caption{Realizar buscas com regiões reduzidas -- promissoras (regiões factíveis de soluções)}
+\end{center}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks=0.7]
+\frametitle{\textit{Backtracking}}
+
+Basicamente o procedimento do \textit{Backtracking} é definido por:
+
+\begin{enumerate}
+
+\item Inicia-se por  um casamento de um predicado \textit{backtrackable} $p$ com um outro predicado $p$.
+
+\item Segue-se a execução da regra $p$, executando a instância das variáveis da \underline{esquerda para direita}.
+ \textbf{Exemplo} (ilustrativo):\\
+      \texttt{p(X1,X2,X3, ....., Xn) ?=> q1(X1), q2(X2), ...., qn(Xn).} 
+
+\item Caso ocorra uma falha durante a execução da regra $p$,
+ o compilador busca re-instanciar as variáveis do corpo de $p$ que falharem. Esta tentativa segue uma ordem:\\ 
+  $q1(X1) \rightarrow q2(X2)\rightarrow ....\rightarrow qn(Xn)$, até a variável $Xn$
+%, incluindo aquelas indexadas a partir de um domínio.
+%, com a única exceção sendo variáveis instanciadas a
+%partir de argumentos do predicado.
+
+\item Caso $Xn$ seja instanciada com sucesso, tem-se uma resposta consistente para $p$
+
+\item No caso de uma falha completa na regra corrente $p$, segue-se para uma próxima regra $p$
+ (\texttt{p ....?=> ...}), a qual  é avaliada com novas instâncias as suas  variáveis.
+
+\item Este processo é completo (exaustivo) e se repete até não for mais possível a reinstanciação de variáveis, ou ocorrer uma falha  durante a   execução.
+\end{enumerate}
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Ilustrando o \textit{Backtracking} -- 02}
+
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics[width=0.950\textwidth, height=0.8\textheight]{figures/ilustra_backtracking_03.jpg}
+%\caption{Realizar buscas com regiões reduzidas -- promissoras (regiões factíveis de soluções)}
+\end{center}
+\end{figure}
+\textcolor{red}{Exercício: descubra os domínios possíveis de \texttt{X1}, \texttt{X2} e \texttt{X3}}
+\end{frame}
+
+s
+\begin{frame}[fragile]
+\frametitle{Ilustrando o \textit{Backtracking} -- 03}
+
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics[width=0.60\textwidth, height=0.75\textheight]{figures/ilustra_backtracking_02.jpg}
+%\caption{Realizar buscas com regiões reduzidas -- promissoras (regiões factíveis de soluções)}
+\end{center}
+\end{figure}
+
+\end{frame}
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -271,7 +339,8 @@ sucessor(X,Y) ?=> antecedente(Y,Z), sucessor(X,Z).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{frame}[fragile]{}
+\begin{frame}[fragile]
+\frametitle{Exercícios}
     
     \begin{itemize}
         \item Uma chamada do tipo $mae(maria, X)$, seria como perguntar ao compilador
@@ -289,7 +358,7 @@ sucessor(X,Y) ?=> antecedente(Y,Z), sucessor(X,Z).
             
             \item "Maria é mãe de Pedro ?".
             
-            $\vdots$
+    
         \end{itemize}
         
     \end{itemize}
@@ -297,4 +366,36 @@ sucessor(X,Y) ?=> antecedente(Y,Z), sucessor(X,Z).
 \end{frame}
 
 
+
+
+\begin{frame}[fragile]
+\frametitle{Reflexões}
+
+
+\begin{itemize}
+\item A recursão é o paradigma das linguagens declarativas como Haskell, Prolog, Picat, ... etc
+ 
+ \pause
+ \item As regras recursivas são construídas com uma ou mais \textit{regras aterradas}, que \textbf{sempre vem antes} das demais
+ regras recursivas, as  quais podem ou não terem o \textit{backtracking} habilitados (\textbf{\texttt{?=>}})
+ 
+ 
+ \pause
+ \item A avaliação destas regras \textbf{são sempre da esquerda para direita}, ocorrendo o \textit{backtracking} em caso de falha ou de uma nova resposta
+  
+  \pause
+ \item As regras recursivas com \textit{backtracking} habilitados ( \textbf{\texttt{?=>}} ), apenas
+ para regras predicativas. As funções não admitem \textit{backtracking}!
+ 
+  \pause
+ \item A metodologia destas regras e sua construção, seguem  esquemas mais
+ avançados da programação declarativa
+ 
+   \pause
+ \item O \textbf{\textit{main}} é uma regra predicativa que pode conter ou não argumentos.
+ 
+ 
+\end{itemize}
+
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
