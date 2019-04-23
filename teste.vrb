@@ -1,16 +1,18 @@
-\frametitle{Reflexões}
+\frametitle{Conclusões Parciais}
 
 \begin{itemize}
 
+  \item Picat: tipagem dinâmica. O erro entre variáveis e dados, ocorre
+  no meio da execução do código
 
+\pause
+\item As estruturas de dados compostos são as clássicas:
+      listas, vetores, mapas, conjuntos, etc
+
+\pause
   \item O conteúdo desta parte do curso pode ser complementado
   com a   \textbf{Videoaula 02: Tipos de Dados do PICAT}\\
     \textbf{\url {https://www.youtube.com/watch?v=7fPKPd0ZDnc}}
 
-%      \pause
-%      \item Para próxima seção esteja com o Picat instalado em seu
-%      computador para um melhor aproveitamento.
-   % \pause
-  %\item
 \end{itemize}
 
