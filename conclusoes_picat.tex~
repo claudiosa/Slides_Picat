@@ -5,15 +5,20 @@
 
     \begin{itemize}
       \item Picat é jovem (nascida em 2013); 
+      \pause
       \item Uma evolução ao Prolog após seus mais de 40 anos de existência e sucesso!
+      \pause
       \item Sua sintaxe é moderna;
+      \pause
       \item Código aberto, multi-plataforma, e repleta de possibilidades;
+      \pause
       \item Uso para fins diversos;
+      \pause
       \item Muitas bibliotecas específicas prontas: CP, SAT, Planner, etc;
-      \item 
-
-      
-      \item .
+      \pause
+      \item A sintaxe de PR exige um pouco mais do programador
+      \pause
+      \item Dúvidas: o guia do usuário, livro do Hakan e o Fórum de discussão do Picat
 
     \end{itemize}
 \end{frame}

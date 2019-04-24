@@ -378,9 +378,22 @@ tal que alguns requisitos sejam atendidos (restrições  satisfeitas)
   \pause
   \item As restrições globais se aplicam sobre um conjunto de variáveis.
 
-  \pause
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile] 
+
+\frametitle{Modelagem -- Comentários}
+
+\begin{itemize}
   \item A fase de busca e propagação do comando 	\texttt{solve(Critérios, Variáveis)}, 
   há dezenas de combinações possíveis: consultar o guia do usuário
+  
+  \pause
+  \item Tem-se os predicados extras ... são muitos, todos os da CP
 
   \pause
   \item Finalmente, exemplos sofisticados-- de PR com PICAT:\\
@@ -390,7 +403,6 @@ tal que alguns requisitos sejam atendidos (restrições  satisfeitas)
 \end{itemize}
 
 \end{frame}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]

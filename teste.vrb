@@ -1,18 +1,23 @@
-\frametitle{Conclusões Parciais}
+\frametitle{Reflexões}
+
 
 \begin{itemize}
+  \item Há outros métodos para se resolver estes problemas.\\
+  Exemplo: Programação Linear, Buscas Heurísticas, etc
 
-  \item Picat: tipagem dinâmica. O erro entre variáveis e dados, ocorre
-  no meio da execução do código
+  \pause
+  \item As restrições globais se aplicam sobre um conjunto de variáveis
+  e há muitas outras importantes disponíveis no Picat
 
-\pause
-\item As estruturas de dados compostos são as clássicas:
-      listas, vetores, mapas, conjuntos, etc
+  \pause
+  \item A área é extensa, contudo, Picat adere há todos requisitos da PR
 
-\pause
-  \item O conteúdo desta parte do curso pode ser complementado
-  com a   \textbf{Videoaula 02: Tipos de Dados do PICAT}\\
-    \textbf{\url {https://www.youtube.com/watch?v=7fPKPd0ZDnc}}
+    \pause
+  \item Resumo da PR: segue por uma notação/manipulação algébrica restrita,
+        simplificar e bissecionar as restrições, instanciar variáveis,
+        verificar inconsistências,
+        avançar sobre as demais variáveis, até que todas
+        estejam instanciadas.
 
 \end{itemize}
 
