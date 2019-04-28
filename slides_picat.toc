@@ -3,27 +3,28 @@
 \beamer@sectionintoc {2}{Introdu\IeC {\c c}\IeC {\~a}o}{29}{0}{2}
 \beamer@subsectionintoc {2}{1}{Estrutura da Linguagem}{33}{0}{2}
 \beamer@subsubsectionintoc {2}{1}{1}{Paradigmas}{38}{0}{2}
-\beamer@subsubsectionintoc {2}{1}{2}{Usando Picat}{62}{0}{2}
-\beamer@sectionintoc {3}{Tipos de Dados e Vari\IeC {\'a}veis}{79}{0}{3}
-\beamer@subsectionintoc {3}{1}{Tipos de Dados}{86}{0}{3}
-\beamer@subsectionintoc {3}{2}{Vari\IeC {\'a}veis}{104}{0}{3}
-\beamer@subsectionintoc {3}{3}{Unifica\IeC {\c c}\IeC {\~a}o e Atribui\IeC {\c c}\IeC {\~a}o}{106}{0}{3}
-\beamer@subsectionintoc {3}{4}{Tabela de Operadores}{122}{0}{3}
-\beamer@subsubsectionintoc {3}{4}{1}{Operadores Especiais}{124}{0}{3}
-\beamer@sectionintoc {4}{Predicados e Fun\IeC {\c c}\IeC {\~o}es}{157}{0}{4}
-\beamer@subsectionintoc {4}{1}{Casamento de Padr\IeC {\~o}es}{161}{0}{4}
-\beamer@subsectionintoc {4}{2}{Fun\IeC {\c c}\IeC {\~o}es}{172}{0}{4}
-\beamer@subsectionintoc {4}{3}{Relembrando as Regras}{180}{0}{4}
-\beamer@subsectionintoc {4}{4}{Regras do Tipo Fatos}{182}{0}{4}
-\beamer@subsectionintoc {4}{5}{Exemplos}{186}{0}{4}
-\beamer@sectionintoc {5}{Comandos Condicionais, La\IeC {\c c}os e Repeti\IeC {\c c}\IeC {\~o}es}{190}{0}{5}
-\beamer@subsectionintoc {5}{1}{Fun\IeC {\c c}\IeC {\~o}es e Predicados Especiais}{211}{0}{5}
-\beamer@sectionintoc {6}{Recurs\IeC {\~a}o}{231}{0}{6}
-\beamer@subsectionintoc {6}{1}{Recurs\IeC {\~a}o}{231}{0}{6}
-\beamer@subsectionintoc {6}{2}{\textit {Backtracking}}{246}{0}{6}
-\beamer@sectionintoc {7}{Listas}{261}{0}{7}
-\beamer@sectionintoc {8}{Buscas}{289}{0}{8}
-\beamer@sectionintoc {9}{Programa\IeC {\c c}\IeC {\~a}o Din\IeC {\^a}mica}{315}{0}{9}
-\beamer@sectionintoc {10}{Planejamento}{342}{0}{10}
-\beamer@sectionintoc {11}{Programa\IeC {\c c}\IeC {\~a}o por Restri\IeC {\c c}\IeC {\~o}es}{385}{0}{11}
-\beamer@sectionintoc {12}{Conclus\IeC {\~a}o}{475}{0}{12}
+\beamer@subsubsectionintoc {2}{1}{2}{Usando Picat}{63}{0}{2}
+\beamer@sectionintoc {3}{Tipos de Dados e Vari\IeC {\'a}veis}{78}{0}{3}
+\beamer@subsectionintoc {3}{1}{Tipos de Dados}{85}{0}{3}
+\beamer@subsectionintoc {3}{2}{Vari\IeC {\'a}veis}{103}{0}{3}
+\beamer@subsectionintoc {3}{3}{Unifica\IeC {\c c}\IeC {\~a}o e Atribui\IeC {\c c}\IeC {\~a}o}{105}{0}{3}
+\beamer@subsectionintoc {3}{4}{Tabela de Operadores}{121}{0}{3}
+\beamer@subsubsectionintoc {3}{4}{1}{Operadores Especiais}{123}{0}{3}
+\beamer@sectionintoc {4}{Predicados e Fun\IeC {\c c}\IeC {\~o}es}{156}{0}{4}
+\beamer@subsectionintoc {4}{1}{Casamento de Padr\IeC {\~o}es}{160}{0}{4}
+\beamer@subsectionintoc {4}{2}{Fun\IeC {\c c}\IeC {\~o}es}{171}{0}{4}
+\beamer@subsectionintoc {4}{3}{Relembrando as Regras}{179}{0}{4}
+\beamer@subsectionintoc {4}{4}{Regras do Tipo Fatos}{181}{0}{4}
+\beamer@subsectionintoc {4}{5}{Exemplos}{185}{0}{4}
+\beamer@sectionintoc {5}{Comandos Condicionais, La\IeC {\c c}os e Repeti\IeC {\c c}\IeC {\~o}es}{189}{0}{5}
+\beamer@subsectionintoc {5}{1}{Fun\IeC {\c c}\IeC {\~o}es e Predicados Especiais}{210}{0}{5}
+\beamer@sectionintoc {6}{Recurs\IeC {\~a}o}{230}{0}{6}
+\beamer@subsectionintoc {6}{1}{Recurs\IeC {\~a}o}{230}{0}{6}
+\beamer@subsectionintoc {6}{2}{\textit {Backtracking}}{245}{0}{6}
+\beamer@sectionintoc {7}{Listas}{260}{0}{7}
+\beamer@sectionintoc {8}{Buscas}{288}{0}{8}
+\beamer@sectionintoc {9}{Programa\IeC {\c c}\IeC {\~a}o Din\IeC {\^a}mica}{314}{0}{9}
+\beamer@sectionintoc {10}{Planejamento}{341}{0}{10}
+\beamer@sectionintoc {11}{Programa\IeC {\c c}\IeC {\~a}o por Restri\IeC {\c c}\IeC {\~o}es}{384}{0}{11}
+\beamer@sectionintoc {12}{Conclus\IeC {\~o}es}{474}{0}{12}
+\beamer@subsectionintoc {12}{1}{Agradecimentos}{482}{0}{12}
