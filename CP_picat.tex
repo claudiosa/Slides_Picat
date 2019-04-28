@@ -21,7 +21,8 @@
       \item A PR encontrava-se inicialmente dentro da IA e PO, mas como várias outras, tornaram-se
       fortes e autônomas. Atualmente uma área de pesquisa bem forte em alguns países.
       
-     
+      \pause
+      \item Nesta seção, temos 3 exemplos ilustrar conceitos da PR
     \end{itemize}
     
     \end{block}
@@ -278,7 +279,7 @@ $N_1 + N_2 = 18$
 
 \frametitle{Código em Partes}
 
-\begin{small}
+\begin{footnotesize}
 \begin{verbatim}
 modelo => 
     PAR = 382,
@@ -288,7 +289,7 @@ modelo =>
     L_dom = [I : I in 1..1000, prime(I)],
     Variaveis :: L_dom,
 \end{verbatim}
-\end{small}
+\end{footnotesize}
    
    Uma ótima estratégia: sair com um domínio de números candidatos!
     
@@ -298,7 +299,7 @@ modelo =>
 
 \frametitle{Código em Partes}
 
-\begin{small}
+\begin{footnotesize}
 \begin{verbatim}
     % RESTRICOES
     N1 #!= N2,
@@ -313,7 +314,7 @@ modelo =>
 	printf("\n.....................................")
 	.
 \end{verbatim}
-\end{small}
+\end{footnotesize}
     
 \end{frame}
 %%%%%%%%%%%%%%%%%
@@ -321,7 +322,7 @@ modelo =>
 
 \frametitle{Código em Partes}
 
-\begin{small}
+\begin{footnotesize}
 \begin{verbatim}
 import cp.
 
@@ -334,7 +335,7 @@ main =>
     writef("\n Total de solucoes:  %d \n", length(L)) .
 
 \end{verbatim}
-\end{small}
+\end{footnotesize}
     
 \end{frame}
 
@@ -344,7 +345,7 @@ main =>
 
 \frametitle{Saída -- I}
 
-\begin{small}
+\begin{footnotesize}
 \begin{verbatim}
 Picat> cl('soma_N1_N2_primos_CP').
 Compiling:: soma_N1_N2_primos_CP.pi
@@ -364,7 +365,7 @@ Picat> main.
 .....................................
 \end{verbatim}
     
-\end{small}
+\end{footnotesize}
 \end{frame}
 
 
@@ -373,7 +374,7 @@ Picat> main.
 
 \frametitle{Saída -- II}
 
-\begin{small}
+\begin{footnotesize}
 \begin{verbatim}
  .....................................
   N1: 353	 N2: 29
@@ -389,7 +390,7 @@ yes
 Picat> 
 \end{verbatim}
     
-\end{small}
+\end{footnotesize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile] 
@@ -475,7 +476,7 @@ tal que alguns requisitos sejam atendidos (restrições  satisfeitas)
 
 \frametitle{Código em Partes}
 
-\begin{small}
+\begin{footnotesize}
 \begin{verbatim}
 modelo => 
     Dias = 5, % segunda= 1, ...., sexta-feira = 5
@@ -488,7 +489,7 @@ modelo =>
    Quadro :: 1 .. L_dom.len , %% operador len . "eh colado"
 ...
 \end{verbatim}
-\end{small}
+\end{footnotesize}
    
     
 \end{frame}
@@ -497,7 +498,7 @@ modelo =>
 
 \frametitle{Código em Partes}
 
-\begin{small}
+\begin{footnotesize}
 \begin{verbatim}
     %% O medico 2 NUNCA trabalha no consultorio 1
     foreach ( J in 1 .. Dias ) 
@@ -510,7 +511,7 @@ modelo =>
     end,
 ...
 \end{verbatim}
-\end{small}
+\end{footnotesize}
     
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -518,7 +519,7 @@ modelo =>
 
 \frametitle{Código em Partes}
 
-\begin{small}
+\begin{footnotesize}
 \begin{verbatim}
 
   %% O Clin Geral deve vir o maior numero de dias ... 
@@ -538,7 +539,7 @@ modelo =>
    end,  
 ...  
 \end{verbatim}
-\end{small}
+\end{footnotesize}
     
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -546,7 +547,7 @@ modelo =>
 
 \frametitle{Código em Partes}
 
-\begin{small}
+\begin{footnotesize}
 \begin{verbatim}
 	% A BUSCA
 	solve([ff], Quadro),
@@ -557,7 +558,7 @@ modelo =>
    print_matrix_NAMES( Quadro , L_dom ),
 	 printf(".............................\n") .
 \end{verbatim}
-\end{small}
+\end{footnotesize}
     
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -565,7 +566,7 @@ modelo =>
 
 \frametitle{Código em Partes}
 
-\begin{small}
+\begin{footnotesize}
 \begin{verbatim}
 print_matrix_NAMES( M, Lista ) =>
  L = M.length,
@@ -584,7 +585,7 @@ print_n_lista( 1, [A|_] ) = A.
 print_n_lista( N, [_|B] ) = print_n_lista( (N-1), B ) .
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{verbatim}
-\end{small}
+\end{footnotesize}
     
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -595,7 +596,7 @@ print_n_lista( N, [_|B] ) = print_n_lista( (N-1), B ) .
 
 \frametitle{Saída - I}
 
-\begin{small}
+\begin{footnotesize}
 \begin{verbatim}
 Picat> cl('horario_medico_CP.pi').
 Compiling:: horario_medico_CP.pi
@@ -613,7 +614,7 @@ Picat> main
 3 2 1 7 4 
 \end{verbatim}
   
-\end{small}
+\end{footnotesize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -623,7 +624,7 @@ Picat> main
 
 \frametitle{Saída - II}
 
-\begin{small}
+\begin{footnotesize}
 \begin{verbatim}
 :clin_geral 	:oftalmo 	:pediatra 	:gineco 	:cardio 	
 :gineco 	:clin_geral 	:otorrino 	:pediatra 	:oftalmo 	
@@ -633,7 +634,7 @@ Picat> main
 yes
 \end{verbatim}
   
-\end{small}
+\end{footnotesize}
 \end{frame}
 
 \begin{frame}[fragile]
@@ -641,7 +642,7 @@ yes
 
 \frametitle{Saída - III}
 
-\begin{small}
+\begin{footnotesize}
 \begin{verbatim}
 
 $ time(picat horario_medico_CP.pi )
@@ -663,14 +664,402 @@ sys	0m0,013s
 [ccs@gerzat picat]$ 
 \end{verbatim}
   
-\end{small}
+\end{footnotesize}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile] 
+
+\frametitle{Exemplo -- 03 -- Caixeiro-Viajante}
+
+\begin{itemize}
+\item Este é um exemplo clássico $\Rightarrow $ um NP-Completo $\Rightarrow $ boas soluções
+apenas com Colônia de Formigas (técnica da Computação Evolucionária)
+
+\pause
+\item Neste exemplo o Problema do Caixeiro-Viajante
+ (do inglês: TSP -- \textit{Travelling Salesman Problem}) é discutido com \textbf{dois modelos da PR} destacando dois pontos desta técnica:
+
+\begin{itemize}
+  \item  Uso de outras restrições globais: \texttt{element} e \texttt{circuit}
+  \item Uso de variáveis de decisão binária. No exemplo: uma matriz binária. 
+\end{itemize}
+
+\pause
+\item Tecnicamente um problema com muitas aplicações similares! 
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+%[fragile, allowframebreaks=0.9]
+
+\frametitle{O que é o TSP?}
+
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics[width=0.80\textwidth, height=0.50\textheight]{figures/tsp01.jpg}
+\caption{Passar por algumas cidades uma única vez e retornar a cidade de origem}
+\end{center}
+\end{figure}
+    
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile] 
+
+\frametitle{Modelagem -- Comentários}
+
+\begin{itemize}
+  \item Usaremos a modelagem matemática de uma \textit{\underline{matriz binária de decisão}}
+  
+  \pause
+  \item Esta abordagem é bem conhecida, porém, e eficiente para alguns tipos de problemas semelhantes
+
+  \pause
+  \item Idéia da \textit{\underline{matriz binária de decisão}}: $N$ cidades, logo, há possíveis
+  conexões entre elas. 
+  
+  \pause
+  \item Comentários desta modelagem ao longo do código e detalhes do formalismo matemático
+  em qualquer livro da área de combinatória, PO, e modelagem matemática
+
+  \pause
+  \item Contudo, duas novas restrições globais são usadas e precisam ser entendidas:    \texttt{element} e \texttt{circuit}
+
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+ \frametitle{Restrição global: \textit{element}}
+
+\begin{verbatim}
+element_ex(Vars)  =>  
+    X :: 1..4, %% NUM de indices da lista
+    element(X , [22, 33, 44, 55], Index),
+    Vars = [X , Index],
+    solve(Vars).
+\end{verbatim}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+ \frametitle{Restrição global: \textit{element}}
+
+\begin{footnotesize}
+\begin{verbatim}
+exe04 => 
+    Todas_Sol = findall(Uma_Sol , $element_ex(Uma_Sol)),
+    foreach( X in Todas_Sol )
+      printf("\n Sol %w", X)
+    end,
+    printf("\n Total de SOL: %d", Todas_Sol.len).  
+\end{verbatim}
+\end{footnotesize}
+\pause
+
+Saída:
+\begin{footnotesize}
+\begin{verbatim}
+ Sol [1,22]
+ Sol [2,33]
+ Sol [3,44]
+ Sol [4,55]
+ Total de SOL: 4
+\end{verbatim}
+\end{footnotesize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+ \frametitle{Restrição global: \textit{circuit}}
+
+\begin{verbatim}
+circ_ex(L) =>
+    L = [X1,X2,X3,X4], 
+    L :: 1..4, %% NUM de indices da lista
+    circuit(L),
+    solve(L).
+\end{verbatim}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+ \frametitle{Restrição global: \textit{circuit}}
+
+\begin{footnotesize}
+\begin{verbatim}
+exe02 => 
+    Todas_Sol = findall( Uma_Sol , $circ_ex(Uma_Sol)),
+    foreach( X in Todas_Sol )
+      printf("\n Sol %w", X)
+    end,
+    printf("\n Total de SOL: %d", Todas_Sol.len).  
+\end{verbatim}
+\end{footnotesize}
+\pause
+
+Saída:
+\begin{footnotesize}
+\begin{verbatim}
+ Sol [2,3,4,1]
+ Sol [2,4,1,3]
+ Sol [3,1,4,2]
+ Sol [3,4,2,1]
+ Sol [4,1,2,3]
+ Sol [4,3,1,2]
+ Total de SOL: 6
+\end{verbatim}
+\end{footnotesize}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Código Completo}
+
+\begin{itemize}
+\item Acompanhar as explicações do $1^{o.}$ modelo:\\
+\url{https://github.com/claudiosa/CCS/blob/master/picat/tsp_ESTUDO_hakan.pi}
+
+
+\item Acompanhar as explicações do $2^{o.}$ modelo:\\
+\url{https://github.com/claudiosa/CCS/blob/master/picat/tsp_CP.pi}
+
+
+  \item Confira a execução e testes
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{$1^{o.}$ Modelo para o TSP -- Nilsson e Hakan}
+
+\begin{footnotesize}
+\begin{verbatim}
+% Original formulation from Nilsson cited above.
+% Codifificado por HAKAN e CCS
+tsp_test(nilsson, Cidades, Custo) =>
+   Cidades   = [X1,X2,X3,X4,X5,X6,X7],
+   %% a matriz adjacencia - do mapa - 7 cidades
+   element(X1,[ 0, 4, 8,10, 7,14,15],C1),
+   element(X2,[ 4, 0, 7, 7,10,12, 5],C2),
+   element(X3,[ 8, 7, 0, 4, 6, 8,10],C3),
+   element(X4,[10, 7, 4, 0, 2, 5, 8],C4),
+   element(X5,[ 7,10, 6, 2, 0, 6, 7],C5),
+   element(X6,[14,12, 8, 5, 6, 0, 5],C6),
+   element(X7,[15, 5,10, 8, 7, 5, 0],C7),
+   Custo #= C1+C2+C3+C4+C5+C6+C7 ,
+   circuit( Cidades ) ,
+   solve([$min(Custo)], Cidades).
+\end{verbatim}
+\end{footnotesize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+ \frametitle{Saída}
+
+\begin{footnotesize}
+\begin{verbatim}
+$ picat tsp_ESTUDO_hakan.pi 
+Cidades: [2,7,1,3,4,5,6]	Custo: 34
+ A viagem: 
+Da cidade 1 --> 2 custa: 4	 Acumulado: 4
+Da cidade 2 --> 7 custa: 5	 Acumulado: 9
+Da cidade 7 --> 6 custa: 5	 Acumulado: 14
+Da cidade 6 --> 5 custa: 6	 Acumulado: 20
+Da cidade 5 --> 4 custa: 2	 Acumulado: 22
+Da cidade 4 --> 3 custa: 4	 Acumulado: 26
+Da cidade 3 --> 1 custa: 8	 Acumulado: 34
+\end{verbatim}
+\end{footnotesize}
+\pause
+
+\begin{itemize}
+  \item \textcolor{red}{A importância deste modelo: facilmente se entende o TSP}
+  \pause
+   \item \textcolor{red}{Hakan fez uma versão genérica para este modelo, de bom desempenho!}
+  \pause
+   \item \textcolor{red}{O $2^{o.}$ modelo tem importância como técnica para PR!}
+
+
+\end{itemize}
+
+
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[fragile]
-\frametitle{Reflexões}
+\frametitle{$2^{o.}$ Modelo para o TSP -- Usando Matriz de Decisão}
 
+\begin{footnotesize}
+\begin{verbatim}
+import cp,util.
+matriz_adj(Matrix) =>
+   Matrix = 
+       [[ 0, 4, 8,10, 7,14,15],
+        [ 4, 0, 7, 7,10,12, 5],
+        [ 8, 7, 0, 4, 6, 8,10],
+        [10, 7, 4, 0, 2, 5, 8],
+        [ 7,10, 6, 2, 0, 6, 7],
+        [14,12, 8, 5, 6, 0, 5],
+        [15, 5,10, 8, 7, 5, 0]].
+\end{verbatim}
+\end{footnotesize}
+
+
+\begin{itemize}
+  \item Os dados são os mesmos do exemplo anterior
+  \item Poderia ser feita leitura via arquivos: ver exemplos de entrada e saída no github
+  \item Comentários no código e aúdio
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile] 
+
+\frametitle{Código em Partes}
+
+\begin{footnotesize}
+\begin{verbatim}
+tsp_D(Matriz, Cidades, M_Decisao, Custo) =>
+   Len = Matriz.length, %% N x N cidades
+   Cidades = new_list(Len), %%% 1a. dimensao
+   Cidades :: 1..Len,
+   % grafo de DECISAO que representa o resultado dos nos escolhidos
+   M_Decisao = new_array (Len, Len),
+   M_Decisao :: 0..1 ,
+\end{verbatim}
+\end{footnotesize}
+\pause
+
+\begin{footnotesize}
+\begin{verbatim}
+%  calculate upper and lower bounds of the Costs list -- HAKAN
+   % repensar MELHORAR .....
+   SOMA_Dists = sum([Matriz[I,J] : I in 1..Len, 
+                J in 1..Len, Matriz[I,J] > 0]),
+   MinDist = 0,
+   MaxDist = SOMA_Dists,
+   Custo :: 0..MaxDist,
+\end{verbatim}
+\end{footnotesize}    
+    
+\end{frame}
+
+
+\begin{frame}[fragile] 
+
+\frametitle{Código em Partes}
+
+\begin{footnotesize}
+\begin{verbatim}
+% Se NAO HOUVER CONEXAO ou  ARCO = 0 entao não há conexão
+  foreach(I in 1..Len , J  in 1..Len)
+    (Matriz[I,J] #= 0) #=> (M_Decisao[I,J] #= 0)
+  end,    
+\end{verbatim}
+\end{footnotesize}
+\pause
+
+\begin{footnotesize}
+\begin{verbatim}
+% Para todas linhas, a soma das colunas é igual a 1
+% UMA: uma saida como caminho a ser traçado e somente UMA
+  foreach(I in 1..Len)
+    sum([M_Decisao[I,J] : J in 1..Len, I != J]) #= 1
+  end,     
+
+% Para todas colunas, a soma das linhas é igual a 1  
+% UMA: uma chegada ao nó de destino e somente UMA chegada
+  foreach(J in 1..Len)
+   sum([M_Decisao[I,J] : I in 1..Len, I != J]) #= 1
+  end,     
+\end{verbatim}
+\end{footnotesize}    
+    
+\end{frame}
+
+\begin{frame}[fragile] 
+\frametitle{Código em Partes}
+\begin{footnotesize}
+\begin{verbatim}
+%% Relacionar as escolhas da M_Decisao com a
+%%  ... sequencia das Cidades. 
+  foreach(I in 1..Len , J  in 1..Len)
+    ( M_Decisao[I,J] #= 1 ) #<=> ( Cidades[I] #= J )
+  end,    
+ 
+  %% garante o circuito entre os nós selecionados
+  circuit(Cidades),
+ \end{verbatim}
+\end{footnotesize}
+\pause
+
+\begin{footnotesize}
+\begin{verbatim}
+%% Função custo a ser minimizada
+ Custo #= sum([M_Decisao[I,J] * Matriz[I,J] : 
+             I in 1..Len , J  in 1..Len]),
+
+ %% Vars para BUSCA
+ Vars = [Cidades, M_Decisao], %% OU  Cidades ++ M_Decisao
+ solve([$min(Custo)], Vars ).
+\end{verbatim}
+\end{footnotesize}    
+    
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+ \frametitle{Saída}
+
+\begin{footnotesize}
+\begin{verbatim}
+$ picat tsp_CP.pi 
+M_Decisao: {{0,1,0,0,0,0,0},{0,0,0,0,0,0,1},{1,0,0,0,0,0,0},{0,0,1,0,0,0,0},{0,0,0,1,0,0,0},{0,0,0,0,1,0,0},{0,0,0,0,0,1,0}}
+DESTINOS:
+      1 2 3 4 5 6 7 
+ 1 -> 0 1 0 0 0 0 0 
+ 2 -> 0 0 0 0 0 0 1 
+ 3 -> 1 0 0 0 0 0 0 
+ 4 -> 0 0 1 0 0 0 0 
+ 5 -> 0 0 0 1 0 0 0 
+ 6 -> 0 0 0 0 1 0 0 
+ 7 -> 0 0 0 0 0 1 0 
+Sequência das Cidades: [2,7,1,3,4,5,6]
+Custo: 34
+
+ A viagem: 
+Da cidade 1 --> 2 custa: 4	 Acumulado: 4
+..........................................
+Da cidade 3 --> 1 custa: 8	 Acumulado: 34
+\end{verbatim}
+\end{footnotesize}
+
+\textcolor{red}{As funções/regras de saída não
+foram apresentadas!}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+\frametitle{Resumindo a PR}
 
 \begin{itemize}
   \item Há outros métodos para se resolver estes problemas.\\
@@ -683,7 +1072,7 @@ sys	0m0,013s
   \pause
   \item A área é extensa, contudo, Picat adere há todos requisitos da PR
 
-    \pause
+  \pause
   \item Resumo da PR: segue por uma notação/manipulação algébrica restrita,
         simplificar e bissecionar as restrições, instanciar variáveis, 
         verificar inconsistências,

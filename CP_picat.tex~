@@ -162,6 +162,59 @@
 \end{frame}
 
 
+
+\begin{frame}[fragile]
+%[fragile, allowframebreaks=0.9]
+\frametitle{Conceitos}
+
+\begin{block}{A PR tem os seguintes elementos:}
+\pause
+\begin{itemize}
+  \item Um conjunto de \textbf{variáveis}: $X_1$, $X_2$, $X_3$, ..., $X_n$ 
+
+  \pause
+    \item Um conjunto de \textbf{domínios} dessas variáveis: $D_{X_1}$, $D_{X_2}$, $D_{X_3}$, ..., $D_{X_n}$
+
+    \pause
+      \item Finalmente, as \textbf{restrições}, que são relações n-árias entre estas variáveis
+      
+       \pause
+      \item Exemplo: $D_{X_1} = D_{X_2}= \{3,4\}$ e $X_1 \neq X_2$
+      
+\end{itemize}
+
+\end{block}
+    
+\end{frame}
+
+
+\begin{frame}[fragile]
+%[fragile, allowframebreaks=0.9]
+\frametitle{PR e Picat}
+
+\begin{block}{}
+
+\begin{itemize}
+    \item Para o exemplo anterior um  código em Picat é dado por:
+      \pause
+    \begin{itemize}
+        \item \texttt{[X1, X2] :: 3..4}
+        \item \texttt{X1 \#!= X2} 
+     \end{itemize}  
+      
+      \pause
+     \item Em resumo, as relações da PR tem o símbolo `{\#}' 
+
+  \pause
+  \item Para tornar toda esta sintaxe da PR disponível, Picat tem um módulo para suporte da PR: \texttt{import cp}
+    
+\end{itemize}
+
+\end{block}
+    
+\end{frame}
+
+
 \begin{frame}[fragile] 
 
 \frametitle{Exemplo -- 01 -- Soma de Números Primos}

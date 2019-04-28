@@ -1,14 +1,16 @@
+
 \section{Tipos de Dados e Variáveis}
 
 \begin{frame}[fragile]
 %[fragile, allowframebreaks=0.9]
- \frametitle{Tipos de Dados e Variáveis -- I}
+ \frametitle{Conceitos Iniciais -- Tipos de Dados}
 
 
 \begin{itemize}
 
 \item Em projetos de linguagens de programação há dois tipos 
-verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\textbf{dinâmica}}
+verificação do tipo de dados: \underline{\textbf{estática}} e 
+ \underline{\textbf{dinâmica}}
 
   
   \pause 
@@ -20,10 +22,9 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
   
   \pause 
   \item Linguagens fortemente tipadas, tais como C, Java e Pascal, 
-  exigem que o tipo do dado (conteudo) seja do mesmo tipo da variável 
+  exigem que o tipo do dado (conteúdo) seja do mesmo tipo da variável 
   ao qual este valor será atribuído. 
   Tudo isto é pré-definido durante a fase da \textit{compilação}.
-  
   
 \end{itemize}
 \end{frame}
@@ -31,7 +32,8 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 
 \begin{frame}[fragile]
 %[fragile, allowframebreaks=0.9]
- \frametitle{Tipos de Dados e Variáveis -- II}
+
+ \frametitle{Conceitos Iniciais -- continuação}
 \begin{itemize}
 
   \item Nas linguagens interpretadas, com uma máquina virtual, 
@@ -39,14 +41,12 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
   programa
   
   \pause 
-  \item Prós e contras para o que é melhor, a discussão fica de lado neste momento
+  \item Prós e contras sobre a melhor tipagem de dados, esta éa discussão que fica de lado neste momento
   
   \pause 
-  \item Picat até o momento tem a tipagem \textbf{dinâmica}
+  \item Em resumo Picat, tem a tipagem \textbf{dinâmica}
   
 \end{itemize}
-
-
 \end{frame}
 
 
@@ -262,8 +262,8 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
-	\frametitle{Vetores} [fragile, allowframebreaks=0.9]
+\begin{frame}[fragile]
+	\frametitle{Vetores} 
 	
 	Vetores ou \textit{arrays} são estruturas especiais do tipo:
 	\begin{center}
@@ -462,10 +462,9 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[fragile]
-	
-	\begin{block}{Exemplo}
-\begin{small}
 
+\begin{small}	
+	\begin{block}{Exemplo}
 		\begin{verbatim}
 		teste => X = 0, X := X + 1,  X := X + 2, write(X).
 		\end{verbatim}
@@ -790,20 +789,22 @@ verificação do tipo de dados: \underline{\textbf{estática}} e \underline{\tex
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
-\frametitle{Reflexões}
+\frametitle{Conclusões Parciais}
 
 \begin{itemize}
 
+  \item Picat: tipagem dinâmica. O erro entre variáveis e dados, ocorre 
+  no meio da execução do código
 
+\pause
+\item As estruturas de dados compostos são as clássicas: 
+      listas, vetores, mapas, conjuntos, etc
+
+\pause
   \item O conteúdo desta parte do curso pode ser complementado
   com a   \textbf{Videoaula 02: Tipos de Dados do PICAT}\\
     \textbf{\url {https://www.youtube.com/watch?v=7fPKPd0ZDnc}} 
 
-%      \pause
-%      \item Para próxima seção esteja com o Picat instalado em seu 
-%      computador para um melhor aproveitamento.
-   % \pause
-  %\item 
 \end{itemize}
 
 \end{frame}

@@ -26,4 +26,4 @@
 \beamer@sectionintoc {9}{Programa\IeC {\c c}\IeC {\~a}o Din\IeC {\^a}mica}{315}{0}{9}
 \beamer@sectionintoc {10}{Planejamento}{342}{0}{10}
 \beamer@sectionintoc {11}{Programa\IeC {\c c}\IeC {\~a}o por Restri\IeC {\c c}\IeC {\~o}es}{385}{0}{11}
-\beamer@sectionintoc {12}{Conclus\IeC {\~a}o}{445}{0}{12}
+\beamer@sectionintoc {12}{Conclus\IeC {\~a}o}{475}{0}{12}

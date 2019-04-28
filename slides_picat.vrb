@@ -1,5 +1,4 @@
-\frametitle{Reflexões}
-
+\frametitle{Resumindo a PR}
 
 \begin{itemize}
   \item Há outros métodos para se resolver estes problemas.\\
@@ -12,7 +11,7 @@
   \pause
   \item A área é extensa, contudo, Picat adere há todos requisitos da PR
 
-    \pause
+  \pause
   \item Resumo da PR: segue por uma notação/manipulação algébrica restrita,
         simplificar e bissecionar as restrições, instanciar variáveis,
         verificar inconsistências,

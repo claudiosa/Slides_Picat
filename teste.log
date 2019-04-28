@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.2.25)  23 APR 2019 23:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.24)  28 APR 2019 17:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1015,569 +1015,569 @@ File: lstlang3.sty 2018/09/02 1.7 listings language file
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 156.
+(hyperref)                removing `\\' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 156.
+(hyperref)                removing `\new@ifnextchar' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\medskipamount' on input line 156.
+(hyperref)                removing `\medskipamount' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 156.
+(hyperref)                removing `\begingroup' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 156.
+(hyperref)                removing `\catcode' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 156.
+(hyperref)                removing `\active' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 156.
+(hyperref)                removing `\catcode' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 156.
+(hyperref)                removing `\active' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\%' on input line 156.
+(hyperref)                removing `\%' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 156.
+(hyperref)                removing `\catcode' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 156.
+(hyperref)                removing `\active' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\#' on input line 156.
+(hyperref)                removing `\#' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 156.
+(hyperref)                removing `\catcode' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\&' on input line 156.
+(hyperref)                removing `\&' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\textunderscore' on input line 156.
+(hyperref)                removing `\textunderscore' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\_' on input line 156.
+(hyperref)                removing `\_' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 156.
+(hyperref)                removing `\catcode' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 156.
+(hyperref)                removing `\active' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\~' on input line 156.
+(hyperref)                removing `\~' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\textasciitilde' on input line 156.
+(hyperref)                removing `\textasciitilde' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 156.
+(hyperref)                removing `\\' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Hy@tempa' on input line 156.
+(hyperref)                removing `\Hy@tempa' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Hy@tempa' on input line 156.
+(hyperref)                removing `\Hy@tempa' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 156.
+(hyperref)                removing `\\' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 156.
+(hyperref)                removing `\begingroup' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 156.
+(hyperref)                removing `\catcode' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 156.
+(hyperref)                removing `\active' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 156.
+(hyperref)                removing `\catcode' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 156.
+(hyperref)                removing `\active' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\%' on input line 156.
+(hyperref)                removing `\%' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 156.
+(hyperref)                removing `\catcode' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 156.
+(hyperref)                removing `\active' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\#' on input line 156.
+(hyperref)                removing `\#' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 156.
+(hyperref)                removing `\catcode' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\&' on input line 156.
+(hyperref)                removing `\&' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\textunderscore' on input line 156.
+(hyperref)                removing `\textunderscore' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\_' on input line 156.
+(hyperref)                removing `\_' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 156.
+(hyperref)                removing `\catcode' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 156.
+(hyperref)                removing `\active' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\~' on input line 156.
+(hyperref)                removing `\~' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\textasciitilde' on input line 156.
+(hyperref)                removing `\textasciitilde' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 156.
+(hyperref)                removing `\\' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Hy@tempa' on input line 156.
+(hyperref)                removing `\Hy@tempa' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Hy@tempa' on input line 156.
+(hyperref)                removing `\Hy@tempa' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 156.
+(hyperref)                removing `\\' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 156.
+(hyperref)                removing `\begingroup' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 156.
+(hyperref)                removing `\catcode' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 156.
+(hyperref)                removing `\active' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 156.
+(hyperref)                removing `\catcode' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 156.
+(hyperref)                removing `\active' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\%' on input line 156.
+(hyperref)                removing `\%' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 156.
+(hyperref)                removing `\catcode' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 156.
+(hyperref)                removing `\active' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\#' on input line 156.
+(hyperref)                removing `\#' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 156.
+(hyperref)                removing `\catcode' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\&' on input line 156.
+(hyperref)                removing `\&' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\textunderscore' on input line 156.
+(hyperref)                removing `\textunderscore' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\_' on input line 156.
+(hyperref)                removing `\_' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\catcode' on input line 156.
+(hyperref)                removing `\catcode' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\active' on input line 156.
+(hyperref)                removing `\active' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\~' on input line 156.
+(hyperref)                removing `\~' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\textasciitilde' on input line 156.
+(hyperref)                removing `\textasciitilde' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 156.
+(hyperref)                removing `\<let>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 156.
+(hyperref)                removing `\\' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\csname\endcsname' on input line 156.
+(hyperref)                removing `\csname\endcsname' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Hy@tempa' on input line 156.
+(hyperref)                removing `\Hy@tempa' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 156.
+(hyperref)                removing `\<def>-command' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Hy@tempa' on input line 156.
+(hyperref)                removing `\Hy@tempa' on input line 157.
 
 (./teste.aux (./CP_picat.aux))
 \openout1 = `teste.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1644,7 +1644,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box103
-Package hyperref Info: Link coloring OFF on input line 165.
+Package hyperref Info: Link coloring OFF on input line 166.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1654,72 +1654,72 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count361
 )
-LaTeX Info: Redefining \ref on input line 165.
-LaTeX Info: Redefining \pageref on input line 165.
-LaTeX Info: Redefining \nameref on input line 165.
+LaTeX Info: Redefining \ref on input line 166.
+LaTeX Info: Redefining \pageref on input line 166.
+LaTeX Info: Redefining \nameref on input line 166.
  (./teste.out)
 (./teste.out)
 \@outlinefile=\write6
 \openout6 = `teste.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 165.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 166.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 165.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 166.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 165.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 165.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 166.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 166.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 165.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 166.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 165.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 165.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 166.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 166.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 165.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 166.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 165.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 165.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 166.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 166.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 165.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 166.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 165.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 165.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 166.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 166.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 165.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 166.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 165.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 166.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 165.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 166.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 165.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 166.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 165.
+(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 166.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 165.
+(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 166.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 165.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 166.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 165.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 166.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 165.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 165.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 166.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 166.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
 (Font)              `pureletters' in the math version `normal' on input line 16
-5.
+6.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 16
-5.
+6.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 165.
+(Font)              `pureletters' in the math version `bold' on input line 166.
 
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  T1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 1
-65.
+66.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 165.
+ut line 166.
 
 (/usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English
 .dict
@@ -1753,40 +1753,53 @@ Package caption Info: End \AtBeginDocument code.
  (./teste.nav)
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 168.
+(Font)              size <20.74> substituted on input line 169.
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 168.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 169.
 
 (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 168.
+LaTeX Font Info:    Try loading font information for U+msa on input line 169.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 168.
+LaTeX Font Info:    Try loading font information for U+msb on input line 169.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 168.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 169.
 
 (/usr/share/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 168.
+line 169.
 
 (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-) [1
+)
+<figures/logo02-picat.jpg, id=20, 113.24783pt x 119.20825pt>
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 169.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/logo02-picat.jpg
+>]
 \openout4 = `teste.vrb'.
 
- (./teste.vrb) [2
+
+(./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 190.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [2
 
 ]
 \openout2 = `CP_picat.aux'.
@@ -1794,286 +1807,848 @@ thkerncmss.
  (./CP_picat.tex
 \openout4 = `teste.vrb'.
 
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 30.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [3
 
-(./teste.vrb) [3
 
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 30.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [4
 
-] (./teste.vrb) [4
+]
+(./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 30.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [5
 
-] (./teste.vrb) [5
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 30.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [6
 
 ]
 \openout4 = `teste.vrb'.
 
- (./teste.vrb) [6
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 69.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [7
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 69.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [8
 
 ]
-(./teste.vrb) [7
+(./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 69.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [9
 
-] (./teste.vrb) [8
-
-] (./teste.vrb) [9
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 69.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [10
 
 ]
 \openout4 = `teste.vrb'.
 
- (./teste.vrb) [10
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 96.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [11
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 96.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [12
 
 ]
-(./teste.vrb) [11
+(./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 96.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [13
 
-] (./teste.vrb) [12
-
-] (./teste.vrb) [13
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 96.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [14
 
 ]
 \openout4 = `teste.vrb'.
 
  (./teste.vrb
-<figures/problema_modelagem.pdf, id=365, 332.24126pt x 210.7875pt>
+<figures/problema_modelagem.pdf, id=391, 332.24126pt x 210.7875pt>
 File: figures/problema_modelagem.pdf Graphic file (type pdf)
 <use figures/problema_modelagem.pdf>
 Package pdftex.def Info: figures/problema_modelagem.pdf  used on input line 7.
 (pdftex.def)             Requested size: 215.10255pt x 161.49313pt.
-) [14
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 115.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [15
 
  <./figures/problema_modelagem.pdf>]
 \openout4 = `teste.vrb'.
 
  (./teste.vrb
-<figures/dinamica_pr.pdf, id=399, 150.5625pt x 425.59pt>
+<figures/dinamica_pr.pdf, id=425, 150.5625pt x 425.59pt>
 File: figures/dinamica_pr.pdf Graphic file (type pdf)
 <use figures/dinamica_pr.pdf>
 Package pdftex.def Info: figures/dinamica_pr.pdf  used on input line 6.
 (pdftex.def)             Requested size: 92.19218pt x 201.85861pt.
-) [15
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 128.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [16
 
  <./figures/dinamica_pr.pdf>]
 \openout4 = `teste.vrb'.
 
-
-(./teste.vrb
-<figures/reducao_PR_01.pdf, id=431, 328.22626pt x 288.07625pt>
+ (./teste.vrb
+<figures/reducao_PR_01.pdf, id=458, 328.22626pt x 288.07625pt>
 File: figures/reducao_PR_01.pdf Graphic file (type pdf)
 <use figures/reducao_PR_01.pdf>
 Package pdftex.def Info: figures/reducao_PR_01.pdf  used on input line 6.
 (pdftex.def)             Requested size: 215.10245pt x 161.49301pt.
-) [16
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 144.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[17
 
  <./figures/reducao_PR_01.pdf>]
 \openout4 = `teste.vrb'.
 
  (./teste.vrb
-<figures/reducao_PR_02.pdf, id=483, 403.5075pt x 445.665pt>
+<figures/reducao_PR_02.pdf, id=509, 403.5075pt x 445.665pt>
 File: figures/reducao_PR_02.pdf Graphic file (type pdf)
 <use figures/reducao_PR_02.pdf>
 Package pdftex.def Info: figures/reducao_PR_02.pdf  used on input line 7.
 (pdftex.def)             Requested size: 215.10167pt x 161.48651pt.
-) [17
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 163.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [18
 
  <./figures/reducao_PR_02.pdf>]
 \openout4 = `teste.vrb'.
 
- (./teste.vrb) [18
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 189.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [19
 
-] (./teste.vrb) [19
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 189.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [20
 
-] (./teste.vrb) [20
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 189.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [21
 
-]
-(./teste.vrb) [21
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 189.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
 
-] (./teste.vrb) [22
+[22
 
-]
-\openout4 = `teste.vrb'.
-
- (./teste.vrb) [23
-
-] (./teste.vrb) [24
-
-]
-(./teste.vrb) [25
-
-] (./teste.vrb) [26
-
-]
-\openout4 = `teste.vrb'.
-
- (./teste.vrb) [27
-
-] (./teste.vrb) [28
-
-]
-\openout4 = `teste.vrb'.
-
-
-(./teste.vrb) [29
-
-] (./teste.vrb) [30
-
-] (./teste.vrb) [31
-
-] (./teste.vrb) [32
-
-]
-\openout4 = `teste.vrb'.
-
-
-(./teste.vrb) [33
-
-]
-\openout4 = `teste.vrb'.
-
- (./teste.vrb
-Overfull \hbox (7.63322pt too wide) in paragraph at lines 13--13
-[]    \T1/cmtt/m/n/10 % L_dom = [I : I in 1..1000, eh_primo(I) == true],   %OU[
-] 
- []
-
-) [34
-
-]
-\openout4 = `teste.vrb'.
-
- (./teste.vrb) [35
-
-]
-\openout4 = `teste.vrb'.
-
- (./teste.vrb) [36
-
-]
-\openout4 = `teste.vrb'.
-
- (./teste.vrb) [37
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 189.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [23
 
 ]
 \openout4 = `teste.vrb'.
 
  (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 216.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [24
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 216.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [25
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 216.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[26
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 216.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [27
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 237.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [28
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 237.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [29
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 261.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[30
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 261.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [31
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 261.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [32
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 261.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [33
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 274.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[34
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 296.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [35
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 319.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [36
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 340.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [37
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 369.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
 [38
 
 ]
 \openout4 = `teste.vrb'.
 
- (./teste.vrb) [39
-
-] (./teste.vrb) [40
-
-] (./teste.vrb) [41
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 394.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [39
 
 ]
 \openout4 = `teste.vrb'.
 
  (./teste.vrb)
-[42
-
-] (./teste.vrb) [43
-
-] (./teste.vrb) [44
-
-] (./teste.vrb) [45
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 412.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [40
 
 ] (./teste.vrb)
-[46
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 412.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [41
 
-]
-\openout4 = `teste.vrb'.
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 412.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
 
- (./teste.vrb) [47
-
-] (./teste.vrb) [48
-
-] (./teste.vrb) [49
+[42
 
 ]
 \openout4 = `teste.vrb'.
 
  (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 438.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [43
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 438.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [44
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 438.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [45
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 438.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[46
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 438.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [47
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 459.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [48
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 459.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [49
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 459.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
 [50
 
 ]
 \openout4 = `teste.vrb'.
 
- (./teste.vrb
-Overfull \hbox (2.3845pt too wide) in paragraph at lines 16--16
-[]   \T1/cmtt/m/n/10 Quadro :: 1 .. L_dom.len , %% operador len . "eh colado"[]
- 
- []
-
-) [51
-
-]
-\openout4 = `teste.vrb'.
-
- (./teste.vrb) [52
-
-]
-\openout4 = `teste.vrb'.
-
- (./teste.vrb
-Overfull \hbox (2.3845pt too wide) in paragraph at lines 23--23
-[]  \T1/cmtt/m/n/10 %% Ninguém trabalha no mesmo consultorio em dias seguidos[]
- 
- []
-
-
-Overfull \hbox (7.63322pt too wide) in paragraph at lines 23--23
-[]  \T1/cmtt/m/n/10 %% Ninguém trabalha no mesmo dia em mais de um consultorio[
-] 
- []
-
-) [53
-
-]
-\openout4 = `teste.vrb'.
-
- (./teste.vrb) [54
-
-]
-\openout4 = `teste.vrb'.
-
- (./teste.vrb
-Overfull \hbox (39.12553pt too wide) in paragraph at lines 22--22
-[]\T1/cmtt/m/n/10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%[] 
- []
-
-
-Overfull \hbox (39.12553pt too wide) in paragraph at lines 22--22
-[]\T1/cmtt/m/n/10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%[] 
- []
-
-) [55
-
-]
-\openout4 = `teste.vrb'.
-
- (./teste.vrb) [56
-
-]
-\openout4 = `teste.vrb'.
-
- (./teste.vrb) [57
-
-]
-\openout4 = `teste.vrb'.
-
- (./teste.vrb) [58
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 471.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [51
 
 ]
 \openout4 = `teste.vrb'.
 
  (./teste.vrb)
-[59
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 495.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [52
 
-] (./teste.vrb) [60
+]
+\openout4 = `teste.vrb'.
 
-] (./teste.vrb) [61
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 516.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [53
 
-] (./teste.vrb) [62
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 544.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[54
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 563.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [55
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb
+Overfull \hbox (4.484pt too wide) in paragraph at lines 22--22
+[]\T1/cmtt/m/n/9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%[] 
+ []
+
+
+Overfull \hbox (4.484pt too wide) in paragraph at lines 22--22
+[]\T1/cmtt/m/n/9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%[] 
+ []
+
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 590.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [56
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 618.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [57
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 638.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [58
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 668.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [59
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 691.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[60
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 691.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [61
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 691.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [62
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb
+<figures/tsp01.jpg, id=1693, 376.40625pt x 188.20313pt>
+File: figures/tsp01.jpg Graphic file (type jpg)
+<use figures/tsp01.jpg>
+Package pdftex.def Info: figures/tsp01.jpg  used on input line 6.
+(pdftex.def)             Requested size: 245.83856pt x 134.58144pt.
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 705.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [63
+
+ <./figures/tsp01.jpg>]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 733.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [64
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 733.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [65
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 733.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [66
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 733.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[67
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 733.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [68
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 748.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [69
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 775.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [70
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 775.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[71
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 789.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [72
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 818.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [73
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 818.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [74
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 835.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[75
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 861.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [76
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 895.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [77
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 895.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [78
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 895.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[79
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 895.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [80
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 925.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [81
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb
+Overfull \hbox (9.20784pt too wide) in paragraph at lines 13--13
+[]   \T1/cmtt/m/n/9 % grafo de DECISAO que representa o resultado dos nos escol
+hidos[] 
+ []
+
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 956.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [82
+
+] (./teste.vrb
+Overfull \hbox (9.20784pt too wide) in paragraph at lines 13--13
+[]   \T1/cmtt/m/n/9 % grafo de DECISAO que representa o resultado dos nos escol
+hidos[] 
+ []
+
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 956.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [83
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 989.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [84
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 989.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [85
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1019.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [86
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1019.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[87
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb
+Overfull \hbox (278.46709pt too wide) in paragraph at lines 23--23
+[]\T1/cmtt/m/n/9 M_Decisao: {{0,1,0,0,0,0,0},{0,0,0,0,0,0,1},{1,0,0,0,0,0,0},{0
+,0,1,0,0,0,0},{0,0,0,1,0,0,0},{0,0,0,0,1,0,0},{0,0,0,0,0,1,0}}[] 
+ []
+
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1052.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [88
+
+]
+\openout4 = `teste.vrb'.
+
+ (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1084.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [89
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1084.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [90
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1084.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [91
+
+] (./teste.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1084.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[92
 
 ])
 \tf@nav=\write7
@@ -2085,12 +2660,11 @@ Overfull \hbox (39.12553pt too wide) in paragraph at lines 22--22
 \tf@snm=\write9
 \openout9 = `teste.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 212.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 212.
- (./teste.aux
-(./CP_picat.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 212.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 212.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
+ (./teste.aux (./CP_picat.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 213.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 213.
 Package rerunfilecheck Info: File `teste.out' has not changed.
 (rerunfilecheck)             Checksum: 98C355670644E598DE403A63653018EB;73.
 
@@ -2100,32 +2674,35 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 30848 strings out of 492616
- 576406 string characters out of 6135177
+ 31028 strings out of 492616
+ 578318 string characters out of 6135177
  918405 words of memory out of 5000000
- 33972 multiletter control sequences out of 15000+600000
- 554359 words of font info for 83 fonts, out of 8000000 for 9000
+ 34023 multiletter control sequences out of 15000+600000
+ 558328 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,14n,70p,772b,891s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/share/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf-
-dist/fonts/type1/public/cm-super/sfso1095.pfb></usr/share/texmf-dist/fonts/type
-1/public/cm-super/sfss0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
-er/sfss0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb
-></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/te
-xmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf-dist/fonts/
-type1/public/cm-super/sfss1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm
--super/sfss2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1095
-.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on teste.pdf (62 pages, 353279 bytes).
+s/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-
+dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf-dist/fonts/type
+1/public/cm-super/sfsi1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
+er/sfso1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb
+></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/te
+xmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist/fonts/
+type1/public/cm-super/sfss1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm
+-super/sfss1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1440
+.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss2074.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf-dist/fo
+nts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt
+1095.pfb>
+Output written on teste.pdf (92 pages, 563842 bytes).
 PDF statistics:
- 1775 PDF objects out of 2073 (max. 8388607)
- 1655 compressed objects within 17 object streams
- 126 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2569 PDF objects out of 2984 (max. 8388607)
+ 2406 compressed objects within 25 object streams
+ 186 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

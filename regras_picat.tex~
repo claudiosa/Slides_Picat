@@ -3,7 +3,7 @@
 
 
 \begin{frame}[fragile,allowframebreaks=0.8,c]
-	\frametitle{Predicados e Funções em Picat}
+	\frametitle{Predicados e Funções}
     
 \begin{itemize}
 
@@ -117,8 +117,20 @@ regra_01(N) , N <= 10  =>
 
 \item O objetivo é encontrar dois padrões que possam ser unificados para se inferir alguma ação.
 
-\item Quanto ao {\em casamento de padrões}:
-\framebreak
+\pause
+\item Muitos exemplos no curso
+
+\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+\frametitle{Casamento de Padrões -- Procedimento}
+
+
+Procedimento de {\em casamento de padrões}:
 
 \begin{itemize}
 	\item Dado um padrão $p_1(t_1, \ldots,t_m)$, este \emph{casa} 
@@ -137,8 +149,6 @@ regra_01(N) , N <= 10  =>
     
 \end{itemize}        
 
-\end{itemize}
-    
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
