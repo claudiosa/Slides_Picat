@@ -57,7 +57,7 @@
     \item Paradigma: um conjunto de características baseado em alguma abordagem teórica 
     
     \pause
-      \item Picat é ma linguagem multiparadigma pois abrange os seguintes paradigmas:
+      \item Picat é uma linguagem multiparadigma pois abrange os seguintes paradigmas:
     
       \begin{itemize}
       	\item[--] Lógico
@@ -86,8 +86,8 @@
     
     \pause
     	\item Regras são escritas em formas de cláusulas, as quais são interpretadas como
-        implicações lógicas. Depen
-        dem das premissas serem verdadeiras para esta ser verdadeira.
+        implicações lógicas.\\ 
+        Dependem das premissas serem verdadeiras para esta ser verdadeira.
         
 
     \pause
@@ -191,28 +191,31 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{frame}			  [allowframebreaks=0.9]
+\begin{frame}	 [fragile]
 
-    \frametitle{Acrônimo de \textbf{P.I.C.A.T.}}
+   \frametitle{Acrônimo de \textbf{P.I.C.A.T.}}
   
   
-  	\begin{description}
-   
-       \item [\textbf{P}:] \textit{Pattern-matching}:  Utiliza o conceito de \textit{casamento de 
-      padrões} entre objetos, bem como os conceitos da \textit{unificação} da LPO
+  \begin{block}{}
+  		\begin{description}
 
-      \item [\textbf{I}:] \textit{Intuitive}: Oferece estruturas de decisão, atribuição e laços de
-      repetição, etc. Análogo a outras linguagens de programação mais populares
+ \item [\textbf{P}:] \textit{Pattern-matching}:  Utiliza o conceito de \textit{casamento de 
+padrões} entre objetos, bem como os conceitos da \textit{unificação} da LPO
 
-      \item [\textbf{C}:] \textit{Constraints}: Suporta a programação por restrições (PR) para 	
-      problemas combinatórios
+\item [\textbf{I}:] \textit{Intuitive}: Oferece estruturas de decisão, atribuição e laços de
+repetição, etc. Análogo há outras linguagens de programação mais populares
 
-       \item [\textbf{A}:] \textit{Actors}: Suporte as chamadas a eventos, os atores;
+\item [\textbf{C}:] \textit{Constraints}: Suporta a programação por restrições (PR) para 	
+problemas combinatórios
 
-      \item [\textbf{T}:] \textit{Tabling}: Implementa a técnica de \textit{memoization}, com 
-      soluções imediatas para problemas de Programação Dinâmica (PD).
-    
+ \item [\textbf{A}:] \textit{Actors}: Suporte as chamadas a eventos, chamada via \textit{atores}
+
+\item [\textbf{T}:] \textit{Tabling}: Implementa a técnica de \textit{memoization} com 
+soluções imediatas para problemas de Programação Dinâmica (PD).
+
   \end{description}	
+ \end{block}
+  
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -221,12 +224,11 @@
   \frametitle{Instalação do PICAT}
 
   \begin{itemize}
-  
-  	\item Baixar a versão desejada de:\\ 
+   	\item Baixar a versão desejada de:\\ 
     \hspace{8mm} \url{http://picat-lang.org/download.html}
 
      \pause    
-   	\item Descompactar. Em geral em: \textbf{/usr/local/Picat/} no Linux e IOS
+   	\item Descompactar. Em geral em: \textbf{/usr/local/Picat/} ou \textbf{/opt/Picat/}  no Linux e IOS
 
      \pause    
     \item  Criar um link simbólico (Linux) ou atalhos (Windows):\\ 
@@ -243,7 +245,10 @@
 
      \pause
    	\item Finalmente, tenha um editor de texto apropriado.\\
-    \hspace{8mm} Sugestão: \textit{Geany}, \textit{Sublime} ou \textit{Atom}.
+    \hspace{8mm} Sugestão: \textit{Geany}, \textit{Sublime} ou \textit{VS Code}.
+
+  \pause
+   	\item Editor on-line mantido pelo Alexandre: \url{http://retina.inf.ufsc.br/picat.html}
      
     \pause
     \item Se não tiver \textit{plugin} para Picat, escolha a sintaxe da linguagem \textit{Erlang}.
@@ -260,14 +265,13 @@
   \frametitle{Usando Picat}
   	\begin{itemize}
     
-      \item Picat é uma linguagem  disponível em qualquer arquitetura de 
-      processamento. 
+    % \item Picat é uma linguagem  disponível em qualquer arquitetura de 
+    % processamento. 
       
-      \pause
-      \item Qualquer emergência, o ambiente completo de execução do Picat pode ser reconstruído a partir 
-      da linguagem C padrão
+    %\pause
+    %\item Qualquer emergência, o ambiente completo de execução do Picat pode ser reconstruído a partir da linguagem C padrão
       
-      \pause
+   
       \item Os seus arquivos fontes utilizam a extensão \textbf{.pi}. Exemplo: \texttt{programa.pi}
       \item Há dois modos principais de utilização do Picat: 
       

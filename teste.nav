@@ -5,14 +5,16 @@
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
 \headcommand {\sectionentry {1}{Conclus\IeC {\~o}es}{3}{Conclus\IeC {\~o}es}{0}}
-\headcommand {\slideentry {1}{0}{1}{3/10}{}{0}}
-\headcommand {\beamer@framepages {3}{10}}
-\headcommand {\beamer@subsectionpages {3}{10}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{11}{Agradecimentos}}
-\headcommand {\slideentry {1}{1}{1}{11/13}{Agradecimentos}{0}}
-\headcommand {\beamer@framepages {11}{13}}
-\headcommand {\beamer@partpages {1}{13}}
-\headcommand {\beamer@subsectionpages {11}{13}}
-\headcommand {\beamer@sectionpages {3}{13}}
-\headcommand {\beamer@documentpages {13}}
-\headcommand {\gdef \inserttotalframenumber {4}}
+\headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\slideentry {1}{0}{2}{4/11}{}{0}}
+\headcommand {\beamer@framepages {4}{11}}
+\headcommand {\beamer@subsectionpages {3}{11}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{12}{Agradecimentos}}
+\headcommand {\slideentry {1}{1}{1}{12/14}{Agradecimentos}{0}}
+\headcommand {\beamer@framepages {12}{14}}
+\headcommand {\beamer@partpages {1}{14}}
+\headcommand {\beamer@subsectionpages {12}{14}}
+\headcommand {\beamer@sectionpages {3}{14}}
+\headcommand {\beamer@documentpages {14}}
+\headcommand {\gdef \inserttotalframenumber {5}}

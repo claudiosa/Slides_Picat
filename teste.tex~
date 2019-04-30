@@ -139,7 +139,8 @@
 % The log drawn in the upper right corner.
 
 \logo{\centering
-\includegraphics[height=0.10\paperheight]{figures/logo01-picat.jpg}
+%\includegraphics[height=0.10\paperheight]{figures/logo01-picat.jpg}
+\includegraphics[height=0.11\paperheight]{figures/logo02-picat.jpg}
 \hspace{0.9\paperwidth}
 %\includegraphics[height=0.027\paperheight]{figures/logo01-picat.jpg}
 }
@@ -206,7 +207,7 @@
 % \include{buscas_picat}
 % \include{PD_picat} % cap ??? finalizar aqui
 % \include{planejamento_picat}
- \include{CP_picat} % cap  finalizar aqui
+ %\include{CP_picat} % cap  finalizar aqui
 %
-% \include{conclusoes_picat}
+\include{conclusoes_picat}
 \end{document}

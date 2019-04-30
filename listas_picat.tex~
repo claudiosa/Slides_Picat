@@ -139,7 +139,7 @@ isto é, além dos delimitadores \lbrack \ldots \rbrack, há um
 % Atenção em cada exemplo e faça suas próprias conclusões 
 %[ de como as listas funcionam.
 %\end{itemize}
-\begin{small}
+\begin{footnotesize}
 \begin{verbatim}
  [ a, b, c, d ] = X
  [ X | b, c, d ]  =  [ a, b, c, d ]
@@ -155,7 +155,7 @@ isto é, além dos delimitadores \lbrack \ldots \rbrack, há um
  [  a | _ ] = [  a , b , c ,  d ]
  [  a , b | c , d ] = [  X , Y | Z ]
  \end{verbatim}
-\end{small}
+\end{footnotesize}
 \end{block}
 
 \framebreak
@@ -436,7 +436,6 @@ V2 = {(I,J) :  I in 1 .. 2, J in 11 .. 12}
 \end{block}
 
 \end{frame}
-
 
 
 

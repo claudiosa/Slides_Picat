@@ -279,7 +279,7 @@ Procedimento de {\em casamento de padrões}:
 \begin{frame}[fragile]
 \frametitle{Regras, Metas e Funções -- Exemplo}
 
-\begin{small}
+\begin{footnotesize}
 \begin{verbatim}
 main =>
        X = 3, 
@@ -294,14 +294,14 @@ um_predicado(X,Y,Z) => Z = X + Y.
 uma_funcao(X,Y) = R => R = X + Y.
 \end{verbatim}
 
-\end{small}
+\end{footnotesize}
 \end{frame}
 
 
 \begin{frame} [fragile]
 
 \frametitle{Regras, Metas e Funções -- Exemplo}
-\begin{small}
+\begin{footnotesize}
 \begin{verbatim}
 Picat> cl('predicados_funcoes').
 Compiling:: predicados_funcoes.pi
@@ -320,7 +320,7 @@ yes
 
 Picat>
 \end{verbatim}
-\end{small}
+\end{footnotesize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -421,7 +421,7 @@ Picat>
 \begin{frame} [fragile]
 \frametitle{Exemplo -- Função e Regras}
 
-\begin{small}
+\begin{footnotesize}
 \begin{verbatim}
 index (+,+,+) (+,+, -) (-,+,-) (-,-,+) (-,-, +) 
       (+,-,+) (+,+,-)  (-,-,-)
@@ -441,7 +441,7 @@ main ?=>
 main =>       
        println("\n FIM"). 
 \end{verbatim}
-\end{small}
+\end{footnotesize}
 
 \textcolor{red}{Este exemplo é muito interessante. Execute ele na console do interpretador
 excluindo alguns dos parâmetros do \textit{index}}
@@ -857,7 +857,7 @@ laco_03 =>
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
  \begin{frame}[fragile]
  \frametitle{Compreensão de Listas e Vetores: Exemplo}
-\begin{small}
+\begin{footnotesize}
 
 \begin{verbatim}
 main =>
@@ -876,7 +876,7 @@ Tam = M.length,  %% tamanho de M
 %%%% $picat vetor_exemplo_01.pi
 \end{verbatim}
 
-\end{small}
+\end{footnotesize}
  
 \end{frame}
 

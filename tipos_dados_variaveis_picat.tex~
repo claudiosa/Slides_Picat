@@ -1,6 +1,28 @@
 
 \section{Tipos de Dados e Variáveis}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Tipos de Dados e Variáveis}
+\begin{minipage}{0.47\textwidth}
+    \begin{itemize}
+        \item Contextualizar
+        \item Definiçoes
+        \item Exemplos
+    \end{itemize}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{figure}[ht!]
+\begin{center}
+\includegraphics[width=1.2\textwidth, height=0.40\textheight]{figures/logo_picat_alex.jpg}
+\end{center}
+\end{figure}
+\end{minipage}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 \begin{frame}[fragile]
 %[fragile, allowframebreaks=0.9]
  \frametitle{Conceitos Iniciais -- Tipos de Dados}
@@ -21,7 +43,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e
   \item Enquanto a \underline{dinâmica} em \textit{tempo de execução}.
   
   \pause 
-  \item Linguagens fortemente tipadas, tais como C, Java e Pascal, 
+  \item Linguagens fortemente tipadas, tais como Java, Haskell e Pascal, 
   exigem que o tipo do dado (conteúdo) seja do mesmo tipo da variável 
   ao qual este valor será atribuído. 
   Tudo isto é pré-definido durante a fase da \textit{compilação}.
@@ -38,13 +60,17 @@ verificação do tipo de dados: \underline{\textbf{estática}} e
 
   \item Nas linguagens interpretadas, com uma máquina virtual, 
   esta definição é feita durante a \textit{execução} do
-  programa
+  programa. Exemplo: Java é uma linguagem com tipagem estática que 
+  é executada em uma máquina virtual.
+
   
   \pause 
-  \item Prós e contras sobre a melhor tipagem de dados, esta éa discussão que fica de lado neste momento
+  \item Prós e contras sobre a melhor tipagem de dados, esta é
+  uma discussão que fica de lado neste momento, neste contexto
   
   \pause 
-  \item Em resumo Picat, tem a tipagem \textbf{dinâmica}
+  \item Em resumo Picat, tem uma tipagem \textbf{dinâmica} e
+   é compilado para uma   máquina virtual própria.
   
 \end{itemize}
 \end{frame}
@@ -463,7 +489,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e
 
 \begin{frame}[fragile]
 
-\begin{small}	
+\begin{footnotesize}	
 	\begin{block}{Exemplo}
 		\begin{verbatim}
 		teste => X = 0, X := X + 1,  X := X + 2, write(X).
@@ -485,7 +511,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e
 			
 	\end{block}
 
-\end{small}
+\end{footnotesize}
 
 
 \end{frame}
@@ -555,7 +581,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e
 \subsection{Tabela de Operadores} 
 \begin{frame}[fragile]
 
-\begin{small}
+\begin{footnotesize}
 		
 	\begin{table}
 	\label{Operadores Aritméticos}
@@ -576,7 +602,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e
 		\end{center}
 	\end{table}
 
-	\end{small}
+	\end{footnotesize}
 
 \end{frame}
 
@@ -584,7 +610,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e
 
 \begin{frame}[fragile]
 
-\begin{small}
+\begin{footnotesize}
 
 	\begin{table}
 		\caption{Tabela de Operadores Completa em Ordem de Precedência}
@@ -605,7 +631,7 @@ verificação do tipo de dados: \underline{\textbf{estática}} e
 		\end{center}
 	\end{table}
 
-\end{small}
+\end{footnotesize}
 
 \end{frame}
 
