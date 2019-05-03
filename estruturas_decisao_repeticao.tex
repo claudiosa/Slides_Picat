@@ -1,15 +1,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Comandos Condicionais, Laços e Repetições}
+\section{Estruturas de Decisão, Laços e Iteradores}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Predicados e Funções}
+\frametitle{Estruturas de Decisão, Laços e Iteradores}
 \begin{minipage}{0.47\textwidth}
     \begin{itemize}
         \item Definições
         \item Contexto de uso
-        \item Estruturas de repetição
         \item Estruturas de decisão
+        \item Estruturas de repetição
+        \item Iteradores
+        \item Exemplos
     \end{itemize}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
@@ -24,7 +26,7 @@
 %%% ATE AQUI
 
 \begin{frame}[fragile]
-\frametitle{Comandos Condicionais, Laços e Repetições}
+\frametitle{Estruturas de Decisão, Laços e Iteradores}
     
   
   \begin{itemize}
@@ -55,7 +57,7 @@
     %%%%%%%%%%%%%%%%
     
 \begin{frame}[fragile]
-\frametitle{Comandos Condicionais}
+\frametitle{Estrutura Condicionais}
     
     \begin{itemize}
         
@@ -87,12 +89,6 @@
 \end{frame}    
     
     
-    
-    
-    
-    
-    
-    
 \begin{frame}[fragile]
 
 \begin{block}{Exemplo: \texttt{if--then--else--end} }
@@ -115,8 +111,7 @@ if (X <= 100) then
     
     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
-    
-    
+       
     
 \begin{frame}[fragile]
 \frametitle{Estruturas de Repetições}
@@ -124,23 +119,22 @@ if (X <= 100) then
 
 \begin{itemize}
     
-    \item Picat também implementa 3 estruturas de repetição, são elas:
-    \texttt{foreach}, \texttt{while}, e \texttt{do-while}.
+    \item Picat também implementa 3 estruturas de repetição:
+    \texttt{foreach}, \texttt{while} e \texttt{do-while}
     
     \pause
-    \item O laço do  \texttt{foreach}  itera sobre termos simples e compostos.
+    \item O laço do  \texttt{foreach}  \textbf{itera} sobre termos simples e compostos
     
-        \pause
+    \pause
     \item O  \texttt{while} repete um conjunto de ações enquanto uma 
      condição for verdadeira.
      
         \pause
-    \item A condição pode ser simples ou combinada
+    \item A condição pode ser simples ou combinada: ver exemplos
      
-     
-        \pause
+     \pause
     \item O laço \texttt{do-while} é análogo ao  \texttt{while}, porém ele 
-    sempre executa pelo menos uma vez.
+    sempre executa pelo menos uma vez
 \end{itemize}
 \end{frame}    
 
@@ -160,20 +154,15 @@ if (X <= 100) then
         \end{tabbing}
     
    \pause    
-   Esta notação é dada por:
-        
+   Esta notação é dada por:        
     \item  $E_i$ é um \emph{padrão de iteração} ou \emph{iterador}. 
         
     \item  $D_i$ é  uma expressão de \emph{valor composto}. Exemplo: uma lista de valores
         
-     \item  $Cond_i$ é uma condição opcional sobre os iteradores $E_1$ até $E_i$.
+     \item  $Cond_i$ é uma condição opcional sobre os \textbf{iteradores} $E_1$ até $E_i$.
         
-     \item Laços do \texttt{foreach} podem conter múltiplos iteradores. 
+     \item O \texttt{foreach} pode conter múltiplos iteradores usando o ``\texttt{in}'' 
      Caso isso ocorra, o compilador interpreta isso como diversos laços aninhados.
-        
-        % Maiores detalhes, ver Manual do Usuário. % copiar para outros slides
-        
-        % Exemplo 1 iterador e multiplos iteradores
         
     \end{itemize}
 \end{frame}    
@@ -184,15 +173,17 @@ if (X <= 100) then
 \begin{block}{Exemplo: \texttt{foreach} }
      
 \begin{lstlisting}[frame=single]
-    
-laco_01 =>  
-    L = [17, 3, 41, 25, 8, 1, 6, 40],  
-    foreach (E in L)  
-        println(E)  
-    end.  
+ imp_tracejados(N) =>
+   nl,
+   foreach(I in 1..N)
+     printf("=")
+   end,
+   nl.   
 \end{lstlisting}
         
 \end{block}
+
+\textcolor{red}{O \texttt{I} é iterado com valores de \texttt{1} a \texttt{N}}
 \end{frame}    
 
 
@@ -308,8 +299,8 @@ laco_03 =>
 \frametitle{Compreensão de Listas e Vetores}    
     
 \begin{itemize}    
-    \item A função de \underline{\textit{compreensão de listas e vetores}} é uma função especial que  permite a fácil criação de listas ou vetores, opcionalmente seguindo uma regra de 
-    criação.
+    \item A função de \underline{\textit{compreensão de listas e vetores}} é uma 
+    função especial que  permite a fácil criação de listas ou vetores.
     
     \item Sua notação é:
     
@@ -319,7 +310,8 @@ laco_03 =>
     \end{tabbing}
     
     \item Onde, $T$ é uma expressão  adicionada a lista, cada $E_i$ é um 
-    iterador, cada $D_i$ é um termo composto ou expressão que gera um termo composto, e cada $Cond_i$ é uma condição sobre cada iterador de $E_1$ até $E_i$.
+    iterador sobre $D_i$, o qual é um termo ou expressão, 
+     e $Cond_i$ é uma condição sobre cada iterador de $E_1$ até $E_i$.
     
     \item Há uma seção dedicada a listas. Voltaremos ao assunto.
     
@@ -372,7 +364,7 @@ Tam = M.length,  %% tamanho de M
 
 \begin{itemize}
         
-\item Picat tem diversas variações  funções de leitura de valores,
+\item Picat tem diversas  funções de leitura de valores,
         que serve tanto para ler de uma console \texttt{stdin},
         como de um arquivo qualquer.
         
@@ -548,26 +540,102 @@ main =>
 \end{frame}
 
 \begin{frame}[fragile]
-\frametitle{Exemplos -- Compreensão de Listas}    
+\frametitle{Exemplos -- Construindo de Listas e Vetores}    
        
- \begin{lstlisting}[frame=single]
+       
+\begin{footnotesize}
+\begin{verbatim}
+import util. % use split
 main => 
-  Tamanho = read_int(),
-  Y = [read_int() : 1..Tamanho],
-  Z = {X : X in Y, X >= 0},
-  forach(I in 1..Tamanho)
-      if(Y[I] >= 0)then
-          printf("Y[%d] e maior ou igual que 0\n",I)
-      else
-          printf("Y[%d] e menor que 0\n",I)
-      end
-  end
- printf("Os valores de Y que sao maiores que 0 sao:\n%w",Z)
-.
-\end{lstlisting} 
-       
-\textcolor{red}{Este exemplo reúne muitos conceitos desta seção.}       
-   
+        le_vetor_01(X1),
+        printf("\nVETOR LIDO: %w ", X1),
+        le_vetor_02(X2),
+        printf("\nVETOR LIDO: %w ", X2),
+        le_lista_01(Y),
+        printf("\nLISTA LIDA: %w ", Y),
+        le_lista_02(W),
+        printf("\nLISTA LIDA 2: %w " , W) .
+\end{verbatim}
+\end{footnotesize}       
+
+\begin{small}
+\begin{itemize}
+  \item \textcolor{red}{Este exemplo reúne muitos conceitos desta seção.}  
+  \item \textcolor{red}{\url{https://github.com/claudiosa/CCS/blob/master/picat/input_output_exemplos/leitura_vetores_listas.pi}}  
+\end{itemize}
+\end{small}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exemplo -- Leitura de Vetores}    
+
+\begin{footnotesize}
+\begin{verbatim}
+le_vetor_01 ( V ) =>
+  printf("\nDIGITE tamanho da entrada: "),
+  Tam = read_int(),
+  V = new_array( Tam ), % cria um vetor
+  printf("\nDIGITE os %d VALORES do vetor:", Tam),
+  foreach (I in 1..Tam)
+        V[I] = read_int()
+  end,
+  printf("\nVETOR: %w ", V).
+  
+le_vetor_02 ( V ) =>  
+  printf("\nLendo um vetor qualquer de inteiros na linha: "),
+  V = { to_int(W) : W in read_line().split() }.
+  % OU
+  %L = [ to_int(W) : W in read_line().split()],
+  %V = to_array( L ).
+\end{verbatim}
+\end{footnotesize}       
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exemplo -- Leitura Lista}    
+
+\begin{footnotesize}
+\begin{verbatim}
+le_lista_01 ( L ) =>  
+  printf("\nLendo lista de inteiros na linha: "),
+  L = [ to_int(W) : W in read_line().split()].
+  
+le_lista_02 (List) =>  
+    printf("\nLista inteiros e 0 encerra: "),
+    L := [] ,
+    E := read_int() ,
+    while (E != 0)  
+        L := [E|L],  
+        E := read_int()  
+    end,  
+    List = L .
+\end{verbatim}
+\end{footnotesize}       
+\textcolor{red}{Volte neste exemplo após a seção de Listas.}          
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Saída -- via \texttt{main}}    
+
+\begin{footnotesize}
+\begin{verbatim}
+$ picat leitura_vetores_listas.pi 
+DIGITE tamanho da entrada: 3
+DIGITE os 3 VALORES do vetor: 3 4 5
+VETOR LIDO: {3,4,5} 
+Lendo um vetor qualquer de inteiros na linha: 9 8 7 6 
+VETOR LIDO: {9,8,7,6} 
+Lendo lista de inteiros na linha: 1 2 3 4 
+LISTA LIDA: [1,2,3,4] 
+Lista inteiros e 0 encerra: 1 2 3 7 0 1 2 3 5
+LISTA LIDA 2: [7,3,2,1] 
+.... removi algumas linhas em branco
+\end{verbatim}
+\end{footnotesize}       
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -577,20 +645,19 @@ main =>
 
 \begin{itemize}
 
-
-  \item Esta seção avança na sintaxe do Picat
+  \item Esta seção avança na sintaxe do Picat 
   
-    \pause
+  \pause
   \item Embora sua sintaxe não seja muito extensa, ela precisa 
   ser praticada
   
-    \pause
+   \pause
   \item Como este conteúdo se assemelha as LPs clássicas, como exercício,
   voce está apto a fazer alguns algoritmos de outras linguagens.
 
   \pause
-  \item Se antes o Prolog era complicado, com Picat,
-  tudo ficou análogo a Python e a linguagem C
+  \item Se antes o Prolog era complicado para entradas e saída, com Picat,
+  tudo ficou semelhante as demais linguagens imperativas
   
   \pause
   \item Em \url{https://github.com/claudiosa/CCS/tree/master/picat/input_output_exemplos}

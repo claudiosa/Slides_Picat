@@ -1,17 +1,15 @@
-\frametitle{Contribuições}
-  \begin{itemize}
 
-    \item Alexandre Gonçalves;
+    \frametitle{Agradecimentos}
 
-    \item João Herique Faes Battisti;
+    \begin{itemize}
+      \item Muito obrigado a voce!
+      \pause
+      \item Algumas pessoas que deram opiniões e me incentivaram a
+            fazer este material
 
-    \item Paulo Victor de Aguiar;
+      \pause
+      \item Claudio Cesar de Sá
+     \item Contacto: \url{claudio.sa@udesc.br} e\\
+           \url{claudio@colmeia.udesc.br}
 
-    \item Rogério Eduardo da Silva;
-    \item Hakan Kjellerstrand -- (\url{http://www.hakank.org/picat/})
-    \item Neng-Fa Zhou -- (\url{http://www.picat-lang.org/})
-
-    \item Outros anônimos que auxiliaram na produção deste documento;
-
-  \end{itemize}
-
+    \end{itemize}

@@ -7,7 +7,7 @@
 \begin{minipage}{0.47\textwidth}
     \begin{itemize}
         \item Definições
-        \item Predicados
+        \item Predicados ou Cláusulas
         \item Funções 
         \item Contexto de uso
         \item Exemplos        
@@ -32,13 +32,13 @@
 \item Os \textbf{predicados} sempre assumem valores valores lógicos \texttt{true} ($1$) ou \texttt{false} ($0$).
 
 \item Os \textbf{predicados} em seus argumentos, podem passar $n$-termos e receber
-outros termos.
+outros $m$-termos.
 
 \item Quanto as \textbf{funções}, estas funcionam seguindo as regras de funções matemáticas,
-sempre retornando um único valor
+sempre retornando um único valor. Logo, um tipo particular de \textbf{predicados lógicos}
+que podem retornar vários termos
 
 \item Predicados e funções são definidos com regras de \textit{casamento de padrões}
-
 
 \item Predicados são conhecidos como \textbf{regras lógicas}, há dois tipos de regras:
 \framebreak        
@@ -164,7 +164,8 @@ Procedimento de {\em casamento de padrões}:
         \item O número de termos (chamado de aridade) em ($t_1, \ldots,t_m$)
         e ($u_1, \ldots,u_n$) for equivalente.
     
-    	\item Os termos ($t_1, \ldots,t_m$) e ($u_1, \ldots,u_n$) são equivalentes, ou tornaram-se  equivalentes pela unificação de variáveis	em qualquer um dos dois termos;
+    	\item Os termos ($t_1, \ldots,t_m$) e ($u_1, \ldots,u_n$) são equivalentes, ou 
+    	tornaram-se  equivalentes pela unificação de variáveis	em qualquer um dos dois termos;
     \end{itemize}
     
     \item Caso essas condições forem satisfeitas, o padrão $p_1(t_1,\ldots,t_m)$  casa com o padrão $p_2(u_1, \ldots,u_n)$.
@@ -174,35 +175,15 @@ Procedimento de {\em casamento de padrões}:
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[fragile]
-    
-\begin{block}{Exemplos de \textit{casamento}}
-
-\begin{enumerate}
-	\item A regra $fatorial(Termo, Resultado)$ pode casar com:\\
-    $fatorial(1,1)$, $fatorial(5,120)$, $fatorial(abc,25)$, $fatorial(X,Y)$, \emph{etc}.
-    
-    \pause
-     \item A regra $fatorial(Termo, Resultado), Termo \geq 0$ pode casar com:\\
-    $fatorial(1,1)$, $fatorial(5,120)$, $fatorial(X,Y)$, $fatorial(Z,Z)$, \emph{etc}.
-    
-    \pause
-    \item A regra $pai(X,Y)$ pode casar com:\\
-    $pai(rogerio, miguel)$, $pai(rogerio, henrique)$, $pai(salomao, X)$, $pai(12,24)$, \emph{etc}.
-    
-    \pause
-    \item A regra $pai(salomao, X)$ pode casar com:\\
-    $pai(salomao, rogerio)$, $pai(salomao, fabio)$.
-    
-    \pause
-    \item A regra $pai(salomao, fabio)$ pode casar com:\\
-    $pai(X, fabio)$, $pai(salomao, X)$, $pai(X,Y)$
-\end{enumerate}
-
-\end{block}
-    
-\end{frame}
+%
+% \begin{frame}[fragile]
+%     
+% \begin{block}{Exemplos de \textit{casamento}}
+%
+%  
+% \end{block}
+%     
+% \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -213,15 +194,24 @@ Procedimento de {\em casamento de padrões}:
 	\begin{itemize}
 	    
 	 \item Na matemática ao se deduzir um valor de um teorema, tem-se uma \textit{prova}. 
-	  Assim, o termo  \textit{goal} eventualmente é chamado de \textit{prova do programa}
+	  Assim, o termo  \textit{goal}  é conhecido também como \textit{prova do programa}
 	 
 	 \pause
-	    \item Metas ou Provas (do inglês: \textit{goal}) são estados que definem o final da execução.
+	    \item Metas ou provas (do inglês: \textit{goal}) são estados que definem o final da execução
 	    
   	 \pause
-	    \item Uma meta pode ser, entre outros, um valor lógico, uma chamada de outra regra, 
-	    uma exceção ou uma operação lógica.
+	    \item Uma meta pode ser, um valor lógico, uma chamada de outra regra, 
+	    uma exceção ou uma operação lógica, um termo ...
+
+  	 \pause
+	    \item Exemplo: a cláusula \texttt{main} é uma meta a ser provada!
+
+  	 \pause
+	    \item Em resumo, todas cláusulas, de alguma maneira são metas a serem provadas!
+
 	\end{itemize}
+
+
 
 \end{frame}
     
@@ -566,27 +556,23 @@ eleva_cubo(X) = X1 => X1 = X*X*X.
 
 \begin{itemize}
 
-  \item Esta seção  trata da sintaxe do Picat
+  \item Esta seção trata dos elementos do Picat: cláusulas
  
  \pause 
   \item Predicados ou cláusulas, que são
   de 2 tipos: \textbf{regras predicativas} ou \textbf{funções}
 
-
     \pause
   \item \textit{Regras} é um nome genérico a predicados ou cláusulas e funções
-  
-  
     \pause
   \item \textit{Regras} sem corpo são conhecidas como verdades e chamadas de \textbf{fatos}\\
 Uso obrigatório do meta-predicado:  \textit{index}
   
    \pause
-  \item Embora sua sintaxe não seja muito extensa, ela precisa 
-  ser praticada
+  \item Lembrando ainda que funções retornam um único valor
   
-   \pause
-  \item Mãos à obra!
+%   \pause
+%  \item Mãos à obra!
 \end{itemize}
 
 \end{frame}
