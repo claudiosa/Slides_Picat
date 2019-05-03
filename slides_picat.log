@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  3 MAY 2019 11:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  3 MAY 2019 17:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1203,9 +1203,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 (./slides_picat.aux (./aula_apresentacao_curso_picat.aux)
 (./introducao_picat.aux) (./tipos_dados_variaveis_picat.aux)
-(./regras_picat.aux) (./recursao_picat.aux) (./listas_picat.aux)
-(./buscas_picat.aux) (./PD_picat.aux) (./planejamento_picat.aux)
-(./CP_picat.aux) (./conclusoes_picat.aux))
+(./regras_picat.aux) (./estruturas_decisao_repeticao.aux) (./recursao_picat.aux
+) (./listas_picat.aux) (./buscas_picat.aux) (./PD_picat.aux)
+(./planejamento_picat.aux) (./CP_picat.aux) (./conclusoes_picat.aux))
 \openout1 = `slides_picat.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 163.
@@ -1426,7 +1426,7 @@ line 166.
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-<figures/logo02-picat.jpg, id=122, 113.24783pt x 119.20825pt>
+<figures/logo02-picat.jpg, id=126, 113.24783pt x 119.20825pt>
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 166.
@@ -1667,7 +1667,7 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 194.
 \openout2 = `introducao_picat.aux'.
 
  (./introducao_picat.tex
-<figures/logo_picat_alex.jpg, id=933, 564.60938pt x 317.68687pt>
+<figures/logo_picat_alex.jpg, id=939, 564.60938pt x 317.68687pt>
 File: figures/logo_picat_alex.jpg Graphic file (type jpg)
 <use figures/logo_picat_alex.jpg>
 Package pdftex.def Info: figures/logo_picat_alex.jpg  used on input line 24.
@@ -1813,7 +1813,7 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 151.
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/Paradigma_Procedural.png, id=1366, 642.4pt x 481.8pt>
+<figures/Paradigma_Procedural.png, id=1372, 642.4pt x 481.8pt>
 File: figures/Paradigma_Procedural.png Graphic file (type png)
 <use figures/Paradigma_Procedural.png>
 Package pdftex.def Info: figures/Paradigma_Procedural.png  used on input line 2
@@ -2191,7 +2191,7 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 76.
  [87
 
 ]
-<figures/tipos_dados_picat__traduzido3.png, id=2463, 422.57875pt x 349.305pt>
+<figures/tipos_dados_picat__traduzido3.png, id=2468, 422.57875pt x 349.305pt>
 File: figures/tipos_dados_picat__traduzido3.png Graphic file (type png)
 <use figures/tipos_dados_picat__traduzido3.png>
 Package pdftex.def Info: figures/tipos_dados_picat__traduzido3.png  used on inp
@@ -3280,10 +3280,21 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 168.
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb)
+ (./slides_picat.vrb
+Overfull \hbox (29.23097pt too wide) in paragraph at lines 11--12
+[][][][][] 
+ []
+
+
+Overfull \hbox (24.13217pt too wide) in paragraph at lines 14--15
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+
+ []
+
+)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 187.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 199.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [212
 
@@ -3293,7 +3304,7 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 187.
  (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 208.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 220.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [213
 
@@ -3303,17 +3314,18 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 208.
  (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 226.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 238.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [214
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb)
+
+(./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 248.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 260.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [215
 
@@ -3323,109 +3335,9 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 248.
  (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 266.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 278.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [216
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 293.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [217
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 293.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [218
-
-]
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 331.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [219
-
-]
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 331.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [220
-
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 357.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [221
-
-]
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 442.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [222
-
-]
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 442.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [223
-
-
-]
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 442.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [224
-
-
-]
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 442.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [225
-
-
-]
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 468.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [226
-
-]
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 493.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [227
-
-]
-\openout4 = `slides_picat.vrb'.
-
-
-(./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 514.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [228
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -3433,7 +3345,107 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 514.
  (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 540.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 305.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[217
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 305.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [218
+
+]
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 343.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [219
+
+]
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 343.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [220
+
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 369.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [221
+
+]
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 454.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[222
+
+]
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 454.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [223
+
+
+]
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 454.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [224
+
+
+]
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 454.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [225
+
+
+]
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 480.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [226
+
+]
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 505.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [227
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 525.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [228
+
+]
+\openout4 = `slides_picat.vrb'.
+
+
+(./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 551.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [229
 
@@ -3443,10 +3455,9 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 540.
  (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 568.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 579.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-
-[230
+ [230
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -3454,9 +3465,10 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 568.
  (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 594.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 605.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [231
+
+[231
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -3464,7 +3476,7 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 594.
  (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 618.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 629.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [232
 
@@ -3474,7 +3486,7 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 618.
  (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 639.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 650.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [233
 
@@ -3484,46 +3496,53 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 639.
  (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 671.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 689.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [234
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 671.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 689.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [235
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 689.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [236
 
 ]
 (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 671.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [236
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 671.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 689.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [237
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 671.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 689.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-
-[238
+ [238
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 671.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 689.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [239
+
+[239
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 689.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [240
 
 ])
 \openout2 = `recursao_picat.aux'.
@@ -3531,18 +3550,18 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 671.
  (./recursao_picat.tex
 File: figures/logo_picat_alex.jpg Graphic file (type jpg)
 <use figures/logo_picat_alex.jpg>
-Package pdftex.def Info: figures/logo_picat_alex.jpg  used on input line 24.
+Package pdftex.def Info: figures/logo_picat_alex.jpg  used on input line 23.
 (pdftex.def)             Requested size: 184.37462pt x 107.65823pt.
 
-Overfull \hbox (30.72969pt too wide) in paragraph at lines 24--24
+Overfull \hbox (30.72969pt too wide) in paragraph at lines 23--23
  [] 
  []
 
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 24.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 23.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-[240
+[241
 
 
 
@@ -3552,37 +3571,37 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 24.
  (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 55.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [241
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 55.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 54.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [242
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 55.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 54.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [243
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 55.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 54.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [244
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 55.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 54.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [245
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 54.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [246
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -3591,17 +3610,7 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 55.
 (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 90.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [246
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 124.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 89.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [247
 
@@ -3611,10 +3620,9 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 124.
  (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 146.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 123.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-
-[248
+ [248
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -3622,31 +3630,32 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 146.
  (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 167.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 148.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [249
 
-] (./slides_picat.vrb)
+[249
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 167.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 172.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [250
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 167.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 172.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [251
 
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
+] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 194.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 172.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [252
 
@@ -3656,27 +3665,37 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 194.
  (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 219.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 200.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [253
 
 ]
-(./slides_picat.vrb)
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 219.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 225.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [254
 
 ]
 \openout4 = `slides_picat.vrb'.
 
- (./slides_picat.vrb)
+
+(./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 232.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 250.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [255
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 250.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [256
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -3684,78 +3703,88 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 232.
  (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 254.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 263.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
 
-[256
+[257
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 285.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [258
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 254.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 285.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [257
+ [259
 
 ]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/ilustra_backtracking_01.jpg, id=6820, 542.025pt x 406.51875pt>
+<figures/ilustra_backtracking_01.jpg, id=6867, 542.025pt x 406.51875pt>
 File: figures/ilustra_backtracking_01.jpg Graphic file (type jpg)
 <use figures/ilustra_backtracking_01.jpg>
 Package pdftex.def Info: figures/ilustra_backtracking_01.jpg  used on input lin
 e 5.
 (pdftex.def)             Requested size: 245.83604pt x 242.2259pt.
 )
-Overfull \vbox (12.78995pt too high) detected at line 265
+Overfull \vbox (12.78995pt too high) detected at line 296
  []
 
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 265.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 296.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-[258
+[260
 
  <./figures/ilustra_backtracking_01.jpg>]
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 296.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 324.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [259
+ [261
 
 ]
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 296.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 324.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [260
+ [262
 
 
 ]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/ilustra_backtracking_03.jpg, id=6898, 423.83344pt x 199.49532pt>
+<figures/ilustra_backtracking_03.jpg, id=6944, 423.83344pt x 199.49532pt>
 File: figures/ilustra_backtracking_03.jpg Graphic file (type jpg)
 <use figures/ilustra_backtracking_03.jpg>
 Package pdftex.def Info: figures/ilustra_backtracking_03.jpg  used on input lin
 e 5.
 (pdftex.def)             Requested size: 291.93446pt x 215.3269pt.
 )
-Overfull \vbox (1.61958pt too high) detected at line 310
+Overfull \vbox (1.61958pt too high) detected at line 338
  []
 
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 310.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 338.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-[261
+[263
 
  <./figures/ilustra_backtracking_03.jpg>]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/ilustra_backtracking_02.jpg, id=6924, 260.975pt x 308.15125pt>
+<figures/ilustra_backtracking_02.jpg, id=6970, 260.975pt x 308.15125pt>
 File: figures/ilustra_backtracking_02.jpg Graphic file (type jpg)
 <use figures/ilustra_backtracking_02.jpg>
 Package pdftex.def Info: figures/ilustra_backtracking_02.jpg  used on input lin
@@ -3764,78 +3793,110 @@ e 5.
 )
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 324.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 352.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [262
+ [264
 
  <./figures/ilustra_backtracking_02.jpg>]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb)
-Overfull \vbox (4.06372pt too high) detected at line 357
- []
-
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 357.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-[263
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 387.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [264
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 421.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 380.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [265
 
-] (./slides_picat.vrb)
+]
+\openout4 = `slides_picat.vrb'.
+
+
+(./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 421.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 401.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [266
 
-] (./slides_picat.vrb)
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 421.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 425.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [267
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 460.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[268
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 488.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [269
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 511.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [270
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 549.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [271
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 421.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 549.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [268
+ [272
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 549.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [273
 
 ]
 (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 421.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 549.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [269
+ [274
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 421.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 549.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [270
+ [275
 
 ])
 \openout2 = `listas_picat.aux'.
@@ -3854,7 +3915,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 21.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-[271
+[276
 
 
 
@@ -3863,10 +3924,10 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 46.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [272
+ [277
 
 ]
-<figures/ilustra-lista-01.jpg, id=7206, 203.76125pt x 159.59625pt>
+<figures/ilustra-lista-01.jpg, id=7329, 203.76125pt x 159.59625pt>
 File: figures/ilustra-lista-01.jpg Graphic file (type jpg)
 <use figures/ilustra-lista-01.jpg>
 Package pdftex.def Info: figures/ilustra-lista-01.jpg  used on input line 63.
@@ -3875,10 +3936,10 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 63.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [273
+ [278
 
  <./figures/ilustra-lista-01.jpg>]
-<figures/lista-picat-01.jpg, id=7231, 227.34938pt x 199.49532pt>
+<figures/lista-picat-01.jpg, id=7355, 227.34938pt x 199.49532pt>
 File: figures/lista-picat-01.jpg Graphic file (type jpg)
 <use figures/lista-picat-01.jpg>
 Package pdftex.def Info: figures/lista-picat-01.jpg  used on input line 74.
@@ -3887,10 +3948,10 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 74.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [274
+ [279
 
  <./figures/lista-picat-01.jpg>]
-<figures/exemplo_listas_01.jpg, id=7256, 244.915pt x 206.7725pt>
+<figures/exemplo_listas_01.jpg, id=7381, 244.915pt x 206.7725pt>
 File: figures/exemplo_listas_01.jpg Graphic file (type jpg)
 <use figures/exemplo_listas_01.jpg>
 Package pdftex.def Info: figures/exemplo_listas_01.jpg  used on input line 86.
@@ -3899,7 +3960,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 86.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [275
+ [280
 
  <./figures/exemplo_listas_01.jpg>]
 \openout4 = `slides_picat.vrb'.
@@ -3909,47 +3970,47 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 212.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [276
-
-]
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 212.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-
-[277
-
-
-]
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 212.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [278
-
-
-]
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 212.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [279
-
-
-]
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 212.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [280
-
-
-]
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 212.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [281
+
+]
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 212.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[282
+
+
+]
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 212.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [283
+
+
+]
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 212.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [284
+
+
+]
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 212.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [285
+
+
+]
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 212.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [286
 
 
 ]
@@ -3960,14 +4021,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 262.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [282
+ [287
 
 ]
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 262.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [283
+ [288
 
 
 ]
@@ -3975,7 +4036,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 262.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [284
+ [289
 
 
 ]
@@ -3993,14 +4054,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 301.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [285
+ [290
 
 ]
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 301.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [286
+ [291
 
 
 ]
@@ -4011,14 +4072,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 338.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [287
+ [292
 
 ]
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 338.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [288
+ [293
 
 
 ]
@@ -4035,14 +4096,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 376.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [289
+ [294
 
 ]
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 376.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [290
+ [295
 
 
 ]
@@ -4053,14 +4114,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 424.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [291
+ [296
 
 ]
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 424.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [292
+ [297
 
 
 ]
@@ -4068,7 +4129,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 424.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [293
+ [298
 
 
 ]
@@ -4080,7 +4141,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 439.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
 
-[294
+[299
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -4090,35 +4151,35 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 462.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [295
+ [300
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 462.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [296
+ [301
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 462.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [297
+ [302
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 462.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [298
+ [303
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 462.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [299
+ [304
 
 ])
 \openout2 = `buscas_picat.aux'.
@@ -4138,7 +4199,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 22.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-[300
+[305
 
 
 
@@ -4147,34 +4208,34 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 52.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [301
+ [306
 
 ]
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 52.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [302
+ [307
 
 ]
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 52.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [303
+ [308
 
 ]
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 52.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [304
+ [309
 
 ]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/ilhas_euler.jpeg, id=8020, 223.83624pt x 226.8475pt>
+<figures/ilhas_euler.jpeg, id=8146, 223.83624pt x 226.8475pt>
 File: figures/ilhas_euler.jpeg Graphic file (type jpg)
 <use figures/ilhas_euler.jpeg>
 Package pdftex.def Info: figures/ilhas_euler.jpeg  used on input line 5.
@@ -4184,21 +4245,21 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 86.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [305
+ [310
 
  <./figures/ilhas_euler.jpeg>]
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 86.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [306
+ [311
 
 
 ]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/hamiltonian_path.jpg, id=8072, 72.27pt x 76.6062pt>
+<figures/hamiltonian_path.jpg, id=8197, 72.27pt x 76.6062pt>
 File: figures/hamiltonian_path.jpg Graphic file (type jpg)
 <use figures/hamiltonian_path.jpg>
 Package pdftex.def Info: figures/hamiltonian_path.jpg  used on input line 6.
@@ -4208,7 +4269,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 119.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [307
+ [312
 
  <./figures/hamiltonian_path.jpg>]
 File: figures/logo02-picat.jpg Graphic file (type jpg)
@@ -4216,7 +4277,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 119.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
 
-[308
+[313
 
 
 ]
@@ -4227,21 +4288,21 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 155.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [309
+ [314
 
 ]
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 155.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [310
+ [315
 
 
 ]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/espaco-estado-arvore.jpg, id=8176, 381.425pt x 132.495pt>
+<figures/espaco-estado-arvore.jpg, id=8300, 381.425pt x 132.495pt>
 File: figures/espaco-estado-arvore.jpg Graphic file (type jpg)
 <use figures/espaco-estado-arvore.jpg>
 Package pdftex.def Info: figures/espaco-estado-arvore.jpg  used on input line 5
@@ -4252,7 +4313,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 175.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [311
+ [316
 
  <./figures/espaco-estado-arvore.jpg>]
 \openout4 = `slides_picat.vrb'.
@@ -4292,21 +4353,21 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 223.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [312
+ [317
 
 ]
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 223.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [313
+ [318
 
 
 ]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/mapa-norte-santa-catarina.jpg, id=8252, 642.4pt x 469.755pt>
+<figures/mapa-norte-santa-catarina.jpg, id=8377, 642.4pt x 469.755pt>
 File: figures/mapa-norte-santa-catarina.jpg Graphic file (type jpg)
 <use figures/mapa-norte-santa-catarina.jpg>
 Package pdftex.def Info: figures/mapa-norte-santa-catarina.jpg  used on input l
@@ -4317,13 +4378,13 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 240.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [314
+ [319
 
  <./figures/mapa-norte-santa-catarina.jpg>]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/mapa01SC.jpg, id=8279, 379.4175pt x 303.1325pt>
+<figures/mapa01SC.jpg, id=8404, 379.4175pt x 303.1325pt>
 File: figures/mapa01SC.jpg Graphic file (type jpg)
 <use figures/mapa01SC.jpg>
 Package pdftex.def Info: figures/mapa01SC.jpg  used on input line 5.
@@ -4333,7 +4394,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 254.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [315
+ [320
 
  <./figures/mapa01SC.jpg>]
 \openout4 = `slides_picat.vrb'.
@@ -4348,14 +4409,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 312.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [316
+ [321
 
 ]
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 312.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [317
+ [322
 
 
 ]
@@ -4363,7 +4424,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 312.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [318
+ [323
 
 
 ]
@@ -4374,7 +4435,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 339.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [319
+ [324
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -4384,14 +4445,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 351.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [320
+ [325
 
 ]
 \openout4 = `slides_picat.vrb'.
 
 
 (./slides_picat.vrb
-<figures/mapa02SC.jpg, id=8433, 379.4175pt x 303.1325pt>
+<figures/mapa02SC.jpg, id=8559, 379.4175pt x 303.1325pt>
 File: figures/mapa02SC.jpg Graphic file (type jpg)
 <use figures/mapa02SC.jpg>
 Package pdftex.def Info: figures/mapa02SC.jpg  used on input line 5.
@@ -4401,7 +4462,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 366.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [321
+ [326
 
  <./figures/mapa02SC.jpg>]
 \openout4 = `slides_picat.vrb'.
@@ -4412,35 +4473,35 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 395.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
 
-[322
+[327
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 395.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [323
+ [328
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 395.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [324
+ [329
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 395.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [325
+ [330
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 395.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [326
+ [331
 
 ])
 \openout2 = `PD_picat.aux'.
@@ -4459,7 +4520,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 22.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-[327
+[332
 
 
 
@@ -4467,7 +4528,7 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 22.
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/ilustra_PD.png, id=8614, 1606.0pt x 770.88pt>
+<figures/ilustra_PD.png, id=8737, 1606.0pt x 770.88pt>
 File: figures/ilustra_PD.png Graphic file (type png)
 <use figures/ilustra_PD.png>
 Package pdftex.def Info: figures/ilustra_PD.png  used on input line 5.
@@ -4477,7 +4538,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 34.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [328
+ [333
 
  <./figures/ilustra_PD.png (PNG copy)>]
 \openout4 = `slides_picat.vrb'.
@@ -4488,14 +4549,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 63.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [329
+ [334
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 63.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [330
+ [335
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
@@ -4503,14 +4564,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 63.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
 
-[331
+[336
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 63.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [332
+ [337
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -4520,28 +4581,28 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 93.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [333
+ [338
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 93.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [334
+ [339
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 93.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [335
+ [340
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 93.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [336
+ [341
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -4552,14 +4613,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 124.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [337
+ [342
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 124.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [338
+ [343
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
@@ -4567,20 +4628,20 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 124.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
 
-[339
+[344
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 124.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [340
+ [345
 
 ]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/pascal_triangle_01.jpg, id=8943, 365.365pt x 164.615pt>
+<figures/pascal_triangle_01.jpg, id=9068, 365.365pt x 164.615pt>
 File: figures/pascal_triangle_01.jpg Graphic file (type jpg)
 <use figures/pascal_triangle_01.jpg>
 Package pdftex.def Info: figures/pascal_triangle_01.jpg  used on input line 6.
@@ -4590,13 +4651,13 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 139.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [341
+ [346
 
  <./figures/pascal_triangle_01.jpg>]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/pascal_triangle_02.jpg, id=8969, 748.7975pt x 583.17876pt>
+<figures/pascal_triangle_02.jpg, id=9094, 748.7975pt x 583.17876pt>
 File: figures/pascal_triangle_02.jpg Graphic file (type jpg)
 <use figures/pascal_triangle_02.jpg>
 Package pdftex.def Info: figures/pascal_triangle_02.jpg  used on input line 6.
@@ -4606,7 +4667,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 156.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [342
+ [347
 
  <./figures/pascal_triangle_02.jpg>]
 \openout4 = `slides_picat.vrb'.
@@ -4623,14 +4684,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 175.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [343
+ [348
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 175.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [344
+ [349
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -4640,7 +4701,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 199.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [345
+ [350
 
 ]
 (./slides_picat.vrb)
@@ -4648,14 +4709,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 199.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [346
+ [351
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 199.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [347
+ [352
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -4666,7 +4727,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 221.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
 
-[348
+[353
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -4682,7 +4743,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 250.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [349
+ [354
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -4692,7 +4753,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 262.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [350
+ [355
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -4702,7 +4763,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 290.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [351
+ [356
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -4713,14 +4774,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 309.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [352
+ [357
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 309.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [353
+ [358
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
@@ -4728,7 +4789,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 309.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
 
-[354
+[359
 
 ])
 \openout2 = `planejamento_picat.aux'.
@@ -4747,7 +4808,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 22.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-[355
+[360
 
 
 
@@ -4755,84 +4816,45 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 22.
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 58.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [356
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 58.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [357
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 58.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [358
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 58.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [359
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 58.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [360
-
-]
-(./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 58.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [361
 
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
+] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 108.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 58.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [362
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 108.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 58.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-
-[363
+ [363
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 108.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 58.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [364
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 108.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 58.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [365
 
-] (./slides_picat.vrb)
+]
+(./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 108.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 58.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [366
 
@@ -4842,16 +4864,55 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 108.
  (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 143.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 108.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [367
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 108.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[368
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 108.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [369
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 108.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [370
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 108.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [371
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 143.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [368
+ [372
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 143.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [373
 
 ]
 (./slides_picat.vrb)
@@ -4859,20 +4920,20 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 143.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [369
+ [374
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 143.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [370
+ [375
 
 ]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/planning01.jpg, id=9710, 552.0625pt x 393.47pt>
+<figures/planning01.jpg, id=9834, 552.0625pt x 393.47pt>
 File: figures/planning01.jpg Graphic file (type jpg)
 <use figures/planning01.jpg>
 Package pdftex.def Info: figures/planning01.jpg  used on input line 5.
@@ -4883,13 +4944,13 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 160.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
 
-[371
+[376
 
  <./figures/planning01.jpg>]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/mundo_dos_blocos01.jpg, id=9735, 426.62613pt x 176.40097pt>
+<figures/mundo_dos_blocos01.jpg, id=9861, 426.62613pt x 176.40097pt>
 File: figures/mundo_dos_blocos01.jpg Graphic file (type jpg)
 <use figures/mundo_dos_blocos01.jpg>
 Package pdftex.def Info: figures/mundo_dos_blocos01.jpg  used on input line 5.
@@ -4899,13 +4960,13 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 176.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [372
+ [377
 
  <./figures/mundo_dos_blocos01.jpg>]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/mundo_dos_blocos02.jpg, id=9764, 746.01291pt x 559.50967pt>
+<figures/mundo_dos_blocos02.jpg, id=9887, 746.01291pt x 559.50967pt>
 File: figures/mundo_dos_blocos02.jpg Graphic file (type jpg)
 <use figures/mundo_dos_blocos02.jpg>
 Package pdftex.def Info: figures/mundo_dos_blocos02.jpg  used on input line 5.
@@ -4915,7 +4976,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 192.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [373
+ [378
 
  <./figures/mundo_dos_blocos02.jpg>]
 \openout4 = `slides_picat.vrb'.
@@ -4926,14 +4987,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 239.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [374
+ [379
 
 ]
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 239.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [375
+ [380
 
 
 ]
@@ -4941,19 +5002,19 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 239.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [376
+ [381
 
 
 ]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/puzzle_2x3_01.jpg, id=9866, 200.75pt x 317.185pt>
+<figures/puzzle_2x3_01.jpg, id=9990, 200.75pt x 317.185pt>
 File: figures/puzzle_2x3_01.jpg Graphic file (type jpg)
 <use figures/puzzle_2x3_01.jpg>
 Package pdftex.def Info: figures/puzzle_2x3_01.jpg  used on input line 5.
 (pdftex.def)             Requested size: 92.18988pt x 107.65755pt.
-<figures/puzzle_2x3_02.jpg, id=9867, 1284.8pt x 722.7pt>
+<figures/puzzle_2x3_02.jpg, id=9991, 1284.8pt x 722.7pt>
 File: figures/puzzle_2x3_02.jpg Graphic file (type jpg)
 <use figures/puzzle_2x3_02.jpg>
 Package pdftex.def Info: figures/puzzle_2x3_02.jpg  used on input line 15.
@@ -4963,14 +5024,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 265.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [377
+ [382
 
  <./figures/puzzle_2x3_01.jpg>]
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 265.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [378
+ [383
 
 
  <./figures/puzzle_2x3_02.jpg>]
@@ -5005,46 +5066,46 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 360.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [379
-
-]
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 360.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [380
-
-
-]
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 360.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [381
-
-
-]
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 360.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [382
-
-
-]
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 360.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [383
-
-
-]
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 360.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [384
+
+]
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 360.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [385
+
+
+]
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 360.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [386
+
+
+]
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 360.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [387
+
+
+]
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 360.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [388
+
+
+]
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 360.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [389
 
 
 ]
@@ -5055,7 +5116,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 373.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [385
+ [390
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5072,14 +5133,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 418.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [386
+ [391
 
 ]
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 418.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [387
+ [392
 
 
 ]
@@ -5089,55 +5150,55 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 418.
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 438.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [388
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 438.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [389
-
-]
-(./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 438.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [390
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 438.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [391
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 464.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-
-[392
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 464.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [393
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 464.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 438.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [394
+
+]
+(./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 438.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [395
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 438.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [396
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 464.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[397
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 464.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [398
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 464.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [399
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5147,21 +5208,21 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 486.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [395
+ [400
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 486.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [396
+ [401
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 486.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [397
+ [402
 
 ]
 (./slides_picat.vrb)
@@ -5169,7 +5230,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 486.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [398
+ [403
 
 ])
 \openout2 = `CP_picat.aux'.
@@ -5188,7 +5249,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 25.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-[399
+[404
 
 
 
@@ -5200,28 +5261,28 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 55.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [400
+ [405
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 55.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [401
+ [406
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 55.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [402
+ [407
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 55.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [403
+ [408
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5231,7 +5292,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 94.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [404
+ [409
 
 ]
 (./slides_picat.vrb)
@@ -5239,14 +5300,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 94.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [405
+ [410
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 94.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [406
+ [411
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
@@ -5254,7 +5315,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 94.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
 
-[407
+[412
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5264,34 +5325,34 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 121.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [408
+ [413
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 121.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [409
+ [414
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 121.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [410
+ [415
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 121.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [411
+ [416
 
 ]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/problema_modelagem.pdf, id=10759, 332.24126pt x 210.7875pt>
+<figures/problema_modelagem.pdf, id=10882, 332.24126pt x 210.7875pt>
 File: figures/problema_modelagem.pdf Graphic file (type pdf)
 <use figures/problema_modelagem.pdf>
 Package pdftex.def Info: figures/problema_modelagem.pdf  used on input line 7.
@@ -5301,13 +5362,13 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 140.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [412
+ [417
 
  <./figures/problema_modelagem.pdf>]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/dinamica_pr.pdf, id=10792, 150.5625pt x 425.59pt>
+<figures/dinamica_pr.pdf, id=10917, 150.5625pt x 425.59pt>
 File: figures/dinamica_pr.pdf Graphic file (type pdf)
 <use figures/dinamica_pr.pdf>
 Package pdftex.def Info: figures/dinamica_pr.pdf  used on input line 6.
@@ -5317,14 +5378,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 153.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [413
+ [418
 
  <./figures/dinamica_pr.pdf>]
 \openout4 = `slides_picat.vrb'.
 
 
 (./slides_picat.vrb
-<figures/reducao_PR_01.pdf, id=10824, 328.22626pt x 288.07625pt>
+<figures/reducao_PR_01.pdf, id=10949, 328.22626pt x 288.07625pt>
 File: figures/reducao_PR_01.pdf Graphic file (type pdf)
 <use figures/reducao_PR_01.pdf>
 Package pdftex.def Info: figures/reducao_PR_01.pdf  used on input line 6.
@@ -5334,13 +5395,13 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 169.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [414
+ [419
 
  <./figures/reducao_PR_01.pdf>]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/reducao_PR_02.pdf, id=10877, 403.5075pt x 445.665pt>
+<figures/reducao_PR_02.pdf, id=11000, 403.5075pt x 445.665pt>
 File: figures/reducao_PR_02.pdf Graphic file (type pdf)
 <use figures/reducao_PR_02.pdf>
 Package pdftex.def Info: figures/reducao_PR_02.pdf  used on input line 7.
@@ -5351,7 +5412,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 188.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
 
-[415
+[420
 
  <./figures/reducao_PR_02.pdf>]
 \openout4 = `slides_picat.vrb'.
@@ -5361,68 +5422,68 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 214.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [416
+ [421
 
 ]
 (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 214.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [417
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 214.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [418
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 214.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-
-[419
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 214.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [420
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 241.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [421
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 241.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [422
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 241.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 214.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [423
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 214.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[424
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 214.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [425
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 241.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [424
+ [426
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 241.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [427
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 241.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [428
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 241.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [429
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5433,54 +5494,12 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 262.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [425
+ [430
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 262.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [426
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 286.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-
-[427
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 286.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [428
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 286.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [429
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 286.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [430
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 299.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [431
 
@@ -5490,9 +5509,51 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 299.
  (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 286.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[432
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 286.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [433
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 286.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [434
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 286.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [435
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 299.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [436
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 321.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [432
+ [437
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5503,7 +5564,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 344.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [433
+ [438
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5513,7 +5574,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 365.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [434
+ [439
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5524,7 +5585,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 394.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
 
-[435
+[440
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5534,69 +5595,29 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 419.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [436
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 437.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [437
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 437.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [438
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 437.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [439
-
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 463.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [440
-
-]
-(./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 463.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [441
 
-] (./slides_picat.vrb)
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 463.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 437.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [442
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 463.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 437.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-
-[443
+ [443
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 463.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 437.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [444
 
@@ -5606,23 +5627,63 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 463.
  (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 484.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 463.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [445
 
-] (./slides_picat.vrb)
+]
+(./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 484.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 463.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [446
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 484.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 463.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [447
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 463.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[448
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 463.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [449
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 484.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [450
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 484.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [451
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 484.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [452
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5632,7 +5693,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 496.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [448
+ [453
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5643,7 +5704,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 520.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [449
+ [454
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5653,7 +5714,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 541.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [450
+ [455
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5664,7 +5725,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 569.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
 
-[451
+[456
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5674,7 +5735,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 588.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [452
+ [457
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5696,7 +5757,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 615.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [453
+ [458
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5706,7 +5767,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 643.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [454
+ [459
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5716,7 +5777,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 663.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [455
+ [460
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5727,7 +5788,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 693.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [456
+ [461
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5737,7 +5798,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 716.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [457
+ [462
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
@@ -5745,20 +5806,20 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 716.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
 
-[458
+[463
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 716.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [459
+ [464
 
 ]
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb
-<figures/tsp01.jpg, id=12051, 376.40625pt x 188.20313pt>
+<figures/tsp01.jpg, id=12176, 376.40625pt x 188.20313pt>
 File: figures/tsp01.jpg Graphic file (type jpg)
 <use figures/tsp01.jpg>
 Package pdftex.def Info: figures/tsp01.jpg  used on input line 6.
@@ -5768,7 +5829,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 730.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [460
+ [465
 
  <./figures/tsp01.jpg>]
 \openout4 = `slides_picat.vrb'.
@@ -5778,14 +5839,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 758.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [461
+ [466
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 758.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [462
+ [467
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
@@ -5793,21 +5854,21 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 758.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
 
-[463
+[468
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 758.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [464
+ [469
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 758.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [465
+ [470
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5817,7 +5878,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 773.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [466
+ [471
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5827,14 +5888,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 800.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [467
+ [472
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 800.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [468
+ [473
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5845,7 +5906,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 814.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [469
+ [474
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5855,7 +5916,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 843.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [470
+ [475
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
@@ -5863,7 +5924,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 843.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
 
-[471
+[476
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5873,7 +5934,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 860.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [472
+ [477
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5883,7 +5944,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 886.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [473
+ [478
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5893,21 +5954,21 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 920.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [474
+ [479
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 920.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [475
+ [480
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 920.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [476
+ [481
 
 ]
 (./slides_picat.vrb)
@@ -5915,7 +5976,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 920.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [477
+ [482
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5925,7 +5986,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 950.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [478
+ [483
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5941,7 +6002,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 981.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [479
+ [484
 
 ] (./slides_picat.vrb
 Overfull \hbox (9.20784pt too wide) in paragraph at lines 13--13
@@ -5954,7 +6015,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 981.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [480
+ [485
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5964,14 +6025,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1014.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [481
+ [486
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1014.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [482
+ [487
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -5982,14 +6043,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1044.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [483
+ [488
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1044.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [484
+ [489
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -6005,7 +6066,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1077.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [485
+ [490
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -6015,14 +6076,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1109.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [486
+ [491
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1109.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [487
+ [492
 
 ]
 (./slides_picat.vrb)
@@ -6030,14 +6091,14 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1109.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [488
+ [493
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1109.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [489
+ [494
 
 ])
 \openout2 = `conclusoes_picat.aux'.
@@ -6061,7 +6122,7 @@ File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 19.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [490
+ [495
 
 
 
@@ -6069,43 +6130,6 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 19.
 \openout4 = `slides_picat.vrb'.
 
  (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 43.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [491
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 43.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [492
-
-]
-(./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 43.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [493
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 43.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [494
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 43.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-
-[495
-
-] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 43.
@@ -6119,44 +6143,49 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 43.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [497
 
-] (./slides_picat.vrb)
+]
+(./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 43.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [498
 
-]
-\openout4 = `slides_picat.vrb'.
-
- (./slides_picat.vrb)
+] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 66.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 43.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [499
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 66.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 43.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [500
 
-]
-(./slides_picat.vrb)
+[500
+
+] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 66.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 43.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [501
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 66.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 43.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [502
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 43.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [503
 
 ]
 \openout4 = `slides_picat.vrb'.
@@ -6164,24 +6193,88 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 66.
  (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 86.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-
-[503
-
-] (./slides_picat.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 86.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 64.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [504
 
 ] (./slides_picat.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 86.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 64.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [505
+
+]
+(./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 64.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [506
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 96.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [507
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 96.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[508
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 96.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [509
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 96.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [510
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 96.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [511
+
+]
+\openout4 = `slides_picat.vrb'.
+
+ (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 117.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [512
+
+] (./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 117.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [513
+
+]
+(./slides_picat.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 117.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [514
 
 ])
 \tf@nav=\write7
@@ -6195,23 +6288,17 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 86.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 208.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 208.
-
-(./slides_picat.aux (./aula_apresentacao_curso_picat.aux)
-(./introducao_picat.aux) (./tipos_dados_variaveis_picat.aux)
-(./regras_picat.aux) (./estruturas_decisao_repeticao.aux) (./recursao_picat.aux
-) (./listas_picat.aux) (./buscas_picat.aux) (./PD_picat.aux)
-(./planejamento_picat.aux) (./CP_picat.aux) (./conclusoes_picat.aux))
+ (./slides_picat.aux
+(./aula_apresentacao_curso_picat.aux) (./introducao_picat.aux)
+(./tipos_dados_variaveis_picat.aux) (./regras_picat.aux)
+(./estruturas_decisao_repeticao.aux) (./recursao_picat.aux) (./listas_picat.aux
+) (./buscas_picat.aux) (./PD_picat.aux) (./planejamento_picat.aux)
+(./CP_picat.aux) (./conclusoes_picat.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 208.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 208.
+Package rerunfilecheck Info: File `slides_picat.out' has not changed.
+(rerunfilecheck)             Checksum: 4B33896DFAAF70AA43CA784C00A8CDA5;1826.
 
-
-Package rerunfilecheck Warning: File `slides_picat.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `slides_picat.out':
-(rerunfilecheck)             Before: A2B984B6D6B9E8A35A3BF9F7AC307050;1749
-(rerunfilecheck)             After:  4AB274B9321346BB72016A7BCEA5C59D;1746.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.74pt have occurred.
@@ -6219,62 +6306,17 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 33886 strings out of 492616
- 618829 string characters out of 6135177
+ 33956 strings out of 492616
+ 619685 string characters out of 6135177
  943426 words of memory out of 5000000
- 35229 multiletter control sequences out of 15000+600000
+ 35274 multiletter control sequences out of 15000+600000
  570010 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,18n,70p,779b,1510s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Operadores\040Aritm\351ticos} has been referenced
  but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.12.2.496} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.12.1.492} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.6.2.249} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.6.1.234} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.5.1.213} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.5.188} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.4.184} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.3.182} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.2.174} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.1.163} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.3.4.123} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.3.3.107} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.3.2.105} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.3.1.87} has been referenced but does not e
-xist, replaced by a fixed one
 
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/
@@ -6310,10 +6352,10 @@ type1/public/cm-super/sftt0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm
 .pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/shar
 e/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fo
 nts/type1/public/cm-super/sftt1440.pfb>
-Output written on slides_picat.pdf (505 pages, 2486630 bytes).
+Output written on slides_picat.pdf (514 pages, 2515260 bytes).
 PDF statistics:
- 13590 PDF objects out of 15390 (max. 8388607)
- 12865 compressed objects within 129 object streams
- 1059 named destinations out of 1200 (max. 500000)
- 404 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13819 PDF objects out of 15390 (max. 8388607)
+ 13083 compressed objects within 131 object streams
+ 1064 named destinations out of 1200 (max. 500000)
+ 412 words of extra memory for PDF output out of 10000 (max. 10000000)
 

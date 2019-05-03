@@ -2,7 +2,6 @@
 
 \section{Recursão}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Recursão}
@@ -39,7 +38,7 @@
     \pause
     \item Permite expressar conceitos complexos em uma sintaxe abstrata, mas  simples de ler.
     \pause
-    \item Uma regra é dita recursiva quando ela faz auto-referência.
+    \item Uma regra é dita recursiva quando ela faz \underline{auto-referência}.
     
     \pause
     \item Em Picat, a recursão pode ser usada sob uma notação em \textit{lógica} ou \textit{funcional}
@@ -129,8 +128,11 @@ O Fatorial de um número $n$ é definido  recursivamente pela
 
 \begin{block}{Sequência Fibonacci}
 
-A sequência Fibonacci é uma sequência de números calculada a partir da soma dos
-dois últimos números anteriores desta. Ou seja o $n-esimo$ termo da Sequência Fibonacci é definido como a soma dos termos $n-1$ e $n-2$. Como fato ou definição: os dois primeiros termos, $n = 0$ e $n = 1$, são respectivamente, $0$ e $1$.
+A sequência Fibonacci é um número calculado a partir da soma dos
+dois últimos números anteriores a este. Ou seja, o $n-esimo$ termo da 
+sequência Fibonacci é 
+definido como a soma dos termos $n-1$ e $n-2$. Por definição: os dois 
+primeiros termos, $n = 0$ e $n=1$ são respectivamente, $0$ e $1$.
       
       \[
       Fib(n)=\left\{
@@ -152,16 +154,19 @@ dois últimos números anteriores desta. Ou seja o $n-esimo$ termo da Sequência
 
   \begin{itemize}
       
-      \item Podemos perceber algo em comum entre estas três regras, todas tem uma ou mais
-      condições que sempre tem o mesmo valor de retorno, ou seja, todas tem uma \textit{regra de  aterramento}.
+      \item Podemos perceber algo em comum entre estas três definições matemáticas. 
+      Todas tem uma ou mais
+      condições que sempre tem o mesmo valor de retorno, ou seja, 
+      todas tem uma \textit{regra de  aterramento}.
       
       \pause
       \item Uma condição de \textit{aterramento} é uma condição onde a chamada recursiva da regra
       acaba (pára ou termina).
       
        \pause
-      \item Caso uma regra não tenha uma \textit{regra de aterramento}, poderá ocorrer uma recursão infinita deste regra, ou seja, são feitas infinitas chamadas recursivas
-      da regra.
+      \item Caso uma regra não tenha uma ou mais  \textit{regras de aterramento}, 
+      pode ocorrer uma recursão infinita deste regra  (infinitas chamadas recursivas
+      sobre a mesma regra provocando um \textit{estouro} da pilha de execução).
   \end{itemize}
 
 \end{frame}
@@ -171,25 +176,51 @@ dois últimos números anteriores desta. Ou seja o $n-esimo$ termo da Sequência
 
 \frametitle{Exemplos}
 
-Numa visão funcional, estas regras matemáticas podem ser transcritas em Picat como:
+Numa visão funcional, estas definições
+ matemáticas podem ser transcritas em Picat como:
 
-    \begin{lstlisting}[frame=single]
+\begin{lstlisting}[frame=single]
+soma_0_N(0) = 0.
+soma_0_N(1) = 1.
+soma_0_N(N) = N + soma_0_N(N-1).
+\end{lstlisting}
+
+\begin{lstlisting}[frame=single]
 fatorial(0) = 1.
 fatorial(1) = 1.
-fatorial(n) = n * fatorial(n-1).
-    \end{lstlisting}
+fatorial(N) = N * fatorial(N-1).
+\end{lstlisting}
 
-    \begin{lstlisting}[frame=single]
-fibonacci(0) = 0.
-fibonacci(1) = 1.
-fibonacci(n) = fibonacci(n-1) + fibonacci(n-2).
-    \end{lstlisting}
+\begin{lstlisting}[frame=single]
+fiboNacci(0) = 0.
+fiboNacci(1) = 1.
+fiboNacci(N) = fiboNacci(N-1) + fiboNacci(N-2).
+\end{lstlisting}
 
-    \begin{lstlisting}[frame=single]
-somatorio(0) = 0.
-somatorio(1) = 1.
-somatorio(n) = n + somatorio(n-1).
-    \end{lstlisting}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+
+\frametitle{Exemplos}
+
+Numa visão funcional, estas definições matemáticas podem ser transcritas em Picat como:
+
+\begin{lstlisting}[frame=single]
+main => 
+        writeln( fat = fatorial ( 8 ) ) , 
+        writeln( fib = fiboNacci ( 9 ) ) ,
+        writeln( soma = soma_0_N (10) )  .
+
+................................................
+
+$ picat recursao_ex_02.pi 
+fat = 40320
+fib = 34
+soma = 55
+$
+\end{lstlisting}
 
 \end{frame}
 
@@ -282,9 +313,6 @@ Basicamente o procedimento do \textit{Backtracking} é definido por:
 \item Caso ocorra uma falha durante a execução da regra $p$,
  o compilador busca re-instanciar as variáveis do corpo de $p$ que falharem. Esta tentativa segue uma ordem:\\ 
   $q1(X1) \rightarrow q2(X2)\rightarrow ....\rightarrow qn(Xn)$, até a variável $Xn$
-%, incluindo aquelas indexadas a partir de um domínio.
-%, com a única exceção sendo variáveis instanciadas a
-%partir de argumentos do predicado.
 
 \item Caso $Xn$ seja instanciada com sucesso, tem-se uma resposta consistente para $p$
 
@@ -317,7 +345,7 @@ Basicamente o procedimento do \textit{Backtracking} é definido por:
 \begin{figure}[!htb]
 \begin{center}
 \includegraphics[width=0.60\textwidth, height=0.75\textheight]{figures/ilustra_backtracking_02.jpg}
-%\caption{Realizar buscas com regiões reduzidas -- promissoras (regiões factíveis de soluções)}
+
 \end{center}
 \end{figure}
 
@@ -327,19 +355,18 @@ Basicamente o procedimento do \textit{Backtracking} é definido por:
 
 \begin{frame}[fragile]
 
-\frametitle{Exemplos}
-    
-Tomando como exemplo uma relação de parentesco, como a seguinte:
-% usar antecendente,sucessor, descendente etc.
-        \begin{lstlisting}[frame=single]
-index(-,-) (+,-) (-,+)
-antecedente(ana,maria).
-antecedente(pedro,maria).
-antecedente(maria,paula).
-antecedente(paula,lucas).
-antecedente(lucas, eduarda).
+\frametitle{Exemplo 01 -- Árvore Geneológica -- I}
+ 
+Código:  \url{.../picat/uso_ancestral_recursao.pi}
+\begin{lstlisting}[frame=single]
+index (-,-) (+,-) (-,+)
+ancestral(ana,maria).
+ancestral(pedro,maria).
+ancestral(maria,paula).
+ancestral(paula,lucas).
+ancestral(lucas, eduarda).
 
-index(-)
+index (-)
 mulher(ana).
 mulher(maria).
 mulher(paula).
@@ -347,44 +374,145 @@ mulher(eduarda).
 homem(pedro).
 homem(lucas).
 
-mae(X,Y) ?=> antecedente(X,Y), mulher(X).
-pai(X,Y) ?=> antecedente(X,Y), homem(X).
-avos(X,Y) ?=> antecedente(X,Z), antecedente(Z,Y).
-sucessor(X,Y) ?=> antecedente(Y,X).
-sucessor(X,Y) ?=> antecedente(Y,Z), sucessor(X,Z).
-        \end{lstlisting}
+....................................................continua
+\end{lstlisting}
+    
+\end{frame}
+\begin{frame}[fragile]
+
+\frametitle{Exemplo 01 -- Árvore Geneológica -- II}
+ 
+\begin{lstlisting}[frame=single]
+....................................................
+mae(X,Y) => ancestral(X,Y), mulher(X).
+pai(X,Y) => ancestral(X,Y), homem(X).
+avos(X,Y) => ancestral(X,Z), ancestral(Z,Y).
+
+descende_de(X,Y) ?=> ancestral(Y,X).
+descende_de(X,Y) => ancestral(Y,Z), descende_de(X,Z).
+
+main ?=>
+      descende_de(X,Y),
+      prinitf("\n => %w descende de %w" , X,Y),
+      false. 
+main =>  true.
+\end{lstlisting}
     
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{frame}[fragile]
-\frametitle{Exercícios}
+\frametitle{Refletindo sobre o Exemplo}
     
     \begin{itemize}
         \item Uma chamada do tipo $mae(maria, X)$, seria como perguntar ao compilador
-        "Maria é mãe de quem ?".
+        ``\textit{Maria é mãe de quem ?}".
         
-        \item Nesse caso o compilador iria testar cada possível valor que pudesse ser 
-        unificado com $X$ que pudesse satisfazer a regra $mae(maria,X)$.
+        \item Nesse caso o compilador  testa  possíveis valores que pudessem ser 
+        unificados com $X$ satisfazendo a regra $mae(maria,X)$.
         
         \item Ou seja, seria como se estivéssemos perguntando:
         
         \begin{itemize}
             \item "Maria é mãe de Ana ?".
-            
             \item "Maria é mãe de Paula ?".
-            
             \item "Maria é mãe de Pedro ?".
-            
-    
         \end{itemize}
-        
-    \end{itemize}
+   \end{itemize}
     
 \end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exemplo 02 -- Números -- I}
+
+Código: \url{.../picat/backtracking_ex_02.pi}
+\begin{scriptsize}
+
+\begin{verbatim}
+% $ picat backtracking_ex_02.pi 
+% cl('backtracking_ex_02').
+%%% FATOS ... 
+index(-)  % fatos instanciados como retorno
+    p(1).  p(3).   p(5).
+	
+index(-)  % fatos instanciados como retorno
+    q(7).  q(4).  q(13).
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+algum_num(X, Y, Z) ?=> % ? esta regra tem backtracking
+      p(X),
+      q(Y),
+      Z = 3,
+      ((X + Y) mod Z) == 0.
+
+algum_num(X, Y, Z) ?=>  % ? esta regra tem backtracking
+      p(X),
+      q(Y),
+      Z = 4,
+      ((X + Y) mod Z) == 0.
+............................................ continua
+ \end{verbatim} 
+
+\end{scriptsize}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exemplo 02 -- Números -- II}
+
+\begin{scriptsize}
+\begin{verbatim}
+........................................
+algum_num(X, Y, Z) =>  % esta regra NAO tem backtracking
+      p(X),
+      q(Y),
+      Z = 5,
+      ((X + Y) mod Z) == 0.
+
+% CUIDAR AQUI
+%algum_num(_, _, _)  =>     
+%     printf("\n NAO HA MAIS MULTIPLOS de 3, 4 ou 5").    
+%%%%%%%%%%%%%%%%%%%%%%%%%n%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%
+main ?=>  % main com backtracking
+   algum_num( X, Y, Z),
+   imp(X,Y,Z),
+   false.     % força TODAS respostas 
+   
+main => imp_tracejados(40).   
+ \end{verbatim} 
+ 
+ \end{scriptsize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Exemplo 02 -- Saída}
+
+\begin{scriptsize}
+\begin{verbatim}
+$ picat backtracking_ex_02.pi 
+
+ X:5  Y:7 	X+Y:12 é MULTIPLO de:3
+ X:5  Y:4 	X+Y:9 é MULTIPLO de:3
+ X:5  Y:13 	X+Y:18 é MULTIPLO de:3
+ X:1  Y:7 	X+Y:8 é MULTIPLO de:4
+ X:3  Y:13 	X+Y:16 é MULTIPLO de:4
+ X:5  Y:7 	X+Y:12 é MULTIPLO de:4
+ X:1  Y:4 	X+Y:5 é MULTIPLO de:5
+ X:3  Y:7 	X+Y:10 é MULTIPLO de:5
+========================================
+$ 
+\end{verbatim} 
+  \end{scriptsize}   
+  
+\textcolor{red}{Cuidar em confundir \textbf{0} (zero) com \textbf{O}. Perdi horas no código acima.}  
+\end{frame}
+
+
+
+
 
 
 
@@ -412,8 +540,8 @@ sucessor(X,Y) ?=> antecedente(Y,Z), sucessor(X,Z).
  \item A metodologia destas regras e sua construção, seguem  esquemas mais
  avançados da programação declarativa
  
-   \pause
- \item O \textbf{\textit{main}} é uma regra predicativa que pode conter ou não argumentos.
+%  \pause
+% \item O \textbf{\textit{main}} é uma regra predicativa que pode conter ou não argumentos.
  
  
 \end{itemize}
