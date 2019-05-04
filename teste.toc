@@ -1,8 +1,3 @@
 \babel@toc {brazilian}{}
-\beamer@sectionintoc {1}{Recurs\IeC {\~a}o}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Recurs\IeC {\~a}o}{4}{0}{1}
-\beamer@subsectionintoc {1}{2}{\textit {Backtracking}}{20}{0}{1}
-\beamer@sectionintoc {2}{Conclus\IeC {\~o}es}{39}{0}{2}
-\beamer@subsectionintoc {2}{1}{Faltando}{48}{0}{2}
-\beamer@subsectionintoc {2}{2}{Dicas de Programa\IeC {\c c}\IeC {\~a}o}{51}{0}{2}
-\beamer@subsectionintoc {2}{3}{Agradecimentos}{56}{0}{2}
+\beamer@sectionintoc {1}{Estruturas de Decis\IeC {\~a}o, La\IeC {\c c}os e Iteradores}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Fun\IeC {\c c}\IeC {\~o}es e Predicados Especiais}{25}{0}{1}

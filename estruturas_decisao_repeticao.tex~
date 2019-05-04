@@ -173,12 +173,24 @@ if (X <= 100) then
 \begin{block}{Exemplo: \texttt{foreach} }
      
 \begin{lstlisting}[frame=single]
- imp_tracejados(N) =>
+ imp_tracejados (N) =>
    nl,
    foreach(I in 1..N)
      printf("=")
    end,
    nl.   
+..................................................................  
+Picat> cl('backtracking_ex_02').
+Compiling:: backtracking_ex_02.pi
+** Warning: singleton variables (backtracking_ex_02.pi, 50-55): I
+backtracking_ex_02.pi compiled in 3 milliseconds
+loading...
+
+yes
+
+Picat> imp_tracejados(30).
+
+==============================
 \end{lstlisting}
         
 \end{block}
@@ -507,8 +519,7 @@ main =>
     else
         println("X nao e menor que 100")
     end.
-.
-        \end{lstlisting}
+ \end{lstlisting}
     
     \end{block}
 \end{frame}
@@ -540,7 +551,7 @@ main =>
 \end{frame}
 
 \begin{frame}[fragile]
-\frametitle{Exemplos -- Construindo de Listas e Vetores}    
+\frametitle{Exemplos -- Construindo  Listas e Vetores}    
        
        
 \begin{footnotesize}
@@ -595,7 +606,7 @@ le_vetor_02 ( V ) =>
 
 
 \begin{frame}[fragile]
-\frametitle{Exemplo -- Leitura Lista}    
+\frametitle{Exemplo -- Leitura de  Listas}    
 
 \begin{footnotesize}
 \begin{verbatim}
@@ -645,19 +656,26 @@ LISTA LIDA 2: [7,3,2,1]
 
 \begin{itemize}
 
-  \item Esta seção avança na sintaxe do Picat 
-  
-  \pause
-  \item Embora sua sintaxe não seja muito extensa, ela precisa 
+  \item Esta seção avança na sintaxe do Picat e precisa 
   ser praticada
   
    \pause
   \item Como este conteúdo se assemelha as LPs clássicas, como exercício,
   voce está apto a fazer alguns algoritmos de outras linguagens.
 
-  \pause
-  \item Se antes o Prolog era complicado para entradas e saída, com Picat,
+  \pause 
+  \item Se antes o Prolog era complicado para \textit{entradas} e \textit{saídas}, com Picat,
   tudo ficou semelhante as demais linguagens imperativas
+
+
+  \pause
+  \item \textcolor{red}{\textbf{Cuidado}: as funções de \textit{entradas} e \textit{saídas}, e outras do sistema como
+  \textit{time}, etc,  \textbf{nunca} falham e nem aceitam \textit{backtracking} 
+  definidas para elas. Em caso de falha do predicado que as contém, estas são \textbf{silenciosas},
+  apresentando um simples \textbf{no} ou \textbf{false}!}
+  
+  \pause
+  \item Felizmente os erros e problemas de sintaxe  são prontamente  acusados
   
   \pause
   \item Em \url{https://github.com/claudiosa/CCS/tree/master/picat/input_output_exemplos}

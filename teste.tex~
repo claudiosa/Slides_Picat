@@ -147,14 +147,11 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \title[Picat]{\fontsize{20}{30}\selectfont \textcolor{black}{PICAT: Uma Linguagem de Programação Multiparadigma}}
 
-\author[Claudio Cesar de Sá]{, Claudio Cesar de Sá, Miguel Alfredo Nunes, Jeferson L. R. Souza
+\author[Claudio Cesar de Sá]{Claudio Cesar de Sá
 \\\medskip 
-	 {\small \url{miguel.nunes@edu.udesc.br}}\\
-     {\small \url{jeferson.souza@udesc.br}}\\
-     {\small \url{claudio.sa@udesc.br}}}
+	 {\small \url{claudio.sa@udesc.br}}}
 
 \institute[]{
     Departamento de Ci\^encia da Computa\c{c}\~ao -- DCC \\
@@ -170,20 +167,18 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
-  \frametitle{Contribuições}
+  \frametitle{Contribuições e Agradecimentos}
+
   \begin{itemize}
-
-    \item Alexandre Gonçalves;
-
-    \item João Herique Faes Battisti;
-
-    \item Paulo Victor de Aguiar;
-
-    \item Rogério Eduardo da Silva;
+  \item Miguel Alfredo Nunes
+  \item Jeferson L. R. Souza
+    \item Alexandre Gonçalves 
     \item Hakan Kjellerstrand -- (\url{http://www.hakank.org/picat/})
     \item Neng-Fa Zhou -- (\url{http://www.picat-lang.org/})
-
-    \item Outros anônimos que auxiliaram na produção deste documento;
+    \item João Herique Faes Battisti
+    \item Paulo Victor de Aguiar
+    \item Rogério Eduardo da Silva
+    \item Outros anônimos que auxiliaram na produção deste documento
 
   \end{itemize}
 
@@ -201,8 +196,9 @@
 %
 % \include{introducao_picat}
  %\include{tipos_dados_variaveis_picat}
-% \include{regras_picat}
-% \include{recursao_picat}
+ %\include{regras_picat}
+%\include{estruturas_decisao_repeticao}
+ \include{recursao_picat}
 % \include{listas_picat} % cap 4 nesse capitulo falar mais de listas
 % \include{buscas_picat}
 % \include{PD_picat} % cap ??? finalizar aqui

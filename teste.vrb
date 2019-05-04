@@ -1,15 +1,34 @@
+\frametitle{Reflexões}
 
-    \frametitle{Agradecimentos}
+\begin{itemize}
 
-    \begin{itemize}
-      \item Muito obrigado a voce!
-      \pause
-      \item Algumas pessoas que deram opiniões e me incentivaram a
-            fazer este material
+  \item Esta seção avança na sintaxe do Picat e precisa
+  ser praticada
 
-      \pause
-      \item Claudio Cesar de Sá
-     \item Contacto: \url{claudio.sa@udesc.br} e\\
-           \url{claudio@colmeia.udesc.br}
+   \pause
+  \item Como este conteúdo se assemelha as LPs clássicas, como exercício,
+  voce está apto a fazer alguns algoritmos de outras linguagens.
 
-    \end{itemize}
+  \pause
+  \item Se antes o Prolog era complicado para \textit{entradas} e \textit{saídas}, com Picat,
+  tudo ficou semelhante as demais linguagens imperativas
+
+
+  \pause
+  \item \textcolor{red}{\textbf{Cuidado}: as funções de \textit{entradas} e \textit{saídas}, e outras do sistema como
+  \textit{time}, etc,  \textbf{nunca} falham e nem aceitam \textit{backtracking}
+  definidas para elas. Em caso de falha do predicado que as contém, estas são \textbf{silenciosas},
+  apresentando um simples \textbf{no} ou \textbf{false}!}
+
+  \pause
+  \item Felizmente os erros e problemas de sintaxe  são prontamente  acusados
+
+  \pause
+  \item Em \url{https://github.com/claudiosa/CCS/tree/master/picat/input_output_exemplos}
+  tem vários exemplos avançados de entradas e saídas
+
+  \pause
+  \item Mãos à obra!
+
+\end{itemize}
+
