@@ -1,34 +1,28 @@
 \frametitle{Reflexões}
 
+
 \begin{itemize}
+\item A recursão é o paradigma das linguagens declarativas como Haskell, Prolog, Picat, ... etc
 
-  \item Esta seção avança na sintaxe do Picat e precisa
-  ser praticada
+ \pause
+ \item As regras recursivas são construídas com uma ou mais  \textcolor{magenta}{\textit{regras aterradas}}, que  \textcolor{magenta}{\textbf{sempre vem antes}} das demais
+ regras recursivas, as  quais podem ou não terem o \textit{backtracking} habilitados ( \textcolor{magenta}{\textbf{\texttt{?=>}}})
 
-   \pause
-  \item Como este conteúdo se assemelha as LPs clássicas, como exercício,
-  voce está apto a fazer alguns algoritmos de outras linguagens.
 
-  \pause
-  \item Se antes o Prolog era complicado para \textit{entradas} e \textit{saídas}, com Picat,
-  tudo ficou semelhante as demais linguagens imperativas
-
+ \pause
+ \item A avaliação destas regras \textcolor{magenta}{\textbf{são sempre da esquerda para direita}}, ocorrendo o \textcolor{magenta}{\textit{backtracking}} em caso de falha ou de uma nova resposta
 
   \pause
-  \item \textcolor{red}{\textbf{Cuidado}: as funções de \textit{entradas} e \textit{saídas}, e outras do sistema como
-  \textit{time}, etc,  \textbf{nunca} falham e nem aceitam \textit{backtracking}
-  definidas para elas. Em caso de falha do predicado que as contém, estas são \textbf{silenciosas},
-  apresentando um simples \textbf{no} ou \textbf{false}!}
+ \item As regras recursivas com \textit{backtracking} habilitados ( \textbf{\texttt{?=>}} ), apenas
+ para regras predicativas.  \textcolor{red}{As funções não admitem \textit{backtracking}!}
 
   \pause
-  \item Felizmente os erros e problemas de sintaxe  são prontamente  acusados
+ \item \textcolor{green}{A metodologia destas regras e sua construção, seguem  esquemas mais
+ avançados da programação declarativa!}
 
-  \pause
-  \item Em \url{https://github.com/claudiosa/CCS/tree/master/picat/input_output_exemplos}
-  tem vários exemplos avançados de entradas e saídas
+%  \pause
+% \item O \textbf{\textit{main}} é uma regra predicativa que pode conter ou não argumentos.
 
-  \pause
-  \item Mãos à obra!
 
 \end{itemize}
 

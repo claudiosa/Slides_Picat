@@ -24,24 +24,72 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{frame}[fragile,allowframebreaks=0.8,c]
-	\frametitle{Predicados e Funções}
+\begin{frame}[fragile]
+\frametitle{Predicados e Funções}
     
 \begin{itemize}
 
-\item Os \textbf{predicados} sempre assumem valores valores lógicos \texttt{true} ($1$) ou \texttt{false} ($0$).
+\item \textit{Predicados lógicos} definem a base teórica do Picat
 
-\item Os \textbf{predicados} em seus argumentos, podem passar $n$-termos e receber
-outros $m$-termos.
+\pause
+\item \textit{Predicados lógicos} são também conhecidos como \textit{cláusulas lógicas},  ora como
+simplesmente \textit{regras lógicas} (no contexto de linguagens de programação)
 
-\item Quanto as \textbf{funções}, estas funcionam seguindo as regras de funções matemáticas,
-sempre retornando um único valor. Logo, um tipo particular de \textbf{predicados lógicos}
-que podem retornar vários termos
+\pause
+\item Estas regras lógicas são de 04 tipos: 
+\pause
+\begin{itemize}
 
-\item Predicados e funções são definidos com regras de \textit{casamento de padrões}
+   \item Regras condicionais (ou completas)
+   \item Regras do tipo \textbf{fatos} ou sempre verdadeiras
+   \item Regras do tipo \textbf{metas}
+   \item Regras tipo \textbf{funções}
+\end{itemize}
 
-\item Predicados são conhecidos como \textbf{regras lógicas}, há dois tipos de regras:
-\framebreak        
+\pause
+\item Excetuando-se as funções, as regras sempre assumem os seguintes valores lógicos:\\
+ \texttt{true} ($1$ ou \texttt{yes} ...) ou \texttt{false} ($0$ ou \texttt{no} ...).
+
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+\frametitle{Predicados e Funções}
+    
+\begin{itemize}
+
+
+\item Nos argumentos do \textbf{predicados} podem-se passar $n$-termos e receber
+outros $m$-termos, tal que $n \ge m$. Exemplo:\\
+
+\begin{center}
+  \texttt{raizes(A, B, C, X1, X2)}
+\end{center}
+
+\pause
+\item As \textbf{funções}  seguem as regras de funções matemáticas, logo,
+retornam um único valor
+
+\pause
+\item Ou ainda, as \textbf{funções} são  um tipo particular de \textbf{regras lógicas}
+
+\pause
+\item Predicados e funções são inferenciados via \textit{casamento de padrões}\\
+\textcolor{magenta}{Este conceito é ilustrado pelos exemplos deste curso.}
+
+
+ \end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]
+
+\frametitle{Regras Lógicas}
+
+As \textbf{regras lógicas} são de dois tipos:
+
         \begin{itemize}
             \item Regras \textbf{sem} {\em backtracking} (\textit{non-backtrackable}):
         	
@@ -50,6 +98,7 @@ que podem retornar vários termos
              \> \> \verb+ Cabeça , Condicional + \textbf{\textcolor{red}{=>}} \verb+ Corpo .+
             \end{tabbing}
             
+        \pause
 
             \item Regras \textbf{com} {\em backtracking}:
             
@@ -57,15 +106,20 @@ que podem retornar vários termos
               aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
              \> \> \verb+ Cabeça , Condicional + \textbf{\textcolor{red}{?=>}} \verb+ Corpo .+
             \end{tabbing}
-        
         \end{itemize}
-\framebreak        
-       
-  \item A identificação da sintaxe é dada por:
-  
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+
+\frametitle{Regras Lógicas}
+     
+  A identificação da sintaxe é dada por:
+
   \begin{itemize}
   
-      \item \emph{Cabeça}: indica um padrão de regra a ser casada.
+      \item \emph{Cabeça}: indica um padrão de regra a ser casada
       
       Forma geral:
       \begin{tabbing}
@@ -76,22 +130,28 @@ que podem retornar vários termos
       Onde:
       
       \begin{itemize}
-          \item \emph{regra} é um átomo que define o nome da regra.
-          \item \emph{n} é a aridade da regra (\emph{i.e.} o total de argumentos)
-          \item Cada \emph{$termo_i$} é um argumento da regra.
+          \item \emph{regra} é um átomo  que define o nome da regra
+          \item \emph{n} é a aridade da regra (\emph{i.e.} número de argumentos)
+          \item Cada \emph{$termo_i$} é um argumento da regra
       \end{itemize}
       
-      \item \emph{Cond}: é uma ou várias condições sobre a execução desta regra.
+      \item \emph{Cond}: é uma ou várias condições sobre a execução desta regra
           
       \item \emph{Corpo}: define as ações da regra 
       
   \end{itemize}
-  
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Regras Lógicas}
+\begin{itemize} 
+
   \item Todas as regras são finalizadas por um ponto final (.), seguido por um espaço 
   em branco ou nova linha.
+
   
-  \item Ao longo dos exemplos, detalhes a mais sobre esta construção de \textbf{predicados} e \textbf{funções}
-      
+  \item  \textcolor{magenta}{ \textbf{Regras} e \textbf{funções} são ilustradas pelos exemplos deste curso.}
 \end{itemize}
 
 \end{frame}
@@ -99,32 +159,47 @@ que podem retornar vários termos
 
 
 \begin{frame}[fragile]
-	\frametitle{Regras com e sem Backtracking -- Exemplo}
+\frametitle{Regras Com e Sem Backtracking -- Exemplo}
 
 
 \begin{footnotesize}
 \begin{verbatim}
-main => regra_01(7)  ,
-        regra_01(-4) ,
+main => regra_01(7)  ,  regra_01(-4) ,
+        regra_01( 0 ) , regra_01( 1) ,
         regra_01(44) .
         
-regra_01(0)          ?=> printf("\n  CHEGOU A 0 !!!\n").
-regra_01(N) , N < 0  ?=> printf("\n  EH UM NEGATIVO !!!\n").
-regra_01(N) , N > 10 ?=> printf("\n  EH MAIOR QUE 10 !!!\n").
-regra_01(N) , N <= 10  =>  
-          printf("\t :%d ", N),
-          regra_01(N-1).
-
-%% =<  EH IGUAL a >= :: sobrecarga
-%%% $ picat regras_com_sem_backtraking.pi
-
+regra_01(0)          ?=> printf("\n CHEGOU A 0 !!!").
+regra_01(N) , N < 0  ?=> printf("\n EH UM NEGATIVO !!!").
+regra_01(N) , N > 10 ?=> printf("\n EH MAIOR QUE 10 !!!").
+regra_01(N) , N <= 10 =>  printf("\n NUM de 0 a 10 :%d", N).
+          
+%% =<  EH IGUAL a <= :: sobrecarga
+%% >= EH IGUAL => :: sobrecarga
+%%% $ picat regras_ex_04.pi
 \end{verbatim}
 
 \end{footnotesize}
-\textcolor{red}{Há uma recursão aqui. Algumas seções a frente.}
-
+%\textcolor{red}{Retornaremos a esHá uma recursão aqui. Algumas seções a frente.}
 \end{frame}
 
+\begin{frame}[fragile]
+	\frametitle{Regras com e sem Backtracking -- Saída}
+
+
+\begin{footnotesize}
+\begin{verbatim}
+$ picat regras_ex_04.pi 
+
+ NUM de 0 a 10 :7
+ EH UM NEGATIVO !!!
+ CHEGOU A 0 !!!
+ NUM de 0 a 10 :1
+ EH MAIOR QUE 10 !!!
+\end{verbatim}
+
+\end{footnotesize}
+\textcolor{red}{Aqui, o \texttt{main} foi um tipo função e uma regra tipo meta!}
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -135,12 +210,16 @@ regra_01(N) , N <= 10  =>
 
 \begin{itemize}
 
-\item O algoritmo de {\em casamento de padrões} para regras é análogo ao algoritmo de    unificação para variáveis. 
-
-\item O objetivo é encontrar dois padrões que possam ser unificados para se inferir alguma ação.
+\item O  {\em casamento de padrões} é o mecanismo de  encontrar  regras 
+que casem com a instância corrente de execução do programa
 
 \pause
-\item Muitos exemplos no curso
+\item O objetivo é encontrar dois ou mais
+  padrões que possam ser unificados 
+  para se inferir alguma nova ação
+
+\pause
+\item Muitos exemplos de uso ao longo do curso
 
 \end{itemize}
 \end{frame}
@@ -151,41 +230,30 @@ regra_01(N) , N <= 10  =>
 \begin{frame}[fragile]
 \frametitle{Casamento de Padrões -- Procedimento}
 
-
 Procedimento de {\em casamento de padrões}:
 
 \begin{itemize}
 	\item Dado um padrão $p_1(t_1, \ldots,t_m)$, este \emph{casa} 
-	com um padrão semelhante $p_2(u_1, \ldots,u_n)$ se:
+	      com um padrão semelhante $p_2(u_1, \ldots,u_n)$ se:
     
     \begin{itemize}
-    	\item $p_1$ e $p_2$ forem átomos equivalentes;
+      	\item $p_1$ e $p_2$ forem átomos equivalentes;
     
         \item O número de termos (chamado de aridade) em ($t_1, \ldots,t_m$)
         e ($u_1, \ldots,u_n$) for equivalente.
     
-    	\item Os termos ($t_1, \ldots,t_m$) e ($u_1, \ldots,u_n$) são equivalentes, ou 
+      	\item Os termos ($t_1, \ldots,t_m$) e ($u_1, \ldots,u_n$) são equivalentes, ou 
     	tornaram-se  equivalentes pela unificação de variáveis	em qualquer um dos dois termos;
     \end{itemize}
     
-    \item Caso essas condições forem satisfeitas, o padrão $p_1(t_1,\ldots,t_m)$  casa com o padrão $p_2(u_1, \ldots,u_n)$.
+    \item Caso essas condições forem satisfeitas, o padrão $p_1(t_1,\ldots,t_m)$  
+    casa com o padrão $p_2(u_1, \ldots,u_n)$.
     
 \end{itemize}        
 
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% \begin{frame}[fragile]
-%     
-% \begin{block}{Exemplos de \textit{casamento}}
-%
-%  
-% \end{block}
-%     
-% \end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[fragile]
 
@@ -201,7 +269,7 @@ Procedimento de {\em casamento de padrões}:
 	    
   	 \pause
 	    \item Uma meta pode ser, um valor lógico, uma chamada de outra regra, 
-	    uma exceção ou uma operação lógica, um termo ...
+	    uma exceção, uma operação lógica, um termo ...etc
 
   	 \pause
 	    \item Exemplo: a cláusula \texttt{main} é uma meta a ser provada!
@@ -291,7 +359,7 @@ Procedimento de {\em casamento de padrões}:
 \begin{frame}[fragile]
 \frametitle{Regras, Metas e Funções -- Exemplo}
 
-\begin{footnotesize}
+\begin{small}
 \begin{verbatim}
 main =>
        X = 3, 
@@ -301,12 +369,12 @@ main =>
        printf("\n Z: %d \t R: %d", Z, R),
        println("\n FIM"). 
        
-um_predicado(X,Y,Z) => Z = X + Y.
+um_predicado(X,Y,Z) => Z = X + Y .
 
-uma_funcao(X,Y) = R => R = X + Y.
+uma_funcao(X,Y) = R => R = X + Y .
 \end{verbatim}
 
-\end{footnotesize}
+\end{small}
 \end{frame}
 
 
@@ -319,27 +387,29 @@ Picat> cl('predicados_funcoes').
 Compiling:: predicados_funcoes.pi
 predicados_funcoes.pi compiled in 0 milliseconds
 loading...
-
 yes
-
-Picat> um_predicado(3,4,Z), write(Z).
-7Z = 7
+Picat> um_predicado(3,4,Zeze), write(Zeze).  %% goal
+7Zeze = 7
 yes
-
-Picat> uma_funcao(3,4) = R, write(R).
-7R = 7
+Picat> uma_funcao(3,4) = Ratu, write(Ratu).  %% goal
+7Ratu = 7
 yes
-
-Picat>
+%%%%%%%%%%%%%%%%%%%%%%%% na console Linux
+$ picat predicados_funcoes.pi 
+ Z: 7 	 R: 7
+ FIM
 \end{verbatim}
 \end{footnotesize}
+{\small \textcolor{red}{Algumas linhas em \textbf{branco} na saída foram omitidas!}}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Relembrando as Regras}
-\begin{frame}[c, fragile, allowframebreaks=0.75]
-	\frametitle{Relembrando as Regras}
+
+\begin{frame} [fragile]
+
+	\frametitle{Retomando as Regras}
     
     \begin{itemize}
         \item Forma geral de um predicado do tipo Regra:
@@ -348,26 +418,44 @@ Picat>
           aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
           \> \> \verb+ Cabeça , Condicional  =>   Corpo .+ 
         \end{tabbing}
-        
+
+        \pause        
         \item  Forma geral de um predicado com \textit{backtracking}:
         
         \begin{tabbing}
           aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
             \> \> \verb+ Cabeça , Condicional + \textbf{\textcolor{red}{?=>}} \verb+ Corpo .+
         \end{tabbing}
-    \end{itemize}
-    
-    \textcolor{red}{Em Prolog, esta condicional (Cond) entra no corpo da regra. Picat é flexível!}
 
-    \framebreak
-    
+    \pause
+    \item  \textcolor{magenta}{Em Prolog, esta condicional (Cond) entra no corpo da regra. Picat é mais flexível!}
+
+    \pause
+    \item Na prática,  o estilo de programação usado é:\\
+    \begin{center}
+        \textbf{ \textcolor{magenta}{ \texttt{Cabeça => Condicional , Corpo .} }}
+    \end{center}
+
+    \pause
+    \item Porquê? Reuso de código de Prolog ...
+
+    \end{itemize}
+
+\end{frame}
+
+
+\begin{frame} [fragile]
+ 	\frametitle{Comentando as Regras}
     \begin{itemize}
-        \framebreak
         
-        \item Dentro de uma regra, \emph{Cond} só pode ser avaliado uma vez, acessando somente termos dentro do escopo do predicado.
+        \item Dentro de uma regra, \emph{Cond} só é avaliada \underline{uma vez} 
+        (\textcolor{red}{\textbf{cuidado}}),
+        exceto em caso falha e a regra for habilitada para \textit{backtracking}
+                
+        \pause
+        \item Estar atento que: regras são \textbf{sempre avaliados com valores lógicos} ({\em true} ou {\em false})
         
-        \item Sempre estar atento que: regras são \textbf{sempre avaliados com valores lógicos} ({\em true} ou {\em false})
-        
+        \pause
         \item Por outro lado, as variáveis  como argumento ou  instanciadas
         dentro dele, podem ser utilizadas dentro do escopo da regra, 
         ou no escopo onde  esta regra foi chamada.
@@ -378,15 +466,17 @@ Picat>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Regras do Tipo  Fatos}
-\begin{frame}[c,allowframebreaks=0.6,fragile]
+
+\begin{frame} [fragile]
 \frametitle{Regras do Tipo  Fatos}
 
     \begin{itemize}
-        \item As regras que não tem condicionais e nem corpo, estes  são conhecidos
+        \item As regras que \underline{não tem condicionais} e \underline{nem corpo} são conhecidas
         como:  \textit{fatos} ou \textit{regras sem-corpo}
         
        \item Estes \textit{fatos} são regras \textit{sempre verdadeiras}
         
+        \pause
         \item Formato dos fatos são do tipo:
         
         \begin{tabbing}
@@ -395,24 +485,33 @@ Picat>
         \end{tabbing}
         
         \item Os argumentos de um \emph{fato} \textbf{não} podem conter \textbf{variáveis}.
+
+    \end{itemize}
+\end{frame}
+
+
         
-        \framebreak
+\begin{frame} [fragile]
+\frametitle{Regras do Tipo  Fatos}
+
+
+    \begin{itemize}
         
-        \item A declaração de um fato é precedida por uma declaração \textbf{\emph{index}},
-        algo como:
+        \item A declaração de um fato é precedida pela declaração \textbf{\emph{index}}:
         
         \begin{tabbing}
         aa \= aaa \= aaa \= aaa \= aaa \= aaa \= aaa \kill
             \> \texttt{index ($M_{11},M_{12},\ldots,M_{1n}$) $\ldots$ ($M_{m1},M_{m2},\ldots,M_{mn}$)}\index{\texttt{index}} 
         \end{tabbing}
         
+        \pause
         \item Onde um $M_{ij}$ com o simbolo `$+$',  significa que este termo já foi 
         indexado.
         
-        \item Quanto o `$-$' significa que este termo deve ser indexado
+        \item Logo,  o `$-$' significa que este termo \underline{deve ser indexado}
         
-        \item Ou seja, quando ocorre um simbolo `$+$' em um grupo do \textit{index}, é avaliado
-        pelo compilador como um valor constante a ser casada
+        \item Ou seja, quando ocorre um simbolo `$+$' em um grupo do \textit{index}, 
+        o compilador  avalia este como um valor constante a ser casado
         
         %, que não irá gerar uma nova regra durante
         %a execução do programa.
@@ -420,10 +519,12 @@ Picat>
         \item Quanto ao `$-$', este é avaliado pelo compilador com uma variável que deverá ser 
         instanciada à um valor. Ou seja, quando se deseja unificar um valor a esta variável
         
-        \item Dica: o parâmetro `$-$' no \textit{index} é quase como regra geral
-                
-        \item \textbf{Não} pode haver um \textbf{predicado} e um \textbf{predicado 
-        fato} com \textbf{mesmo nome}.
+        \pause
+        \item \textcolor{magenta}{Dica: o parâmetro `$-$' no \textit{index} é quase como regra geral}
+             
+       \pause
+        \item \textcolor{red}{Cuidado: \textbf{Não} pode haver um \textbf{predicado} e um \textbf{predicado 
+        fato} com \textbf{mesmo nome}.}
         
     \end{itemize}
 \end{frame}
@@ -447,9 +548,9 @@ and2(false,true,false).
 and2(false,false,false).
 
 main ?=>
-       and2(X,Y,Z), % and eh reservado
+       and2(X,Y,Z), % AND2 pois and eh reservado
        printf("\n X: %w \t Y: %w \t Z: %w", X, Y, Z),
-       fail.
+       false.
 main =>       
        println("\n FIM"). 
 \end{verbatim}
@@ -472,7 +573,7 @@ excluindo alguns dos parâmetros do \textit{index}}
 
 \frametitle{Exemplos}
 
-\begin{block}{Exemplo de Predicado ou regra}
+\begin{block}{Exemplo de Predicado ou Regra}
    
 \begin{lstlisting}[frame=single]
 contas_P0(X1, X2, X3, Z) ?=>
@@ -493,7 +594,7 @@ contas_P0(X1, _, _, Z) =>
 
 \begin{frame}[fragile]
 
-\begin{block}{Exemplo de Funções}
+\begin{block}{Exemplo de Função}
      
 \begin{lstlisting}[frame=single]
 contas_F0(X1, X2, X3) = Z, (number(X1), 
@@ -511,23 +612,23 @@ contas_F0(X1, X2, X3) = Z, (number(X1),
 \textcolor{red}{\textit{Aperitivo} à próxima seção: condicionais e laços!}
     
 \end{frame}    
+
 \begin{frame}[fragile]
    
-\begin{block}{Mais Exemplos (Fatos e Regras)}
+\begin{block}{Exemplos de Fatos}
     
 \begin{lstlisting}[frame=single]
-index(-,-) (+,-) (-,+)
-pai(salomao, rogerio).
-pai(salomao, fabio).
-pai(rogerio, miguel).
-pai(rogerio, henrique).
 
-avo(X,Y) ?=> pai(X,Z), pai(Z,Y).
-irmao(X,Y) ?=> pai(Z,X), pai(Z,Y).
-tio(X,Y) ?=> pai(Z,Y), irmao(X,Z).
+index (-,-) (+,-) (-,+)    %%% NAO HA PONTO FINAL
+pai (salomao, rogerio).
+pai (salomao, fabio).
+pai (rogerio, miguel).
+pai (rogerio, henrique).
+...........................
+
 \end{lstlisting}
     
- \end{block}
+\end{block}
     
 \end{frame}    
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -556,14 +657,15 @@ eleva_cubo(X) = X1 => X1 = X*X*X.
 
 \begin{itemize}
 
-  \item Esta seção trata dos elementos do Picat: cláusulas
- 
- \pause 
-  \item Predicados ou cláusulas, que são
-  de 2 tipos: \textbf{regras predicativas} ou \textbf{funções}
+  \item Esta seção trata dos elementos do Picat: regras (ou cláusulas) lógicas
 
-    \pause
+  \pause
   \item \textit{Regras} é um nome genérico a predicados ou cláusulas e funções
+  
+  \pause 
+  \item Predicados ou cláusulas são de 4 tipos: \textbf{regras}, \textbf{fatos}, 
+  \textbf{metas} e \textbf{funções}
+
     \pause
   \item \textit{Regras} sem corpo são conhecidas como verdades e chamadas de \textbf{fatos}\\
 Uso obrigatório do meta-predicado:  \textit{index}

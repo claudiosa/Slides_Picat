@@ -505,7 +505,7 @@ $ picat backtracking_ex_02.pi
 ========================================
 $ 
 \end{verbatim} 
-  \end{footnotesize}   
+  \end{scriptsize}   
   
 \textcolor{red}{Cuidar em confundir \textbf{0} (zero) com \textbf{O}. Perdi horas no código acima.}  
 \end{frame}

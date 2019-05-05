@@ -1,3 +1,4 @@
 \babel@toc {brazilian}{}
-\beamer@sectionintoc {1}{Estruturas de Decis\IeC {\~a}o, La\IeC {\c c}os e Iteradores}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Fun\IeC {\c c}\IeC {\~o}es e Predicados Especiais}{25}{0}{1}
+\beamer@sectionintoc {1}{Recurs\IeC {\~a}o}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Recurs\IeC {\~a}o}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{\textit {Backtracking}}{20}{0}{1}

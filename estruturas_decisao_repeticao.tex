@@ -11,7 +11,7 @@
         \item Estruturas de decisão
         \item Estruturas de repetição
         \item Iteradores
-        \item Entrada e saídas
+        \item Entradas e saídas
         \item Exemplos
     \end{itemize}
 \end{minipage}
@@ -293,15 +293,20 @@ laco_03 =>
 \begin{itemize}
     
     \item Há algumas funções e predicados especiais em Picat 
-    que necessitam de algum cuidado.
+    que necessitam de algum cuidado:
     
     \pause
-    \item São elas: \texttt{compreensão de listas/vetores}, 
-    \texttt{entrada de dados} e \texttt{saída de dados}.
+    \begin{itemize}
+      \item \textcolor{magenta}{Geração (compreensão) de listas e vetores}
+      \item  \textcolor{magenta}{Entradas e saídas de dados}
+    \end{itemize}
     
+    \pause
     \item Na verdade, já fizemos uso delas, porém sem a ênfase de que
     são funções ora predicados.
     
+    \pause
+    \item \textcolor{magenta}{Um \textbf{atalho} consider\'avel na programação com Picat!}
 \end{itemize}
 \end{frame}      
 
@@ -352,23 +357,41 @@ laco_03 =>
 main =>
  L = [(A, I) : A in [a, b], I in 1 .. 2],
  V = {(I, A) : A in [a, b], I in 1 .. 2},
- printf("\nL: %w  \nV: %w\n", L, V),
- imp_vetor(V).
+ printf("\nLista: %w  \nVetor: %w\n", L, V),
+ imp_vetor(V),
+ imp_vetor(L).
 
 imp_vetor (M) => 
-Tam = M.length,  %% tamanho de M
+ Tam = M.length,  %% tamanho de M
   nl,
    foreach(I in 1  .. Tam )
-     printf("V(%d):%w \t" , I, M[I] )
+     printf("V_ou_L(%d):%w \t" , I, M[I] )
     end,
   nl.
 %%%% $picat vetor_exemplo_01.pi
 \end{verbatim}
-
 \end{footnotesize}
  
 \end{frame}
 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+ \begin{frame}[fragile]
+ \frametitle{Saída -- Compreensão de Listas e Vetores}
+\begin{footnotesize}
+\begin{verbatim}
+$ picat vetor_exemplo_01.pi 
+
+Lista: [(a,1),(a,2),(b,1),(b,2)]  
+Vetor: {(1,a),(2,a),(1,b),(2,b)}
+
+V_ou_L(1):1,a 	V_ou_L(2):2,a 	V_ou_L(3):1,b 	V_ou_L(4):2,b 	
+
+V_ou_L(1):a,1 	V_ou_L(2):a,2 	V_ou_L(3):b,1 	V_ou_L(4):b,2 	
+[hulk@SAGUACU picat]$ 
+\end{verbatim}
+\end{footnotesize}
+ 
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[c,allowframebreaks]
@@ -676,7 +699,7 @@ LISTA LIDA 2: [7,3,2,1]
   apresentando um simples \textbf{no} ou \textbf{false}!}
   
   \pause
-  \item Felizmente os erros e problemas de sintaxe  são prontamente  acusados
+  \item \textcolor{green}{Felizmente os erros e problemas de sintaxe  são prontamente reportados}
   
   \pause
   \item Em \url{https://github.com/claudiosa/CCS/tree/master/picat/input_output_exemplos}
