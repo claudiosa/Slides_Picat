@@ -1,7 +1,21 @@
-\frametitle{Agradecimentos}
+\frametitle{Concluindo Listas}
 
+\begin{block}{}
+\begin{itemize}
+  \item Há muitos predicados e funções prontas sobre listas nos módulos do Picat
+  \pause
+  \item Contudo, se aprende sobre listas, fazendo \textcolor{magenta}{\textbf{muitos}} métodos
+    \pause
+  \item A recursividade em sua modelagem, define a \textcolor{magenta}{metodologia de se \textit{programar em lógica}}
+    \pause
+  \item Exercitar-se para aprender os detalhes!
+    \pause
+  \item Usar as listas como estrutura base em problemas complexos
 
-						
+     \pause
+  \item Próxima na aula: buscas (\textcolor{magenta}{\textbf{uso extensivo de listas}})
 
+\end{itemize}
 
+\end{block}
 

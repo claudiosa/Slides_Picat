@@ -1,32 +1,31 @@
 \babel@toc {brazilian}{}
-\beamer@sectionintoc {1}{Apresenta\IeC {\c c}\IeC {\~a}o ao Curso de PICAT}{3}{0}{1}
-\beamer@sectionintoc {2}{Introdu\IeC {\c c}\IeC {\~a}o}{29}{0}{2}
-\beamer@subsectionintoc {2}{1}{Estrutura da Linguagem}{34}{0}{2}
-\beamer@subsubsectionintoc {2}{1}{1}{Paradigmas}{39}{0}{2}
-\beamer@subsubsectionintoc {2}{1}{2}{Usando Picat}{64}{0}{2}
-\beamer@sectionintoc {3}{Tipos de Dados e Vari\IeC {\'a}veis}{80}{0}{3}
-\beamer@subsectionintoc {3}{1}{Tipos de Dados}{88}{0}{3}
-\beamer@subsectionintoc {3}{2}{Vari\IeC {\'a}veis}{106}{0}{3}
-\beamer@subsectionintoc {3}{3}{Unifica\IeC {\c c}\IeC {\~a}o e Atribui\IeC {\c c}\IeC {\~a}o}{108}{0}{3}
-\beamer@subsectionintoc {3}{4}{Tabela de Operadores}{124}{0}{3}
-\beamer@subsubsectionintoc {3}{4}{1}{Operadores Especiais}{126}{0}{3}
-\beamer@sectionintoc {4}{Predicados e Fun\IeC {\c c}\IeC {\~o}es}{159}{0}{4}
-\beamer@subsectionintoc {4}{1}{Casamento de Padr\IeC {\~o}es}{175}{0}{4}
-\beamer@subsectionintoc {4}{2}{Fun\IeC {\c c}\IeC {\~o}es}{184}{0}{4}
-\beamer@subsectionintoc {4}{3}{Relembrando as Regras}{192}{0}{4}
-\beamer@subsectionintoc {4}{4}{Regras do Tipo Fatos}{200}{0}{4}
-\beamer@subsectionintoc {4}{5}{Exemplos}{207}{0}{4}
-\beamer@sectionintoc {5}{Estruturas de Decis\IeC {\~a}o, La\IeC {\c c}os e Iteradores}{216}{0}{5}
-\beamer@subsectionintoc {5}{1}{Fun\IeC {\c c}\IeC {\~o}es e Predicados Especiais}{238}{0}{5}
-\beamer@sectionintoc {6}{Recurs\IeC {\~a}o}{265}{0}{6}
-\beamer@subsectionintoc {6}{1}{Recurs\IeC {\~a}o}{266}{0}{6}
-\beamer@subsectionintoc {6}{2}{\textit {Backtracking}}{282}{0}{6}
-\beamer@sectionintoc {7}{Listas}{300}{0}{7}
-\beamer@sectionintoc {8}{Buscas}{329}{0}{8}
-\beamer@sectionintoc {9}{Programa\IeC {\c c}\IeC {\~a}o Din\IeC {\^a}mica}{356}{0}{9}
-\beamer@sectionintoc {10}{Planejamento}{384}{0}{10}
-\beamer@sectionintoc {11}{Programa\IeC {\c c}\IeC {\~a}o por Restri\IeC {\c c}\IeC {\~o}es}{428}{0}{11}
-\beamer@sectionintoc {12}{Conclus\IeC {\~o}es}{519}{0}{12}
-\beamer@subsectionintoc {12}{1}{Faltando}{528}{0}{12}
-\beamer@subsectionintoc {12}{2}{Dicas de Programa\IeC {\c c}\IeC {\~a}o}{531}{0}{12}
-\beamer@subsectionintoc {12}{3}{Agradecimentos}{536}{0}{12}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{5}{0}{1}
+\beamer@subsectionintoc {1}{1}{Estrutura da Linguagem}{10}{0}{1}
+\beamer@subsubsectionintoc {1}{1}{1}{Paradigmas}{15}{0}{1}
+\beamer@subsubsectionintoc {1}{1}{2}{Usando Picat}{40}{0}{1}
+\beamer@sectionintoc {2}{Tipos de Dados e Vari\IeC {\'a}veis}{56}{0}{2}
+\beamer@subsectionintoc {2}{1}{Tipos de Dados}{64}{0}{2}
+\beamer@subsectionintoc {2}{2}{Vari\IeC {\'a}veis}{82}{0}{2}
+\beamer@subsectionintoc {2}{3}{Unifica\IeC {\c c}\IeC {\~a}o e Atribui\IeC {\c c}\IeC {\~a}o}{84}{0}{2}
+\beamer@subsectionintoc {2}{4}{Tabela de Operadores}{100}{0}{2}
+\beamer@subsubsectionintoc {2}{4}{1}{Operadores Especiais}{102}{0}{2}
+\beamer@sectionintoc {3}{Predicados e Fun\IeC {\c c}\IeC {\~o}es}{135}{0}{3}
+\beamer@subsectionintoc {3}{1}{Casamento de Padr\IeC {\~o}es}{151}{0}{3}
+\beamer@subsectionintoc {3}{2}{Fun\IeC {\c c}\IeC {\~o}es}{160}{0}{3}
+\beamer@subsectionintoc {3}{3}{Relembrando as Regras}{168}{0}{3}
+\beamer@subsectionintoc {3}{4}{Regras do Tipo Fatos}{176}{0}{3}
+\beamer@subsectionintoc {3}{5}{Exemplos}{183}{0}{3}
+\beamer@sectionintoc {4}{Estruturas de Decis\IeC {\~a}o, La\IeC {\c c}os e Iteradores}{192}{0}{4}
+\beamer@subsectionintoc {4}{1}{Fun\IeC {\c c}\IeC {\~o}es e Predicados Especiais}{214}{0}{4}
+\beamer@sectionintoc {5}{Recurs\IeC {\~a}o}{241}{0}{5}
+\beamer@subsectionintoc {5}{1}{Recurs\IeC {\~a}o}{242}{0}{5}
+\beamer@subsectionintoc {5}{2}{\textit {Backtracking}}{258}{0}{5}
+\beamer@sectionintoc {6}{Listas}{276}{0}{6}
+\beamer@sectionintoc {7}{Buscas}{313}{0}{7}
+\beamer@sectionintoc {8}{Programa\IeC {\c c}\IeC {\~a}o Din\IeC {\^a}mica}{340}{0}{8}
+\beamer@sectionintoc {9}{Planejamento}{368}{0}{9}
+\beamer@sectionintoc {10}{Programa\IeC {\c c}\IeC {\~a}o por Restri\IeC {\c c}\IeC {\~o}es}{412}{0}{10}
+\beamer@sectionintoc {11}{Conclus\IeC {\~o}es}{503}{0}{11}
+\beamer@subsectionintoc {11}{1}{Faltando}{512}{0}{11}
+\beamer@subsectionintoc {11}{2}{Dicas de Programa\IeC {\c c}\IeC {\~a}o}{515}{0}{11}
+\beamer@subsectionintoc {11}{3}{Agradecimentos}{520}{0}{11}
