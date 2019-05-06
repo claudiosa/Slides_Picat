@@ -34,7 +34,7 @@
   \frametitle{Apresentação ao Curso de PICAT -- II}
   \begin{itemize}
 
-    \item Este curso é dirigido a voce?
+    \item Este curso é dirigido a você?
   \pause
     \item Requisitos:
    \pause
@@ -50,7 +50,7 @@
     \item Motivação:
    \pause
 		\begin{itemize}
-			\item Dependendo de sua dedicação, ao final voce vai estar apto a resolver problemas
+			\item Dependendo de sua dedicação, ao final você vai estar apto a resolver problemas
 			computacionais de simples à difíceis
 
 			\item Difícil: muitas linhas de código e muito conhecimento de algoritmos seriam
@@ -69,12 +69,11 @@
 \begin{frame}[fragile]
   \frametitle{Apresentação ao Curso de PICAT -- III}
   \begin{itemize}
-
 						
-    \item Requisitos computacionais:\\
-    \pause
-    um computador qualquer (arquitetura 16, 32 ou 64 bits), com Linux, Mac ou Windows,
-    que tenha um compilador C instalado completo, preferencialmente.
+    \item Recursos computacionais:\\
+    \pause 
+    Binários disponíveis para Linux, Mac e Windows
+     e Código fonte (em C) também disponível
 
     \item Comunidade e ações: \url{http://picat-lang.org}
     
@@ -91,11 +90,6 @@
 			 vai estar na interatividade
 			da minha \textbf{apresentação oral}. 
 			
-			\pause
-			\item Em resumo, este material é  um guia para o seu desenvolvimento,
-			 com explicações nestas aulas, que funcionam como um \textit{atalho} de
-			horas de estudo sobre vários temas apresentados.
-
     
   \end{itemize}
 
@@ -134,7 +128,7 @@
   \frametitle{Apresentação ao Curso de PICAT -- V}
   \begin{itemize}
 
-    \item Além desta  apresentação do curso, voce pode assistir uma
+    \item Além desta  apresentação do curso, você pode assistir uma
     parte deste curso em aulas que fiz para o Youtube, há alguns anos atrás:
 
     \pause
@@ -165,9 +159,14 @@
     Pesquisa Operacional, etc
 
     \pause
-    \item Ao final voce vai conseguir resolver problemas com alguma complexidade e ler
+    \item Ao final você vai conseguir resolver problemas com alguma complexidade e ler
     códigos de grandes programadores da área: Barták, Neng-Fa, Hakank, Dymichenko, etc    
     
+    \pause
+		\item Em resumo, este material é  um guia para o seu desenvolvimento,
+		 com explicações nestas aulas, que funcionam como um \textit{atalho} de
+		 horas de estudo sobre vários temas apresentados.
+   
     \pause
     \item Tópicos   cobertos no curso: ver índice
   \end{itemize}

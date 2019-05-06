@@ -1,62 +1,32 @@
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
-\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
-\headcommand {\beamer@framepages {2}{2}}
-\headcommand {\beamer@sectionpages {1}{2}}
-\headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\sectionentry {1}{Recurs\IeC {\~a}o}{3}{Recurs\IeC {\~a}o}{0}}
-\headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
-\headcommand {\beamer@framepages {3}{3}}
-\headcommand {\beamer@subsectionpages {3}{3}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{4}{Recurs\IeC {\~a}o}}
-\headcommand {\slideentry {1}{1}{1}{4/8}{Recurs\IeC {\~a}o}{0}}
-\headcommand {\beamer@framepages {4}{8}}
-\headcommand {\slideentry {1}{1}{2}{9/9}{Recurs\IeC {\~a}o}{0}}
-\headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {1}{1}{3}{10/10}{Recurs\IeC {\~a}o}{0}}
-\headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {1}{1}{4}{11/11}{Recurs\IeC {\~a}o}{0}}
-\headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {1}{1}{5}{12/14}{Recurs\IeC {\~a}o}{0}}
-\headcommand {\beamer@framepages {12}{14}}
-\headcommand {\slideentry {1}{1}{6}{15/15}{Recurs\IeC {\~a}o}{0}}
-\headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {1}{1}{7}{16/16}{Recurs\IeC {\~a}o}{0}}
-\headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {1}{1}{8}{17/18}{Recurs\IeC {\~a}o}{0}}
-\headcommand {\beamer@framepages {17}{18}}
-\headcommand {\slideentry {1}{1}{9}{19/19}{Recurs\IeC {\~a}o}{0}}
-\headcommand {\beamer@framepages {19}{19}}
-\headcommand {\beamer@subsectionpages {4}{19}}
-\headcommand {\beamer@subsectionentry {0}{1}{2}{20}{\textit {Backtracking}}}
-\headcommand {\slideentry {1}{2}{1}{20/21}{\textit {Backtracking}}{0}}
-\headcommand {\beamer@framepages {20}{21}}
-\headcommand {\slideentry {1}{2}{2}{22/22}{\textit {Backtracking}}{0}}
-\headcommand {\beamer@framepages {22}{22}}
-\headcommand {\slideentry {1}{2}{3}{23/23}{\textit {Backtracking}}{0}}
-\headcommand {\beamer@framepages {23}{23}}
-\headcommand {\slideentry {1}{2}{3}{23/24}{\textit {Backtracking}}{0}}
-\headcommand {\beamer@framepages {23}{24}}
-\headcommand {\slideentry {1}{2}{4}{25/25}{\textit {Backtracking}}{0}}
-\headcommand {\beamer@framepages {25}{25}}
-\headcommand {\slideentry {1}{2}{5}{26/26}{\textit {Backtracking}}{0}}
-\headcommand {\beamer@framepages {26}{26}}
-\headcommand {\slideentry {1}{2}{6}{27/27}{\textit {Backtracking}}{0}}
-\headcommand {\beamer@framepages {27}{27}}
-\headcommand {\slideentry {1}{2}{7}{28/28}{\textit {Backtracking}}{0}}
-\headcommand {\beamer@framepages {28}{28}}
-\headcommand {\slideentry {1}{2}{8}{29/29}{\textit {Backtracking}}{0}}
-\headcommand {\beamer@framepages {29}{29}}
-\headcommand {\slideentry {1}{2}{9}{30/30}{\textit {Backtracking}}{0}}
-\headcommand {\beamer@framepages {30}{30}}
-\headcommand {\slideentry {1}{2}{10}{31/31}{\textit {Backtracking}}{0}}
-\headcommand {\beamer@framepages {31}{31}}
-\headcommand {\slideentry {1}{2}{11}{32/32}{\textit {Backtracking}}{0}}
-\headcommand {\beamer@framepages {32}{32}}
-\headcommand {\slideentry {1}{2}{12}{33/37}{\textit {Backtracking}}{0}}
-\headcommand {\beamer@framepages {33}{37}}
-\headcommand {\beamer@partpages {1}{37}}
-\headcommand {\beamer@subsectionpages {20}{37}}
-\headcommand {\beamer@sectionpages {3}{37}}
-\headcommand {\beamer@documentpages {37}}
-\headcommand {\gdef \inserttotalframenumber {25}}
+\headcommand {\beamer@sectionpages {1}{1}}
+\headcommand {\beamer@subsectionpages {1}{1}}
+\headcommand {\sectionentry {1}{Apresenta\IeC {\c c}\IeC {\~a}o ao Curso de PICAT}{2}{Apresenta\IeC {\c c}\IeC {\~a}o ao Curso de PICAT}{0}}
+\headcommand {\slideentry {1}{0}{1}{2/3}{}{0}}
+\headcommand {\beamer@framepages {2}{3}}
+\headcommand {\slideentry {1}{0}{2}{4/6}{}{0}}
+\headcommand {\beamer@framepages {4}{6}}
+\headcommand {\slideentry {1}{0}{3}{7/11}{}{0}}
+\headcommand {\beamer@framepages {7}{11}}
+\headcommand {\slideentry {1}{0}{4}{12/15}{}{0}}
+\headcommand {\beamer@framepages {12}{15}}
+\headcommand {\slideentry {1}{0}{5}{16/20}{}{0}}
+\headcommand {\beamer@framepages {16}{20}}
+\headcommand {\slideentry {1}{0}{6}{21/24}{}{0}}
+\headcommand {\beamer@framepages {21}{24}}
+\headcommand {\slideentry {1}{0}{7}{25/28}{}{0}}
+\headcommand {\beamer@framepages {25}{28}}
+\headcommand {\beamer@subsectionpages {2}{28}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{29}{Conte\IeC {\'u}dos do Curso}}
+\headcommand {\slideentry {1}{1}{1}{29/33}{Conte\IeC {\'u}dos do Curso}{0}}
+\headcommand {\beamer@framepages {29}{33}}
+\headcommand {\slideentry {1}{1}{2}{34/39}{Conte\IeC {\'u}dos do Curso}{0}}
+\headcommand {\beamer@framepages {34}{39}}
+\headcommand {\slideentry {1}{1}{3}{40/40}{Conte\IeC {\'u}dos do Curso}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\beamer@partpages {1}{40}}
+\headcommand {\beamer@subsectionpages {29}{40}}
+\headcommand {\beamer@sectionpages {2}{40}}
+\headcommand {\beamer@documentpages {40}}
+\headcommand {\gdef \inserttotalframenumber {11}}
