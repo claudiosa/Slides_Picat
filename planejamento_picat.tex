@@ -25,32 +25,29 @@
 \begin{frame}[fragile]
 %[fragile, allowframebreaks=0.9]
 
-    \frametitle{Planejamento}
+ \frametitle{Planejamento}
 
    \begin{block}{}
      \begin{itemize}
-      \item Requisitos: conceitos de listas e recursividade  dominados!
+      \item Requisitos: recursividade, listas e PD
        \pause
       
       \item Além destes: conceitos grafos, árvores de busca, nós, etc
        
        \pause
-      \item \textit{Planejamento} é um termo amplo e em vários domínios 
+      \item \textit{Planejamento} é um \textcolor{magenta}{\textbf{termo amplo e em vários domínios}} 
       
        \pause
-      \item O que \textbf{não} é o nosso contexto de \textit{planejamento} ?\\
+      \item \textcolor{red}{O que \textbf{não} é o nosso contexto de \textit{planejamento}?}\\
       Exemplo: planejamento estratégico das empresas, planejar como distribuir
       os dividendos da empresa, orçamento familiar,  etc
       
       \pause
-      
-      
-      \item O que é o nosso contexto de \textit{planejamento} ?
+       \item \textcolor{violet}{O que é o nosso contexto de \textit{planejamento}?}
        \pause
        Questões que envolvam um ambiente, um agente (um programa, um robô, etc), sensores,
       e ações que modifiquem estados.\\ Exemplo clássico:  robótica em geral
  
-
     \end{itemize}
     
     \end{block}
@@ -67,19 +64,12 @@
    \begin{block}{}
      \begin{itemize}
  
-
-%      \item 
-      
-      
- %     \pause
-
- 
        
-      \item Problemas em geral necessitam de um \textbf{plano} para serem solucionados, assim,
-      há uma visão que encontrar um plano para um problema, é ter uma solução!
+      \item Problemas em geral necessitam de um \textcolor{magenta}{\textbf{plano}} 
+      para serem solucionados, assim,
+      há uma visão que encontrar um plano para um problema $\Rightarrow$ ter uma solução!
 
       \pause
-      
       \item Em resumo, a área de planejamento é bem complexa, 
        antiga na área da IA e robótica (1970 -- STRIPS), 
        efervescente, e de muito interesse na indústria.
@@ -119,7 +109,7 @@
       \item Plano: seqüência ordenada de ações
        \pause
          \begin{itemize}
-           \item problema: obter banana, leite e uma furadeira (nesta ordem)
+           \item problema: escalar o Everest, comprar um abacate, leite e uma furadeira (nesta ordem)
 
            \pause
             \item plano: ir ao supermercado, ir à seção de frutas, pegar as bananas, 
@@ -226,8 +216,9 @@ pegar um objeto, atirar na direção do alvo, etc
  \item \underline{Operadores}: vocabulário ou repertório de atuações atômicas do que o agente pode fazer.\\
  Exemplos: $pegar(X)$, $mover\_de(X,Y)$, $levantar(X)$, $livre(X)$, etc
  
- \item Uma eventual confusão para iniciantes: um ação é um conjunto de um ou mais operadores,
- e ainda, \textbf{a ação é condicional}. A ação só é disparada se as condições de pré-requisitos forem 
+ \item Uma eventual confusão: \textcolor{magenta}{\textbf{uma ação é um conjunto de um ou mais operadores}},
+ e ainda, \textcolor{magenta}{\textbf{a ação é condicional}}. 
+ A ação só é disparada se as condições de pré-requisitos forem 
  satisfeitas.
  
  \item \underline{Heurística}: alguma função que  indica o progresso sobre os estados
@@ -237,7 +228,6 @@ pegar um objeto, atirar na direção do alvo, etc
 \end{itemize}
 
 \end{frame}
-
 
 
 
@@ -267,6 +257,8 @@ pegar um objeto, atirar na direção do alvo, etc
 \begin{frame}[fragile, allowframebreaks=0.9]
  \frametitle{Partes do  código comentado}
 
+
+\begin{footnotesize}
 \begin{verbatim}
 /*
 A  B  C 
@@ -281,19 +273,33 @@ D  E  F
 import datetime.
 import planner.
 \end{verbatim}
+\end{footnotesize}
+
+\begin{center}
+\textbf{\textcolor{red}{Atenção quanto a modelagem do problema, as 3 primeiras posicões da lista
+correspondem a linha superior (A .. C), e as 3 últimas, a linha inferior (D .. F).}
+}
+\end{center}
+
 \framebreak
 
+\begin{footnotesize}
 \begin{verbatim}
 index(-)
 estado_inicial( [0,1,5,4,3,2]  ).
+%%%%%%%%%%%%%==> A,B,C,D,E,F
 
 %% funcao final do planner
 final( [1,2,3,4,5,0] ) => true .
-
+%%%%==> A,B,C,D,E,F
+%% pode ter uma condicional de parada
 
 \end{verbatim}
+
+\end{footnotesize}
 \framebreak
 
+\begin{footnotesize}
 \begin{verbatim}
 % Up <-> Down
 /* Descrevendo as possiveis acoes para o planner */
@@ -310,9 +316,12 @@ action([A,B,C, D,E,F], S1, Acao, Custo_Acao ) ?=>
     Acao = ($dow(A),S1). %%a acao + estado modificado
 .........................................................
 \end{verbatim}
+\end{footnotesize}
+
 \framebreak
 
 
+\begin{footnotesize}
 \begin{verbatim}
 % Left <-> Right
 action([A,B,C, D,E,F], S1, Acao, Custo_Acao ) ?=>
@@ -329,30 +338,27 @@ action([A,B,C, D,E,F], S1, Acao, Custo_Acao ) ?=>
 .........................................................
 \end{verbatim}
 
+\end{footnotesize}
 \framebreak
 
 \begin{footnotesize}
 \begin{verbatim}
 main  ?=>  
     estado_inicial( Q ),
-   
     best_plan_unbounded( Q , Sol_Acoes), 
-     println(sol=Sol_Acoes),
+    println(sol = Sol_Acoes),
         
     printf("\n Estado Inicial: "),
     w_Quadro( Q ), 
     w_L_Estado( Sol_Acoes ), 
-  
     Total := length(Sol_Acoes) ,
     Num_Movts := (Total -1) ,
     printf("\n Inicial  (estado): %w ", Q),
     printf("\n Total de acoes: %d", Total), 
     printf(" \n =========================================\n ")
-    %%% , fail descomente para multiplas solucoes
+    %%% fail ou false: descomente para multiplas solucoes
     .
-   
-main => printf("\n Para uma solução .... !!!!" ) .
-.........................................................
+ main => printf("\n Para uma solução .... !!!!" ) .
 \end{verbatim}
 
 \end{footnotesize}
@@ -424,15 +430,18 @@ Acao: up(3)
 
 \begin{itemize}
   \item O que efetivamente voce precisa saber
+  
   \pause
   \item Importar um módulo \\
-\texttt{import planner.}
-  \pause
-  \item O predicado: \textit{final}\\
-    \texttt{final(S,Plan,Cost) => Plan=[], Cost=0, final(S).}
+   \textbf{\texttt{import planner.}}
+
+   \pause
+   \item O predicado: \textit{final}\\
+    \textbf{\texttt{final(S,Plan,Cost) => Plan=[], Cost=0, final(S).}}
+   
     \pause
-  \item O predicado \textit{action}\\
-    \texttt{action(S,NextS,Action,ActionCost)}
+    \item O predicado \textit{action}\\
+    \textbf{\texttt{action(S,NextS,Action,ActionCost)}}
 
 \end{itemize}
 \end{frame}
@@ -443,13 +452,14 @@ Acao: up(3)
 
 \begin{itemize}
 
- \item A eficiência do planner do Picat se dá devido a sua combinação
-       de técnicas: busca em profundidade (e variações) e Programação
-       Dinâmica (PD), com o \textit{tabling}
+ \item A \textcolor{magenta}{\textbf{eficiência}} do planner do Picat se dá devido a sua combinação
+       de técnicas: \textcolor{magenta}{busca em profundidade} (e variações) e \textcolor{magenta}{Programação
+       Dinâmica (PD)} (uso do \textit{tabling})
+
+
   \pause 
   \item O núcleo de busca dos planejadores  disponíveis no Picat são de 2 tipos:
   \begin{enumerate}
-
     \item Usam um busca em profundidade com limites (\textit{Depth-Bounded Search})
     \item Usam um busca em profundidade ilimitada de recursos (\textit{Depth-Unbounded Search}) 
   \end{enumerate}
@@ -471,18 +481,22 @@ Acao: up(3)
 
 
 \begin{itemize}
-  \item Outros métodos para se resolver estes problemas
+  \item Planejamento resolve uma classe ampla de problemas\\
+   Havendo necessidade de
+    \textcolor{magenta}{\textbf{descobrir sequências ações}} $\Leftrightarrow$ \textcolor{violet}{Planejamento}
+
   \pause
-  \item Mas perdemos na portabilidade de usar em outros planejadores
+  \item Em geral, estes problemas são importantes na indústria
+
   \pause
   \item Os modelos escritos em PDDL (\textit{Planning Domain Definition Language})
   facilmente portáveis para Picat
     \pause
   \item Sob um uso mais restrito, um modelo em PDDL é executado diretamente em Picat
-   % \pause
-  %\item 
+    
+  \pause
+  \item Na próxima seção uma outra técnica de resolver problemas: \textbf{\underline{PR}}
 \end{itemize}
 
 \end{frame}
-
 

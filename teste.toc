@@ -1,2 +1,2 @@
 \babel@toc {brazilian}{}
-\beamer@sectionintoc {1}{Buscas}{2}{0}{1}
+\beamer@sectionintoc {1}{Programa\IeC {\c c}\IeC {\~a}o por Restri\IeC {\c c}\IeC {\~o}es}{2}{0}{1}

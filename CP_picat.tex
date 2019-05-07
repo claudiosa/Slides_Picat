@@ -13,6 +13,8 @@
         \item Princípios
         \item 03 exemplos
         \item 03 técnicas
+        \item Aprendizagem da PR via estudos de casos
+        \item Vamos dividir esta seção 
     \end{itemize}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
@@ -35,19 +37,19 @@
    \begin{block}{}
      \begin{itemize}
      
-      \item A Programação por Restrições (PR) é conhecida por \textit{Constraint Programming} ou simplesmente \textbf{CP}
+      \item A \textcolor{magenta}{Programação por Restrições} (PR) é conhecida por \textcolor{magenta}{\textit{Constraint Programming}} 
+      ou simplesmente \textbf{CP}
 
       \pause
       \item Uma poderosa teoria (e técnica)  que  contorna a complexidade de certos problemas
       exponenciais
-      
-       
+             
       \pause
-      \item A PR encontrava-se inicialmente dentro da IA e PO, mas como várias outras, tornaram-se
+      \item A \textbf{\textcolor{magenta}{PR}} encontrava-se inicialmente dentro da IA e PO, mas como várias outras áreas, tornaram-se
       fortes e autônomas. Atualmente uma área de pesquisa bem forte em alguns países.
       
       \pause
-      \item Nesta seção, temos 3 exemplos ilustrar conceitos da PR
+      \item Nesta seção, temos 3 exemplos ilustrar conceitos da \textbf{\textcolor{magenta}{PR}}
     \end{itemize}
     
     \end{block}
@@ -65,16 +67,17 @@
    \begin{block}{}
      \begin{itemize}
 
-      \item Aproximadamente o algoritmo da PR é dado:
+      \item \textcolor{magenta}{\textit{Aproximadamente}} o algoritmo da \textbf{\textcolor{magenta}{PR}} é dado:
        \pause       
           \begin{enumerate}
 
             \item Avaliar algebricamente  os domínios das variáveis com suas restrições
 
-            \item Intercala iterativamente a \textsf{propagação de restrições} com 
-                  um \textsf{algoritmo de busca}
+            \item Intercala iterativamente a \textcolor{magenta}{\textsf{propagação de restrições}} com 
+                  um \textcolor{magenta}{\textsf{algoritmo de busca}}
 
-            \item A cada variável instanciada, o processo é repetido sobre as demais variáveis, reduzindo progressivamente o espaço de busca
+            \item A cada variável instanciada, o processo é repetido sobre as demais variáveis, 
+            reduzindo progressivamente o espaço de busca
 
             \item Volte ao passo inicial até que os domínios permaneçam estáticos
             e que as variáveis apresentem instâncias consistentes
@@ -85,7 +88,9 @@
        \item Este núcleo é uma busca por constantes otimizações
 
         \pause
-       \item Uma das virtudes da PR: a legibilidade e clareza de suas soluções
+       \item Uma das virtudes da \textcolor{magenta}{PR}: 
+       a legibilidade e clareza de suas soluções, conhecidos
+       como \textcolor{magenta}{\textbf{modelos}}
        
     \end{itemize}
     
@@ -101,20 +106,16 @@
    \begin{block}{}
      \begin{itemize}
     \item Problemas combinatoriais com domínio nos inteiros são bons candidatos a serem
-       resolvidos por PR
+       resolvidos por \textcolor{magenta}{PR}
+      
        \pause
-       \item Quando temos problemas que precisamos conhecer \textbf{todas} as respostas, 
+       \item Quando temos problemas que precisamos conhecer \textcolor{magenta}{\textbf{todas}} as respostas, 
     não apenas a melhor resposta
     
       \pause
-      \item Quando necessitamos de respostas \textit{precisas} e não apenas as aproximadas.
+      \item Quando necessitamos de respostas \textcolor{magenta}{\textit{precisas}} e não apenas as aproximadas.
        Há um custo  computacional a ser pago aqui!
-        
-        \pause
-        \item
-
-
-
+      
     \end{itemize}
     \end{block}
     
@@ -187,33 +188,33 @@
     
 \end{frame}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[fragile]
 %[fragile, allowframebreaks=0.9]
 \frametitle{Conceitos}
 
 \begin{block}{A PR tem os seguintes elementos:}
-\pause
-\begin{itemize}
-  \item Um conjunto de \textbf{variáveis}: $X_1$, $X_2$, $X_3$, ..., $X_n$ 
+    \pause
+    \begin{itemize}
+    \item Um conjunto de \textbf{variáveis}: $X_1$, $X_2$, $X_3$, ..., $X_n$ 
 
-  \pause
+    \pause
     \item Um conjunto de \textbf{domínios} dessas variáveis: $D_{X_1}$, $D_{X_2}$, $D_{X_3}$, ..., $D_{X_n}$
 
     \pause
-      \item Finalmente, as \textbf{restrições}, que são relações n-árias entre estas variáveis
-      
-       \pause
-      \item Exemplo: $D_{X_1} = D_{X_2}= \{3,4\}$ e $X_1 \neq X_2$
-      
+    \item Finalmente, as \textbf{restrições}, que são relações n-árias entre estas variáveis
+
+     \pause
+    \item Exemplo: $D_{X_1} = D_{X_2}= \{3,4\}$ e $X_1 \neq X_2$
+
 \end{itemize}
 
 \end{block}
     
 \end{frame}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
 %[fragile, allowframebreaks=0.9]
 \frametitle{PR e Picat}
@@ -229,10 +230,12 @@
      \end{itemize}  
       
       \pause
-     \item Em resumo, as relações da PR tem o símbolo `{\#}' 
+     \item Em resumo, as relações da PR tem o símbolo `\textbf{\textcolor{magenta}{{\#}}}' 
 
   \pause
-  \item Para tornar toda esta sintaxe da PR disponível, Picat tem um módulo para suporte da PR: \texttt{import cp}
+  \item Para tornar toda esta sintaxe da PR disponível, Picat 
+        tem um módulo para suporte da PR:\\
+         \textcolor{magenta}{\texttt{import cp}}
     
 \end{itemize}
 
@@ -240,20 +243,47 @@
     
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile] 
+
+\frametitle{Exemplos}
+\begin{block}{}
+\begin{enumerate}
+  \item Soma de dois números primos (problema \textit{ad-hoc})
+  
+  \pause
+  \item Escala (simplificada) de consultórios médicos (uso de
+  matriz)
+    
+  \pause
+  \item Caixeiro-viajante (uso de matriz binária de decisão) -- diferente
+  da solução do Hakank, aqui discutida
+      
+\end{enumerate}
+\end{block}
+
+  \begin{center}
+  \textbf{\textcolor{magenta}{Basicamente, 3 problemas distintos!}}
+  \end{center}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{frame}[fragile] 
 
 \frametitle{Exemplo -- 01 -- Soma de Números Primos}
 
 \begin{itemize}
-  \item Dado um número par qualquer, encontre  dois de números primos, $N_1$ e $N_2$,
+  \item Dado um número par qualquer, $N_{PAR}$, encontre  dois de números primos, $N_1$ e $N_2$,
 diferentes entre si, que somados deêm este número 
 par.
 
 \pause
 \item Exemplo:\\
 Seja o PAR = 18\\
-Uma soluç~ao:\\
+Uma solução:\\
 $N_1 = 7$  e $N_2 = 11$\\
 pois\\
 $N_1 + N_2 = 18$
@@ -316,7 +346,17 @@ modelo =>
 \end{verbatim}
 \end{footnotesize}
    
-   Uma ótima estratégia: sair com um domínio de números candidatos!
+   
+   
+   \begin{itemize}
+   \pause
+     \item Uma ótima estratégia: sair com um \textbf{\textcolor{magenta}{domínio de números candidatos}}!
+   \pause
+     \item O par da entrada: \textcolor{magenta}{\textbf{382}}
+
+     \item Quanto maior este valor, maior o número de soluções?
+   \end{itemize}
+
     
 \end{frame}
 %%%%%%%%%%%%%%%%%
@@ -452,11 +492,11 @@ tal que alguns requisitos sejam atendidos (restrições  satisfeitas)
   preenchida com um destes códigos.
    
   \pause
-  \item Vamos utilizar restrições globais: \texttt{member} e \texttt{all\_different}
+  \item Vamos utilizar restrições globais: \textcolor{magenta}{\texttt{member}} e 
+  \textcolor{magenta}{\texttt{all\_different}}
 
   \pause
   \item As restrições globais se aplicam sobre um conjunto de variáveis.
-
 
 \end{itemize}
 
@@ -701,16 +741,17 @@ sys	0m0,013s
 apenas com Colônia de Formigas (técnica da Computação Evolucionária)
 
 \pause
-\item Neste exemplo o Problema do Caixeiro-Viajante
- (do inglês: TSP -- \textit{Travelling Salesman Problem}) é discutido com \textbf{dois modelos da PR} destacando dois pontos desta técnica:
+\item Neste exemplo o \textcolor{magenta}{Problema do Caixeiro-Viajante}
+ (do inglês: TSP -- \textit{Travelling Salesman Problem}) é discutido com \textcolor{magenta}{\textbf{dois modelos da PR}} 
+ destacando dois pontos desta técnica:
 
 \begin{itemize}
-  \item  Uso de outras restrições globais: \texttt{element} e \texttt{circuit}
-  \item Uso de variáveis de decisão binária. No exemplo: uma matriz binária. 
+  \item  Uso de outras restrições globais: \textcolor{magenta}{\texttt{element}} e \textcolor{magenta}{\texttt{circuit}}
+  \item Uso de variáveis de decisão binária, neste exemplo, uma matriz binária. 
 \end{itemize}
 
 \pause
-\item Tecnicamente um problema com muitas aplicações similares! 
+\item Tecnicamente, este problema tem muitas aplicações similares! 
 \end{itemize}
 
 \end{frame}
@@ -751,7 +792,8 @@ apenas com Colônia de Formigas (técnica da Computação Evolucionária)
   em qualquer livro da área de combinatória, PO, e modelagem matemática
 
   \pause
-  \item Contudo, duas novas restrições globais são usadas e precisam ser entendidas:    \texttt{element} e \texttt{circuit}
+  \item Contudo, duas novas restrições globais são usadas e precisam ser entendidas:    \textcolor{magenta}{\texttt{element}} e 
+  \textcolor{magenta}{\texttt{circuit}}
 
 \end{itemize}
 
@@ -1002,7 +1044,13 @@ tsp_D(Matriz, Cidades, M_Decisao, Custo) =>
   foreach(I in 1..Len)
     sum([M_Decisao[I,J] : J in 1..Len, I != J]) #= 1
   end,     
+\end{verbatim}
+\end{footnotesize}
 
+\pause
+
+\begin{footnotesize}
+\begin{verbatim}
 % Para todas colunas, a soma das linhas é igual a 1  
 % UMA: uma chegada ao nó de destino e somente UMA chegada
   foreach(J in 1..Len)
@@ -1088,22 +1136,23 @@ foram apresentadas!}
 
 \begin{itemize}
   \item Há outros métodos para se resolver estes problemas.\\
-  Exemplo: Programação Linear, Buscas Heurísticas, etc
+  Exemplo: Programação Linear, Buscas Heurísticas, AGs, Busca Gulosa  etc
 
   \pause  
-  \item As restrições globais se aplicam sobre um conjunto de variáveis
+  \item As \textcolor{magenta}{restrições globais} se aplicam sobre um conjunto de variáveis
   e há muitas outras importantes disponíveis no Picat
 
   \pause
-  \item A área é extensa, contudo, Picat adere há todos requisitos da PR
+  \item A área é extensa e \textcolor{magenta}{Picat adere há todos requisitos da PR}
 
   \pause
   \item Resumo da PR: segue por uma notação/manipulação algébrica restrita,
         simplificar e bissecionar as restrições, instanciar variáveis, 
-        verificar inconsistências,
-        avançar sobre as demais variáveis, até que todas 
+        verificar inconsistências,   avançar sobre as demais variáveis, até que todas 
         estejam instanciadas.
   
-\end{itemize}
+  \pause
+  \item Enfim, agora é o momento de praticar e aprimorar os conhecimentos $\Rightarrow$ Bons códigos!
 
+\end{itemize}
 \end{frame}

@@ -7,9 +7,11 @@
 \frametitle{Programação Dinâmica}
 \begin{minipage}{0.47\textwidth}
     \begin{itemize}
-        \item O que é PD?
+        \item O que é a PD?
+        \item Características
         \item Importância
         \item Exemplo
+        
     \end{itemize}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
@@ -24,37 +26,29 @@
 
 
 \begin{frame}[fragile]
-\frametitle{Programação Dinâmica}
-
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=0.95\textwidth, height=0.70\textheight]{figures/ilustra_PD.png}
-\caption{Conceitos da Programação Dinâmica -- (PD)}
-\end{figure}
-\end{frame}
-
-
-\begin{frame}[fragile]
 %[fragile, allowframebreaks=0.9]
 
     \frametitle{Programação Dinâmica (PD) -- I}
 
    \begin{block}{}
      \begin{itemize}
-      \item Uma poderosa técnica de programação que  contorna a complexidade de certos problemas
+      \item Uma poderosa \textcolor{magenta}{\textit{técnica de programação}}  que  contorna a complexidade de certos problemas
       exponenciais
       
        \pause
-       \item O problema \textbf{deve} apresentar uma \textit{\underline{regra de recorrência}}
+       \item O problema \textbf{deve} apresentar uma \textcolor{magenta}{\textit{\underline{regra de recorrência}}}
        
       \pause
       \item A idéia é que todos os cálculos feitos a partir desta \textit{regra de recorrência},
-      são consultados e armazenados numa \textit{tabela dinâmica}
+     sejam armazenados numa \textit{tabela dinâmica} e consultados para reuso de novos cálculos de outras
+      instâncias
       
       \pause
-      \item Esta técnica de utilizar uma \textit{tabela dinâmica} nos cálculos intermediários,
+      \item Esta \textcolor{magenta}{\textit{técnica de programação}} 
+      utiliza uma \textit{tabela dinâmica} nos cálculos intermediários,
       evitando a repetição do que já foi calculado anteriormente, é conhecida como:
-      Programação Dinâmica, ou simplesmente: PD
+      \textcolor{magenta}{Programação Dinâmica}, ou simplesmente:
+       \underline{\textcolor{magenta}{\textbf{PD}}}
 
     \end{itemize}
     
@@ -64,11 +58,25 @@
 
 
 
+\begin{frame}[fragile]
+\frametitle{Programação Dinâmica (PD) -- II}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.95\textwidth, height=0.70\textheight]{figures/ilustra_PD.png}
+\caption{Conceitos da Programação Dinâmica -- (PD) -- Resumos}
+\end{figure}
+\end{frame}
+
+
+
+
+
 
 \begin{frame}[fragile]
 %[fragile, allowframebreaks=0.9]
 
-    \frametitle{Programação Dinâmica (PD) -- II}
+    \frametitle{Programação Dinâmica (PD) -- III}
 
    \begin{block}{}
      \begin{itemize}
@@ -77,11 +85,13 @@
       natural do que esta ter a PD disponível 
 
        \pause
-       \item O comando que cria uma tabela para um determinado predicado é o  \textit{tabling}
+       \item O comando que cria uma tabela para um determinado predicado é o  \textcolor{magenta}{\textbf{\textit{tabling}}}
  
         \pause
        \item O \textit{tabling}  é um dos elementos fortes do planejador do Picat (módulo \textit{planner})
 
+        \pause
+       \item Assim a PD, faz a complexidade ser espacial devido o uso de memória em seus cálculos intermediários
 
         \pause
        \item O exemplo escolhido para ilustrar a PD em Picat, veio do texto \textit{Modeling and Solving AI
@@ -99,10 +109,8 @@
 
 \frametitle{Exemplo de Uso da Programação Dinâmica -- (PD)}
 
-
-
 \begin{itemize}
-  \item Seja o binômio ${\left(x + y\right)}^n$, conhecido \textit{Binômio de Newton}
+  \item Seja o binômio ${\left(x + y\right)}^n$, conhecido como \textit{Binômio de Newton}
 
   \pause 
   \item Casos particulares são:
@@ -114,12 +122,11 @@
   \item  ${\left(x + y\right)}^2 = x^2y^0 + 2x^1y^1 + x^0y^2$
   \item  ${\left(x + y\right)}^3 = x^3y^0 + 3x^2y^1 + 3x^1y^2 + x^0y^3$
   \item  ${\left(x + y\right)}^4 = x^4y^0 + 4x^3y^1 + 6x^2y^2 + 4x^1y^3 + x^0y^4.$
-    \item  .......
-    \pause
+  \item  .......
+  \pause
  \item Como obter estes coeficientes  polinômios?  
 
 \end{itemize}
-
     
 \end{frame}
 
@@ -184,7 +191,7 @@ $$ {n \choose k}= \frac {n!}{k!(n-k)!}=\frac {n(n-1)(n-2)\cdots(n-k+1)}{k!}$$
 \begin{itemize}
   \item Alternativa ao cálculo do fatorial, tem-se a relação de Stiffel:
 
-$$ {n\choose k}={n-1\choose k-1}+{n-1\choose k}$$
+ $$ {n\choose k}={n-1\choose k-1}+{n-1\choose k}$$  
     
 
 \pause
@@ -192,21 +199,19 @@ $$ {n\choose k}={n-1\choose k-1}+{n-1\choose k}$$
   termo na linha $n$ e coluna $k$ é  dado por: ${n-1 \choose k-1}$
   
   \pause
-  \item A fórmula de Stiffel é recorrente, e diretamente escrita em Picat.\\
-  Veja os códigos.
+  \item A fórmula de Stiffel é \textcolor{red}{recorrente} e diretamente escrita em Picat.\\
+  Veja os códigos ...
 \end{itemize}   
     
 \end{frame}
-
-
 
 
 \begin{frame}[fragile] 
 
 \frametitle{Código em Partes}
 
+\begin{footnotesize}
 \begin{verbatim}
-
 import datetime.   %%% para o statistics
 import util.
 
@@ -215,9 +220,17 @@ table
 c(_, 0) = 1.
 c(N, N) = 1.
 c(N,K) = c(N-1, K-1) + c(N-1, K).
-
 \end{verbatim}
-    
+\end{footnotesize}    
+
+\begin{center}
+\textcolor{magenta}{Esta fórmula é semelhante com a sequência de Fibonacci, vista
+na seção de recursividade, mas aqui temos 2 argumentos em \texttt{c(N,K)}. 
+Logo, o número de 
+variações de cada coeficiente \texttt{c(N,K)}, 
+cresce muito os cálculos repetidos!}
+\end{center}
+
 \end{frame}
 
 
@@ -290,8 +303,6 @@ main => printf("\n Para uma solução .... !!!!" ) .
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{frame}[fragile]
 \frametitle{Reflexões sobre PD}
 
@@ -300,10 +311,16 @@ main => printf("\n Para uma solução .... !!!!" ) .
   \item Há outros métodos para se resolver estes problemas
 
   \pause
-  \item O comando \textit{tabling} é a base do módulo \textit{planner}
+  \item O comando \textit{tabling} é a base do módulo \textit{planner},
+  usado para resolver \underline{problemas de planejamento}
 
-   \pause
-  \item Uma estratégia de programação bem poderosa
+  \pause
+  \item A PD é uma estratégia de programação bem poderosa
+  
+  \pause
+  \item Assunto das próximas seções:  \underline{Planejamento} e PR
+
+  
 \end{itemize}
 
 \end{frame}

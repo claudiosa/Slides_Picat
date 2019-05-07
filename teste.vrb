@@ -1,31 +1,23 @@
-\frametitle{Concluindo Buscas}
+\frametitle{Resumindo a PR}
 
-\begin{block}{}
 \begin{itemize}
-
-
-  \item A recursividade na modelagem das buscas,
-  define \textcolor{magenta}{\textbf{uma metodologia}} de
-   se \textit{programar em lógica} e resolver problemas
-
+  \item Há outros métodos para se resolver estes problemas.\\
+  Exemplo: Programação Linear, Buscas Heurísticas, AGs, Busca Gulosa  etc
 
   \pause
-  \item A área de buscas é ampla e apresenta muitas variações. Apresentamos
-  nesta seção um \textcolor{magenta}{\textbf{núcleo mágico}}, que pode ser utilizado em muitas outras
-  estrategias--métodos de buscas.
-
+  \item As \textcolor{magenta}{restrições globais} se aplicam sobre um conjunto de variáveis
+  e há muitas outras importantes disponíveis no Picat
 
   \pause
-  \item Praticamente todos os métodos de buscas fazem o uso extensivo das
-  \textcolor{magenta}{\textbf{listas}} em problemas complexos
+  \item A área é extensa e \textcolor{magenta}{Picat adere há todos requisitos da PR}
 
   \pause
-  \item Aos problemas complexos, há outras técnicas de programação
-  para resolvê-los.
+  \item Resumo da PR: segue por uma notação/manipulação algébrica restrita,
+        simplificar e bissecionar as restrições, instanciar variáveis,
+        verificar inconsistências,   avançar sobre as demais variáveis, até que todas
+        estejam instanciadas.
 
   \pause
-  \item Assunto das próximas seções: \underline{PD}, Planejamento e CP
+  \item Enfim, agora é o momento de praticar e aprimorar os conhecimentos $\Rightarrow$ Bons códigos!
+
 \end{itemize}
-
-\end{block}
-

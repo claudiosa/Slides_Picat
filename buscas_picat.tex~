@@ -7,7 +7,10 @@
 \frametitle{Buscas}
 \begin{minipage}{0.47\textwidth}
     \begin{itemize}
-        \item Conceituar buscas
+        \item O que é uma \textit{busca}?
+        \item Problemas $\Rightarrow$ buscar ...
+        \item Buscas em estruturas quaisquer
+        \item Listas são o suficiente!
         \item Núcleo das buscas
         \item Exemplo
     \end{itemize}
@@ -33,7 +36,14 @@
      \begin{itemize}
       \item Requisito: conceitos de listas e recursividade  dominados!
        \pause
-      \item Além destes: conceitos grafos, árvores de busca, nós, etc
+      \item Além destes: noções sobre grafos, árvores, nós, etc
+
+       \pause
+      \item Solucionar problemas implicar em percorrer estados (um caminho)
+      que levem há um estado--solução      
+      
+       \pause
+      \item Grosseiramente: \textbf{\textcolor{magenta}{estados de problemas $\Leftrightarrow$ estruturas abstratas}}
          
        \pause
       \item Pois, problemas em geral
@@ -42,7 +52,7 @@
       sob uma \textit{árvore de busca}
       \pause
       
-     \item Então, computar listas em Picat, é a nossa estratégia
+     \item Então, computar listas em Picat é uma estratégia
      de resolver problemas!
 
     \end{itemize}
@@ -58,7 +68,7 @@
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.60\textwidth, height=0.650\textheight]{figures/ilhas_euler.jpeg}
+\includegraphics[width=0.560\textwidth, height=0.50\textheight]{figures/ilhas_euler.jpeg}
 %%%prolog/scale=0.47
 %\label{fig_nos_estados}
 \caption{Ciclo Euleriano -- Problema das Pontes de Königsberg}
@@ -80,7 +90,8 @@ qualquer uma das pontes.
 \item  Embora intrigante, este problema foi atacado por Leonard Euler (1736) e demonstrou
 que isto não era possível para um grafo qualquer
 
-\item Curiosamente, este problema, computacionalmente é \underline{\textit{fácil}} de resolver!
+\item Curiosamente, este problema é \underline{\textit{fácil}} de resolver. Euler demonstrou
+uma relação entre vértices e arestas para que isto fosse possível.
 \end{itemize}
 
 \end{frame}
@@ -88,7 +99,7 @@ que isto não era possível para um grafo qualquer
 
 
 \begin{frame}[fragile, allowframebreaks=0.9]
-  \frametitle{Caminho Hamiltoniano}
+ \frametitle{Caminho Hamiltoniano}
 
 
 \begin{figure}[!htb]
@@ -103,8 +114,8 @@ que isto não era possível para um grafo qualquer
 \framebreak
 
 \begin{itemize}
-  \item Diferente do ciclo Euleriano, o caminho Hamiltoniano, origem
-  e destino são diferentes
+  \item \textcolor{magenta}{\textbf{Diferente}} do ciclo Euleriano, o caminho Hamiltoniano, \textcolor{magenta}{origem
+  e destino são diferentes}
  
 \item Todos os nós precisam ser visitados uma única vez sem repetição
 
@@ -113,7 +124,7 @@ que isto não era possível para um grafo qualquer
 
 \item Ao contrário do ciclo Euleriano, este problema, computacionalmente é \underline{\textit{difícil}} de resolver!
 
-\item Mas é este que vamos usar como exemplo, com um algoritmo  ingênuo.
+\item Vamos usar o caminho Hamiltoniano como exemplo, para construir um algoritmo  ingênuo, mas que funciona bem!
 \end{itemize}
 
 \end{frame}
@@ -127,7 +138,7 @@ Contextualizando estes termos:
 \begin{itemize}
 
   \item Em geral, problemas podem ser vistos como \textit{fotografias 
-  instantâneas} de uma situação, isto é, \textbf{um estado discreto}
+  instantâneas} de uma situação, isto é, \textcolor{magenta}{\textbf{um estado discreto}}
    
   \item Uma \textit{sucessão} destes estados, compõem \textit{um caminho} de um estado $i$ ao estado $j$
   
@@ -157,30 +168,70 @@ Contextualizando estes termos:
 
 %%%%%%%%%%%%%%
 
+
 \begin{frame}[fragile]
-\frametitle{Problemas de Grafos se Transformam em Árvores de Buscas}
+\frametitle{Problema do Robô no Labirinto}
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=.99\textwidth, height=0.55\textheight]{figures/espaco-estado-arvore.jpg}
+\includegraphics[width=.79\textwidth, height=0.45\textheight]{figures/labirinto_robo.png}
 %%%prolog/scale=0.47
 %\label{fig_nos_estados}
-\caption{Google ...}
+%\caption{Google ...}
 \end{figure}
 
-\textcolor{red}{Resumindo, os problemas são modelados  em 
-estruturas  complexas, tais como grafos, mas o processo de solução
-se mantém: realizar uma busca, tal como uma estrutura de uma árvore }
+\textcolor{magenta}{Imagine qualquer problema: uma busca na WEB,
+atomicidade de transações de BD, máquina de café, carro autônomo, etc }
 
 \end{frame}
 
 
 
+\begin{frame}[fragile]
+\frametitle{Problemas de Grafos se Transformam em Árvores de Buscas}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth, height=0.55\textheight]{figures/arv_buscas_estados.png}
+\end{figure}
+
+\textcolor{magenta}{Resumindo, os problemas são modelados  em 
+estruturas  complexas, tais como grafos, mas o processo de solução
+se mantém: \textbf{realizar uma busca, tal como uma estrutura de uma árvore (listas)} !}
+
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Problemas de Grafos se Transformam em Árvores de Buscas}
+
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.7\textwidth, height=0.55\textheight]{figures/arv_buscas_finais.png}
+\end{figure}
+
+% \begin{minipage}{0.5\textwidth}
+% \begin{figure}[ht!]
+% \begin{center}
+% \includegraphics[width=0.7\textwidth, height=0.30\textheight]{figures/busca_grafo.png}
+% \end{center}
+% \end{figure}
+% \end{minipage}
+% \end{frame}
+%
+\begin{center}
+\textcolor{magenta}{Assim, a idéia é percorrer os \textbf{ramos destas  árvores}, de maneira
+sistemática. Um \textbf{caminho} da raiz há um nó terminal de interesse, este é uma solução do
+problema. Logo, tudo se resume em manipular muitas \textbf{listas}!}
+\end{center}
+
+\end{frame}
+
 
 \begin{frame}[fragile, allowframebreaks=0.9]
   \frametitle{Núcleo Geral de Buscas}
-
-
 
 \textcolor{red}{Pseudo-código já em Picat}
 
@@ -257,19 +308,23 @@ em Blumenau, passando por algumas destas cidades uma única vez!
 
 
 \begin{frame}[fragile, allowframebreaks=0.9]
- \frametitle{\textit{O nosso viajante}}
+
+\frametitle{Modelagem do Problema -- \textit{O nosso viajante do Vale do Itajaí}}
 
 \begin{itemize}
   \item Em nosso problema temos 7 cidades pré-escolhidas
 
   \item A lista de cidades são:
-  \begin{verbatim}
+\begin{footnotesize}
+ \begin{verbatim}
 index(-) %% lista de todas cidade do mapa
 as_cidades( [ brusque, blumenau, itajai, luiz_alves,
             jaragua, sao_bento, joinville ] ).
 \end{verbatim}
+ \end{footnotesize}
 
-  \item  Duas cidades em particular
+\item  Duas cidades em particular:
+\begin{footnotesize}
 \begin{verbatim}
 index(-)
 destino( blumenau ).
@@ -277,11 +332,12 @@ destino( blumenau ).
 index(-)
 origem( joinville ).
 \end{verbatim}  
-
+\end{footnotesize}
   
 \item As estradas transitáveis entre as cidades definem
   o nosso mapa, consequentemente um grafo entre
   cidades:
+\begin{footnotesize}
 \begin{verbatim}
 %% MAPA da região
 index(-,-)
@@ -298,14 +354,27 @@ arco(blumenau, itajai)      .
 arco(brusque, itajai)       .
 arco(brusque, blumenau)     .
 \end{verbatim} 
-  
-\item Claro, este problema é pequeno e construindo o grafo dá para perceber que existe
-algumas soluções
+\end{footnotesize}  
 
-  \item Para resolver este problema vamos utilizar uma \textit{busca em profundidade}
+\item As estradas entre as cidades são bidirecionais. Se  há estrada para ir
+da cidade $X$ a cidade $Y$ então na outra direção é verdadeiro.
+Em regras isto é escrito por:
+\begin{footnotesize}
+\begin{verbatim}
+/* BI-DIRECIONALIDADE DOS ARCOS */
+move_no(X,Y) ?=> arco(X,Y).
+move_no(X,Y)  => arco(Y,X).
+\end{verbatim} 
+\end{footnotesize}  
+
+\item Claro, este problema é pequeno e construindo o grafo dá para constatar que existe
+mais uma solução para o nosso viajante
+
+  \item Para resolver este problema vamos utilizar uma \textbf{\textcolor{magenta}{busca em profundidade}}
   
-  \item Esta \textit{busca em profundidade}, encontra-se inserida no contexto buscas em geral,
-  visto anteriormente
+  \item Esta \textbf{\textcolor{magenta}{busca em profundidade}}  (do inglês. \textit{depth first search -- DFS}), 
+  encontra-se inserida no contexto \textit{buscas em geral},
+  visto anteriormente.
 \end{itemize}
 
 
@@ -346,8 +415,42 @@ busca_DFS (  [NoH | Caminho], Solucao) =>
   \item Acompanhar as explicações do código de:\\
 \url{https://github.com/claudiosa/CCS/blob/master/picat/hamiltoniano_DFS.pi}
 
-  \item Confira a execuç\~ao
+   \item Muitos elementos da linguagem neste código
+
+  \item Confira a execução
 \end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]
+\frametitle{Saída}
+
+\begin{footnotesize}
+\begin{verbatim}
+$ picat hamiltoniano_DFS.pi 
+..............................
+[blumenau,brusque,itajai,luiz_alves,jaragua,sao_bento,joinville] 
+ UMA SOLUCAO ....: OK
+ ==>joinville : sao_bento : jaragua : luiz_alves : itajai : brusque 
+ : blumenau : 
+ Cidade Inicial: joinville 
+ Cidade Final: blumenau
+ Total de cidades visitadas: 7
+ CPU time 0.000000 em SEGUNDOS 
+ OVERALL PICAT CPU time 0.013000 em SEGUNDOS 
+ Backtrackings total 0  
+ =========================================
+ [ccs@gerzat picat]$ 
+\end{verbatim}
+\end{footnotesize}
+
+\begin{center}
+\textcolor{magenta}{Existe uma função chamada \textbf{findall}, cujo valor
+de retorno é uma lista com todas soluções possíveis de um dado predicado!}
+\end{center}
+
 \end{frame}
 
 
@@ -375,23 +478,30 @@ busca_DFS (  [NoH | Caminho], Solucao) =>
 \begin{itemize}
   
   
-  \item A recursividade na modelagem das buscas, define uma metodologia de se \textit{programar em lógica} e resolver problemas
-    \pause
-  \item Exercitar-se para aprender os detalhes!
-    \pause
-  \item Há o uso extensivo de listas em problemas complexos
+  \item A recursividade na modelagem das buscas, 
+  define \textcolor{magenta}{\textbf{uma metodologia}} de
+   se \textit{programar em lógica} e resolver problemas
+ 
+ 
+  \pause
+  \item A área de buscas é ampla e apresenta muitas variações. Apresentamos
+  nesta seção um \textcolor{magenta}{\textbf{núcleo mágico}}, que pode ser utilizado em muitas outras
+  estrategias--métodos de buscas. 
+  
+  
+  \pause
+  \item Praticamente todos os métodos de buscas fazem o uso extensivo das 
+  \textcolor{magenta}{\textbf{listas}} em problemas complexos
   
   \pause
   \item Aos problemas complexos, há outras técnicas de programação
   para resolvê-los.
-  
-  
+    
   \pause
-  \item Assunto das próximas seções!
+  \item Assunto das próximas seções: \underline{PD}, Planejamento e CP
 \end{itemize}
 
 \end{block}
 
 \end{frame}
-
 
