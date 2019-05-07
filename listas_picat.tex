@@ -220,12 +220,35 @@ há  problemas em geral (dos simples a complexos)
 
 
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+
+\frametitle{Exemplos sobre Listas (e Implementações)}
+
+\begin{enumerate}
+  \item Comprimento de uma lista: retorna um valor numérico
+  
+  \pause
+  \item Se um elemento $x$ pertence a lista: retorna um valor binário (\textit{true} ou \textit{false})
 
 
+  \pause
+  \item Adicionar um elemento $x$ em uma lista: retorna uma nova lista, o $x$ inserido nesta lista,
+  se $x$ já estiver presente, não insira. Em resumo: insere $x$ em $L$ sem repetição.
+
+  \pause
+  \item Concatena duas listas: retorna uma terceira lista
+  
+\end{enumerate}
+
+Em resumo: 4 métodos clássicos!
+
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[fragile, allowframebreaks=0.9]
-\frametitle{Exemplo: encontrar o comprimento de uma lista}
+\frametitle{Exemplo 01: encontrar o comprimento de uma lista}
  
 \begin{itemize}
    \item O comprimento de uma lista é o comprimento de sua \textbf{sub-lista}, mais \textbf{um}
@@ -272,7 +295,7 @@ compto([],N) & \#1 & -- & -- & -- & $\nwarrow$ 0\\\hline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}[fragile, allowframebreaks=0.9]
-\frametitle{Exemplo: verificar a pertinência de um objeto na lista}
+\frametitle{Exemplo 02: verificar a pertinência de um objeto na lista}
 
 \begin{itemize}
   \item Verifica se um dado objeto pertence há uma  lista
@@ -303,7 +326,7 @@ pode ser construído como:
 pertence_01( A, [A|_]) ?=> true. 
 % Again, backtracking CONTROLADO ... diferente do Prolog
 pertence_01(A,[B|L])  => 
-             A != B,
+             A != B ,
              pertence_01(A,L).
 \end{verbatim}
 
@@ -311,7 +334,7 @@ pertence_01(A,[B|L])  =>
 
 
 \begin{frame}[fragile, allowframebreaks=0.9]
-\frametitle{Exemplo: adicionar um elemento  em uma lista}
+\frametitle{Exemplo 03: adicionar um elemento  em uma lista}
 
 \begin{itemize}
   \item Um objeto é adicionado no início da lista (sem repeti\c{c}ão) caso este já
@@ -325,7 +348,7 @@ Em Picat, sob uma \underline{visão funcional}, esta função é escrita por:
 add_X_lista_02(X, [ ]) = [X]. 
 add_X_lista_02(X, Y) = Z =>
           pertence_02(X, Y) = true,
-          Z = Y;
+          Z = Y ;
           Z = [ X | Y ].
 \end{verbatim}
 
@@ -338,7 +361,7 @@ pode ser construído como:
 add_X_lista_01(X, [ ], Z )  ?=> Z = [X]. 
 add_X_lista_01(X, Y, Z) ?=>
           pertence_01(X, Y),
-          Z = Y.
+          Z = Y .
 add_X_lista_01(X, Y, Z) =>
           Z = [ X | Y ].
 
@@ -350,7 +373,7 @@ add_X_lista_01(X, Y, Z) =>
 
 
 \begin{frame}[fragile, allowframebreaks=0.9]
-\frametitle{Exemplo: união de duas listas}
+\frametitle{Exemplo 04: união de duas listas}
 
 \begin{itemize}
   \item O método de  união ou concatenação entre duas listas,
@@ -522,4 +545,3 @@ main => Status = command("clear") ,
 \end{block}
 
 \end{frame}
-

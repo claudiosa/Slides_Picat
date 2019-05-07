@@ -21,11 +21,11 @@
 \beamer@subsectionintoc {5}{1}{Recurs\IeC {\~a}o}{242}{0}{5}
 \beamer@subsectionintoc {5}{2}{\textit {Backtracking}}{258}{0}{5}
 \beamer@sectionintoc {6}{Listas}{276}{0}{6}
-\beamer@sectionintoc {7}{Buscas}{313}{0}{7}
-\beamer@sectionintoc {8}{Programa\IeC {\c c}\IeC {\~a}o Din\IeC {\^a}mica}{340}{0}{8}
-\beamer@sectionintoc {9}{Planejamento}{368}{0}{9}
-\beamer@sectionintoc {10}{Programa\IeC {\c c}\IeC {\~a}o por Restri\IeC {\c c}\IeC {\~o}es}{412}{0}{10}
-\beamer@sectionintoc {11}{Conclus\IeC {\~o}es}{503}{0}{11}
-\beamer@subsectionintoc {11}{1}{Faltando}{512}{0}{11}
-\beamer@subsectionintoc {11}{2}{Dicas de Programa\IeC {\c c}\IeC {\~a}o}{515}{0}{11}
-\beamer@subsectionintoc {11}{3}{Agradecimentos}{520}{0}{11}
+\beamer@sectionintoc {7}{Buscas}{317}{0}{7}
+\beamer@sectionintoc {8}{Programa\IeC {\c c}\IeC {\~a}o Din\IeC {\^a}mica}{349}{0}{8}
+\beamer@sectionintoc {9}{Planejamento}{377}{0}{9}
+\beamer@sectionintoc {10}{Programa\IeC {\c c}\IeC {\~a}o por Restri\IeC {\c c}\IeC {\~o}es}{421}{0}{10}
+\beamer@sectionintoc {11}{Conclus\IeC {\~o}es}{512}{0}{11}
+\beamer@subsectionintoc {11}{1}{Faltando}{521}{0}{11}
+\beamer@subsectionintoc {11}{2}{Dicas de Programa\IeC {\c c}\IeC {\~a}o}{524}{0}{11}
+\beamer@subsectionintoc {11}{3}{Agradecimentos}{529}{0}{11}

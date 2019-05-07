@@ -1,2 +1,2 @@
 \babel@toc {brazilian}{}
-\beamer@sectionintoc {1}{Listas}{2}{0}{1}
+\beamer@sectionintoc {1}{Buscas}{2}{0}{1}

@@ -1,20 +1,30 @@
-\frametitle{Concluindo Listas}
+\frametitle{Concluindo Buscas}
 
 \begin{block}{}
 \begin{itemize}
-  \item Há muitos predicados e funções prontas sobre listas nos módulos do Picat
+
+
+  \item A recursividade na modelagem das buscas,
+  define \textcolor{magenta}{\textbf{uma metodologia}} de
+   se \textit{programar em lógica} e resolver problemas
+
+
   \pause
-  \item Contudo, se aprende sobre listas, fazendo \textcolor{magenta}{\textbf{muitos}} métodos
-    \pause
-  \item A recursividade em sua modelagem, define a \textcolor{magenta}{metodologia de se \textit{programar em lógica}}
-    \pause
-  \item Exercitar-se para aprender os detalhes!
-    \pause
-  \item Usar as listas como estrutura base em problemas complexos
+  \item A área de buscas é ampla e apresenta muitas variações. Apresentamos
+  nesta seção um \textcolor{magenta}{\textbf{núcleo mágico}}, que pode ser utilizado em muitas outras
+  estrategias--métodos de buscas.
 
-     \pause
-  \item Próxima na aula: buscas (\textcolor{magenta}{\textbf{uso extensivo de listas}})
 
+  \pause
+  \item Praticamente todos os métodos de buscas fazem o uso extensivo das
+  \textcolor{magenta}{\textbf{listas}} em problemas complexos
+
+  \pause
+  \item Aos problemas complexos, há outras técnicas de programação
+  para resolvê-los.
+
+  \pause
+  \item Assunto das próximas seções: \underline{PD}, Planejamento e CP
 \end{itemize}
 
 \end{block}
