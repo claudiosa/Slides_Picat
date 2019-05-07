@@ -7,7 +7,8 @@
 \frametitle{Buscas}
 \begin{minipage}{0.47\textwidth}
     \begin{itemize}
-        \item Conceituar buscas
+        \item O que é \textit{busca}?
+        \item Buscas em árvores, grafos, etc
         \item Núcleo das buscas
         \item Exemplo
     \end{itemize}
@@ -33,7 +34,14 @@
      \begin{itemize}
       \item Requisito: conceitos de listas e recursividade  dominados!
        \pause
-      \item Além destes: conceitos grafos, árvores de busca, nós, etc
+      \item Além destes: noções sobre grafos, árvores, nós, etc
+
+       \pause
+      \item Solucionar problemas implicar em percorrer estados (um caminho)
+      que levem há um estado--solução      
+      
+       \pause
+      \item Grosseiramente: \textbf{\textcolor{magenta}{estados de problemas $\Leftrightarrow$ estruturas abstratas}}
          
        \pause
       \item Pois, problemas em geral
@@ -42,7 +50,7 @@
       sob uma \textit{árvore de busca}
       \pause
       
-     \item Então, computar listas em Picat, é a nossa estratégia
+     \item Então, computar listas em Picat é uma estratégia
      de resolver problemas!
 
     \end{itemize}
@@ -80,7 +88,8 @@ qualquer uma das pontes.
 \item  Embora intrigante, este problema foi atacado por Leonard Euler (1736) e demonstrou
 que isto não era possível para um grafo qualquer
 
-\item Curiosamente, este problema, computacionalmente é \underline{\textit{fácil}} de resolver!
+\item Curiosamente, este problema é \underline{\textit{fácil}} de resolver. Euler demonstrou
+uma relação entre vértices e arestas para que isto fosse possível.
 \end{itemize}
 
 \end{frame}
@@ -88,7 +97,7 @@ que isto não era possível para um grafo qualquer
 
 
 \begin{frame}[fragile, allowframebreaks=0.9]
-  \frametitle{Caminho Hamiltoniano}
+ \frametitle{Caminho Hamiltoniano}
 
 
 \begin{figure}[!htb]
@@ -103,8 +112,8 @@ que isto não era possível para um grafo qualquer
 \framebreak
 
 \begin{itemize}
-  \item Diferente do ciclo Euleriano, o caminho Hamiltoniano, origem
-  e destino são diferentes
+  \item \textcolor{magenta}{\textbf{Diferente}} do ciclo Euleriano, o caminho Hamiltoniano, \textcolor{magenta}{origem
+  e destino são diferentes}
  
 \item Todos os nós precisam ser visitados uma única vez sem repetição
 
@@ -113,7 +122,7 @@ que isto não era possível para um grafo qualquer
 
 \item Ao contrário do ciclo Euleriano, este problema, computacionalmente é \underline{\textit{difícil}} de resolver!
 
-\item Mas é este que vamos usar como exemplo, com um algoritmo  ingênuo.
+\item Vamos usar o caminho Hamiltoniano como exemplo, para construir um algoritmo  ingênuo, mas que funciona bem!
 \end{itemize}
 
 \end{frame}
@@ -127,7 +136,7 @@ Contextualizando estes termos:
 \begin{itemize}
 
   \item Em geral, problemas podem ser vistos como \textit{fotografias 
-  instantâneas} de uma situação, isto é, \textbf{um estado discreto}
+  instantâneas} de uma situação, isto é, \textcolor{magenta}{\textbf{um estado discreto}}
    
   \item Uma \textit{sucessão} destes estados, compõem \textit{um caminho} de um estado $i$ ao estado $j$
   
@@ -165,7 +174,7 @@ Contextualizando estes termos:
 \includegraphics[width=.99\textwidth, height=0.55\textheight]{figures/espaco-estado-arvore.jpg}
 %%%prolog/scale=0.47
 %\label{fig_nos_estados}
-\caption{Google ...}
+%\caption{Google ...}
 \end{figure}
 
 \textcolor{red}{Resumindo, os problemas são modelados  em 
@@ -179,8 +188,6 @@ se mantém: realizar uma busca, tal como uma estrutura de uma árvore }
 
 \begin{frame}[fragile, allowframebreaks=0.9]
   \frametitle{Núcleo Geral de Buscas}
-
-
 
 \textcolor{red}{Pseudo-código já em Picat}
 
@@ -393,5 +400,4 @@ busca_DFS (  [NoH | Caminho], Solucao) =>
 \end{block}
 
 \end{frame}
-
 
