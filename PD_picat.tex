@@ -32,17 +32,19 @@
 
    \begin{block}{}
      \begin{itemize}
+     \item A recursão embora elegante, esta é ineficiente. Ver a árvore de expansão de Fibonacci.
+     
+     \pause
       \item Uma poderosa \textcolor{magenta}{\textit{técnica de programação}}  que  contorna a complexidade de certos problemas
       exponenciais
       
        \pause
-       \item O problema \textbf{deve} apresentar uma \textcolor{magenta}{\textit{\underline{regra de recorrência}}}
-       
+       \item O problema \textbf{deve} apresentar uma \textcolor{magenta}{\textbf{\underline{regra de recorrência}}}, a qual
+       torna-se uma estratégia para se \textcolor{magenta}{\textbf{armazenar sequencialmente}} resultados temporários/intermediários
+              
       \pause
-      \item A idéia é que todos os cálculos feitos a partir desta \textit{regra de recorrência},
-     sejam armazenados numa \textit{tabela dinâmica} e consultados para reuso de novos cálculos de outras
-      instâncias
-      
+      \item Estes cálculos de \textit{instâncias menores} são armazenados numa \textbf{tabela dinâmica}
+            
       \pause
       \item Esta \textcolor{magenta}{\textit{técnica de programação}} 
       utiliza uma \textit{tabela dinâmica} nos cálculos intermediários,
@@ -69,6 +71,51 @@
 \end{frame}
 
 
+\begin{frame}[fragile]
+\frametitle{Programação Dinâmica (PD) -- III}
+
+Requisitos para PD:
+
+\pause
+\begin{itemize}
+
+  \item \textcolor{magenta}{\textbf{\underline{Subestrutura ótima}}}: um cálculo incremental, tal que os
+  melhores sejam encontrados e armazenados para posterior reuso.\\
+  Exemplo:\\
+  \begin{enumerate}
+    \item $fat(0) = 1$ 
+    \item $fat(1) = 1$
+  \end{enumerate}
+   Estes são os melhores resultados até então, pois 
+   o problema apresenta em seu interior soluções ótimas para subproblemas. 
+
+\end{itemize}
+\end{frame}
+
+   
+\begin{frame}[fragile]
+\frametitle{Programação Dinâmica (PD) -- IV}
+
+   
+\begin{itemize}
+
+  \item \textcolor{magenta}{\textbf{\underline{Sobreposição de problemas menores (subproblemas)}}}: de modo recorrente, possamos
+  construir uma 
+  tabela para armazenar as soluções dos subproblemas, afim de evitar que elas sejam recalculadas.\\
+  Exemplo:\\
+  $fat(7) \rightarrow fat(6) \rightarrow ... fat(0) $ (\textit{top-down})\\ 
+  $fat(0) \rightarrow fat(1) \rightarrow ... fat(7) $ (\textit{botton-up})\\ 
+  onde esta sobreposição é descrita por:\\
+  $fat(N) = N . fat(N-1)$
+   
+\end{itemize}
+
+\begin{center}
+\textcolor{magenta}{Aproximadamente, a PD é  uma recursão apoiada por uma tabela de cálculos intermediários}
+\end{center}
+
+Dica: \url{https://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/dynamic-programming.html}
+\end{frame}
 
 
 
@@ -76,7 +123,7 @@
 \begin{frame}[fragile]
 %[fragile, allowframebreaks=0.9]
 
-    \frametitle{Programação Dinâmica (PD) -- III}
+    \frametitle{Programação Dinâmica (PD) -- V}
 
    \begin{block}{}
      \begin{itemize}
@@ -85,10 +132,10 @@
       natural do que esta ter a PD disponível 
 
        \pause
-       \item O comando que cria uma tabela para um determinado predicado é o  \textcolor{magenta}{\textbf{\textit{tabling}}}
+       \item O comando que cria uma tabela para um determinado predicado é o  \textcolor{magenta}{\textbf{\textit{table}}}
  
         \pause
-       \item O \textit{tabling}  é um dos elementos fortes do planejador do Picat (módulo \textit{planner})
+       \item O \textit{table}  é um dos elementos fortes do planejador do Picat (módulo \textit{planner})
 
         \pause
        \item Assim a PD, faz a complexidade ser espacial devido o uso de memória em seus cálculos intermediários
@@ -138,11 +185,16 @@
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.70\textwidth, height=0.60\textheight]{figures/pascal_triangle_01.jpg}
-%%%prolog/scale=0.47
+%\includegraphics[width=0.70\textwidth, height=0.60\textheight]{figures/pascals_triangle_01.jpg}
+%[width=0.475\textwidth]
+\includegraphics[width=0.49\textwidth, height=0.50\textheight]{figures/pascals_triangle_01.jpg}
+\includegraphics[width=0.49\textwidth, height=0.50\textheight]{figures/pascals_triangle_02.jpg}
+%%%prolog/scale=0.47pascals_triangle.gif
 %\label{fig_nos_estados}
-\caption{O triângulo de Pascal}
+\caption{O triângulo de Pascal -- suas propriedades}
 \end{figure}
+
+
 \end{frame}
 
 
@@ -152,6 +204,8 @@
 
 \frametitle{Exemplo de Uso da Programação Dinâmica -- (PD)}
 
+\label{Triangulo_Pascal}
+
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=0.850\textwidth, height=0.650\textheight]{figures/pascal_triangle_02.jpg}
@@ -159,6 +213,7 @@
 %\label{fig_nos_estados}
 \caption{O triângulo de Pascal -- Coeficientes Binomiais}
 \end{figure}
+Volte a Stiffel: \ref{Stiffel}    
     
 \end{frame}
 
@@ -188,22 +243,50 @@ $$ {n \choose k}= \frac {n!}{k!(n-k)!}=\frac {n(n-1)(n-2)\cdots(n-k+1)}{k!}$$
 
 \frametitle{Formulação Matemática -- II}
 
+\label{Stiffel}
+
 \begin{itemize}
   \item Alternativa ao cálculo do fatorial, tem-se a relação de Stiffel:
-
  $$ {n\choose k}={n-1\choose k-1}+{n-1\choose k}$$  
     
 
-\pause
+  \pause
   \item  O coeficiente binomial é muito utilizado no Triângulo de Pascal, onde o 
   termo na linha $n$ e coluna $k$ é  dado por: ${n-1 \choose k-1}$
   
   \pause
-  \item A fórmula de Stiffel é \textcolor{red}{recorrente} e diretamente escrita em Picat.\\
-  Veja os códigos ...
+  \item Complementado a relação de Stiffel, tem-se ainda:
+  \begin{itemize}
+  \item $ {n\choose 0}= 1$ com $k=0$
+  \item $ {n\choose n}= 1$ com $k=n$
+  \end{itemize}
+
+  \item Veja o triângulo novamente: \ref{Triangulo_Pascal}
+     
 \end{itemize}   
     
 \end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+%[fragile, allowframebreaks=0.9]
+%\frametitle{Programação Dinâmica}
+
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.850\textwidth, height=0.650\textheight]{figures/Binomial_Coefficients_RecursionTree_Memoization.jpg}
+%%%prolog/scale=0.47
+%\label{fig_nos_estados}Binomial_Coefficients_RecursionTree_Memoization.jpg
+\caption{A árvore expandida de busca -- \textit{memoization}}
+\end{figure}
+    
+  \pause
+  A fórmula de Stiffel é \textcolor{red}{recorrente} e diretamente escrita em Picat.
+ \end{frame}
+
+
 
 
 \begin{frame}[fragile] 
@@ -215,7 +298,6 @@ $$ {n \choose k}= \frac {n!}{k!(n-k)!}=\frac {n(n-1)(n-2)\cdots(n-k+1)}{k!}$$
 import datetime.   %%% para o statistics
 import util.
 
-
 table
 c(_, 0) = 1.
 c(N, N) = 1.
@@ -223,13 +305,12 @@ c(N,K) = c(N-1, K-1) + c(N-1, K).
 \end{verbatim}
 \end{footnotesize}    
 
-\begin{center}
-\textcolor{magenta}{Esta fórmula é semelhante com a sequência de Fibonacci, vista
-na seção de recursividade, mas aqui temos 2 argumentos em \texttt{c(N,K)}. 
-Logo, o número de 
-variações de cada coeficiente \texttt{c(N,K)}, 
-cresce muito os cálculos repetidos!}
-\end{center}
+\begin{itemize}
+  \item Relembrando: ${n\choose k}={n-1\choose k-1}+{n-1\choose k}$
+
+  \item \textcolor{magenta}{Esta fórmula é semelhante com a sequência de Fibonacci, vista
+   na seção de recursividade, mas aqui temos 2 argumentos em \texttt{c(N,K)} }
+  \end{itemize}
 
 \end{frame}
 
@@ -311,12 +392,16 @@ main => printf("\n Para uma solução .... !!!!" ) .
   \item Há outros métodos para se resolver estes problemas
 
   \pause
-  \item O comando \textit{tabling} é a base do módulo \textit{planner},
+  \item O comando \textit{table} é a base do módulo \textit{planner},
   usado para resolver \underline{problemas de planejamento}
 
   \pause
   \item A PD é uma estratégia de programação bem poderosa
   
+  \pause
+  \item Uso: sub-sequência máxima, menor distância entre 2 pontos num grafo, 
+    problema da mochila,   soma de sub-conjuntos etc
+        
   \pause
   \item Assunto das próximas seções:  \underline{Planejamento} e PR
 

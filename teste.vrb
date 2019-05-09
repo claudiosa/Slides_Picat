@@ -1,23 +1,23 @@
-\frametitle{Resumindo a PR}
+\frametitle{Reflexões sobre PD}
+
 
 \begin{itemize}
-  \item Há outros métodos para se resolver estes problemas.\\
-  Exemplo: Programação Linear, Buscas Heurísticas, AGs, Busca Gulosa  etc
+  \item Há outros métodos para se resolver estes problemas
 
   \pause
-  \item As \textcolor{magenta}{restrições globais} se aplicam sobre um conjunto de variáveis
-  e há muitas outras importantes disponíveis no Picat
+  \item O comando \textit{table} é a base do módulo \textit{planner},
+  usado para resolver \underline{problemas de planejamento}
 
   \pause
-  \item A área é extensa e \textcolor{magenta}{Picat adere há todos requisitos da PR}
+  \item A PD é uma estratégia de programação bem poderosa
 
   \pause
-  \item Resumo da PR: segue por uma notação/manipulação algébrica restrita,
-        simplificar e bissecionar as restrições, instanciar variáveis,
-        verificar inconsistências,   avançar sobre as demais variáveis, até que todas
-        estejam instanciadas.
+  \item Uso: sub-sequência máxima, menor distância entre 2 pontos num grafo,
+    problema da mochila,   soma de sub-conjuntos etc
 
   \pause
-  \item Enfim, agora é o momento de praticar e aprimorar os conhecimentos $\Rightarrow$ Bons códigos!
+  \item Assunto das próximas seções:  \underline{Planejamento} e PR
+
 
 \end{itemize}
+
