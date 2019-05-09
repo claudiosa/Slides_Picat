@@ -1,2 +1,2 @@
 \babel@toc {brazilian}{}
-\beamer@sectionintoc {1}{Programa\IeC {\c c}\IeC {\~a}o Din\IeC {\^a}mica}{2}{0}{1}
+\beamer@sectionintoc {1}{Planejamento}{2}{0}{1}

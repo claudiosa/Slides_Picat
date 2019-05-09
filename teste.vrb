@@ -1,23 +1,21 @@
-\frametitle{Reflexões sobre PD}
+\frametitle{Reflexões}
 
 
 \begin{itemize}
-  \item Há outros métodos para se resolver estes problemas
+  \item Planejamento resolve uma classe ampla de problemas\\
+   Havendo necessidade de
+    \textcolor{magenta}{\textbf{descobrir sequências ações}} $\Leftrightarrow$ \textcolor{violet}{Planejamento}
 
   \pause
-  \item O comando \textit{table} é a base do módulo \textit{planner},
-  usado para resolver \underline{problemas de planejamento}
+  \item Em geral, estes problemas são importantes na indústria
 
   \pause
-  \item A PD é uma estratégia de programação bem poderosa
+  \item Os modelos escritos em PDDL (\textit{Planning Domain Definition Language})
+  facilmente portáveis para Picat
+    \pause
+  \item Sob um uso mais restrito, um modelo em PDDL é executado diretamente em Picat
 
   \pause
-  \item Uso: sub-sequência máxima, menor distância entre 2 pontos num grafo,
-    problema da mochila,   soma de sub-conjuntos etc
-
-  \pause
-  \item Assunto das próximas seções:  \underline{Planejamento} e PR
-
-
+  \item Na próxima seção uma outra técnica de resolver problemas: \textbf{\underline{PR}}
 \end{itemize}
 
