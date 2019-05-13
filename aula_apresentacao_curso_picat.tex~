@@ -8,7 +8,7 @@
 \frametitle{Apresentação ao Curso de PICAT}
 \begin{minipage}{0.47\textwidth}
     \begin{itemize}
-        \item A linguagem PICAT
+        \item A linguagem PICAT    \Letter 
         \item Requisitos e recursos
         \item O que esperar do curso?
         \item Agenda do curso
@@ -26,7 +26,7 @@
 
 \pause
 \begin{center}
-\textbf{Em resumo: Uma visão clara e precisa do que é o curso!}
+\textcolor{red}{\textbf{Em resumo: Uma visão clara e precisa do que é o curso!}}
  \end{center}
 
 
@@ -70,17 +70,19 @@
    \pause
 		\begin{itemize}
 			\item Conhecimento: noções de lógica matemática 
-			(proposional e primeira-ordem), matemática elementar, 
+			(proposional e primeira-ordem), matemática elementar
 			e alguma outra linguagem de programação
 
 			\item Dedicação: depende de você
+			\pause
+		\item \textcolor{magenta}{\textbf{Contudo: conhecimento prévio, estarei resumindo-os!}}
 		\end{itemize}
 		
   \pause
     \item Motivação:
    \pause
 		\begin{itemize}
-			\item Dependendo de sua dedicação, ao final você vai estar apto a resolver problemas
+			\item Ao final você vai estar apto a resolver problemas
 			computacionais difíceis: os famosos NP-completo!
 			
 			\item Difícil: muitas linhas de código e muito conhecimento de algoritmos seriam
@@ -108,19 +110,19 @@
     \item Comunidade e ações: \url{http://picat-lang.org}
     
     \pause
-    \item O material \textcolor{magenta}{\textbf{sempre}} atualizado: 
+    \item O material \textcolor{magenta}{\textbf{sempre}} atualizado 
 
     \pause
     \begin{itemize}
-      \item  \textcolor{magenta}{O material do curso \textbf{completo} e \textbf{sempre atualizado} em PDF,
-      aqui na plataforma, no material para download da $1a.$ aula}
+      \item  \textcolor{magenta}{O material do curso \textbf{completo} (e \textbf{atualizado}) em PDF,
+      aqui na plataforma, junto ao material para download da $1a.$ aula}
       
      \item   Os códigos \textcolor{magenta}{fontes dos programas}:  \url{http://github.com/claudiosa/CCS/picat}
     \end{itemize}
 
 			\item Além do material aqui disponível em PDF, o mais importante  do curso
 			 vai estar na interatividade
-			da minha \textbf{apresentação oral}. 
+			da minha \textcolor{magenta}{\textbf{apresentação oral}} 
 			
     
   \end{itemize}
@@ -137,15 +139,15 @@
     Reforça os erros que cometi um dia!
 
     \pause
-    \item As aulas aqui apresentadas \textbf{não} serão regravadas!\\Porquê?
+    \item As aulas aqui apresentadas \textbf{não} serão regravadas!
         
     \pause 
-    \item O texto completo em PDF e fontes dos programas: \textbf{SIM}, sempre atualizados e ampliados\\
-    Pois sempre há perguntas, melhoramentos, etc, que elucidam os pontos aqui abordados.
+    \item Para compensar este detalhe, vamos o texto completo em PDF e fontes dos programas sempre atualizados,
+    e eventuais \textcolor{red}{\textbf{vídeos-extras}} afim de  elucidar os pontos aqui abordados e/ou perguntas
     
-    \pause 
-    \item Na parte teórica da definição do Picat, mantive os padrões 
-    descritos no manual da linguagem (\url{http://picat-lang.org}).
+%    \pause 
+%    \item Na parte teórica da definição do Picat, mantive os padrões 
+%    descritos no manual da linguagem (\url{http://picat-lang.org}).
     
   \end{itemize}
 
@@ -156,8 +158,8 @@
   \frametitle{Apresentação ao Curso de PICAT -- V}
   \begin{itemize}
 
-    \item Além desta  apresentação do curso, você pode assistir uma
-    parte deste curso em aulas  que fiz para o YouTube, há alguns anos atrás:
+    \item Além desta  apresentação do curso, você pode assistir uma \textit{amostra}
+     deste curso em aulas  que fiz no YouTube, há alguns anos atrás:
 
     \pause
     \item \textcolor{magenta}{\textbf{Videoaula 01: Introdução ao PICAT}}\\
@@ -196,8 +198,8 @@
     
     \pause
 		\item Em resumo, este material é  um guia para o seu desenvolvimento,
-		 com explicações nestas aulas, que funcionam como um \textit{atalho} de
-		 horas de estudo sobre vários temas apresentados.
+		 com explicações nestas aulas, que funcionam como um \textcolor{magenta}{\textbf{\textit{atalho}}}
+		  de horas de estudo sobre vários temas apresentados.
    
     \pause
     \item A seguir os temas cobertos no curso com PICAT:
@@ -262,16 +264,16 @@ entradas e saídas, exemplos
 
     
     \pause
-    \item \underline{Planejamento}:\\
+    \item \underline{Planejamento} ($\approx$ 35 min):\\
         Definições, o módulo \textit{planner}, uso, abrangência, exemplos
 
     \pause
-		\item  \underline{Programação por Restrições (PR)}:\\
+		\item  \underline{Programação por Restrições (PR)} ($\approx$ xx min):\\
       Definições, o módulo \textit{cp}, uso, abrangência, exemplos (03).
       Técnicas de PR.
 
     \pause
-		\item  \underline{Conclusões}:\\
+		\item  \underline{Conclusões} ($\approx$ xx min):\\
     Retrospectiva, tendências, o que ficou faltando, dicas de programação, etc
 
     \pause
@@ -311,11 +313,9 @@ entradas e saídas, exemplos
 
 \begin{LARGE}
 \begin{center}
-Vejo voces no curso !
+\textcolor{magenta}{Vejo voces no curso !}
 \end{center}
 \end{LARGE}
 
 \end{frame}
 						
-
-
