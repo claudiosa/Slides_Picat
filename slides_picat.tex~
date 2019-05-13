@@ -89,6 +89,7 @@
 \usepackage{array}
 \usepackage{blindtext}
 \usepackage{lipsum}
+\usepackage[misc]{ifsym}
 
 \setbeamertemplate{caption}[numbered]
 

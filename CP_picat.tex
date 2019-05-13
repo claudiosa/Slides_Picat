@@ -239,7 +239,68 @@
 
 \end{block}
     
+\begin{center}
+      \textcolor{magenta}{A seguir dois exemplos clássicos (NP's completos) bem resolvidos com PR!} 
+   \end{center}
+   
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]
+%[fragile, allowframebreaks=0.9]
+
+\frametitle{Exemplo 01: Coloração de Mapas}
+
+\begin{footnotesize}
+Seja um mapa com 5 países. Cada país deve ter uma cor, mas os países
+vizinhos \texttt{não} podem ter a mesma cor. 
+\end{footnotesize}
+
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics[width=0.750\textwidth, height=0.50\textheight]{figures/coloracao_01.jpg}
+%\caption{Variáveis: . Quanto ao  Domínio? $Cores =\{1,2,3,4\}$}
+\end{center}
+\end{figure}
+
+\begin{footnotesize}
+\begin{itemize}
+  \item \textcolor{magenta}{\textbf{Variáveis}} são os países: \texttt{X1} a \texttt{X5} -- \textbf{nós} em uma representação em grafo 
+  \item Quanto ao  \textcolor{magenta}{\textbf{domínio}}? $Cores =\{1,2,3,4\}$ -- \textbf{rotulação} destes nós
+  \item \textcolor{magenta}{\textbf{Restrições}}: as \textbf{arestas} de um grafo representam a relação entre países-vizinhos
+\end{itemize}
+\end{footnotesize}
+    
+\end{frame}
+
+
+\begin{frame}[fragile]
+%[fragile, allowframebreaks=0.9]
+
+\frametitle{Exemplo 02: N-Rainhas no Tabuleiro $N\times N$}
+
+\begin{figure}[!htb]
+\begin{center}
+%\includegraphics[width=0.70\textwidth, height=0.60\textheight]{figures/4_rainhas_01.jpg}
+\includegraphics[width=0.480\textwidth, height=0.40\textheight]{figures/4_rainhas_01.jpg}
+\hfill
+\includegraphics[width=0.480\textwidth, height=0.40\textheight]{figures/4_rainhas_02.jpg}
+\caption{Distribuir 4 rainhas no tabuleiro sem se atacarem mutuamente}
+\end{center}
+\end{figure}
+
+\begin{footnotesize}
+\begin{itemize}
+  \item \textcolor{magenta}{\textbf{Este problema tem muitas aplicações práticas! -- uma metáfora}} 
+  \item Muitas abordagens quanto ao número de variáveis e domínios
+  \item Estudo sobre \textcolor{magenta}{\textbf{simetrias}} (e \textit{espelhamentos}) de na modelagem e  resultados (algo comum na PR)
+\end{itemize}
+
+\end{footnotesize}
+\end{frame}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile] 
@@ -267,9 +328,9 @@
   \begin{center}
 \begin{itemize}
 
-    \item   \textbf{\textcolor{magenta}{Basicamente, 3 problemas distintos!}}
+    \item  \textbf{\textcolor{magenta}{Basicamente, 3 problemas distintos!}}
     
- \item   \textbf{\textcolor{magenta}{Volte ao início da seção $\Rightarrow$ \ref{incio_PR} }  }
+ \item  \textbf{\textcolor{magenta}{Volte ao início da seção $\Rightarrow$ \ref{incio_PR} }  }
 
   \end{itemize}  
 
@@ -401,7 +462,7 @@ modelo =>
 import cp.
 
 % main => modelo	.
-% main ?=> modelo, fail.	
+% main ?=> modelo, false.	
 % main =>  true.	
 
 main =>

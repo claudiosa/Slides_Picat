@@ -1,8 +1,23 @@
-\frametitle{Obrigado}
+\frametitle{Resumindo a PR}
 
-\begin{LARGE}
-\begin{center}
-\textcolor{magenta}{Vejo voces no curso !}
-\end{center}
-\end{LARGE}
+\begin{itemize}
+  \item Há outros métodos para se resolver estes problemas.\\
+  Exemplo: Programação Linear, Buscas Heurísticas, AGs, Busca Gulosa  etc
 
+  \pause
+  \item As \textcolor{magenta}{restrições globais} se aplicam sobre um conjunto de variáveis
+  e há muitas outras importantes disponíveis no Picat
+
+  \pause
+  \item A área é extensa e \textcolor{magenta}{Picat adere há todos requisitos da PR}
+
+  \pause
+  \item Resumo da PR: segue por uma notação/manipulação algébrica restrita,
+        simplificar e bissecionar as restrições, instanciar variáveis,
+        verificar inconsistências,   avançar sobre as demais variáveis, até que todas
+        estejam instanciadas.
+
+  \pause
+  \item Enfim, agora é o momento de praticar e aprimorar os conhecimentos $\Rightarrow$ Bons códigos!
+
+\end{itemize}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  13 MAY 2019 00:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  13 MAY 2019 15:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1231,7 +1231,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\Hy@tempa' on input line 156.
 
-(./caps_isolados.aux (./aula_apresentacao_curso_picat.aux))
+(./caps_isolados.aux (./CP_picat.aux))
 \openout1 = `caps_isolados.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 165.
@@ -1456,7 +1456,7 @@ line 168.
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-<figures/logo02-picat.jpg, id=26, 113.24783pt x 119.20825pt>
+<figures/logo02-picat.jpg, id=18, 113.24783pt x 119.20825pt>
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
 Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 168.
@@ -1465,70 +1465,58 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 168.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/logo02-picat.jpg
 >]
-\openout2 = `aula_apresentacao_curso_picat.aux'.
+\openout2 = `CP_picat.aux'.
 
 
-(./aula_apresentacao_curso_picat.tex
-\openout4 = `caps_isolados.vrb'.
-
- (./caps_isolados.vrb
-<figures/logo_picat_alex.jpg, id=60, 564.60938pt x 317.68687pt>
+(./CP_picat.tex
+<figures/logo_picat_alex.jpg, id=54, 564.60938pt x 317.68687pt>
 File: figures/logo_picat_alex.jpg Graphic file (type jpg)
 <use figures/logo_picat_alex.jpg>
-Package pdftex.def Info: figures/logo_picat_alex.jpg  used on input line 15.
+Package pdftex.def Info: figures/logo_picat_alex.jpg  used on input line 25.
 (pdftex.def)             Requested size: 184.37462pt x 107.65823pt.
 
-Overfull \hbox (30.72969pt too wide) in paragraph at lines 15--16
+Overfull \hbox (30.72969pt too wide) in paragraph at lines 25--25
  [] 
  []
 
-)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 33.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 25.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [2
+[2
 
 
- <./figures/logo_picat_alex.jpg>] (./caps_isolados.vrb
-File: figures/logo_picat_alex.jpg Graphic file (type jpg)
-<use figures/logo_picat_alex.jpg>
-Package pdftex.def Info: figures/logo_picat_alex.jpg  used on input line 15.
-(pdftex.def)             Requested size: 184.37462pt x 107.65823pt.
-
-Overfull \hbox (30.72969pt too wide) in paragraph at lines 15--16
- [] 
- []
-
-)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 33.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [3
-
-]
+ <./figures/logo_picat_alex.jpg>]
 \openout4 = `caps_isolados.vrb'.
 
  (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 60.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 55.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [3
+
+]
+(./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 55.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [4
 
 ] (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 60.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 55.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [5
 
 ] (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 60.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 55.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
 [6
 
 ]
@@ -1563,201 +1551,231 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 97.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [10
 
-] (./caps_isolados.vrb)
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 97.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 120.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [11
 
 ] (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 97.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 120.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
 [12
 
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 120.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [13
+
 ]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb
+<figures/problema_modelagem.pdf, id=367, 332.24126pt x 210.7875pt>
+File: figures/problema_modelagem.pdf Graphic file (type pdf)
+<use figures/problema_modelagem.pdf>
+Package pdftex.def Info: figures/problema_modelagem.pdf  used on input line 7.
+(pdftex.def)             Requested size: 215.10255pt x 161.49313pt.
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 139.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [14
+
+ <./figures/problema_modelagem.pdf>]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb
+<figures/dinamica_pr.pdf, id=401, 150.5625pt x 425.59pt>
+File: figures/dinamica_pr.pdf Graphic file (type pdf)
+<use figures/dinamica_pr.pdf>
+Package pdftex.def Info: figures/dinamica_pr.pdf  used on input line 6.
+(pdftex.def)             Requested size: 92.19218pt x 201.85861pt.
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 152.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [15
+
+ <./figures/dinamica_pr.pdf>]
+\openout4 = `caps_isolados.vrb'.
+
+
+(./caps_isolados.vrb
+<figures/reducao_PR_01.pdf, id=433, 328.22626pt x 288.07625pt>
+File: figures/reducao_PR_01.pdf Graphic file (type pdf)
+<use figures/reducao_PR_01.pdf>
+Package pdftex.def Info: figures/reducao_PR_01.pdf  used on input line 6.
+(pdftex.def)             Requested size: 215.10245pt x 161.49301pt.
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 168.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [16
+
+ <./figures/reducao_PR_01.pdf>]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb
+<figures/reducao_PR_02.pdf, id=485, 403.5075pt x 445.665pt>
+File: figures/reducao_PR_02.pdf Graphic file (type pdf)
+<use figures/reducao_PR_02.pdf>
+Package pdftex.def Info: figures/reducao_PR_02.pdf  used on input line 7.
+(pdftex.def)             Requested size: 215.10167pt x 161.48651pt.
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 187.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[17
+
+ <./figures/reducao_PR_02.pdf>]
 \openout4 = `caps_isolados.vrb'.
 
  (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 130.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [13
-
-] (./caps_isolados.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 130.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [14
-
-] (./caps_isolados.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 130.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [15
-
-] (./caps_isolados.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 130.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [16
-
-]
-<figures/livro_picat.jpg, id=462, 331.2375pt x 500.87125pt>
-File: figures/livro_picat.jpg Graphic file (type jpg)
-<use figures/livro_picat.jpg>
-Package pdftex.def Info: figures/livro_picat.jpg  used on input line 144.
-(pdftex.def)             Requested size: 153.64476pt x 188.39944pt.
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 144.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [17
-
- <./figures/livro_picat.jpg>]
-\openout4 = `caps_isolados.vrb'.
-
-
-(./caps_isolados.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 172.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 213.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [18
 
-] (./caps_isolados.vrb)
+]
+(./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 172.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 213.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [19
 
 ] (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 172.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 213.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-
-[20
+ [20
 
 ] (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 172.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 213.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [21
+
+[21
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 213.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [22
 
 ]
 \openout4 = `caps_isolados.vrb'.
 
- (./caps_isolados.vrb
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 10.
-)
+ (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 200.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [22
-
-] (./caps_isolados.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 200.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 246.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [23
 
 ] (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 200.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 246.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [24
 
 ] (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 200.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 246.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [25
 
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 246.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [26
+
 ]
+\openout4 = `caps_isolados.vrb'.
+
+
+(./caps_isolados.vrb
+<figures/coloracao_01.jpg, id=771, 439.6425pt x 348.30125pt>
+File: figures/coloracao_01.jpg Graphic file (type jpg)
+<use figures/coloracao_01.jpg>
+Package pdftex.def Info: figures/coloracao_01.jpg  used on input line 11.
+(pdftex.def)             Requested size: 230.46692pt x 134.57205pt.
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 275.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [27
+
+ <./figures/coloracao_01.jpg>]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb
+<figures/4_rainhas_01.jpg, id=805, 518.93875pt x 320.19624pt>
+File: figures/4_rainhas_01.jpg Graphic file (type jpg)
+<use figures/4_rainhas_01.jpg>
+Package pdftex.def Info: figures/4_rainhas_01.jpg  used on input line 7.
+(pdftex.def)             Requested size: 147.49524pt x 107.6536pt.
+<figures/4_rainhas_02.jpg, id=806, 350.30875pt x 238.8925pt>
+File: figures/4_rainhas_02.jpg Graphic file (type jpg)
+<use figures/4_rainhas_02.jpg>
+Package pdftex.def Info: figures/4_rainhas_02.jpg  used on input line 9.
+(pdftex.def)             Requested size: 147.49748pt x 107.65736pt.
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 301.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[28
+
+ <./figures/4_rainhas_01.jpg> <./figures/4_rainhas_02.jpg>]
 \openout4 = `caps_isolados.vrb'.
 
 
 (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 227.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [26
-
-] (./caps_isolados.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 227.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [27
-
-] (./caps_isolados.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 227.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
-
-[28
-
-] (./caps_isolados.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 227.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 339.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [29
 
-]
-\openout4 = `caps_isolados.vrb'.
-
- (./caps_isolados.vrb)
+] (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 262.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 339.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [30
 
 ] (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 262.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 339.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [31
 
-] (./caps_isolados.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 262.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [32
-
-] (./caps_isolados.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 262.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [33
-
-]
-(./caps_isolados.vrb)
-File: figures/logo02-picat.jpg Graphic file (type jpg)
-<use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 262.
-(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [34
+[31
 
 ]
 \openout4 = `caps_isolados.vrb'.
@@ -1765,61 +1783,91 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 262.
  (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 307.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 362.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [32
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 362.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [33
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 386.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [34
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 386.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [35
 
 ] (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 307.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 386.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [36
 
-[36
-
-] (./caps_isolados.vrb)
+]
+(./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 307.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 386.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [37
 
-] (./caps_isolados.vrb)
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 307.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 399.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [38
 
-] (./caps_isolados.vrb)
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 307.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 431.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
- [39
+
+[39
 
 ] (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 307.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 431.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [40
 
 ] (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 307.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 431.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [41
 
 ]
 \openout4 = `caps_isolados.vrb'.
 
-
-(./caps_isolados.vrb)
+ (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 329.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 454.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [42
 
@@ -1829,9 +1877,577 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 329.
  (./caps_isolados.vrb)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 341.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 475.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [43
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 504.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [44
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+
+(./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 529.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [45
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 547.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [46
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 547.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[47
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 547.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [48
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 573.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [49
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 573.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [50
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 573.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [51
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 573.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [52
+
+]
+(./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 573.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [53
+
+]
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 595.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [54
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 618.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [55
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 618.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [56
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 618.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [57
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 630.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [58
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+
+(./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 654.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [59
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 675.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [60
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 703.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[61
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 722.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [62
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb
+Overfull \hbox (4.484pt too wide) in paragraph at lines 22--22
+[]\T1/cmtt/m/n/9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%[] 
+ []
+
+
+Overfull \hbox (4.484pt too wide) in paragraph at lines 22--22
+[]\T1/cmtt/m/n/9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%[] 
+ []
+
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 749.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [63
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 777.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [64
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 797.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [65
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+
+(./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 827.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [66
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 852.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [67
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 852.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[68
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 852.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [69
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb
+<figures/tsp01.jpg, id=1900, 376.40625pt x 188.20313pt>
+File: figures/tsp01.jpg Graphic file (type jpg)
+<use figures/tsp01.jpg>
+Package pdftex.def Info: figures/tsp01.jpg  used on input line 6.
+(pdftex.def)             Requested size: 245.83856pt x 134.58144pt.
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 866.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [70
+
+ <./figures/tsp01.jpg>]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 891.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [71
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 891.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [72
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 891.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[73
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 921.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [74
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 941.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [75
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 941.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [76
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 941.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [77
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 955.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [78
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+
+(./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 982.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [79
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 982.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [80
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 996.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[81
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1025.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [82
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1025.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [83
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1042.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [84
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1068.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [85
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1102.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [86
+
+]
+(./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1102.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [87
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1102.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [88
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1102.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[89
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1130.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [90
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb
+Overfull \hbox (9.20784pt too wide) in paragraph at lines 13--13
+[]   \T1/cmtt/m/n/9 % grafo de DECISAO que representa o resultado dos nos escol
+hidos[] 
+ []
+
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1161.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [91
+
+] (./caps_isolados.vrb
+Overfull \hbox (9.20784pt too wide) in paragraph at lines 13--13
+[]   \T1/cmtt/m/n/9 % grafo de DECISAO que representa o resultado dos nos escol
+hidos[] 
+ []
+
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1161.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [92
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1200.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [93
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1200.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [94
+
+]
+(./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1200.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [95
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1230.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [96
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1230.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[97
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb
+Overfull \hbox (278.46709pt too wide) in paragraph at lines 23--23
+[]\T1/cmtt/m/n/9 M_Decisao: {{0,1,0,0,0,0,0},{0,0,0,0,0,0,1},{1,0,0,0,0,0,0},{0
+,0,1,0,0,0,0},{0,0,0,1,0,0,0},{0,0,0,0,1,0,0},{0,0,0,0,0,1,0}}[] 
+ []
+
+)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1263.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [98
+
+]
+\openout4 = `caps_isolados.vrb'.
+
+ (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1296.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [99
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1296.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [100
+
+]
+(./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1296.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [101
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1296.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+ [102
+
+] (./caps_isolados.vrb)
+File: figures/logo02-picat.jpg Graphic file (type jpg)
+<use figures/logo02-picat.jpg>
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 1296.
+(pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
+
+[103
 
 ])
 \tf@nav=\write7
@@ -1845,12 +2461,11 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 341.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
- (./caps_isolados.aux
-(./aula_apresentacao_curso_picat.aux))
+ (./caps_isolados.aux (./CP_picat.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 191.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
 Package rerunfilecheck Info: File `caps_isolados.out' has not changed.
-(rerunfilecheck)             Checksum: 96EF7CFC057E662B91A330895A1ED480;205.
+(rerunfilecheck)             Checksum: 98C355670644E598DE403A63653018EB;73.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1858,34 +2473,43 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 31032 strings out of 492616
- 579673 string characters out of 6135177
- 924119 words of memory out of 5000000
- 34213 multiletter control sequences out of 15000+600000
- 557734 words of font info for 88 fonts, out of 8000000 for 9000
+ 31444 strings out of 492616
+ 585579 string characters out of 6135177
+ 922121 words of memory out of 5000000
+ 34366 multiletter control sequences out of 15000+600000
+ 562899 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,14n,70p,780b,653s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,14n,70p,780b,897s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} </home/ccs/.
 texlive/texmf-var/fonts/pk/ljfour/public/ifsym/ifsym10.657pk></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsi1000
-.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/cm-super/sfsi1440.pfb></usr/share/texmf-dist/fo
-nts/type1/public/cm-super/sfso1000.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/cm-super/sfso1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss
-0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/
-share/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf-dis
-t/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/cm-super/sfss1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
-sfss2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></
-usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf
--dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/cm-super/sftt1095.pfb>
-Output written on caps_isolados.pdf (43 pages, 434011 bytes).
+e1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.p
+fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmssi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texm
+f-dist/fonts/type1/public/cm-super/sfsi0900.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/cm-super/sfsi1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
+uper/sfsi1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfso1095.p
+fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/
+texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf-dist/font
+s/type1/public/cm-super/sfss0900.pfb></usr/share/texmf-dist/fonts/type1/public/
+cm-super/sfss1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss10
+95.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf-dist/
+fonts/type1/public/cm-super/sfss2074.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/cm-super/sfsx0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
+sx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></us
+r/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf-d
+ist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1
+/public/cm-super/sftt1095.pfb>
+Output written on caps_isolados.pdf (103 pages, 856088 bytes).
 PDF statistics:
- 1247 PDF objects out of 1440 (max. 8388607)
- 1161 compressed objects within 12 object streams
- 90 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2914 PDF objects out of 2984 (max. 8388607)
+ 2723 compressed objects within 28 object streams
+ 213 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

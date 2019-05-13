@@ -1,20 +1,18 @@
 
        
 \section{Programação por Restrições}
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Programação por Restrições}
+\label{incio_PR}
 \begin{minipage}{0.47\textwidth}
     \begin{itemize}
         \item Conceituar a PR
         \item Princípios
-        \item 03 exemplos
-        \item 03 técnicas
+        \item \textcolor{magenta}{\textbf{03 exemplos $\Rightarrow$ \ref{3_exemplos}}}
+        \item 03 técnicas 
         \item Aprendizagem da PR via estudos de casos
-        \item Vamos dividir esta seção 
+        \item Vamos dividir esta seção (Exemplos: \ref{3_exemplos})
     \end{itemize}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
@@ -247,23 +245,34 @@
 \begin{frame}[fragile] 
 
 \frametitle{Exemplos}
+
+\label{3_exemplos}
 \begin{block}{}
 \begin{enumerate}
   \item Soma de dois números primos (problema \textit{ad-hoc})
+  $\Rightarrow $ \ref{1o_exemplo}
+  
   
   \pause
   \item Escala (simplificada) de consultórios médicos (uso de
-  matriz)
+  matriz)   $\Rightarrow $ \ref{2o_exemplo}
     
   \pause
   \item Caixeiro-viajante (uso de matriz binária de decisão) -- diferente
-  da solução do Hakank, aqui discutida
+  da solução do Hakank, aqui discutida $\Rightarrow $ \ref{3o_exemplo}
       
 \end{enumerate}
 \end{block}
 
   \begin{center}
-  \textbf{\textcolor{magenta}{Basicamente, 3 problemas distintos!}}
+\begin{itemize}
+
+    \item   \textbf{\textcolor{magenta}{Basicamente, 3 problemas distintos!}}
+    
+ \item   \textbf{\textcolor{magenta}{Volte ao início da seção $\Rightarrow$ \ref{incio_PR} }  }
+
+  \end{itemize}  
+
   \end{center}
 
 \end{frame}
@@ -272,7 +281,7 @@
 
 
 \begin{frame}[fragile] 
-
+\label{1o_exemplo}
 \frametitle{Exemplo -- 01 -- Soma de Números Primos}
 
 \begin{itemize}
@@ -461,7 +470,7 @@ Picat>
 \begin{frame}[fragile] 
 
 \frametitle{Exemplo -- 02 -- Escala de Consultórios}
-
+\label{2o_exemplo}
 \begin{itemize}
 \item Seja um Posto Atendimento Médico, um PA, com 4 consultórios e 7 especialidades
   médicas
@@ -501,6 +510,30 @@ tal que alguns requisitos sejam atendidos (restrições  satisfeitas)
 \end{itemize}
 
 \end{frame}
+
+
+\begin{frame}
+  \frametitle{Matriz de Atribuição}
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[]
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+{\color[HTML]{00009B} }                                 & {\color[HTML]{CB0000} \textbf{2a.}}                             & {\color[HTML]{CB0000} \textbf{3a.}}        & {\color[HTML]{CB0000} \textbf{4a.}}        & \multicolumn{1}{l|}{{\color[HTML]{CB0000} \textbf{5a.}}}        & \multicolumn{1}{l|}{{\color[HTML]{CB0000} \textbf{6a.}}}        \\ \hline
+{\color[HTML]{303498} \textbf{1a. Sala}}                       & {\color[HTML]{009901} \textbf{{[}1..7{]}}}                      & {\color[HTML]{009901} \textbf{{[}1..7{]}}} & {\color[HTML]{009901} \textbf{{[}1..7{]}}} & \multicolumn{1}{l|}{{\color[HTML]{009901} \textbf{{[}1..7{]}}}} & \multicolumn{1}{l|}{{\color[HTML]{009901} \textbf{{[}1..7{]}}}} \\ \hline
+{\color[HTML]{303498} \textbf{2a. Sala}}                       & {\color[HTML]{009901} \textbf{{[}1..7{]}}}                      & ...                                        & ...                                        & ...                                                             & ...                                                             \\ \hline
+{\color[HTML]{303498} \textbf{3a. Sala}}                       & {\color[HTML]{009901} \textbf{{[}1..7{]}}}                      & ...                                        & ...                                        & ...                                                             & ...                                                             \\ \hline
+\multicolumn{1}{|l|}{{\color[HTML]{303498} \textbf{4a. Sala}}} & \multicolumn{1}{l|}{{\color[HTML]{009901} \textbf{{[}1..7{]}}}} & ...                                        & ...                                        & ...                                                             & ...                                                             \\ \hline
+\end{tabular}
+\end{table}
+
+O domínio de valores: \texttt{1..7} (7 especialidades médicas)
+
+\end{frame}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile] 
@@ -734,6 +767,7 @@ sys	0m0,013s
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile] 
 
+\label{3o_exemplo}
 \frametitle{Exemplo -- 03 -- Caixeiro-Viajante}
 
 \begin{itemize}
@@ -741,17 +775,17 @@ sys	0m0,013s
 apenas com Colônia de Formigas (técnica da Computação Evolucionária)
 
 \pause
-\item Neste exemplo o \textcolor{magenta}{Problema do Caixeiro-Viajante}
- (do inglês: TSP -- \textit{Travelling Salesman Problem}) é discutido com \textcolor{magenta}{\textbf{dois modelos da PR}} 
- destacando dois pontos desta técnica:
+\item Neste exemplo do \textcolor{magenta}{Problema do Caixeiro-Viajante}
+ (do inglês: TSP -- \textit{Travelling Salesman Problem}) são discutido com \textcolor{magenta}{\textbf{dois modelos da PR}}, 
+ destacando as virtudes de cada um:
 
-\begin{itemize}
-  \item  Uso de outras restrições globais: \textcolor{magenta}{\texttt{element}} e \textcolor{magenta}{\texttt{circuit}}
-  \item Uso de variáveis de decisão binária, neste exemplo, uma matriz binária. 
-\end{itemize}
+\begin{enumerate}
+   \item \textcolor{magenta}{\textbf{1o. Modelo}}: usa  restrições globais: \textcolor{magenta}{\texttt{element}} e \textcolor{magenta}{\texttt{circuit}}
+  \item  \textcolor{magenta}{\textbf{2o. Modelo}}: usa  variáveis de decisão binária  (uma matriz binária: $N \times N$) 
+\end{enumerate}
 
 \pause
-\item Tecnicamente, este problema tem muitas aplicações similares! 
+\item Tecnicamente, o TSP tem muitas aplicações similares! 
 \end{itemize}
 
 \end{frame}
@@ -781,24 +815,69 @@ apenas com Colônia de Formigas (técnica da Computação Evolucionária)
   \item Usaremos a modelagem matemática de uma \textit{\underline{matriz binária de decisão}}
   
   \pause
-  \item Esta abordagem é bem conhecida, porém, e eficiente para alguns tipos de problemas semelhantes
+  \item Esta abordagem é bem conhecida, porém, eficiente para alguns tipos de problemas
 
   \pause
   \item Idéia da \textit{\underline{matriz binária de decisão}}: $N$ cidades, logo, há possíveis
-  conexões entre elas. 
+  conexões entre elas 
   
-  \pause
-  \item Comentários desta modelagem ao longo do código e detalhes do formalismo matemático
-  em qualquer livro da área de combinatória, PO, e modelagem matemática
-
-  \pause
-  \item Contudo, duas novas restrições globais são usadas e precisam ser entendidas:    \textcolor{magenta}{\texttt{element}} e 
-  \textcolor{magenta}{\texttt{circuit}}
+%  \pause
+%  \item Comentários desta modelagem ao longo do código e detalhes do formalismo matemático
+%  em qualquer livro da área de combinatória, PO, e modelagem matemática
 
 \end{itemize}
 
 \end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Ilustrando -- Matriz de Decisão}
+
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+   & {\color{red} 1}  & {\color{red} 2} & {\color{red}...} &  {\color{red}(N-1)} &  {\color{red} N} \\ \hline
+{\color{red}1} & {\color[HTML]{00009B} 0/1} & {\color[HTML]{00009B} 0/1} & ... & {\color[HTML]{00009B} 0/1} & {\color[HTML]{00009B} 0/1} \\ \hline
+{\color{red}2} & {\color[HTML]{00009B} 0/1} & ...                        & ...                        & ...  & ...                        \\ \hline
+{\color{red}...} & ... & ...                        & ...                        & ... & ...                        \\ \hline
+{\color{red}(N-1)} & {\color[HTML]{00009B} 0/1} & ...                        & ...             & ...            & ...                        \\ \hline
+{\color{red}N} & {\color[HTML]{00009B} 0/1} & ...                        & ...              & ...           & {\color[HTML]{00009B} 0/1}                        \\ 
+\hline 
+\end{tabular}
+
+\caption{Matriz de Decisão Binária: $N \times N$}
+\end{table}
+
+\begin{itemize}
+  \item Uma matriz a ser preenchida com 0's e 1's
+  \item Esta matriz pode ter um domínio n-ário 
+  \item \textbf{1}: selecionado e \textbf{0}: não-selecionado
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+ \frametitle{Restrições Globais}
+
+
+  \begin{itemize}
+  \item   \textbf{Restrições Globais}: afetam todo modelo ou boa parte deste
+
+   \pause
+   \item Algumas conhecidas: \textcolor{magenta}{\texttt{member}} e  \textcolor{magenta}{\texttt{all\_different}}
+  
+  \pause
+  \item Para este modelo, duas novas: \textcolor{magenta}{\texttt{element}} e 
+  \textcolor{magenta}{\texttt{circuit}}
+
+  \end{itemize}
+
+
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
@@ -896,9 +975,9 @@ Saída:
 \item Acompanhar as explicações do $2^{o.}$ modelo:\\
 \url{https://github.com/claudiosa/CCS/blob/master/picat/tsp_CP.pi}
 
-
-  \item Confira a execução e testes
+\item Confira a execução e testes
 \end{itemize}
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -962,8 +1041,6 @@ Da cidade 3 --> 1 custa: 8	 Acumulado: 34
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}[fragile]
 \frametitle{$2^{o.}$ Modelo para o TSP -- Usando Matriz de Decisão}
 
@@ -985,7 +1062,7 @@ matriz_adj(Matrix) =>
 
 \begin{itemize}
   \item Os dados são os mesmos do exemplo anterior
-  \item Poderia ser feita leitura via arquivos: ver exemplos de entrada e saída no github
+  \item Poderia ser feita leitura via arquivos: ver exemplos de entrada e saída no GitHub
   \item Comentários no código e aúdio
   \end{itemize}
 
