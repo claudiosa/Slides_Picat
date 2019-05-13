@@ -153,7 +153,7 @@
 
 \author[Claudio Cesar de Sá]{Claudio Cesar de Sá
 \\\medskip 
-\Letter {\small \url{claudio.sa@udesc.br}}}
+\Letter \/ {\small \url{claudio.sa@udesc.br}}}
 
 \institute[]{
     Departamento de Ci\^encia da Computa\c{c}\~ao -- DCC \\
@@ -168,7 +168,7 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{aula_apresentacao_curso_picat}
+%\include{aula_apresentacao_curso_picat}
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %  \begin{frame}[allowframebreaks,c]{Sumário}
@@ -185,7 +185,7 @@
  %\include{buscas_picat} % 7
  %\include{PD_picat} % cap 8 finalizar aqui
 % \include{planejamento_picat} % 9
-% \include{CP_picat} % cap 10 
+ \include{CP_picat} % cap 10 
 %
 %\include{conclusoes_picat} % 11
 \end{document}

@@ -8,7 +8,7 @@
 \frametitle{Apresentação ao Curso de PICAT}
 \begin{minipage}{0.47\textwidth}
     \begin{itemize}
-        \item A linguagem PICAT    \Letter 
+        \item A linguagem PICAT   
         \item Requisitos e recursos
         \item O que esperar do curso?
         \item Agenda do curso
@@ -36,7 +36,7 @@
 
 \begin{frame}[fragile]
 
-  \frametitle{Apresentação ao Curso de PICAT -- I}
+  \frametitle{A Linguagem PICAT}
   \begin{itemize}
     \item O que é o PICAT?
     \pause
@@ -61,7 +61,7 @@
     
 %\framebreak
 \begin{frame}[fragile]
-  \frametitle{Apresentação ao Curso de PICAT -- II}
+  \frametitle{Você e o Curso}
   \begin{itemize}
 
     \item Este curso é dirigido a você?
@@ -99,7 +99,7 @@
 
     
 \begin{frame}[fragile]
-  \frametitle{Apresentação ao Curso de PICAT -- III}
+  \frametitle{Recursos}
   \begin{itemize}
 						
     \item Recursos computacionais:\\
@@ -129,9 +129,27 @@
 
 \end{frame}
 
+
+\begin{frame}
+\frametitle{Livro Disponível}
+
+\begin{figure}[ht!]
+\begin{center}
+\includegraphics[width=0.5\textwidth, height=0.70\textheight]{figures/livro_picat.jpg}
+\caption{Em \url{http://picat-lang.org} -- clique sobre o livro}
+\end{center}
+\end{figure}
+
+
+\end{frame}
+
+
+
+
+
     
 \begin{frame}[fragile]
-  \frametitle{Apresentação ao Curso de PICAT -- IV}
+  \frametitle{Aulas: captura de telas (\textit{screencast})}
   \begin{itemize}
 
     \item Há alguns pontos do curso que estão repetidos: \textit{propositalmente}!\\
@@ -155,7 +173,8 @@
 
     
 \begin{frame}[fragile]
-  \frametitle{Apresentação ao Curso de PICAT -- V}
+  \frametitle{Amostras no YouTube}
+  
   \begin{itemize}
 
     \item Além desta  apresentação do curso, você pode assistir uma \textit{amostra}
@@ -184,16 +203,16 @@
 
 
 \begin{frame}[fragile]
-  \frametitle{Apresentação ao Curso de PICAT -- VI}
+  \frametitle{Ao Final do Curso}
   \begin{itemize}
 
 						
-    \item Assim, ao final deste curso terás uma sólida visão  de uma linguagem
+    \item Terás uma sólida visão  de uma linguagem
     utilizada em várias áreas tais como: modelagem matemática, IA,
     Pesquisa Operacional, etc
 
     \pause
-    \item Ao final você vai conseguir resolver problemas com alguma complexidade e ler
+    \item Vais conseguir resolver problemas com alguma complexidade e ler
     códigos de grandes programadores da área: Barták, Neng-Fa, Hakank, Dymichenko, etc    
     
     \pause
@@ -206,6 +225,8 @@
   \end{itemize}
 
 \end{frame}
+
+
 
 
 \subsection{Conteúdo do Curso}
