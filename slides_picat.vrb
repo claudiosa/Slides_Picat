@@ -1,15 +1,18 @@
+\frametitle{Finalizando ...}
 
-    \frametitle{Agradecimentos}
 
-    \begin{itemize}
-      \item Muito obrigado a voce!
-      \pause
-      \item Algumas pessoas que deram opiniões e me incentivaram a
-            fazer este material
+\begin{minipage}{0.47\textwidth}
 
-      \pause
-      \item Claudio Cesar de Sá
-     \item Contacto: \url{claudio.sa@udesc.br} e\\
-           \url{claudio@colmeia.udesc.br}
+\begin{Large}
+\textbf{\textcolor{magenta}{... espero que\\ tenham gostado\\ e obrigado!}}
+\end{Large}
 
-    \end{itemize}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{figure}[ht!]
+\begin{center}
+\includegraphics[width=1.2\textwidth, height=0.40\textheight]{figures/logo_picat_alex.jpg}
+\end{center}
+\end{figure}
+\end{minipage}
+

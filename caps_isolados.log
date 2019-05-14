@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  13 MAY 2019 18:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  14 MAY 2019 20:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1829,10 +1829,20 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 344.
 ]
 \openout4 = `caps_isolados.vrb'.
 
- (./caps_isolados.vrb)
+ (./caps_isolados.vrb
+File: figures/logo_picat_alex.jpg Graphic file (type jpg)
+<use figures/logo_picat_alex.jpg>
+Package pdftex.def Info: figures/logo_picat_alex.jpg  used on input line 13.
+(pdftex.def)             Requested size: 184.37462pt x 107.65823pt.
+
+Overfull \hbox (30.72969pt too wide) in paragraph at lines 13--14
+ [] 
+ []
+
+)
 File: figures/logo02-picat.jpg Graphic file (type jpg)
 <use figures/logo02-picat.jpg>
-Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 356.
+Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 367.
 (pdftex.def)             Requested size: 28.54343pt x 30.04628pt.
  [43
 
@@ -1848,8 +1858,7 @@ Package pdftex.def Info: figures/logo02-picat.jpg  used on input line 356.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
- (./caps_isolados.aux
-(./aula_apresentacao_curso_picat.aux))
+ (./caps_isolados.aux (./aula_apresentacao_curso_picat.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 191.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
 Package rerunfilecheck Info: File `caps_isolados.out' has not changed.
@@ -1861,11 +1870,11 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 31032 strings out of 492616
- 579673 string characters out of 6135177
+ 31034 strings out of 492616
+ 579689 string characters out of 6135177
  922121 words of memory out of 5000000
- 34213 multiletter control sequences out of 15000+600000
- 557734 words of font info for 88 fonts, out of 8000000 for 9000
+ 34215 multiletter control sequences out of 15000+600000
+ 557737 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,14n,70p,780b,653s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} </home/ccs/.
@@ -1880,12 +1889,12 @@ c/cm-super/sfso1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss
 0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/
 share/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf-dis
 t/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/cm-super/sfss1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
-sfss2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></
-usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf
+ublic/cm-super/sfss2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
+sfsx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></
+usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf
 -dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/cm-super/sftt1095.pfb>
-Output written on caps_isolados.pdf (43 pages, 431903 bytes).
+Output written on caps_isolados.pdf (43 pages, 445267 bytes).
 PDF statistics:
  1247 PDF objects out of 1440 (max. 8388607)
  1161 compressed objects within 12 object streams

@@ -23,17 +23,18 @@
     \frametitle{Conclusões}
 
     \begin{itemize}
-      \item Picat é jovem (nascida em 2013); 
+      \item Picat é jovem  $\approx$ 2013
       \pause
       \item Uma evolução ao Prolog após seus mais de 40 anos de existência e sucesso!
       \pause
-      \item Sua sintaxe é moderna e intuitiva;
+      \item Sua sintaxe é moderna e intuitiva
       \pause
-      \item Código aberto, multi-plataforma, e repleta de possibilidades;
+      \item Código aberto, multi-plataforma e repleta de possibilidades (sistemas embarcados, combinatória,
+      SO, escalonamentos, planejamento etc) $\Rightarrow$ NP's completos em geral
+%      \pause
+%      \item Uso para fins diversos
       \pause
-      \item Uso para fins diversos;
-      \pause
-      \item Muitas bibliotecas específicas prontas: CP, SAT, Planner, etc;
+      \item Muitas bibliotecas específicas prontas: CP (PR), SAT, Planner, etc
       \pause
       \item A sintaxe de PR exige um pouco mais do programador
       \pause
@@ -45,15 +46,16 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Faltando}
+\subsection{Ficou Faltando}
 \begin{frame}[fragile]
 
-    \frametitle{O que ficou faltando:}
+    \frametitle{Ficou Faltando:}
 
     \begin{itemize}
       \item Uso do \texttt{debug} e \texttt{trace} (cansativo -- uma oportunidade)
+
       \pause
-      \item Explorar uso dos solvers de PO (fácil)
+      \item Explorar uso dos \textit{solvers} de PO (fácil)
 
       \pause
       \item Explorar a criação e  uso de módulos  (mais fácil ainda)
@@ -72,7 +74,8 @@
 
     \begin{itemize}
       \item Use o interpretador e o compilador concomitamente. O interpretador
-      sempre acusa warnings etc. O modo compilado na console, não.
+      sempre acusa \textit{warnings} etc. O modo compilado na console não apresenta
+      alguns \textit{warnings}. Efeito \textit{cascata} de erro ...
 
       \pause
       \item No modo interpretado, cada linha de código pode ser testada isoladamente,
@@ -80,7 +83,8 @@
       detectada.
 
        \pause
-      \item Consulte o manual do usuário \textit{on-line} em \textit{html}, mantido pelo Alexandre Gonçalves, UFSC
+      \item Consulte o manual do usuário \textit{on-line} em \textit{html}, 
+      mantido pelo Alexandre Gonçalves -- UFSC
       \url{http://retina.inf.ufsc.br/picat_guide}
 
 
@@ -105,13 +109,44 @@
     \begin{itemize}
       \item Muito obrigado a voce!
       \pause
-      \item Algumas pessoas que deram opiniões e me incentivaram a 
-            fazer este material
+      \item Algumas pessoas que deram opiniões neste material 
+            e me incentivaram a terminá-lo 
+            
+      \pause
+      \item  Em especial a minha esposa: Maria Luiza
   
       \pause
       \item Claudio Cesar de Sá
-     \item Contacto: \url{claudio.sa@udesc.br} e\\
-           \url{claudio@colmeia.udesc.br}
+     \item Contacto: 
+     \begin{description}
+          \item[\Letter \/] \url{claudio.sa@udesc.br}
+          \item[\Letter \/] \url{claudio@colmeia.udesc.br}
+     \end{description}
+
 
     \end{itemize}
 \end{frame}
+
+
+
+\begin{frame}[fragile]
+  \frametitle{Finalizando ...}
+
+
+\begin{minipage}{0.47\textwidth}
+
+\begin{Large}
+\textbf{\textcolor{magenta}{... espero que\\ tenham gostado\\ e obrigado!}}
+\end{Large}
+
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{figure}[ht!]
+\begin{center}
+\includegraphics[width=1.2\textwidth, height=0.40\textheight]{figures/logo_picat_alex.jpg}
+\end{center}
+\end{figure}
+\end{minipage}
+
+\end{frame}
+					

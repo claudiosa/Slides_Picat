@@ -68,7 +68,7 @@
 \subsection{Dicas de Programação}
 \begin{frame}[fragile] 
 
-    \frametitle{O que ficou faltando:}
+    \frametitle{Dicas de Programação:}
 
     \begin{itemize}
       \item Use o interpretador e o compilador concomitamente. O interpretador
@@ -87,7 +87,6 @@
       \pause
       \item Consulte o site do Picat e dos grandes mestres Hakan, Neng-Fa, Roman Barták, 
       Sergii Dymchenko, etc
-
 
       \pause
       \item Inscreva-se no fórum e consulte o Guia do Usuário (tudo em inglês)

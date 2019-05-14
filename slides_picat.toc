@@ -26,6 +26,6 @@
 \beamer@sectionintoc {9}{Planejamento}{386}{0}{9}
 \beamer@sectionintoc {10}{Programa\IeC {\c c}\IeC {\~a}o por Restri\IeC {\c c}\IeC {\~o}es}{430}{0}{10}
 \beamer@sectionintoc {11}{Conclus\IeC {\~o}es}{532}{0}{11}
-\beamer@subsectionintoc {11}{1}{Faltando}{541}{0}{11}
-\beamer@subsectionintoc {11}{2}{Dicas de Programa\IeC {\c c}\IeC {\~a}o}{544}{0}{11}
-\beamer@subsectionintoc {11}{3}{Agradecimentos}{549}{0}{11}
+\beamer@subsectionintoc {11}{1}{Ficou Faltando}{540}{0}{11}
+\beamer@subsectionintoc {11}{2}{Dicas de Programa\IeC {\c c}\IeC {\~a}o}{543}{0}{11}
+\beamer@subsectionintoc {11}{3}{Agradecimentos}{548}{0}{11}

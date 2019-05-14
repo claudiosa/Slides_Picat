@@ -1,8 +1,19 @@
-\frametitle{Obrigado}
+\frametitle{Obrigado ...}
 
-\begin{LARGE}
+\begin{minipage}{0.47\textwidth}
+\begin{Large}
 \begin{center}
-\textcolor{magenta}{Vejo voces no curso !}
+\textbf{\textcolor{magenta}{... e vejo vocês\\ no curso!}}
 \end{center}
-\end{LARGE}
+\end{Large}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{figure}[ht!]
+\begin{center}
+\includegraphics[width=1.2\textwidth, height=0.40\textheight]{figures/logo_picat_alex.jpg}
+\end{center}
+\end{figure}
+\end{minipage}
+
+
 

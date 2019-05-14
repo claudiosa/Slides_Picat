@@ -289,17 +289,32 @@ entradas e saídas, exemplos
         Definições, o módulo \textit{planner}, uso, abrangência, exemplos
 
     \pause
-		\item  \underline{Programação por Restrições (PR)} ($\approx$ xx min):\\
+		\item \underline{Programação por Restrições (PR)} ($\approx$ 85 min):\\
       Definições, o módulo \textit{cp}, uso, abrangência, exemplos (03).
-      Técnicas de PR.
+      Técnicas de PR.\\
+      3 aulas aqui: $1a.$ aula $\approx$ 41 min, $2a.$ aula $\approx$ 16 min,
+      $3a.$ aula $\approx$ 28 min
+      
+    
+\end{enumerate}
 
-    \pause
-		\item  \underline{Conclusões} ($\approx$ xx min):\\
+\end{frame}
+
+
+			
+\begin{frame}[fragile]
+  \frametitle{Conteúdo}
+  
+  \begin{enumerate}
+
+   \setcounter{enumi}{10}
+
+		\item  \underline{Conclusões} ($\approx$ 9 min):\\
     Retrospectiva, tendências, o que ficou faltando, dicas de programação, etc
 
     \pause
-		\item  \underline{Exercícios}:\\
-    Uma lista de exercícios por seção estarei disponibilizando aqui na Plataforma.
+		\item  \underline{Exercícios}: \\
+    Uma lista de exercícios sobre Picat será disponibilizado aqui na Plataforma
 
     
 \end{enumerate}
@@ -332,11 +347,13 @@ entradas e saídas, exemplos
 \begin{frame}[fragile]
   \frametitle{Obrigado}
 
-\begin{LARGE}
+\begin{Huge}
+
 \begin{center}
-\textcolor{magenta}{Vejo voces no curso !}
+\textcolor{magenta}{e vejo voces no curso !}
 \end{center}
-\end{LARGE}
+
+\end{Huge}
 
 \end{frame}
 						
