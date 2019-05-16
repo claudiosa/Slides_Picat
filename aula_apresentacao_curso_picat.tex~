@@ -26,7 +26,7 @@
 
 \pause
 \begin{center}
-\textcolor{red}{\textbf{Em resumo: Uma visão clara e precisa do que é o curso!}}
+\textcolor{red}{\textbf{\textsc{Em resumo: Uma visão clara e precisa do que é o curso!}}}
  \end{center}
 
 
@@ -39,6 +39,7 @@
   \frametitle{A Linguagem PICAT}
   \begin{itemize}
     \item O que é o PICAT?
+    
     \pause
        \begin{itemize}
 			\item Uma linguagem de programação de propósitos gerais -- \textcolor{magenta}{\textbf{\textit{canivete suiço}}}
@@ -47,6 +48,7 @@
 		\end{itemize}
 
     \item Uso e finalidades do PICAT:
+    
     \pause
        \begin{itemize}
 			\item Uso de programas gerais: de simples à complexos (uma reflexão)
@@ -54,6 +56,9 @@
 			\item Área: IA, programação por restrições, programação inteira, planejamento,
 			combinatória, etc
 		\end{itemize}
+
+   \pause
+   \item \textsc{\textbf{PICAT}} é um acrônimo: \pause \colorbox{orange}{{\Large \textbf{P.I.C.A.T.}}}
 
    \end{itemize}
 
@@ -83,12 +88,13 @@
    \pause
 		\begin{itemize}
 			\item Ao final você vai estar apto a resolver problemas
-			computacionais difíceis: os famosos NP-completo!
+			computacionais difíceis: os famosos \textcolor{violet}{\textbf{NP-completos}}!
 			
-			\item Difícil: muitas linhas de código e muito conhecimento de algoritmos seriam
+			\item Difícil: muitas linhas de código e muito 
+			conhecimento de algoritmos seriam
 			necessários
 			
-			\item Com Picat, há sofisticados esquemas prontos para se construir programas.
+			\item Com Picat, há sofisticados esquemas prontos para se construir programas
 
 		\end{itemize}
 
@@ -235,26 +241,25 @@
   \frametitle{Conteúdo}
   \begin{enumerate}
 
-					
-    \item  \underline{Introdução} ($\approx$ 27 min):\\
+    \item  \colorbox{yellow}{\textbf{\underline{Introdução}}} ($\approx$ 27 min):\\
     Histórico, paradigmas de linguagens, usando o Picat, etc
 
     \pause
-    \item \underline{Tipos de Dados e Variáveis} ($\approx$ 28 min):\\
+    \item \colorbox{yellow}{\textbf{\underline{Tipos de Dados e Variáveis}}} ($\approx$ 28 min):\\
 Tipos de Dados, Variáveis, Unificação e Atribuição, Tabela de Operadores, Operadores Especiais,
  Exemplos
     
     \pause
-		\item \underline{Predicados e Funções} ($\approx$ 32 min):\\
+		\item \colorbox{yellow}{\textbf{\underline{Predicados e Funções}}} ($\approx$ 32 min):\\
 Casamento de padrões, funções, regras, fatos, metas, exemplos
 		
     \pause
-    \item \underline{Estruturas de Decisão, Laços e Iteradores} ($\approx$ 28 min):\\
+    \item \colorbox{yellow}{\textbf{\underline{Estruturas de Decisão, Laços e Iteradores}}} ($\approx$ 28 min):\\
 Estruturas de decisão, iteradores, funções e predicados especiais, 
 entradas e saídas, exemplos
     
     \pause
-		\item  \underline{Recursão} ($\approx$ 28 min):\\
+		\item  \colorbox{yellow}{\textbf{\underline{Recursão}}} ($\approx$ 28 min):\\
      Conceitos de recursão, conceito de \textit{backtracking}, o paradigma
      de pensar e programar recursivamente, exemplos
 \end{enumerate}
@@ -271,25 +276,26 @@ entradas e saídas, exemplos
   \begin{enumerate}
 
    \setcounter{enumi}{5}
-    \item  \underline{Listas} ($\approx$ 36 min):\\
+    \item  \colorbox{yellow}{\textbf{\underline{Listas}}} ($\approx$ 36 min):\\
     Definição, como o Picat opera as listas, exemplos
 
 
     \pause
-    \item  \underline{Buscas} ($\approx$ 40 min):\\
-    Definições, uso, abrangência, exemplos
+    \item  \colorbox{yellow}{\textbf{\underline{Buscas}}} ($\approx$ 40 min):\\
+     Definições, uso, abrangência, exemplos. Uma abordagem
+     original.
 
     \pause
-    \item \underline{Programação Dinâmica (PD)} ($\approx$ 24 min):\\
-        Definições, uso, abrangência, exemplos
+    \item \colorbox{yellow}{\textbf{\underline{Programação Dinâmica (PD)}}} ($\approx$ 24 min):\\
+    Definições, uso, abrangência, exemplos
 
     
     \pause
-    \item \underline{Planejamento} ($\approx$ 35 min):\\
+    \item \colorbox{yellow}{\textbf{\underline{Planejamento}}} ($\approx$ 35 min):\\
         Definições, o módulo \textit{planner}, uso, abrangência, exemplos
 
     \pause
-		\item \underline{Programação por Restrições (PR)} ($\approx$ 85 min):\\
+		\item \colorbox{yellow}{\textbf{\underline{Programação por Restrições (PR)}}} ($\approx$ 85 min):\\
       Definições, o módulo \textit{cp}, uso, abrangência, exemplos (03).
       Técnicas de PR.\\
       3 aulas aqui: $1a.$ aula $\approx$ 41 min, $2a.$ aula $\approx$ 16 min,
@@ -309,12 +315,9 @@ entradas e saídas, exemplos
 
    \setcounter{enumi}{10}
 
-		\item  \underline{Conclusões} ($\approx$ 9 min):\\
-    Retrospectiva, tendências, o que ficou faltando, dicas de programação, etc
-
-    \pause
-		\item  \underline{Exercícios}: \\
-    Uma lista de exercícios sobre Picat será disponibilizado aqui na Plataforma
+		\item  \colorbox{yellow}{\textbf{\underline{Conclusões}}} ($\approx$ 9 min):\\
+    Retrospectiva, tendências, o que ficou faltando, 
+    dicas de programação, etc
 
     
 \end{enumerate}
@@ -332,8 +335,8 @@ entradas e saídas, exemplos
   \item Miguel Alfredo Nunes
   \item Jeferson L. R. Souza
     \item Alexandre Gonçalves 
-    \item Hakan Kjellerstrand -- (\url{http://www.hakank.org/picat/})
-    \item Neng-Fa Zhou -- (\url{http://www.picat-lang.org/})
+    \item Hakan Kjellerstrand
+    \item Neng-Fa Zhou
     \item João Herique Faes Battisti
     \item Paulo Victor de Aguiar
     \item Rogério Eduardo da Silva
@@ -343,17 +346,45 @@ entradas e saídas, exemplos
 
 \end{frame}
 
+\subsection{Agradecimentos}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+  \frametitle{Referências}
+
+  \begin{itemize}
+    \item Os fontes, exemplos, problemas, etc:\\ 
+    \url{http://github.com/claudiosa/CCS/picat}
+    \item Hakan Kjellerstrand -- \url{http://www.hakank.org/picat/}
+    \item Neng-Fa Zhou -- \url{http://www.picat-lang.org/}
+    \item Roman Barták -- \url{http://ktiml.mff.cuni.cz/~bartak/}
+    \item Sergii Dymchenko -- \url{http://sdymchenko.com/tags/picat/}
+  \end{itemize}
+
+\end{frame}
+
+
+
 
 \begin{frame}[fragile]
-  \frametitle{Obrigado}
+  \frametitle{Obrigado ...}
 
-\begin{Huge}
-
+\begin{minipage}{0.47\textwidth}
+\begin{huge}
 \begin{center}
-\textcolor{magenta}{e vejo voces no curso !}
+\textbf{\textcolor{magenta}{\textsc{... e vejo vocês\\ no curso!}}}
 \end{center}
+\end{huge}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{figure}[ht!]
+\begin{center}
+\includegraphics[width=1.2\textwidth, height=0.40\textheight]{figures/logo_picat_alex.jpg}
+\end{center}
+\end{figure}
+\end{minipage}
 
-\end{Huge}
+
 
 \end{frame}
 						

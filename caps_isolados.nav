@@ -5,36 +5,40 @@
 \headcommand {\sectionentry {1}{Apresenta\IeC {\c c}\IeC {\~a}o ao Curso de PICAT}{2}{Apresenta\IeC {\c c}\IeC {\~a}o ao Curso de PICAT}{0}}
 \headcommand {\slideentry {1}{0}{1}{2/3}{}{0}}
 \headcommand {\beamer@framepages {2}{3}}
-\headcommand {\slideentry {1}{0}{2}{4/6}{}{0}}
-\headcommand {\beamer@framepages {4}{6}}
-\headcommand {\slideentry {1}{0}{3}{7/12}{}{0}}
-\headcommand {\beamer@framepages {7}{12}}
-\headcommand {\slideentry {1}{0}{4}{13/16}{}{0}}
-\headcommand {\beamer@framepages {13}{16}}
-\headcommand {\slideentry {1}{0}{5}{17/17}{}{0}}
-\headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {1}{0}{6}{18/21}{}{0}}
-\headcommand {\beamer@framepages {18}{21}}
-\headcommand {\slideentry {1}{0}{7}{22/25}{}{0}}
-\headcommand {\beamer@framepages {22}{25}}
-\headcommand {\slideentry {1}{0}{8}{26/29}{}{0}}
-\headcommand {\beamer@framepages {26}{29}}
-\headcommand {\beamer@subsectionpages {2}{29}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{30}{Conte\IeC {\'u}do do Curso}}
-\headcommand {\slideentry {1}{1}{1}{30/34}{Conte\IeC {\'u}do do Curso}{0}}
-\headcommand {\beamer@framepages {30}{34}}
-\headcommand {\slideentry {1}{1}{2}{35/39}{Conte\IeC {\'u}do do Curso}{0}}
-\headcommand {\beamer@framepages {35}{39}}
-\headcommand {\slideentry {1}{1}{3}{40/41}{Conte\IeC {\'u}do do Curso}{0}}
-\headcommand {\beamer@framepages {40}{41}}
-\headcommand {\beamer@subsectionpages {30}{41}}
+\headcommand {\slideentry {1}{0}{2}{4/8}{}{0}}
+\headcommand {\beamer@framepages {4}{8}}
+\headcommand {\slideentry {1}{0}{3}{9/14}{}{0}}
+\headcommand {\beamer@framepages {9}{14}}
+\headcommand {\slideentry {1}{0}{4}{15/18}{}{0}}
+\headcommand {\beamer@framepages {15}{18}}
+\headcommand {\slideentry {1}{0}{5}{19/19}{}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\slideentry {1}{0}{6}{20/22}{}{0}}
+\headcommand {\beamer@framepages {20}{22}}
+\headcommand {\slideentry {1}{0}{7}{23/26}{}{0}}
+\headcommand {\beamer@framepages {23}{26}}
+\headcommand {\slideentry {1}{0}{8}{27/30}{}{0}}
+\headcommand {\beamer@framepages {27}{30}}
+\headcommand {\beamer@subsectionpages {2}{30}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{31}{Conte\IeC {\'u}do do Curso}}
+\headcommand {\slideentry {1}{1}{1}{31/35}{Conte\IeC {\'u}do do Curso}{0}}
+\headcommand {\beamer@framepages {31}{35}}
+\headcommand {\slideentry {1}{1}{2}{36/40}{Conte\IeC {\'u}do do Curso}{0}}
+\headcommand {\beamer@framepages {36}{40}}
+\headcommand {\slideentry {1}{1}{3}{41/41}{Conte\IeC {\'u}do do Curso}{0}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\beamer@subsectionpages {31}{41}}
 \headcommand {\beamer@subsectionentry {0}{1}{2}{42}{Agradecimentos}}
 \headcommand {\slideentry {1}{2}{1}{42/42}{Agradecimentos}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {1}{2}{2}{43/43}{Agradecimentos}{0}}
+\headcommand {\beamer@subsectionpages {42}{42}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{43}{Agradecimentos}}
+\headcommand {\slideentry {1}{3}{1}{43/43}{Agradecimentos}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\beamer@partpages {1}{43}}
-\headcommand {\beamer@subsectionpages {42}{43}}
-\headcommand {\beamer@sectionpages {2}{43}}
-\headcommand {\beamer@documentpages {43}}
-\headcommand {\gdef \inserttotalframenumber {14}}
+\headcommand {\slideentry {1}{3}{2}{44/44}{Agradecimentos}{0}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\beamer@partpages {1}{44}}
+\headcommand {\beamer@subsectionpages {43}{44}}
+\headcommand {\beamer@sectionpages {2}{44}}
+\headcommand {\beamer@documentpages {44}}
+\headcommand {\gdef \inserttotalframenumber {15}}

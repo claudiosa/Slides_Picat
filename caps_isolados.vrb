@@ -1,11 +1,11 @@
 \frametitle{Obrigado ...}
 
 \begin{minipage}{0.47\textwidth}
-\begin{Large}
+\begin{huge}
 \begin{center}
-\textbf{\textcolor{magenta}{... e vejo vocês\\ no curso!}}
+\textbf{\textcolor{magenta}{\textsc{... e vejo vocês\\ no curso!}}}
 \end{center}
-\end{Large}
+\end{huge}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
 \begin{figure}[ht!]
