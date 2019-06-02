@@ -609,27 +609,52 @@
 \headcommand {\beamer@framepages {527}{531}}
 \headcommand {\beamer@sectionpages {430}{531}}
 \headcommand {\beamer@subsectionpages {430}{531}}
-\headcommand {\sectionentry {11}{Conclus\IeC {\~o}es}{532}{Conclus\IeC {\~o}es}{0}}
+\headcommand {\sectionentry {11}{Depura\IeC {\c c}\IeC {\~a}o}{532}{Depura\IeC {\c c}\IeC {\~a}o}{0}}
 \headcommand {\slideentry {11}{0}{1}{532/532}{}{0}}
 \headcommand {\beamer@framepages {532}{532}}
 \headcommand {\slideentry {11}{0}{2}{533/539}{}{0}}
 \headcommand {\beamer@framepages {533}{539}}
-\headcommand {\beamer@subsectionpages {532}{539}}
-\headcommand {\beamer@subsectionentry {0}{11}{1}{540}{Ficou Faltando}}
-\headcommand {\slideentry {11}{1}{1}{540/542}{Ficou Faltando}{0}}
-\headcommand {\beamer@framepages {540}{542}}
-\headcommand {\beamer@subsectionpages {540}{542}}
-\headcommand {\beamer@subsectionentry {0}{11}{2}{543}{Dicas de Programa\IeC {\c c}\IeC {\~a}o}}
-\headcommand {\slideentry {11}{2}{1}{543/547}{Dicas de Programa\IeC {\c c}\IeC {\~a}o}{0}}
-\headcommand {\beamer@framepages {543}{547}}
-\headcommand {\beamer@subsectionpages {543}{547}}
-\headcommand {\beamer@subsectionentry {0}{11}{3}{548}{Agradecimentos}}
-\headcommand {\slideentry {11}{3}{1}{548/551}{Agradecimentos}{0}}
-\headcommand {\beamer@framepages {548}{551}}
-\headcommand {\slideentry {11}{3}{2}{552/552}{Agradecimentos}{0}}
-\headcommand {\beamer@framepages {552}{552}}
-\headcommand {\beamer@partpages {1}{552}}
-\headcommand {\beamer@subsectionpages {548}{552}}
-\headcommand {\beamer@sectionpages {532}{552}}
-\headcommand {\beamer@documentpages {552}}
-\headcommand {\gdef \inserttotalframenumber {281}}
+\headcommand {\slideentry {11}{0}{3}{540/540}{}{0}}
+\headcommand {\beamer@framepages {540}{540}}
+\headcommand {\slideentry {11}{0}{4}{541/541}{}{0}}
+\headcommand {\beamer@framepages {541}{541}}
+\headcommand {\slideentry {11}{0}{5}{542/542}{}{0}}
+\headcommand {\beamer@framepages {542}{542}}
+\headcommand {\slideentry {11}{0}{6}{543/548}{}{0}}
+\headcommand {\beamer@framepages {543}{548}}
+\headcommand {\slideentry {11}{0}{7}{549/549}{}{0}}
+\headcommand {\beamer@framepages {549}{549}}
+\headcommand {\beamer@subsectionpages {532}{549}}
+\headcommand {\beamer@subsectionentry {0}{11}{1}{550}{Trace}}
+\headcommand {\slideentry {11}{1}{1}{550/550}{Trace}{0}}
+\headcommand {\beamer@framepages {550}{550}}
+\headcommand {\slideentry {11}{1}{2}{551/555}{Trace}{0}}
+\headcommand {\beamer@framepages {551}{555}}
+\headcommand {\slideentry {11}{1}{3}{556/560}{Trace}{0}}
+\headcommand {\beamer@framepages {556}{560}}
+\headcommand {\beamer@sectionpages {532}{560}}
+\headcommand {\beamer@subsectionpages {550}{560}}
+\headcommand {\sectionentry {12}{Conclus\IeC {\~o}es}{561}{Conclus\IeC {\~o}es}{0}}
+\headcommand {\slideentry {12}{0}{1}{561/561}{}{0}}
+\headcommand {\beamer@framepages {561}{561}}
+\headcommand {\slideentry {12}{0}{2}{562/568}{}{0}}
+\headcommand {\beamer@framepages {562}{568}}
+\headcommand {\beamer@subsectionpages {561}{568}}
+\headcommand {\beamer@subsectionentry {0}{12}{1}{569}{Ficou Faltando}}
+\headcommand {\slideentry {12}{1}{1}{569/571}{Ficou Faltando}{0}}
+\headcommand {\beamer@framepages {569}{571}}
+\headcommand {\beamer@subsectionpages {569}{571}}
+\headcommand {\beamer@subsectionentry {0}{12}{2}{572}{Dicas de Programa\IeC {\c c}\IeC {\~a}o}}
+\headcommand {\slideentry {12}{2}{1}{572/576}{Dicas de Programa\IeC {\c c}\IeC {\~a}o}{0}}
+\headcommand {\beamer@framepages {572}{576}}
+\headcommand {\beamer@subsectionpages {572}{576}}
+\headcommand {\beamer@subsectionentry {0}{12}{3}{577}{Agradecimentos}}
+\headcommand {\slideentry {12}{3}{1}{577/580}{Agradecimentos}{0}}
+\headcommand {\beamer@framepages {577}{580}}
+\headcommand {\slideentry {12}{3}{2}{581/581}{Agradecimentos}{0}}
+\headcommand {\beamer@framepages {581}{581}}
+\headcommand {\beamer@partpages {1}{581}}
+\headcommand {\beamer@subsectionpages {577}{581}}
+\headcommand {\beamer@sectionpages {561}{581}}
+\headcommand {\beamer@documentpages {581}}
+\headcommand {\gdef \inserttotalframenumber {291}}

@@ -132,7 +132,7 @@
 }
 
 
-\graphicspath{{/home/ccs/Dropbox/figs_genericas/}{figuras/}{/home/ccs/Dropbox/CCS/picat/}}
+\graphicspath{{/home/ccs/Dropbox/figs_genericas/}{figuras/}{figures/}}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 %Global Background must be put in preamble
 %\usebackgroundtemplate{\includegraphics[width=\paperwidth]{amarelinho.pdf}}

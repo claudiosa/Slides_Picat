@@ -1,19 +1,27 @@
-\frametitle{Obrigado ...}
+\frametitle{Reflexões}
 
-\begin{minipage}{0.47\textwidth}
-\begin{huge}
-\begin{center}
-\textbf{\textcolor{magenta}{\textsc{... e vejo vocês\\ no curso!}}}
-\end{center}
-\end{huge}
-\end{minipage}
-\begin{minipage}{0.5\textwidth}
-\begin{figure}[ht!]
-\begin{center}
-\includegraphics[width=1.2\textwidth, height=0.40\textheight]{figures/logo_picat_alex.jpg}
-\end{center}
-\end{figure}
-\end{minipage}
+\begin{itemize}
+  \item \textcolor{magenta}{Se aprende os detalhes da linguagem com um \textit{trace}}
 
+  \pause
+    \item Não se assuste com modo \texttt{trace} na console
+
+
+  \pause
+    \item Atenção na sequência de uso:
+
+    \begin{enumerate}
+      \item Ative o modo \textit{trace}
+      \item Compile e carregue o seu fonte no modo trace, com o comando \texttt{cl(`.....')}.
+      \item Execute o que desejares do código
+
+    \end{enumerate}
+    \pause
+    Em caso de mudança no código, repita os 3 passos acima
+
+\pause
+    \item Finalmente, \textit{boas depurações}!
+
+\end{itemize}
 
 
