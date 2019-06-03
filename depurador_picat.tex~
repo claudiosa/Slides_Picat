@@ -1,12 +1,12 @@
-\section{Conclusões}
+\section{Depuração}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
-\frametitle{Conclusões}
+\frametitle{Depuração}
 \begin{minipage}{0.47\textwidth}
     \begin{itemize}
-        \item O que foi visto
-        \item O que tem a ser feito
-        \item Oportunidades
+        \item O que é depuração?
+        \item Como funciona no Picat? 
+        \item Exemplo de uso
     \end{itemize}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
@@ -20,133 +20,260 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
 
-    \frametitle{Conclusões}
+    \frametitle{Depuração -- Quando usar?}
 
     \begin{itemize}
-      \item Picat é jovem  $\approx$ 2013
+      \item Depuração,  \textit{trace} ou \textit{debug} -- o que é?
       \pause
-      \item Uma evolução ao Prolog após seus mais de 40 anos de existência e sucesso!
+      Mostrar estado de variáveis, funções e predicados durante a execução de um código
+    
+      \item Depuração ou \textit{trace} -- quando usar?
       \pause
-      \item Sua sintaxe é moderna e intuitiva
+     \textbf{\textcolor{violet}{Aprender detalhes da linguagem}}
+
+  \pause
+  \item Depuração ou \textit{trace} $\Rightarrow $      \textbf{\textcolor{violet}{para descobrir o erro!}}
+
+\pause
+    \item Em Picat não há um ambiente gráfico de depuração, 
+    ao contrário do SWI-Prolog. 
       \pause
-      \item Código aberto, multi-plataforma e repleta de possibilidades (sistemas embarcados, combinatória,
-      SO, escalonamentos, planejamento etc) $\Rightarrow$ NP's completos em geral
+    Eis uma oportunidade de um projeto aqui....
+        
+    \item Contudo, o \textit{trace} do Picat faz tudo ...
+      \pause
+    
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+
+\frametitle{Depuração -- Como funciona um predicado?}
+
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics[width=0.90\textwidth, height=0.5\textheight]{figures/trace01.pdf}
+%\caption{Realizar buscas com regiões reduzidas -- promissoras (regiões factíveis de soluções)}
+\end{center}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+
+
+\frametitle{Depuração -- Internamente  tem o \textit{backtracking}!}
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics[width=0.90\textwidth, height=0.6\textheight]{figures/trace02.pdf}
+\caption{Levemente diferente do que é encontrado na bibliografia!}
+\end{center}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+
+\frametitle{Depuração -- uma regra composta}
+
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics[width=0.90\textwidth, height=0.6\textheight]{figures/trace03.pdf}
+%\caption{Realizar buscas com regiões reduzidas -- promissoras (regiões factíveis de soluções)}
+\end{center}
+\end{figure}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+
+    \frametitle{Depuração}
+
+    \begin{itemize}
+    
+      \item Picat tem \textbf{3 modos de execução}: \textit{trace},
+      \textit{non-trace} e \textit{spy}
+      \pause
+      \item  \textit{non-trace}: é a execução normal ou \textit{default} -- vista até o momento
+
+      \pause
+      \item  \textit{trace} ou \textit{debug}: vê passo-a-passo de cada variável, predicado ou      função,  do código inteiro
 %      \pause
 %      \item Uso para fins diversos
       \pause
-      \item Muitas bibliotecas específicas prontas: CP (PR), SAT, Planner, etc
-      \pause
-      \item A sintaxe de PR exige um pouco mais do programador
-      \pause
-      \item Dúvidas: o guia do usuário, livro do Hakan e o Fórum de discussão do Picat
+      \item \textit{spy}: especifica um predicado ou função -- útil para habilitar e desabilitar partes do código
 
+      \pause
+      \item Devem ser habilitado e desabilitados no \underline{\textbf{modo interpretado}}
+    
+      \item \textcolor{red}{Há funções e predicados que não tem \textit{backtracking}.}\\
+      \pause
+       Exemplos: \texttt{nl}, \texttt{printf}, \texttt{read}, etc
+       
     \end{itemize}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+\begin{frame}[fragile]
+
+\frametitle{Uso básico do \textit{trace}}
+
+\begin{enumerate}
+  \item Entre no interpretador do Picat
+  
+    \item Ative o modo \textit{trace} (ou \textit{debug}), com o comando: \textit{trace}
+    
+    \item Compile e carregue o programa desejado 
+    a depurar, com o comando: \texttt{cl(`....').}
+    
+    \item Execute a parte desejada do código
+    
+    \item Vá dando \texttt{Enter} no modo \textit{passo-a-passo}
+    
+    \item Digite `\textbf{h}' para o \texttt{help}\texttt{\texttt{}}  e ver opções disponíveis
+    
+    \item Digite `\textbf{a}' para o \texttt{abortar}\texttt{} o modo trace
+      
+\end{enumerate}
+\begin{center}
+\textbf{\textcolor{magenta}{Em qualquer modificação do código fonte no editor, repita os passos acima, desde o início!}}
+\end{center}
+
+\end{frame}
+
+
+
+
+
+
+
+\subsection{Exemplo do \textit{trace}}
+\begin{frame}[fragile]
+
+\frametitle{Exemplo:  \texttt{X + Y = 22}}
+
+\begin{footnotesize}
+\begin{verbatim}
+main ?=> 
+    %%%%% ACHE X e Y tal que  X + Y = 22 
+    regra(X,Y, 22) , 
+    printf("SAIDAS ==> X: %w Y: %w \n", X, Y)  ,  
+    false.
+main =>  printf("\n Não há mais soluções! \n"). 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+regra(X,Y, R) =>   
+      p(X),
+      q(Y),
+      R = X + Y.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+index(-)      
+     p(2).     p(1).     p(0).
+index(-)      
+     q(20).    q(22).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
+\end{verbatim}
+\end{footnotesize}
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Ficou Faltando}
+
 \begin{frame}[fragile]
 
-    \frametitle{Ficou Faltando:}
+\frametitle{Saída}
 
-    \begin{itemize}
-      \item Uso do \texttt{debug} e \texttt{trace} (cansativo -- uma oportunidade)
-
-      \pause
-      \item Explorar uso dos \textit{solvers} de PO (fácil)
-
-      \pause
-      \item Explorar a criação e  uso de módulos  (mais fácil ainda)
-
-
-
-    \end{itemize}
+\begin{scriptsize}
+\begin{verbatim}
+Picat> trace
+Note: you need to recompile programs in debug mode for tracing
+yes
+{Trace mode}
+Picat>  cl('trace_exemplo_01')
+Compiling:: trace_exemplo_01.pi
+trace_exemplo_01.pi compiled in 3 milliseconds
+loading...
+yes
+{Trace mode}
+Picat> q(X), writeln(x = X), false.
+   Call: (1) q(_10b38) ?
+?  Exit: (1) q(20) ?
+   Call: (2) writeln(x = 20) ?
+x = 20
+   Exit: (2) writeln(x = 20) ?
+   Redo: (1) q(20) ?            >>>> DEVIDO o false
+   Exit: (1) q(22) ?
+   Call: (3) writeln(x = 22) ?
+x = 22
+   Exit: (3) writeln(x = 22) ?
+no
+{Trace mode}
+\end{verbatim}
+\end{scriptsize}
 \end{frame}
 
 
-
-\subsection{Dicas de Programação}
-\begin{frame}[fragile] 
-
-    \frametitle{Dicas de Programação:}
-
-    \begin{itemize}
-      \item Use o interpretador e o compilador concomitamente. O interpretador
-      sempre acusa \textit{warnings} etc. O modo compilado na console não apresenta
-      alguns \textit{warnings}. Efeito \textit{cascata} de erro ...
-
-      \pause
-      \item No modo interpretado, cada linha de código pode ser testada isoladamente,
-      assim, o efeito global desta é restrita. Qualquer erro ou falha é rapidamente
-      detectada.
-
-       \pause
-      \item Consulte o manual do usuário \textit{on-line} em \textit{html}, 
-      mantido pelo Alexandre Gonçalves -- UFSC
-      \url{http://retina.inf.ufsc.br/picat_guide}
-
-
-      \pause
-      \item Consulte o site do Picat e dos grandes mestres Hakan, Neng-Fa, Roman Barták, 
-      Sergii Dymchenko, etc
-
-      \pause
-      \item Inscreva-se no fórum e consulte o Guia do Usuário (tudo em inglês)
-
-
-    \end{itemize}
-\end{frame}
-
-
-
-\subsection{Agradecimentos}
 \begin{frame}[fragile]
 
-    \frametitle{Agradecimentos}
+\frametitle{Considerações de Uso do \textit{trace}}
 
-    \begin{itemize}
-      \item Muito obrigado a voce!
-      \pause
-      \item Algumas pessoas que deram opiniões neste material 
-            e me incentivaram a terminá-lo 
-            
-      \pause
-      \item  Em especial a minha esposa: Maria Luiza
+\begin{itemize}
+  \item Este comando é muito útil e se encontra em modo \textit{beta} de uso
   
-      \pause
-      \item Claudio Cesar de Sá
-     \item Contacto: 
-     \begin{description}
-          \item[\Letter \/] \url{claudio.sa@udesc.br}
-          \item[\Letter \/] \url{claudio@colmeia.udesc.br}
-     \end{description}
+  \item Mas, tem \textbf{TUDO} que se precisa para descobrir um erro
+  
+  \pause
+  \item A idéia de se programar com Picat e outras linguagens
+  declarativas é: 
 
+  \pause
+  \textcolor{magenta}{\textbf{a cada linha de código escrita segue-se por um teste isolado!}}
 
-    \end{itemize}
+  \pause
+  \item Ou seja,  use o \textit{trace} em partes do código!
+
+    \pause
+    \item   \textcolor{magenta}{\textbf{Os números após a chamadas, representam a sequência na pilha de cada predicado!}} 
+
+  \pause
+  \item Ao se ganhar confiança com a linguagem, voce vai omitindo alguns pontos!
+
+  
+\end{itemize}
+
 \end{frame}
-
 
 
 \begin{frame}[fragile]
-  \frametitle{Finalizando ...}
+\frametitle{Reflexões}
 
+\begin{itemize}
+  \item \textcolor{magenta}{Se aprende os detalhes da linguagem com um \textit{trace}}
+  
+  \pause
+    \item Não se assuste com modo \texttt{trace} na console
+  
+  
+  \pause
+    \item Atenção na sequência de uso: 
+    
+    \begin{enumerate}
+      \item Ative o modo \textit{trace}
+      \item Compile e carregue o seu fonte no modo trace, com o comando \texttt{cl(`.....')}.
+      \item Execute o que desejares do código
 
-\begin{minipage}{0.47\textwidth}
+    \end{enumerate}
+    \pause
+    Em caso de mudança no código, repita os 3 passos acima
+    
+\pause
+    \item Finalmente, \textit{boas depurações}!        
+  
+\end{itemize}
 
-\begin{Large}
-\textbf{\textcolor{magenta}{... espero que\\ tenham gostado\\ e obrigado!}}
-\end{Large}
-
-\end{minipage}
-\begin{minipage}{0.5\textwidth}
-\begin{figure}[ht!]
-\begin{center}
-\includegraphics[width=1.2\textwidth, height=0.40\textheight]{figures/logo_picat_alex.jpg}
-\end{center}
-\end{figure}
-\end{minipage}
 
 \end{frame}
-					

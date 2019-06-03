@@ -105,7 +105,7 @@
 %      \pause
 %      \item Uso para fins diversos
       \pause
-      \item \textit{spy}: especifica um predicado ou função -- útil para habilitar e desabilitar   partes do código.
+      \item \textit{spy}: especifica um predicado ou função -- útil para habilitar e desabilitar partes do código
 
       \pause
       \item Devem ser habilitado e desabilitados no \underline{\textbf{modo interpretado}}
@@ -136,44 +136,78 @@
     \item Vá dando \texttt{Enter} no modo \textit{passo-a-passo}
     
     \item Digite `\textbf{h}' para o \texttt{help}\texttt{\texttt{}}  e ver opções disponíveis
+    
     \item Digite `\textbf{a}' para o \texttt{abortar}\texttt{} o modo trace
       
 \end{enumerate}
+\begin{center}
+\textbf{\textcolor{magenta}{Em qualquer modificação do código fonte no editor, repita os passos acima, desde o início!}}
+\end{center}
 
 \end{frame}
 
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection{Trace}
+%\subsection{Exemplo de uso do \textit{trace}}
 \begin{frame}[fragile]
 
-\frametitle{Exemplo}
+\frametitle{Exemplo:  \texttt{X + Y = 22}}
 
 \begin{footnotesize}
 \begin{verbatim}
-index(-)      
-     p(2).     p(1).     p(0).
-index(-)      
-     q(20).    q(22).
+main ?=> 
+    %%%%% ACHE X e Y tal que  X + Y = 22 
+    regra(X,Y, 22) , 
+    printf("SAIDAS ==> X: %w Y: %w \n", X, Y)  ,  
+    false.
+main =>  printf("\n Não há mais soluções! \n"). 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 regra(X,Y, R) =>   
       p(X),
       q(Y),
       R = X + Y.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-main ?=> 
-    X + Y = 22
-    regra(X,Y, 22) , 
-    printf("\n X: %w Y: %w ", X, Y)  ,  
-    false.
-main =>  printf("\n Não há mais soluções! \n"). 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+index(-)      
+     p(2).     p(1).     p(0).
+index(-)      
+     q(20).    q(22).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
 \end{verbatim}
 \end{footnotesize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\subsection{Exemplo de uso do \textit{trace}}
+\begin{frame}[fragile]
+
+\frametitle{Saída}
+
+\begin{scriptsize}
+\begin{verbatim}
+Picat> trace
+Note: you need to recompile programs in debug mode for tracing
+yes
+{Trace mode}
+Picat>  cl('trace_exemplo_01')
+Compiling:: trace_exemplo_01.pi
+trace_exemplo_01.pi compiled in 3 milliseconds
+loading...
+yes
+{Trace mode}
+Picat> q(X), writeln(x = X), false.
+   Call: (1) q(_10b38) ?
+?  Exit: (1) q(20) ?
+   Call: (2) writeln(x = 20) ?
+x = 20
+   Exit: (2) writeln(x = 20) ?
+   Redo: (1) q(20) ?            >>>> DEVIDO o false
+   Exit: (1) q(22) ?
+   Call: (3) writeln(x = 22) ?
+x = 22
+   Exit: (3) writeln(x = 22) ?
+no
+{Trace mode}
+\end{verbatim}
+\end{scriptsize}
 \end{frame}
 
 
@@ -182,8 +216,7 @@ main =>  printf("\n Não há mais soluções! \n").
 \frametitle{Considerações de Uso do \textit{trace}}
 
 \begin{itemize}
-  \item Este comando é muito útil e se encontra em modo bem
-  primitivo de uso
+  \item Este comando é muito útil e se encontra em modo \textit{beta} de uso
   
   \item Mas, tem \textbf{TUDO} que se precisa para descobrir um erro
   
@@ -196,6 +229,9 @@ main =>  printf("\n Não há mais soluções! \n").
 
   \pause
   \item Ou seja,  use o \textit{trace} em partes do código!
+
+    \pause
+    \item   \textcolor{magenta}{\textbf{Os números após a chamadas, representam a sequência na pilha de cada predicado!}} 
 
   \pause
   \item Ao se ganhar confiança com a linguagem, voce vai omitindo alguns pontos!

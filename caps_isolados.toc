@@ -1,3 +1,3 @@
 \babel@toc {brazilian}{}
 \beamer@sectionintoc {1}{Depura\IeC {\c c}\IeC {\~a}o}{2}{0}{1}
-\beamer@subsectionintoc {1}{1}{Trace}{20}{0}{1}
+\beamer@subsectionintoc {1}{1}{Exemplo do \textit {trace}}{20}{0}{1}
