@@ -105,10 +105,11 @@
 %      \pause
 %      \item Uso para fins diversos
       \pause
-      \item \textit{spy}: especifica um predicado ou função -- útil para habilitar e desabilitar partes do código
+      \item \textit{spy}: \textit{salta} para um predicado ou função específica,
+       se iniciando a depuração neste ponto
 
       \pause
-      \item Devem ser habilitado e desabilitados no \underline{\textbf{modo interpretado}}
+      \item Devem ser habilitados e desabilitados no \underline{\textbf{modo interpretado}}
     
       \item \textcolor{red}{Há funções e predicados que não tem \textit{backtracking}.}\\
       \pause
@@ -179,7 +180,7 @@ index(-)
 %\subsection{Exemplo de uso do \textit{trace}}
 \begin{frame}[fragile]
 
-\frametitle{Saída}
+\frametitle{Saída -- \textit{trace}}
 
 \begin{scriptsize}
 \begin{verbatim}
@@ -213,12 +214,54 @@ no
 
 \begin{frame}[fragile]
 
-\frametitle{Considerações de Uso do \textit{trace}}
+\frametitle{Saída -- \textit{spy}}
+
+\begin{tiny}
+\begin{verbatim}
+Picat> trace
+>>>>>>>>>>>>>>>>>>>>>>> OMITIDO LINHAS AQUI
+{Trace mode}
+Picat> cl('trace_exemplo_01')
+>>>>>>>>>>>>>>>>>>>>>>> OMITIDO LINHAS AQUI
+{Trace mode}
+Picat> spy =    
+Spy point set on =.
+>>>>>>>>>>>>>>>>>>>>>>> OMITIDO LINHAS AQUI
+{Spy mode}
+Picat> main
+   Call: (5) 22 = 22 ?
+   Exit: (5) 22 = 22 ?
+?  Exit: (2) regra(2,20,22) ?
+   Call: (6) printf(['\n',' ','X',:,' ','%',w,' ','Y',......],2,20) ?l
+
+ X: 2 Y: 20    Call: (7) 22 = 24 ?
+   Fail: (7) 22 = 24 ?
+?  Exit: (3) p(1) ?l
+   Call: (9) 22 = 21 ?l
+>>>>>>>>>>>>>>>>>>>>>>> OMITIDO LINHAS AQUI  
+   Exit: (13) 22 = 22 ?l
+ X: 0 Y: 22 
+ Não há mais soluções! 
+>>>>>>>>>>>>>>>>>>>>>>> OMITIDO LINHAS AQUI
+{Spy mode}
+\end{verbatim}
+\end{tiny}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]
+
+\frametitle{Considerações de Uso: \textit{trace} e \textit{spy} }
 
 \begin{itemize}
-  \item Este comando é muito útil e se encontra em modo \textit{beta} de uso
+  \item Estes comandos são úteis e se encontram em modo \textit{beta} de uso
   
   \item Mas, tem \textbf{TUDO} que se precisa para descobrir um erro
+    \pause
+    \item   \textcolor{magenta}{\textbf{Os números após a chamadas, representam a sequência na pilha de cada predicado!}} 
+
   
   \pause
   \item A idéia de se programar com Picat e outras linguagens
@@ -228,10 +271,11 @@ no
   \textcolor{magenta}{\textbf{a cada linha de código escrita segue-se por um teste isolado!}}
 
   \pause
-  \item Ou seja,  use o \textit{trace} em partes do código!
+  \item Ou seja,  use o \textit{trace} e o \textit{spy} em partes do código!
 
-    \pause
-    \item   \textcolor{magenta}{\textbf{Os números após a chamadas, representam a sequência na pilha de cada predicado!}} 
+   \pause
+    \item   \textcolor{magenta}{\textbf{No modo \textit{trace}, veja as opções do \textit{help} ou (h).\\
+    Experimente-os sem receios. Em caso de dúvida: a (\textit{abort})!}} 
 
   \pause
   \item Ao se ganhar confiança com a linguagem, voce vai omitindo alguns pontos!
@@ -258,11 +302,10 @@ no
     \begin{enumerate}
       \item Ative o modo \textit{trace}
       \item Compile e carregue o seu fonte no modo trace, com o comando \texttt{cl(`.....')}.
-      \item Execute o que desejares do código
-
+      \item Execute o que desejares do código ou ative alguns \textit{spy}
     \end{enumerate}
     \pause
-    Em caso de mudança no código, repita os 3 passos acima
+    Em caso de mudança no código, repita os passos acima
     
 \pause
     \item Finalmente, \textit{boas depurações}!        

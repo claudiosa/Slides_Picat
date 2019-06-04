@@ -106,14 +106,14 @@
 %      \item Uso para fins diversos
       \pause
       \item \textit{spy}: \textit{salta} para um predicado ou função específica,
-       se iniciando a depuração neste ponto
+       se iniciando a depuração a partir deste ponto
 
       \pause
       \item Devem ser habilitados e desabilitados no \underline{\textbf{modo interpretado}}
     
-      \item \textcolor{red}{Há funções e predicados que não tem \textit{backtracking}.}\\
+      \item \textbf{\textcolor{red}{Há funções e predicados que não tem \textit{backtracking}.}}\\
       \pause
-       Exemplos: \texttt{nl}, \texttt{printf}, \texttt{read}, etc
+       Exemplos: \texttt{nl}, \texttt{printf}, \texttt{read\_...}, etc
        
     \end{itemize}
 \end{frame}
@@ -216,11 +216,8 @@ no
 
 \frametitle{Saída -- \textit{spy}}
 
-\begin{tiny}
+\begin{scriptsize}
 \begin{verbatim}
-Picat> trace
->>>>>>>>>>>>>>>>>>>>>>> OMITIDO LINHAS AQUI
-{Trace mode}
 Picat> cl('trace_exemplo_01')
 >>>>>>>>>>>>>>>>>>>>>>> OMITIDO LINHAS AQUI
 {Trace mode}
@@ -245,7 +242,7 @@ Picat> main
 >>>>>>>>>>>>>>>>>>>>>>> OMITIDO LINHAS AQUI
 {Spy mode}
 \end{verbatim}
-\end{tiny}
+\end{scriptsize}
 \end{frame}
 
 
@@ -274,8 +271,8 @@ Picat> main
   \item Ou seja,  use o \textit{trace} e o \textit{spy} em partes do código!
 
    \pause
-    \item   \textcolor{magenta}{\textbf{No modo \textit{trace}, veja as opções do \textit{help} ou (h).\\
-    Experimente-os sem receios. Em caso de dúvida: a (\textit{abort})!}} 
+    \item   \textcolor{magenta}{\textbf{Nos modos \textit{trace} e \textit{spy}, veja as opções do \textit{help} ou (h).\\
+    Experimente-as sem receios. Em caso de dúvida: a (\textit{abort})!}} 
 
   \pause
   \item Ao se ganhar confiança com a linguagem, voce vai omitindo alguns pontos!
@@ -300,12 +297,18 @@ Picat> main
     \item Atenção na sequência de uso: 
     
     \begin{enumerate}
-      \item Ative o modo \textit{trace}
+      \item Ative o modo \textcolor{magenta}{\textit{trace}}
       \item Compile e carregue o seu fonte no modo trace, com o comando \texttt{cl(`.....')}.
-      \item Execute o que desejares do código ou ative alguns \textit{spy}
+      \item Execute o que desejares do código ou ative alguns \textcolor{magenta}{\textit{spy}}
+      \item Para desativar  \textcolor{magenta}{\textit{notrace}}
     \end{enumerate}
     \pause
     Em caso de mudança no código, repita os passos acima
+       
+  \pause
+    \item Outra alternativa ao \textcolor{magenta}{\textit{trace}} $\Rightarrow$ modo \textcolor{magenta}{\textit{spy}}, para desativar
+    \textcolor{magenta}{\textit{nospy}}
+    
     
 \pause
     \item Finalmente, \textit{boas depurações}!        

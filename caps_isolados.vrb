@@ -11,12 +11,18 @@
     \item Atenção na sequência de uso:
 
     \begin{enumerate}
-      \item Ative o modo \textit{trace}
+      \item Ative o modo \textcolor{magenta}{\textit{trace}}
       \item Compile e carregue o seu fonte no modo trace, com o comando \texttt{cl(`.....')}.
-      \item Execute o que desejares do código ou ative alguns \textit{spy}
+      \item Execute o que desejares do código ou ative alguns \textcolor{magenta}{\textit{spy}}
+      \item Para desativar  \textcolor{magenta}{\textit{notrace}}
     \end{enumerate}
     \pause
     Em caso de mudança no código, repita os passos acima
+
+  \pause
+    \item Outra alternativa ao \textcolor{magenta}{\textit{trace}} $\Rightarrow$ modo \textcolor{magenta}{\textit{spy}}, para desativar
+    \textcolor{magenta}{\textit{nospy}}
+
 
 \pause
     \item Finalmente, \textit{boas depurações}!
