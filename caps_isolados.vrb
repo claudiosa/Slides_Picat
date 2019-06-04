@@ -13,11 +13,10 @@
     \begin{enumerate}
       \item Ative o modo \textit{trace}
       \item Compile e carregue o seu fonte no modo trace, com o comando \texttt{cl(`.....')}.
-      \item Execute o que desejares do código
-
+      \item Execute o que desejares do código ou ative alguns \textit{spy}
     \end{enumerate}
     \pause
-    Em caso de mudança no código, repita os 3 passos acima
+    Em caso de mudança no código, repita os passos acima
 
 \pause
     \item Finalmente, \textit{boas depurações}!

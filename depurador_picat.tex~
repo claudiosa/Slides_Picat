@@ -146,13 +146,7 @@
 
 \end{frame}
 
-
-
-
-
-
-
-\subsection{Exemplo do \textit{trace}}
+%\subsection{Exemplo de uso do \textit{trace}}
 \begin{frame}[fragile]
 
 \frametitle{Exemplo:  \texttt{X + Y = 22}}
@@ -182,7 +176,7 @@ index(-)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+%\subsection{Exemplo de uso do \textit{trace}}
 \begin{frame}[fragile]
 
 \frametitle{Saída}
