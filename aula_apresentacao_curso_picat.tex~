@@ -165,9 +165,9 @@
     \pause
     \item As aulas aqui apresentadas \textbf{não} serão regravadas!
         
-    \pause 
-    \item Para compensar este detalhe, vamos o texto completo em PDF e fontes dos programas sempre atualizados,
-    e eventuais \textcolor{red}{\textbf{vídeos-extras}} afim de  elucidar os pontos aqui abordados e/ou perguntas
+    % \pause 
+    % \item Para compensar este detalhe, vamos o texto completo em PDF e fontes dos programas sempre atualizados,
+    % e eventuais \textcolor{red}{\textbf{vídeos-extras}} afim de  elucidar os pontos aqui abordados e/ou perguntas
     
 %    \pause 
 %    \item Na parte teórica da definição do Picat, mantive os padrões 
