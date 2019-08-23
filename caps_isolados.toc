@@ -1,2 +1,5 @@
 \babel@toc {brazilian}{}
-\beamer@sectionintoc {1}{Depura\IeC {\c c}\IeC {\~a}o}{2}{0}{1}
+\beamer@sectionintoc {1}{Apresenta\IeC {\c c}\IeC {\~a}o ao Curso de PICAT}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Conte\IeC {\'u}do do Curso}{31}{0}{1}
+\beamer@subsectionintoc {1}{2}{Agradecimentos}{42}{0}{1}
+\beamer@subsectionintoc {1}{3}{Agradecimentos}{43}{0}{1}

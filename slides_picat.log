@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.5.18)  4 JUN 2019 15:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.8.12)  23 AUG 2019 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -362,10 +362,6 @@ Package hobsub Info: Skipping package `ifvtex' (already loaded).
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
@@ -657,21 +653,21 @@ File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
 (/usr/share/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2018/11/13 3.27 The Babel package
+Package: babel 2019/04/03 3.29 The Babel package
 
 (/usr/share/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2018/11/13 3.27 Babel switching mechanism
+File: switch.def 2019/04/03 3.29 Babel switching mechanism
 )
 (/usr/share/texmf-dist/tex/generic/babel-portuges/portuges.ldf
 Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 
 (/usr/share/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2018/11/13 3.27 Babel common definitions
+File: babel.def 2019/04/03 3.29 Babel common definitions
 \babel@savecnt=\count157
 \U@D=\dimen189
 
 (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
-LaTeX Info: Redefining \textlatin on input line 2003.
+LaTeX Info: Redefining \textlatin on input line 2011.
 \bbl@dirlevel=\count158
 )
 Package babel Info: Making " an active character on input line 145.
@@ -803,15 +799,15 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \lst@maxwidth=\dimen267
 
 (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 \c@lstnumber=\count180
 \lst@skipnumbers=\count181
 \lst@framebox=\box83
 )
 (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2018/09/02 1.7 listings configuration
+File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
-Package: listings 2018/09/02 1.7 (Carsten Heinz)
+Package: listings 2019/02/27 1.8b (Carsten Heinz)
 
 (/usr/share/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write5
@@ -844,21 +840,22 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.sty
 (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2019-02-15 L3 programming layer (loader) 
+Package: expl3 2019-04-06 L3 programming layer (loader) 
 
 (/usr/share/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2019-02-15 L3 programming layer (code)
+Package: expl3 2019-04-06 L3 programming layer (code)
 \c_max_int=\count266
 \l_tmpa_int=\count267
 \l_tmpb_int=\count268
 \g_tmpa_int=\count269
 \g_tmpb_int=\count270
 \g__kernel_prg_map_int=\count271
-\c_log_iow=\count272
-\l_iow_line_count_int=\count273
-\l__iow_line_target_int=\count274
-\l__iow_one_indent_int=\count275
-\l__iow_indent_int=\count276
+\c__ior_term_ior=\count272
+\c_log_iow=\count273
+\l_iow_line_count_int=\count274
+\l__iow_line_target_int=\count275
+\l__iow_one_indent_int=\count276
+\l__iow_indent_int=\count277
 \c_zero_dim=\dimen268
 \c_max_dim=\dimen269
 \l_tmpa_dim=\dimen270
@@ -877,78 +874,78 @@ Package: expl3 2019-02-15 L3 programming layer (code)
 \l_tmpb_muskip=\muskip15
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
-\l_keys_choice_int=\count277
-\l__intarray_loop_int=\count278
+\l_keys_choice_int=\count278
+\l__intarray_loop_int=\count279
 \c__intarray_sp_dim=\dimen274
-\g__intarray_font_int=\count279
-\c__fp_leading_shift_int=\count280
-\c__fp_middle_shift_int=\count281
-\c__fp_trailing_shift_int=\count282
-\c__fp_big_leading_shift_int=\count283
-\c__fp_big_middle_shift_int=\count284
-\c__fp_big_trailing_shift_int=\count285
-\c__fp_Bigg_leading_shift_int=\count286
-\c__fp_Bigg_middle_shift_int=\count287
-\c__fp_Bigg_trailing_shift_int=\count288
-\c__kernel_randint_max_int=\count289
-\g__fp_array_int=\count290
-\l__fp_array_loop_int=\count291
-\l__sort_length_int=\count292
-\l__sort_min_int=\count293
-\l__sort_top_int=\count294
-\l__sort_max_int=\count295
-\l__sort_true_max_int=\count296
-\l__sort_block_int=\count297
-\l__sort_begin_int=\count298
-\l__sort_end_int=\count299
-\l__sort_A_int=\count300
-\l__sort_B_int=\count301
-\l__sort_C_int=\count302
-\l__tl_analysis_normal_int=\count303
-\l__tl_analysis_index_int=\count304
-\l__tl_analysis_nesting_int=\count305
-\l__tl_analysis_type_int=\count306
-\l__regex_internal_a_int=\count307
-\l__regex_internal_b_int=\count308
-\l__regex_internal_c_int=\count309
-\l__regex_balance_int=\count310
-\l__regex_group_level_int=\count311
-\l__regex_mode_int=\count312
-\c__regex_cs_in_class_mode_int=\count313
-\c__regex_cs_mode_int=\count314
-\l__regex_catcodes_int=\count315
-\l__regex_default_catcodes_int=\count316
-\c__regex_catcode_D_int=\count317
-\c__regex_catcode_S_int=\count318
-\c__regex_catcode_L_int=\count319
-\c__regex_catcode_O_int=\count320
-\c__regex_catcode_A_int=\count321
-\c__regex_all_catcodes_int=\count322
-\l__regex_show_lines_int=\count323
-\l__regex_min_state_int=\count324
-\l__regex_max_state_int=\count325
-\l__regex_left_state_int=\count326
-\l__regex_right_state_int=\count327
-\l__regex_capturing_group_int=\count328
-\l__regex_min_pos_int=\count329
-\l__regex_max_pos_int=\count330
-\l__regex_curr_pos_int=\count331
-\l__regex_start_pos_int=\count332
-\l__regex_success_pos_int=\count333
-\l__regex_curr_char_int=\count334
-\l__regex_curr_catcode_int=\count335
-\l__regex_last_char_int=\count336
-\l__regex_case_changed_char_int=\count337
-\l__regex_curr_state_int=\count338
-\l__regex_step_int=\count339
-\l__regex_min_active_int=\count340
-\l__regex_max_active_int=\count341
-\l__regex_replacement_csnames_int=\count342
-\l__regex_match_count_int=\count343
-\l__regex_min_submatch_int=\count344
-\l__regex_submatch_int=\count345
-\l__regex_zeroth_submatch_int=\count346
-\g__regex_trace_regex_int=\count347
+\g__intarray_font_int=\count280
+\c__fp_leading_shift_int=\count281
+\c__fp_middle_shift_int=\count282
+\c__fp_trailing_shift_int=\count283
+\c__fp_big_leading_shift_int=\count284
+\c__fp_big_middle_shift_int=\count285
+\c__fp_big_trailing_shift_int=\count286
+\c__fp_Bigg_leading_shift_int=\count287
+\c__fp_Bigg_middle_shift_int=\count288
+\c__fp_Bigg_trailing_shift_int=\count289
+\c__kernel_randint_max_int=\count290
+\g__fp_array_int=\count291
+\l__fp_array_loop_int=\count292
+\l__sort_length_int=\count293
+\l__sort_min_int=\count294
+\l__sort_top_int=\count295
+\l__sort_max_int=\count296
+\l__sort_true_max_int=\count297
+\l__sort_block_int=\count298
+\l__sort_begin_int=\count299
+\l__sort_end_int=\count300
+\l__sort_A_int=\count301
+\l__sort_B_int=\count302
+\l__sort_C_int=\count303
+\l__tl_analysis_normal_int=\count304
+\l__tl_analysis_index_int=\count305
+\l__tl_analysis_nesting_int=\count306
+\l__tl_analysis_type_int=\count307
+\l__regex_internal_a_int=\count308
+\l__regex_internal_b_int=\count309
+\l__regex_internal_c_int=\count310
+\l__regex_balance_int=\count311
+\l__regex_group_level_int=\count312
+\l__regex_mode_int=\count313
+\c__regex_cs_in_class_mode_int=\count314
+\c__regex_cs_mode_int=\count315
+\l__regex_catcodes_int=\count316
+\l__regex_default_catcodes_int=\count317
+\c__regex_catcode_D_int=\count318
+\c__regex_catcode_S_int=\count319
+\c__regex_catcode_L_int=\count320
+\c__regex_catcode_O_int=\count321
+\c__regex_catcode_A_int=\count322
+\c__regex_all_catcodes_int=\count323
+\l__regex_show_lines_int=\count324
+\l__regex_min_state_int=\count325
+\l__regex_max_state_int=\count326
+\l__regex_left_state_int=\count327
+\l__regex_right_state_int=\count328
+\l__regex_capturing_group_int=\count329
+\l__regex_min_pos_int=\count330
+\l__regex_max_pos_int=\count331
+\l__regex_curr_pos_int=\count332
+\l__regex_start_pos_int=\count333
+\l__regex_success_pos_int=\count334
+\l__regex_curr_char_int=\count335
+\l__regex_curr_catcode_int=\count336
+\l__regex_last_char_int=\count337
+\l__regex_case_changed_char_int=\count338
+\l__regex_curr_state_int=\count339
+\l__regex_step_int=\count340
+\l__regex_min_active_int=\count341
+\l__regex_max_active_int=\count342
+\l__regex_replacement_csnames_int=\count343
+\l__regex_match_count_int=\count344
+\l__regex_min_submatch_int=\count345
+\l__regex_submatch_int=\count346
+\l__regex_zeroth_submatch_int=\count347
+\g__regex_trace_regex_int=\count348
 \c_empty_box=\box84
 \l_tmpa_box=\box85
 \l_tmpb_box=\box86
@@ -978,35 +975,35 @@ Package: expl3 2019-02-15 L3 programming layer (code)
 \l_tmpb_coffin=\box95
 \g_tmpa_coffin=\box96
 \g_tmpb_coffin=\box97
+\l__coffin_bounding_shift_dim=\dimen290
+\l__coffin_left_corner_dim=\dimen291
+\l__coffin_right_corner_dim=\dimen292
+\l__coffin_bottom_corner_dim=\dimen293
+\l__coffin_top_corner_dim=\dimen294
+\l__coffin_scaled_total_height_dim=\dimen295
+\l__coffin_scaled_width_dim=\dimen296
 \c__coffin_empty_coffin=\box98
 \l__coffin_display_coffin=\box99
 \l__coffin_display_coord_coffin=\box100
 \l__coffin_display_pole_coffin=\box101
-\l__coffin_display_offset_dim=\dimen290
-\l__coffin_display_x_dim=\dimen291
-\l__coffin_display_y_dim=\dimen292
+\l__coffin_display_offset_dim=\dimen297
+\l__coffin_display_x_dim=\dimen298
+\l__coffin_display_y_dim=\dimen299
 \g__file_internal_ior=\read2
-\l__coffin_bounding_shift_dim=\dimen293
-\l__coffin_left_corner_dim=\dimen294
-\l__coffin_right_corner_dim=\dimen295
-\l__coffin_bottom_corner_dim=\dimen296
-\l__coffin_top_corner_dim=\dimen297
-\l__coffin_scaled_total_height_dim=\dimen298
-\l__coffin_scaled_width_dim=\dimen299
-\l__seq_internal_a_int=\count348
-\l__seq_internal_b_int=\count349
+\l__seq_internal_a_int=\count349
+\l__seq_internal_b_int=\count350
+\c__deprecation_minus_one=\count351
 )
 (/usr/share/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
-File: l3pdfmode.def 2019-02-15 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count350
+File: l3pdfmode.def 2019-04-06 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count352
 ))
 (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2018-10-17 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count351
-\g__xparse_grabber_int=\count352
-\l__xparse_m_args_int=\count353
-\l__xparse_mandatory_args_int=\count354
-\l__xparse_v_nesting_int=\count355
+Package: xparse 2019-03-05 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count353
+\g__xparse_grabber_int=\count354
+\l__xparse_m_args_int=\count355
+\l__xparse_v_nesting_int=\count356
 )
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 
@@ -1018,27 +1015,27 @@ Package: ifsym 2000/04/18 I.Kloeckl
 
 (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count356
-\calc@Bcount=\count357
+\calc@Acount=\count357
+\calc@Bcount=\count358
 \calc@Adimen=\dimen300
 \calc@Bdimen=\dimen301
 \calc@Askip=\skip74
 \calc@Bskip=\skip75
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count358
+\calc@Ccount=\count359
 \calc@Cskip=\skip76
 )
-\c@ifsymcnt=\count359
+\c@ifsymcnt=\count360
 )
 (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2018/09/02 1.7 listings language file
+File: lstlang1.sty 2019/02/27 1.8b listings language file
 )
 (/usr/share/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2018/09/02 1.7 listings language file
+File: lstlang2.sty 2019/02/27 1.8b listings language file
 )
 (/usr/share/texmf-dist/tex/latex/listings/lstlang3.sty
-File: lstlang3.sty 2018/09/02 1.7 listings language file
+File: lstlang3.sty 2019/02/27 1.8b listings language file
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1286,16 +1283,16 @@ LaTeX Font Info:    ... okay on input line 164.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count360
+\scratchcounter=\count361
 \scratchdimen=\dimen302
 \scratchbox=\box102
-\nofMPsegments=\count361
-\nofMParguments=\count362
+\nofMPsegments=\count362
+\nofMParguments=\count363
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count363
+\MPscratchCnt=\count364
 \MPscratchDim=\dimen303
-\MPnumerator=\count364
-\makeMPintoPDFobject=\count365
+\MPnumerator=\count365
+\makeMPintoPDFobject=\count366
 \everyMPtoPDFconversion=\toks49
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1323,7 +1320,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count366
+\c@section@level=\count367
 )
 LaTeX Info: Redefining \ref on input line 164.
 LaTeX Info: Redefining \pageref on input line 164.
@@ -1420,7 +1417,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count367
+\c@lstlisting=\count368
  (./slides_picat.nav)
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <20> not available
@@ -7010,15 +7007,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 210.
 (./CP_picat.aux) (./depurador_picat.aux) (./conclusoes_picat.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 210.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 210.
+Package rerunfilecheck Info: File `slides_picat.out' has not changed.
+(rerunfilecheck)             Checksum: 53A5BEEED95B2B56EC6D93C7D3C96BC9;1809.
 
-
-Package rerunfilecheck Warning: File `slides_picat.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `slides_picat.out':
-(rerunfilecheck)             Before: 686E6BF6AB6B5E09A9098F85FF4C5522;1809
-(rerunfilecheck)             After:  53A5BEEED95B2B56EC6D93C7D3C96BC9;1809.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.74pt have occurred.
@@ -7028,65 +7019,56 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 34650 strings out of 492616
- 628913 string characters out of 6135177
- 946487 words of memory out of 5000000
- 35632 multiletter control sequences out of 15000+600000
+ 34728 strings out of 492623
+ 630659 string characters out of 6135669
+ 943149 words of memory out of 5000000
+ 35714 multiletter control sequences out of 15000+600000
  570999 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,19n,70p,779b,1511s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Operadores\040Aritm\351ticos} has been referenced
  but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{Outline0.12.3.581} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.12.2.576} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.12.1.573} has been referenced but does not
- exist, replaced by a fixed one
-
- </home/hulk/.texlive/texmf-var/fonts/pk/ljfour/public/ifsym/ifsym10.657pk>{/us
-r/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pf
-b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmssi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></
-usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
-onts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symb
-ols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsi0900.pfb>
-</usr/share/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/tex
-mf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/cm-super/sfsi1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
-super/sfso1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfso1200.
-pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/share
-/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf-dist/fon
-ts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf-dist/fonts/type1/public
-/cm-super/sfss0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1
-000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf-dist
-/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/cm-super/sfss2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
-fsx0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></u
-sr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf-
-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf-dist/fonts/type
-1/public/cm-super/sfsx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
-er/sftt0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb
-></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/te
-xmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/
-type1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm
--super/sftt1440.pfb>
-Output written on slides_picat.pdf (586 pages, 3050799 bytes).
+ </home/ccs/.texlive/texmf-var/fonts/pk/ljfour/public/ifsym/ifsym10.657pk>{/usr
+/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
+></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmssi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbo
+ls/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsi0900.pfb><
+/usr/share/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texm
+f-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/cm-super/sfsi1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
+uper/sfso1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfso1200.p
+fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/
+texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf-dist/font
+s/type1/public/cm-super/sfss0800.pfb></usr/share/texmf-dist/fonts/type1/public/
+cm-super/sfss0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss10
+00.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf-dist/
+fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/cm-super/sfss2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
+sx0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb></us
+r/share/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf-d
+ist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf-dist/fonts/type1
+/public/cm-super/sfsx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-supe
+r/sftt0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
+</usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/tex
+mf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
+super/sftt1440.pfb>
+Output written on slides_picat.pdf (586 pages, 3050373 bytes).
 PDF statistics:
- 15746 PDF objects out of 18468 (max. 8388607)
- 14896 compressed objects within 149 object streams
- 1218 named destinations out of 1440 (max. 500000)
+ 15743 PDF objects out of 18468 (max. 8388607)
+ 14893 compressed objects within 149 object streams
+ 1215 named destinations out of 1440 (max. 500000)
  462 words of extra memory for PDF output out of 10000 (max. 10000000)
 
